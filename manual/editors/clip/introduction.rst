@@ -25,9 +25,9 @@ View
    Center View to Cursor
       Centers the view so that the cursor is in the middle of the view.
 Select
-   Menu of operators for :doc:`Selecting Markers </interface/controls/nodes/selecting>`.
+   Menu of operators for :doc:`Selecting Markers </movie_clip/tracking/clip/selecting>`.
 Clip
-   Menu of operators for :doc:`Editing Movie Clips </interface/controls/nodes/editing>`.
+   Menu of operators for :doc:`Editing Movie Clips </movie_clip/tracking/clip/editing/clip>`.
 
 Clip
    A :ref:`data-block menu <ui-data-block>` used for add a movie file.
