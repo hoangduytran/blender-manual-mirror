@@ -29,11 +29,13 @@ Side of Frame
    Left/Right :kbd:`[`/:kbd:`]`
       Select strips laying left or right to the current frame.
 Handle
-   Select left, right or both handles of selected strips.
+   Operators to select strip handles.
+   These operators are useful to change the timing of a cut by moving the handles after selecting them.
 
-   .. note::
-
-      Select with this method when you want to change the timing of a cut.
+   Both, Left, Right
+      Select the left, right, or both handles of selected strips.
+   Both/Left/Right Neighbor
+      Select the handle of the neighboring strip to the left, right, or on both sides of the selected strips.
 
 Channel
    Select strips in the same channel laying left or right to active strip.
