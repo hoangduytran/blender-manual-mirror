@@ -133,6 +133,9 @@ Pan
 Display Waveform
    Display an approximate waveform of the sound file inside of the sound strip.
    The waveform reflects strip volume and its animation using :doc:`keyframes </animation/keyframes/introduction>`.
+
+.. _bpy.types.Sound.use_mono:
+
 Mono
    Mixdown all audio channels into a single one.
 
@@ -150,8 +153,13 @@ The Time panel is used to control source and timeline position of the strip.
 Lock (padlock icon)
    Prevents the strip from being moved (found in the panel header).
 
+.. _bpy.types.Sequence.channel:
+
 Channel
    Changes the channel number, or row, of the strip.
+
+.. _bpy.types.Sequence.frame_start:
+
 Start
    Changes the starting frame number of the strip, which is the same as selecting and moving the strip.
 Duration
@@ -220,5 +228,8 @@ Path
    Path to the sound file used by this :ref:`data-block <ui-data-block>` menu.
 Pack
    Pack sound into the blend-file.
+
+.. _bpy.types.Sound.use_memory_cache:
+
 Caching
    Sound file is decoded and loaded into the RAM.
