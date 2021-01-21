@@ -36,6 +36,33 @@ Channel
 Replace Selection
    Replaces the currently selected strips with the new strip
 
+Fit Method
+   Determines how images with aspect ratios different then the :doc:`Scene's </render/output/properties/dimensions>`
+   are scaled to fit inside the render area.
+
+   Defininition
+      njkfnk re vk;j kj vkjveh m ejhrdkc elnv jkmc ejhbkc ejsbscje abbwej cjb wvjhc.
+
+   :Scale to Fit:
+      Adjusts the strips :ref:`Scale Transforms <bpy.types.SequenceTransform.scale>`
+      so the visual contents of the strip to fit exactly within the project's :doc:`/render/output/properties/dimensions`
+      while maintaining the original aspect ratio.
+
+      This may mean that the transparent areas may be added
+      along the content's border to fit the content in the rendered area.
+   :Scale to Fill:
+      Adjusts the strips :ref:`Scale Transforms <bpy.types.SequenceTransform.scale>`
+      so the visual contents of the strip to span the project's :doc:`/render/output/properties/dimensions`
+      while maintaining the original aspect ratio.
+
+      This may mean that portions of the original image no longer fit the content inside the rendered area.
+   :Stretch to Fill:
+      Adjusts the strips :ref:`Scale Transforms <bpy.types.SequenceTransform.scale>`
+      so the visual contents of the strip to fill the project's :doc:`/render/output/properties/dimensions`.
+      Note, unlike the other two methods described above, *Stretch to Fill* does not maintaining the original aspect ratio.
+
+      This may mean that the original image becomes distorted to fit the content inside the rendered area.
+
 Sound
    Add a :doc:`Sound Strip </video_editing/sequencer/strips/sound>` that contains the movie's audio track.
 
@@ -120,6 +147,30 @@ Channel
 
 Replace Selection
    Replaces the currently selected strips with the new strip
+
+Fit Method
+   Determines how images with aspect ratios different then the :doc:`Scene's </render/output/properties/dimensions>`
+   are scaled to fit inside the render area.
+
+   :Scale to Fit:
+      Adjusts the strips :ref:`Scale Transforms <bpy.types.SequenceTransform.scale>`
+      so the visual contents of the strip to fit exactly within the project's :doc:`/render/output/properties/dimensions`
+      while maintaining the original aspect ratio.
+
+      This may mean that the transparent areas may be added
+      along the content's border to fit the content in the rendered area.
+   :Scale to Fill:
+      Adjusts the strips :ref:`Scale Transforms <bpy.types.SequenceTransform.scale>`
+      so the visual contents of the strip to span the project's :doc:`/render/output/properties/dimensions`
+      while maintaining the original aspect ratio.
+
+      This may mean that portions of the original image no longer fit the content inside the rendered area.
+   :Stretch to Fill:
+      Adjusts the strips :ref:`Scale Transforms <bpy.types.SequenceTransform.scale>`
+      so the visual contents of the strip to fill the project's :doc:`/render/output/properties/dimensions`.
+      Note, unlike the other two methods described above, *Stretch to Fill* does not maintaining the original aspect ratio.
+
+      This may mean that the original image becomes distorted to fit the content inside the rendered area.
 
 Use placeholders
    Image sequences can use placeholder files.

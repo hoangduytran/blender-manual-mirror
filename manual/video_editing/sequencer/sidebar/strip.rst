@@ -30,6 +30,8 @@ Opacity
    is drawn on the strip as a dark section that follows the animation curve.
 
 
+.. _bpy.types.SequenceTransform:
+
 Transform
 =========
 
