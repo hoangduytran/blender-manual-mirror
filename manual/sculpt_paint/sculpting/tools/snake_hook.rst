@@ -35,4 +35,5 @@ Deformation
    Radius Falloff
       Applies the brush falloff to the tip of the brush.
    Elastic
-      Modifies the entire mesh using an :term:`Elastic` deformation.
+      Modifies the entire mesh using an :term:`Elastic` deformation,
+      see also the :doc:`Elastic Deform </sculpt_paint/sculpting/tools/elastic_deform>` tool.
