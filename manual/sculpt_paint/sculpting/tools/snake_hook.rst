@@ -26,3 +26,13 @@ Magnify
 
 Rake
    A factor to support moving the mesh with rotation following the cursor's motion.
+
+.. _bpy.types.Brush.snake_hook_deform_type:
+
+Deformation
+   Deformation type that is used by the brush.
+
+   Radius Falloff
+      Applies the brush falloff to the tip of the brush.
+   Elastic
+      Modifies the entire mesh using an :term:`Elastic` deformation.
