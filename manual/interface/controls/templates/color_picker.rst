@@ -26,9 +26,10 @@ Color Model
 
    .. note::
 
-      In Blender, the *Hex* and HSV/HSL values are automatically :term:`Gamma` corrected; however,
-      for the RGB values, they are in Scene Linear color space, and are therefore not gamma corrected.
-      For more information, see the :doc:`Color Management and Exposure </render/color_management>` page.
+      In Blender, the RGB and HSV/HSL values are in Scene Linear color space,
+      and are therefore not :term:`Gamma` corrected.
+      On the contrary, *Hex* are automatically :term:`Gamma` corrected for the :term:`sRGB` color space.
+      For more information, see :doc:`Color Management </render/color_management>`.
 
 Color Values
    Blender uses (0 to 1.0) values to express colors for RGB and HSV colors.
