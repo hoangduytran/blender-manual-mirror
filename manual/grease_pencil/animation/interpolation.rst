@@ -40,9 +40,6 @@ Interpolate All Layers
 Interpolate Selected Strokes
    When enabled, only selected strokes will be interpolated.
 
-Selection Mask
-   When enabled the interpolation only affect selected strokes.
-
 .. note::
 
    The *Interpolate* and *Sequence* tools work better when the strokes in the previous and next keyframes
