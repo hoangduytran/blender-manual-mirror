@@ -64,6 +64,8 @@ Keyboard selection and navigation starts from the active data-block.
      - Open this and all child data-blocks.
 
 
+.. _editors-outliner-properties-sync:
+
 Properties Editor Sync
 ======================
 
