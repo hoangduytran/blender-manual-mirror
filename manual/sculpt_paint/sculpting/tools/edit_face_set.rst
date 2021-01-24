@@ -23,6 +23,8 @@ Mode
       Grows the face sets boundary by one face based on mesh topology.
    Shrink Face Set
       Shrinks the face sets boundary by one face based on mesh topology.
+   Delete Geometry
+      Deletes the faces that are assigned to the face set.
 
 Modify Hidden
    Apply the edit operation to hidden face sets.
