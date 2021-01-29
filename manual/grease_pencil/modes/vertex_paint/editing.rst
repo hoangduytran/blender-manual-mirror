@@ -17,6 +17,21 @@ Set Vertex Colors
 Sets the :ref:`active color <grease-pencil-vertex-paint-brush-color>` to all selected vertices.
 
 
+.. _bpy.ops.gpencil.stroke_reset_vertex_color:
+
+Reset Vertex Colors
+===================
+
+.. admonition:: Reference
+   :class: refbox
+
+   :Mode:      Vertex Paint Mode
+   :Menu:      :menuselection:`Paint --> Reset Vertex Colors`
+
+Removes vertex color information of the active strokes,
+if no strokes are selected, all strokes are reset.
+
+
 .. _bpy.ops.gpencil.vertex_color_invert:
 
 Invert
