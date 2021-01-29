@@ -6,12 +6,11 @@
   Geometry Nodes
 ##################
 
-Nodes can be used to change an object's geometry in a more complex way than regular modifiers.
-To use them add a :doc:`Geometry Nodes Modifier </modeling/modifiers/generate/geometry_nodes>`.
+.. toctree::
+   :maxdepth: 2
 
-.. figure:: /images/modeling_modifiers_nodes_properties.png
-
-   The properties of a Geometry Nodes modifier in the modifier stack.
+   introduction.rst
+   attributes_reference.rst
 
 
 Attribute
@@ -20,7 +19,6 @@ Attribute
 .. toctree::
    :maxdepth: 1
 
-   attributes_reference.rst
    attribute/attribute_compare.rst
    attribute/attribute_fill.rst
    attribute/attribute_math.rst
@@ -44,8 +42,6 @@ Color
 Geometry
 ========
 
-Nodes that can operate on different geometry types (volume, mesh).
-
 .. toctree::
    :maxdepth: 1
 
@@ -55,8 +51,6 @@ Nodes that can operate on different geometry types (volume, mesh).
 
 Input
 =====
-
-Nodes used mainly as input to other nodes.
 
 .. toctree::
    :maxdepth: 1
@@ -69,8 +63,6 @@ Nodes used mainly as input to other nodes.
 
 Mesh
 ====
-
-Nodes that only operate on meshes.
 
 .. toctree::
    :maxdepth: 1
