@@ -42,13 +42,9 @@ Algorithm
       Limit by the maximum of the other two channels other than the *Key Channel*.
    :Single:
       Limit by the maximum of the selected *Limiting Channel*.
-      Limit by the maximum of the selected *Limiting Channel*.
-      Limit by the maximum of the selected *Limiting Channel*.
-      Limit by the maximum of the selected *Limiting Channel*.
 
       Limiting Channel
          The channel to use when computing the maximum, the options are defined by the *Color Space*.
-         Limit by the maximum of the selected *Limiting Channel*.
 
 High
    Determines the lowest values that are considered foreground.
