@@ -128,8 +128,8 @@ List of additional macOS specific keys:
 
 .. _keymap-blender_default-prefs:
 
-Preferences
-===========
+Keymap Preferences
+==================
 
 .. _keymap-blender_default-prefs-select_with:
 
