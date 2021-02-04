@@ -47,6 +47,10 @@ The process is similar for the *Group Output* regarding data
 you want to be made available outside the group.
 
 
+.. _bpy.ops.node.tree_socket_add:
+.. _bpy.ops.node.tree_socket_remove:
+.. _bpy.ops.node.tree_socket_move:
+
 Panel
 -----
 
@@ -66,10 +70,35 @@ the details of the input data value defined here.
 
 If you have multiple inputs or outputs, they can be re-ordered by selecting the socket in the list
 and then moving it up or down with the arrow buttons on the right side of the panel.
-The larger plus sign buttons below the list will add an unconnected socket of the same type
+The plus button will add an unconnected socket of the same type
 as the selected socket or a value socket if there is no selection.
+The minus button will remove the selected socket.
 The triangle at the bottom of the list has filtering functions to facilitate finding nodes
 if the group has a large number of sockets.
+
+.. _bpy.types.NodeSocketInterface.name:
+
+Name
+   The name of the socket to display in the node's interface.
+
+.. _bpy.types.NodeSocketInterface*.default_value:
+
+Default
+   The value to to use when nothing is connected to the node socket.
+   Note, this will not affect the current node but will affect instances of the node.
+
+.. _bpy.types.NodeSocketInterface*.min_value:
+.. _bpy.types.NodeSocketInterface*.max_value:
+
+Min, Max
+   The minimum and maximum value for the UI button shown in the node interface.
+   Note, this is not a minimum or maximum for the data that can pass through the node.
+   If a socket passes a higher value than the maximum it will still pass into the node unchanged.
+
+.. _bpy.types.NodeSocketInterface.hide_value:
+
+Hide Value
+   Hide the socket value even when the socket is not connected.
 
 
 .. _bpy.ops.node.tree_path_parent:
