@@ -147,7 +147,7 @@ Replace Selection
    Replaces the currently selected strips with the new strip.
 
 Fit Method
-   Determines how images with aspect ratio different than the :doc:`Scene's </render/output/properties/dimensions>`
+   Determines how images with an aspect ratio different than the :doc:`Scene's </render/output/properties/dimensions>`
    are scaled to fit inside the render area.
 
    :Scale to Fit:
