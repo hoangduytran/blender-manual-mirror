@@ -23,7 +23,8 @@ Setup
 Baking requires a mesh to have a UV map, and either vertex colors
 or an Image Texture node with an image to be baked to.
 
-The :term:`Active` Image Texture node or vertex color is used as the baking target.
+The :term:`Active` :doc:`Image Texture </render/shader_nodes/textures/image>`
+node or :doc:`Vertex Color </sculpt_paint/vertex_paint/index>` layer is used as the baking target.
 
 Use Render Bake in intensive light/shadow solutions,
 such as AO or soft shadows from area lights. If you bake AO for the main objects,
@@ -226,12 +227,26 @@ Max Ray Distance
 Output
 ------
 
-.. _bpy.types.BakeSettings.margin:
+.. _bpy.types.BakeSettings.target:
 
-Margin
-   Baked result is extended this many pixels beyond the border of each UV "island", to soften seams in the texture.
+Target
+   Where to output the baked map.
 
-.. _bpy.types.BakeSettings.use_clear:
+   :Image Textures:
+      Bake to the image data-block associated with the :term:`Active`
+      :doc:`Image Texture </render/shader_nodes/textures/image>` node.
 
-Clear Image
-   If selected, clears the image before baking render.
+      .. _bpy.types.BakeSettings.margin:
+
+      Margin
+         Baked result is extended this many pixels beyond the border of each UV "island",
+         to soften seams in the texture.
+
+      .. _bpy.types.BakeSettings.use_clear:
+
+      Clear Image
+         If selected, clears the image before baking render.
+
+   :Vertex Colors:
+      Bake to the :term:`Active` :doc:`Vertex Color </sculpt_paint/vertex_paint/index>` layer on the active mesh.
+      Note, the active object must be a mesh as other object types do not have vertex colors.
