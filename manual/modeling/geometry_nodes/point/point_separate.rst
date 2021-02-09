@@ -49,7 +49,7 @@ Outputs
 =======
 
 Geometry 1
-   Points with a mask attribute value of "true" will be moved to the first input.
+   Points with a mask attribute value of "false" will be moved to the first input.
 
 Geometry 2
-   Points with a mask attribute value of "false" will be moved to the first input.
+   Points with a mask attribute value of "true" will be moved to the first input.
