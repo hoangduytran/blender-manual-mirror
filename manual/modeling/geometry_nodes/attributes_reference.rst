@@ -21,6 +21,9 @@ change the values of specific attributes.
 Built-In Attributes
 ===================
 
+These attributes always exist, and cannot be removed. The data type of built-in attributes can not
+be changed.
+
 .. list-table::
    :widths: 10 10 50
    :header-rows: 1
@@ -38,13 +41,22 @@ Built-In Attributes
 
    * - **radius**
      - *Float*
-     - Used to set the size for the points created by the
+     - A built-in atribute on point cloud data created by the
        :doc:`Point Distribute Node </modeling/geometry_nodes/point/point_distribute>`
-       in the viewport.
+       Used to set the size for the points in the viewport.
 
 
 Naming Conventions
 ==================
+
+These attributes do not exist by default, but are used implicitly by certain nodes. The data type of these
+attributes can be changed, just like any attribute besides the built-in attributes.
+
+
+If the attributes don't exist yet, a default value is used, which can depend on the situation.
+For example, in the :doc:`Point Instance Node </modeling/geometry_nodes/point/point_instance>`,
+the default value for `scale` is a unit scale of (1, 1, 1), but the default value for new attributes
+in the "Attribute" nodes is zero.
 
 .. list-table::
    :widths: 10 10 50
@@ -56,15 +68,16 @@ Naming Conventions
 
    * - **rotation**
      - *Vector*
-     - Used in the :doc:`Point Distribute Node </modeling/geometry_nodes/point/point_distribute>` to
-       control the rotation of instanced objects or collections. This is adjusted by
+     - Used in the :doc:`Point Instance Node </modeling/geometry_nodes/point/point_instance>` to
+       control the rotation of instanced objects or collections. Adjusted by
        the :doc:`Point Rotate Node </modeling/geometry_nodes/point/point_rotate>` and the
        :doc:`Align Rotation to Vector Node </modeling/geometry_nodes/point/align_rotation_to_vector>`.
 
    * - **scale**
      - *Vector*
-     - Used in the :doc:`Point Distribute Node </modeling/geometry_nodes/point/point_distribute>` to control the scale.
-       This is adjusted by the :doc:`Point Scale Node </modeling/geometry_nodes/point/point_rotate>`
+     - Used in the :doc:`Point Distribute Node </modeling/geometry_nodes/point/point_distribute>` 
+       to control the scale.
+       Adjusted by the :doc:`Point Scale Node </modeling/geometry_nodes/point/point_rotate>`
        or other attribute nodes.
 
    * - **id**
@@ -81,4 +94,5 @@ Vertex Groups
 All vertex groups can be used as attributes in the node tree when referred to by name.
 However, the result of the node tree does not always produce vertex groups, if a node like
 :doc:`Join Geometry </modeling/geometry_nodes/geometry/join_geometry>` is used.
-
+Similarly, if the data type of a vertex group attribute is changed from the initial "Float" type,
+the attribute will no longer be a vertex group.
