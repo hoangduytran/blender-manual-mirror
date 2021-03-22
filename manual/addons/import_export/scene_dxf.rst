@@ -93,7 +93,7 @@ Line Thickness and Width
 Represent Line Thickness/Width
    DXF line attributes *thickness* and *width* have an effect on line in Z and X/Y direction respectively.
    A straight line might be turned to a cube by its attributes for instance.
-   Therefore in Blender these attributes are represented with curve extrusion, bevel and taper objects.
+   Therefore, in Blender these attributes are represented with curve extrusion, bevel and taper objects.
 Merge by Attributes
    If both *Merged Objects* and *Represent Line Thickness/Width* are activated
    the object merging needs to be extended to separate all lines width different thickness and width.

@@ -138,7 +138,7 @@ Path Mode
    :Copy: Copy the file on exporting and reference it with a relative path.
 
 Forward / Up
-   Since many applications use a different axis for 'Up', there are axis conversion there settings,
+   Since many applications use a different axis for 'Up', there are axis conversion settings,
    Forward and Up axis -- By mapping these to different axis you can convert rotations
    between applications default up and forward axis.
 

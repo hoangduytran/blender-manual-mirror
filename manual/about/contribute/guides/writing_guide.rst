@@ -22,7 +22,7 @@ Complete
    More background information should be provided when necessary to give deeper understanding of a 3D pipeline.
 Concise
    Computer graphics is an incredibly interesting field,
-   there are many rules, exceptions to the rules and interesting details.
+   there are many rules, exceptions to the rules, and interesting details.
    Expanding into details can add unnecessary content,
    so keep the text concise and relevant to the topic at hand.
 Maintainable

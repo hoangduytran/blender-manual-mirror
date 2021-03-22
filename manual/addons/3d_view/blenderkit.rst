@@ -580,7 +580,7 @@ Management Tools:
       Change asset status.
 
 Downloads:
-   This panel is visible when there are running downloads.
+   This panel is visible when running downloads.
    You can cancel downloading of assets by pressing the ``X`` button.
    This cancels the download and deletes the file on your computer.
 
