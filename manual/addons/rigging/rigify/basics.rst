@@ -115,13 +115,13 @@ With the bones in the correct positions, jump back in Object Mode, go to the Arm
 scroll down to the bottom and click on the *Generate* button to finalize the rig creation.
 The generation process will take from few seconds to one minute depending on
 rig complexity and hardware specifications of your machine.
-If the generated rig needs tweaking you can modify the meta-rig accordingly and
+If the generated rig needs tweaking, you can modify the meta-rig accordingly and
 then click again on the generate button. If the rig already exists,
 Rigify will simply overwrite it retaining all your modifiers and constraints and -- where possible --
 all the previously generated features.
 
 If you need to generate more than one rig in the scene or update a specific one
-(when there are more than one in the same file) follow the instructions in the `Advanced Rig Generation`_ section.
+(when there are more than one in the same file), follow the instructions in the `Advanced Rig Generation`_ section.
 
 .. tip:: Rig Updating
 

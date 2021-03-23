@@ -3,7 +3,7 @@
 BlenderKit
 **********
 
-`BlenderKit <https://www.blenderkit.com/>`__ is an online database of materials, brushes and 3D models
+`BlenderKit <https://www.blenderkit.com/>`__ is an online database of materials, brushes, and 3D models
 which you can search, download, upload and rate directly from the add-on.
 
 
