@@ -1,0 +1,39 @@
+.. index:: Geometry Nodes; Random Float
+.. _bpy.types.FunctionNodeRandomFloat:
+
+************
+Random Float
+************
+
+.. figure:: /images/modeling_geometry-nodes_input_random-float_node.png
+   :align: right
+
+   Random Float Node.
+
+The *Random Float* generates a random (floating-point) value from a given range.
+
+
+Inputs
+======
+
+Min
+   The random value will be at least those values.
+
+Max
+   The random values will be no more than those values.
+
+Seed
+   Change the random sequence.
+
+
+Properties
+==========
+
+This node has no properties.
+
+
+Outputs
+=======
+
+Value
+   The random generated value.
