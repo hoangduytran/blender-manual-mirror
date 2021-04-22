@@ -49,7 +49,8 @@ Line Art
 
 Usage
    How the collection is loaded into line art.
-   Child objects of the collection can override this setting if they wish in :ref:`bpy.types.ObjectLineArt.usage`.
+   Child objects of the collection can override this setting
+   if they wish in :ref:`Object Properties <bpy.types.ObjectLineArt.usage>`.
 
    :Include:
       Include all objects in this collection into line art calculation.
