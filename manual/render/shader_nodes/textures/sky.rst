@@ -65,7 +65,7 @@ Sun Rotation
    Rotation of the sun around the zenith (in degrees).
 
 Altitude
-   The distance in kilometers from sea level to the location of the camera.
+   The distance from sea level to the location of the camera.
    For example, if the camera is placed on a beach a value of 0 should be used.
    However, if the camera is in the cockpit of a flying airplane a value of 10 km will be more suitable.
    Note, this is limited to 60 km because the mathematical model only accounts
