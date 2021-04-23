@@ -25,9 +25,6 @@ input[type="number"], input[type="tel"], input[type="color"] {
 	background-color:#FCFCFC;
 }
 
-/* Fixes overlay of "align-right" images on block. */
-.rst-content .admonition {overflow: auto}
-
 /* Boxed paragraphs. */
 .rst-content .refbox .admonition-title {background-color: #bbb}
 .rst-content .refbox {
