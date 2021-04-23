@@ -26,11 +26,11 @@ Properties
 Sky Type
    Sky model to use.
 
-   Preetham
+   :Preetham:
       Based on the 1999 `paper <https://doi.org/10.1145/311535.311545>`__ by Preetham et al.
-   Hosek/Wilkie
+   :Hosek/Wilkie:
       Based on the 2012 `paper <https://cgg.mff.cuni.cz/projects/SkylightModelling/>`__ by Hosek and Wilkie.
-   Nishita
+   :Nishita:
       Improved version of the 1993
       `model <https://www.scratchapixel.com/lessons/procedural-generation-virtual-worlds/simulating-sky/simulating-colors-of-the-sky>`__
       by Nishita et al.
