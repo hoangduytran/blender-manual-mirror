@@ -167,11 +167,6 @@ footer p{ font-size: smaller}
 	padding-right: 20px;
 }
 
-/* Block-quote > dl bugfix. */
-.rst-content dl{line-height:normal}
-/* multi-paragraph dl bugfix */
-.rst-content dl p{line-height:inherit}
-
 /* Quotes for Fig. "link". */
 a[href^="#fig-"]::before {content: "\201c";}
 a[href^="#fig-"]::after {content: "\201d";}
