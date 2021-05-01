@@ -58,9 +58,9 @@ Data-Block Types
 
 For reference, here is a table of data-blocks types stored in blend-files.
 
-:Link:
+Link
    Library Linking, supports being linked into other blend-files.
-:Pack:
+Pack
    File Packing, supports file contents being packed into the blend-file
    *(not applicable for most data-blocks which have no file reference)*.
 
