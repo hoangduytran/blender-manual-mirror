@@ -37,7 +37,7 @@ Creating an Override
 .. admonition:: Reference
    :class: refbox
 
-   :Editor:    3D Viewport & Outliner
+   :Editor:    3D Viewport and Outliner
    :Mode:      Object Mode
    :Menu:      :menuselection:`3D Viewport --> Header --> Object --> Relations --> Make Override Library`
                :menuselection:`Outliner --> Context Menu --> ID Data --> Make Library Override Hierarchy`
@@ -83,7 +83,7 @@ Converting Proxies to Library Override
 .. admonition:: Reference
    :class: refbox
 
-   :Editor:    3D Viewport & Outliner
+   :Editor:    3D Viewport and Outliner
    :Mode:      Object Mode
    :Menu:      :menuselection:`3D Viewport --> Header --> Object --> Relations --> Convert Proxy to Library Override`
                :menuselection:`Outliner -->  ID Data --> Convert Proxy to Library Override`

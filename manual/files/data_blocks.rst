@@ -62,7 +62,7 @@ Link
    Library Linking, supports being linked into other blend-files.
 Pack
    File Packing, supports file contents being packed into the blend-file
-   *(not applicable for most data-blocks which have no file reference)*.
+   (**not** applicable for most data-blocks which have no file reference).
 
 .. EDITORS NOTE:
    For each data-block, we have 2 lines.
@@ -242,7 +242,7 @@ Pack
    * - :doc:`Window Manager </interface/window_system/introduction>`
      - |cross|
      - |none|
-     - | The overarching manager for all of Blender's UI.
+     - | The overarching manager for all of Blender's user interface.
        | Includes Workspaces, notification system, operators, and keymaps.
    * - :doc:`World </render/lights/world>`
      - |tick|
@@ -259,13 +259,11 @@ Life Time
 =========
 
 Every data-block has its usage counted (reference count), when there is more than one,
-you can see the number of current users of a data-block to the right of its name in the UI.
-
+you can see the number of current users of a data-block to the right of its name in the interface.
 Blender follows the general rule that unused data is eventually removed.
 
 Since it is common to add and remove a lot of data while working,
 this has the advantage of not having to manually manage every single data-block.
-
 This works by skipping zero user data-blocks when writing blend-files.
 
 
@@ -277,12 +275,12 @@ Protected
 Since zero user data-blocks are not saved,
 there are times when you want to force the data to be kept irrespective of its users.
 
-If you are building a blend-file to serve as a library of things that you intend to link to and from other files,
+If you are building a blend-file to serve as a library of assets that you intend to link to and from other files,
 you will need to make sure that they do not accidentally get deleted from the library file.
 
 To protect a data-block, use the button with the shield icon next to its name.
 The data-block will then never be silently deleted by Blender,
-but you can still do it manually if needed.
+but you can still manually remove it if needed.
 
 
 Sharing
@@ -320,12 +318,10 @@ Removing Data-Blocks
 ====================
 
 As covered in `Life Time`_, data-blocks are typically removed when they are no longer used.
-
 They can also be manually *unlinked* or *deleted*.
 
 Unlinking a data-block means that its user won't use it anymore.
 This can be achieved by clicking on the "X" icon next to a data-block's name.
-
 If you unlink a data-block from all of its users,
 it will eventually be deleted by Blender as described above (unless it is a protected one).
 

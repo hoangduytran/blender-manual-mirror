@@ -10,8 +10,8 @@ Bounding Box
 
    The Bounding Box node.
 
-The *Bounding Box* node creates a cube with the minium volume that encapsulates the geometry of the input.
-The node also can output the vector positons of the bounding dimensions.
+The *Bounding Box* node creates a cube with the minimum volume that encapsulates the geometry of the input.
+The node also can output the vector positions of the bounding dimensions.
 
 
 Inputs
@@ -34,12 +34,12 @@ Geometry
    The resulting box or cube to encapsulate the input geometry.
 
 Min
-   The coordinates corresponding to the cubes :math:`{-X, -Y, -Z}` poition values,
+   The coordinates corresponding to the cubes -X, -Y, -Z position values,
    i.e. how far the box extends in each of the negative axes directions.
 
 Max
-   The coordinates corresponding to the cubes :math:`{+X, +Y, +Z}` poition values.
-   i.e. how far the box extends in each of the postive axes directions.
+   The coordinates corresponding to the cubes +X, +Y, +Z position values.
+   i.e. how far the box extends in each of the positive axes directions.
 
 
 Example

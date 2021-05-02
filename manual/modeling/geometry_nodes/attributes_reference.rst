@@ -26,7 +26,7 @@ the string input allows you to search and choose existing attributes.
 
    Attribute Search.
 
-The attribute search gives a bit a bit of context about each attribute.
+The attribute search gives a bit of context about each attribute.
 To the left of the menu, the attribute domain is shown followed by the attribute name.
 To the right of the menu, the attribute data type is shown.
 

@@ -17,7 +17,7 @@ Inputs
 ======
 
 Attribute
-   The input attribute whose valued is to be remapped.
+   The input attribute whose value is to be remapped.
 Result
    Name of the attribute where the computed result it stored.
    If an attribute with this name does not exist yet,
