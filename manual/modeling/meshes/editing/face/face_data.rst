@@ -11,7 +11,7 @@ Rotate Colors
 Reverse Colors
    Flips the direction of Vertex Colors inside the selected faces.
 Rotate/Reverse UVs
-   See :ref:`uv-image-rotate-reverse-uvs`.
+   See :ref:`bpy.ops.mesh.uvs_reverse`.
 Mark Freestyle Face
    Todo.
 Clear Freestyle Face
