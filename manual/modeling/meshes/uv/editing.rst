@@ -416,7 +416,9 @@ Snap to Pixels
 .. _bpy.types.SpaceUVEditor.lock_bounds:
 
 Constraining to Image Bounds
-   Turning on *Constrain to Image Bounds* will prevent UVs from being moved outside the 0 to 1 UV range.
+   For standard textures, this option prevents UVs from being moved outside the 0 to 1 UV range.
+   For :doc:`UDIMs </modeling/meshes/uv/workflows/udims>` textures,
+   this option prevents UVs from being moved outside the nearest UDIM tile.
 
 
 3D Viewport
