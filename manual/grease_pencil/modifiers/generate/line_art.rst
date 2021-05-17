@@ -3,7 +3,7 @@
 
 *****************
 Line Art Modifier
-******************
+*****************
 
 The *Line Art* modifier generates stylized line art from the scene or selected source collection or objects.
 
@@ -25,7 +25,7 @@ Options
 
 Source Type
    What type of geometry source should line art be generated from.
-   
+
    Scene, Collection, Object
 
 Source Selector
