@@ -35,11 +35,6 @@ Evaluation Time
 Follow
    Make the curve path children rotate along the curvature of the path.
 
-.. note::
-
-   Deprecated, but still available use.
-   A more future-proof method is the :doc:`/animation/constraints/relationship/follow_path`.
-
 
 Example
 =======
