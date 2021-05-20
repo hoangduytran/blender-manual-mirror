@@ -172,7 +172,7 @@ Invert
 Invert Image Colors
    Invert the colors of an image.
 Invert Channel
-   Red, Green, Blue, Alpha
+   Red, Green, Blue, AlphaSave Buffers
 
 
 .. _bpy.ops.image.resize:
@@ -187,6 +187,27 @@ Resize
    :Menu:      :menuselection:`Image --> Resize`
 
 Adjust the image size in pixels.
+
+
+.. _bpy.ops.image.flip:
+
+Flip
+====
+
+.. admonition:: Reference
+   :class: refbox
+
+   :Mode:      All Modes
+   :Menu:      :menuselection:`Image --> Flip`
+
+This operator mirrors the image across a specified axis.
+Use this to alter the perspective of an image giving an alternative viewpoint;
+this can make an image more visually appealing or highlight some visual flaw.
+
+Horizontally
+   Mirrors the image so the left-side becomes the right-side.
+Virtically
+   Mirrors the image so the top becomes the bottom.
 
 
 .. _bpy.ops.image.pack:
