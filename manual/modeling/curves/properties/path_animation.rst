@@ -30,6 +30,11 @@ Evaluation Time
    By default, it is linked to the global frame number,
    but could be keyframed to give more control over the path animation.
 
+.. _bpy.types.Curve.use_path_clamp:
+
+Clamp
+   Clamp the curve path children so they can't travel past the start/end point of the curve.
+
 .. _bpy.types.Curve.use_path_follow:
 
 Follow
