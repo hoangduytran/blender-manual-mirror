@@ -197,6 +197,13 @@ The structure of the linked data (the relationships between linked data-blocks) 
 Overrides need to be resynced to match the new structure. This operator will resync the override
 to the new structure in the library.
 
+.. warning::
+
+   While resyncing a library override it is possible that edited overrides
+   get deleted if they are changed in the original library.
+   If this is the case, a warning message will be displayed stating how many overrides were deleted,
+   if the deletion is undesirable the resync can be undone before saving the blend-file.
+
 
 Delete Library Override Hierarchy
 =================================
