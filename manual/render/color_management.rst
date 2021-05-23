@@ -165,7 +165,8 @@ Gamma
 .. _bpy.types.ColorManagedSequencerColorspaceSettings.name:
 
 Sequencer
-   The color space that the Sequencer operates in. By default, the Sequencer operates in sRGB space,
+   The color space that the :doc:`Sequencer </editors/sequencer>` operates in.
+   By default, the Sequencer operates in sRGB space,
    but it can also be set to work in Linear space like the Compositing nodes, or another color space.
    Different color spaces will give different results for color correction, crossfades, and other operations.
 
