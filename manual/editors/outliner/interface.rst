@@ -6,6 +6,8 @@ Interface
 Header
 ======
 
+.. _bpy.types.SpaceOutliner.display_mode:
+
 Display Mode
 ------------
 
@@ -22,6 +24,8 @@ Blender File
    Lists all data in the current blend-file.
 Data API
    Lists every :doc:`data-block </files/data_blocks>` along with any properties that they might have.
+Library Overrides
+   Display data-blocks with library overrides and list their overridden properties.
 Orphan Data
    Lists :doc:`data-blocks </files/data_blocks>`
    which are unused and/or will be lost when the file is reloaded.
@@ -133,9 +137,21 @@ Object Children
 .. _bpy.types.SpaceOutliner.use_filter_object_light:
 .. _bpy.types.SpaceOutliner.use_filter_object_camera:
 .. _bpy.types.SpaceOutliner.use_filter_object_empty:
+.. _bpy.types.SpaceOutliner.use_filter_object_others:
 
 Data-Block
    Allows you to filter out certain data-blocks currently present in the scene.
+
+.. _bpy.types.SpaceOutliner.use_filter_lib_override:
+
+Library Overrides
+   Shows the data block properties have been overridden.
+
+.. _bpy.types.SpaceOutliner.use_filter_lib_override_system:
+
+System Overrides
+   Shows the data block properties that are defined/controlled automatically
+   (e.g. to make users of an overridden data-block point to the override data, not the original linked data).
 
 
 .. _bpy.ops.outliner.orphans_purge:
