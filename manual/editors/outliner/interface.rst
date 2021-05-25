@@ -3,8 +3,11 @@
 Interface
 *********
 
-Object Mode
+Main Region
 ===========
+
+Object Mode
+-----------
 
 The far left of the Outliner contains a region to toggle the current :doc:`Object Mode </editors/3dview/modes>`.
 When an object is in a mode other than Object Mode, the mode icon will be displayed in this region.
@@ -19,7 +22,7 @@ from the current mode depending if multiple object are in the same mode.
 .. _editors-outliner-interface-restriction_columns:
 
 Restriction Columns
-===================
+-------------------
 
 The following toggles, in the right side of the *Outliner* editor,
 are available for collections, objects, bones, modifiers and constraints.
