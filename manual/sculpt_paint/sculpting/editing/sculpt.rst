@@ -86,7 +86,7 @@ Transfer Sculpt Mode
    :Menu:      :menuselection:`Sculpt --> Transfer Sculpt Mode`
    :Shortcut:  :kbd:`D`
 
-Adds the object under the mouse to Sculpt mode and removes the :term:`Active` from sculpt mode.
-This operator is useful to easily switch between objects while trying to sculpt on multiple objects at once.
+Adds the object under the mouse to Sculpt Mode and removes the :term:`Active` from Sculpt Mode.
+This operator is useful to easily switch between objects when you want to sculpt on multiple objects at once.
 
-When accessing from the menu, an :ref:`ui-eyedropper` is used to select the object to add to sculpt mode.
+When accessed from the menu, an :ref:`ui-eyedropper` is used to select the object to add to Sculpt Mode.

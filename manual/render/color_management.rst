@@ -119,8 +119,7 @@ Display Device
    or when writing out image files intended to be displayed on another device.
 
    *Rec709* is commonly used for HDTVs, while *XYZ* and *DCI-P3* are common for digital projectors.
-
-   Color management can be disabled by setting the device to None.
+   Color management can be disabled by setting the device to *None*.
 
 .. _bpy.types.ColorManagedViewSettings.view_transform:
 
@@ -176,7 +175,7 @@ Sequencer
 Use Curves
 ----------
 
-Adjust RGB Curves to control image colors before color space conversion.
+Adjust RGB Curves to control the image colors before the color space conversion.
 Read more about using the :ref:`ui-curve-widget`.
 
 
