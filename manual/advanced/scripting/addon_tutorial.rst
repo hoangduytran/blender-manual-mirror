@@ -33,8 +33,12 @@ Suggested reading before starting this tutorial.
   to help become familiar with Blender/Python basics.
 
 To best troubleshoot any error message Python prints while writing scripts, you run Blender from a terminal.
-See `Use The Terminal
-<https://docs.blender.org/api/current/info_tips_and_tricks.html#use-the-terminal>`__.
+See `Use The Terminal <https://docs.blender.org/api/current/info_tips_and_tricks.html#use-the-terminal>`__.
+
+.. tip::
+
+   You can enable :ref:`Developer Extras <prefs-interface-dev-extras>`
+   in the preferences to enable features that make developing add-ons easier.
 
 
 Documentation Links
@@ -125,6 +129,7 @@ Add the following script to the Text editor in Blender::
 Click the :ref:`Run Script button <editors-text-run-script>`,
 all objects in the active scene are moved by 1.0 unit.
 
+
 .. _advanced-scripting-write-the-add-on-simple:
 
 Write the Add-on (Simple)
@@ -156,9 +161,12 @@ This add-on takes the body of the script above, and adds it to an operator's ``e
 
            return {'FINISHED'}            # Lets Blender know the operator finished successfully.
 
+   def menu_func(self, context):
+       self.layout.operator(ObjectMoveX.bl_idname)
+
    def register():
        bpy.utils.register_class(ObjectMoveX)
-
+       bpy.types.VIEW3D_MT_object.append(menu_func)  # Adds the new operator to an existing menu.
 
    def unregister():
        bpy.utils.unregister_class(ObjectMoveX)
@@ -302,7 +310,7 @@ allows vectors to be multiplied by numbers and matrices.
 If you are interested in this area, read into :class:`blender_api:mathutils.Vector`
 -- there are many handy utility functions such as getting the angle between vectors,
 cross product, dot products as well as more advanced functions in :mod:`blender_api:mathutils.geometry`
-such as Bézier spline interpolation and ray-triangle intersection.
+such as BÃ©zier spline interpolation and ray-triangle intersection.
 
 For now we will focus on making this script an add-on, but it's good to know that this
 3D math module is available and can help you with more advanced functionality later on.
