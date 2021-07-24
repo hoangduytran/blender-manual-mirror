@@ -42,7 +42,7 @@ If you have two vertices selected and already connected with an edge, :kbd:`Ctrl
 will create a planar face, also known as a quad. Blender will follow your mouse cursor
 and will use the planar view from your viewport to create those quads.
 
-For :kbd:`Ctrl-LMB`, Blender will automatically rotate the last selected Edge (the source)
+For :kbd:`Ctrl-RMB`, Blender will automatically rotate the last selected Edge (the source)
 for the subsequent operations if you have at least one face created, dividing the angles created between
 the newly created edge and the last two edges, creating a smooth angle between them. Blender will calculate
 this angle using the last positive and negative position of the last X and Y coordinates
@@ -52,10 +52,6 @@ But if you do not want Blender to rotate and smooth edges automatically when ext
 you can also inhibit Blender from rotating sources using the shortcut :kbd:`Shift-Ctrl-RMB`.
 In this case, Blender will not rotate the source dividing the angle between those edges when creating a face.
 
-For both cases, Blender will inform the user about the source rotation during the creation process.
-If you look at the :ref:`bpy.ops.screen.redo_last` panel and press :kbd:`Ctrl-RMB`,
-you will see that the *Rotate Source* is automatically checked and if :kbd:`Shift-Ctrl-RMB` is used,
-it will be automatically unchecked.
 
 If you have three or more vertices selected, and :kbd:`Ctrl-RMB` click,
 you will also create planar faces, but along the vertices selected, following the direction of the cursor.

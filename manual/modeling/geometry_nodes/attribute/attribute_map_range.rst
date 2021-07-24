@@ -16,12 +16,14 @@ The *Map Range* node remaps an attribute's value from a range to a target range.
 Inputs
 ======
 
+Geometry
+   Standard geometry input
 Attribute
    The input attribute whose value is to be remapped.
 Result
-   Name of the attribute where the computed result it stored.
+   Name of the attribute where the computed result is stored.
    If an attribute with this name does not exist yet,
-   a new attribute with the same data type of the *Attribute* is used.
+   a new attribute with the same data type as the *Attribute* is used.
    If it does exist, the values of the existing attribute are overridden.
 From Min
    The lower bound of the range to remap from.
@@ -32,7 +34,7 @@ To Min
 To Max
    The higher bound of the target range.
 Steps
-   The number of values allowed between *To Max* and *To Max* when using *Stepped Linear* interpolation.
+   The number of values allowed between *To Man* and *To Max* when using *Stepped Linear* interpolation.
    A higher value will give a smoother interpolation while lower values will progressively quantize the input.
 Clamp
    If enabled, the output is clamped to the target range.
