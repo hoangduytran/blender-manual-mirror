@@ -1,4 +1,4 @@
-.. index:: Geometry Nodes; Texture
+.. index:: Geometry Nodes; White Noise Texture
 
 ************************
 White Noise Texture Node
