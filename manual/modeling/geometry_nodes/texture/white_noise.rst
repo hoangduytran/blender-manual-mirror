@@ -53,8 +53,6 @@ Color
    Output random color.
 
 
-.. _shader-white-noise-notes:
-
 Notes
 =====
 
