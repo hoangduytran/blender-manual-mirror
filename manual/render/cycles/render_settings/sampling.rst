@@ -182,6 +182,24 @@ Pattern
       See `this Pixar paper <https://graphics.pixar.com/library/ProgressiveMultiJitteredSampling/paper.pdf>`__
       for more information.
 
+.. _bpy.types.CyclesRenderSettings.scrambling_distance:
+
+Scrambling Distance
+   Lower values give faster rendering with GPU rendering and less noise
+   with all devices at the cost of possible artifacts if set too low.
+   Only works when not using adaptive sampling.
+
+   .. _bpy.types.CyclesRenderSettings.adaptive_scrambling_distance:
+
+   Adaptive
+      Uses a formula to adapt the scrambling distance strength based on the sample count.
+
+   .. _bpy.types.CyclesRenderSettings.preview_scrambling_distance:
+
+   Viewport
+      Uses the *Scrambling Distance* value for the viewport rendering.
+      This will make the rendering faster but may flicker.
+
 .. _bpy.types.CyclesRenderSettings.min_light_bounces:
 
 Min Light Bounces
