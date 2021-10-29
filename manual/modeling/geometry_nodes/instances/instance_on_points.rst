@@ -26,8 +26,14 @@ Inputs
 
 Geometry
    Standard geometry input. The position of the points of this geometry affect the transforms of
-   each instance output. If this geometry contains instances, the node will create more instances
-   on the points inside the instances, creating nested instancing.
+   each instance output. 
+   
+   .. note::
+
+      If the input geometry contains instances, the node will create more instances on the points inside
+      the instances, creating nested instancing. When this happens, each new instance will have the
+      transform created by the node from the *Rotation* and *Scale* inputs, but it will *also* be
+      transformed based on the parent instances.
 
 Selection
    Whether to instance on each point. True values mean the an instance will be generated on the point,
