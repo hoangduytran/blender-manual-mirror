@@ -50,3 +50,14 @@ Outputs
 
 Points
    Generated point cloud.
+
+Tangent
+   The normalized :doc:`curve tangent </modeling/geometry_nodes/curve/curve_tangent>` at the sampled
+   position, or the direct evaluated normal in *Evaluated* mode.
+
+Normal
+   The normal value from the evaluated curve at each result point. This is the same value from the 
+   :doc:`/modeling/geometry_nodes/input/normal` at those positions.
+
+Rotation
+   The :term:`Euler` rotation build from the *Tangent* and *Normal* outputs, for convenience.
