@@ -70,9 +70,94 @@ You can use the :doc:`Spreadsheet Editor </editors/spreadsheet>` to determine th
   An example is a UV map attribute.
 - **Spline** domain attributes are associated with a group of connected curve control points.
 
-.. note::
+Attributes are automatically interpolated to other domains. For example, when the 
+:doc:`/modeling/geometry_nodes/input/position` is connected to the selection input of
+the :doc:`/modeling/geometry_nodes/material/set_material` node, the values are interpolated
+from the *Point* domain to the *Face* domain. Normally, domain conversions use simple averages
+for values, but *Boolean* data type attributes have special rules for interpolation:
 
-   For point cloud objects, every attribute has the *point* domain.
+Boolean Domain Interpolation
+----------------------------
+
+.. list-table::
+   :header-rows: 1
+   :widths: 10 10 50
+
+   * - From
+     - To
+     - Conversion
+
+   * - Point
+     - Edge
+     - An edge is selected if both of its vertices were selected.
+
+   * - Point
+     - Face
+     - A face is selected if all of its vertices were selected too.
+
+   * - Point
+     - Corner
+     - Each corner's value is simply a copy of the value at its vertex.
+
+   * - Point
+     - Spline
+     - A spline is selected if all of its control points were selected.
+
+   * -
+     -
+     -
+
+   * - Edge
+     - Point
+     - A vertex is selected if any connected edge was selected.
+
+   * - Edge
+     - Face
+     - A face is selected if all of its edges are selected
+
+   * - Edge
+     - Corner
+     - A corner is selected if its two adjacent edges were selected.
+
+   * -
+     -
+     -
+
+   * - Face
+     - Point
+     - A vertex is selected if any of the connected faces were selected.
+
+   * - Face
+     - Edge
+     - An edge is selected if any connected face was selected.
+
+   * - Face
+     - Edge
+     - Each corner's value is simply a copy of the value at its face.
+
+   * -
+     -
+     -
+
+   * - Corner
+     - Point
+     - A vertex is selected if all connected face corners were selected and it is not a loose vertex.
+
+   * - Corner
+     - Edge
+     - An edge is selected if all corners on adjacent faces were selected.
+
+   * - Corner
+     - Face
+     - A face is selected if all of its corners were selected.
+
+   * -
+     -
+     -
+
+   * - Spline
+     - Point
+     - Each point's value is simply a copy of the corresponding spline's value.
 
 
 Attribute Data Types
