@@ -5,9 +5,9 @@
 Set Material Node
 *****************
 
-.. figure:: /images/modeling_geometry-nodes_material_assign_node.png
+.. figure:: /images/modeling_geometry-nodes_set-material_node.png
    :align: right
-   :width: 300px
+   :width: 250px
 
    The Set Material Node.
 
@@ -17,7 +17,8 @@ on the geometry, the existing material index will be reused.
 
 .. note::
 
-   Currently this node only adjusts mesh data.
+   This node adjusts mesh and volume data, other data types do not support materials.
+   However, volumes only support a single material, so this input will be ignored for volumes.
 
 
 Inputs
@@ -30,9 +31,8 @@ Material
    The material to apply to the geometry.
 
 Selection
-   The name of an attribute to use to determine which parts of the geometry to assign the material to.
-   The attribute will be implicitly converted to a Boolean data type if it isn't a Boolean already.
-   On meshes, the attribute will be used on the face domain.
+   Whether to change the materal of each face.
+   True values mean the material will be changed, false values mean it will remain the same.
 
 
 Properties
