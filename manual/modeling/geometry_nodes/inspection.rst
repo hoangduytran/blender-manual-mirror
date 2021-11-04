@@ -42,14 +42,14 @@ Attribute Search
    Attribute Search.
 
 The attribute search is shown when clicking on an attribute input in the modifier.
-It contains a list of all the attributes that were available at that point in the
-modifier or node execution.
+It contains a list of all the attributes that were available at that point in
+the modifier or node execution.
 
 
 Viewer Node
 ===========
 
-The Viewer node is used to display intermediate geometry in the spreadsheet.
+The Viewer node is used to display intermediate geometry in the Spreadsheet.
 For more information see :doc:`/modeling/geometry_nodes/output/viewer`.
 
 

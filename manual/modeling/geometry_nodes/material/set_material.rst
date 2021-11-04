@@ -9,7 +9,7 @@ Set Material Node
    :align: right
    :width: 250px
 
-   The Set Material Node.
+   The Set Material node.
 
 The *Set Material* changes the material assignment in the specified selection,
 by adjusting the ``material_index`` attribute. If the material is already used
@@ -31,7 +31,7 @@ Material
    The material to apply to the geometry.
 
 Selection
-   Whether to change the materal of each face.
+   Whether to change the material of each face.
    True values mean the material will be changed, false values mean it will remain the same.
 
 

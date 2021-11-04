@@ -198,7 +198,7 @@ Scrambling Distance
 
    Viewport
       Uses the *Scrambling Distance* value for the viewport rendering.
-      This will make the rendering faster but may flicker.
+      This will make the rendering faster but may cause flickering.
 
 .. _bpy.types.CyclesRenderSettings.min_light_bounces:
 

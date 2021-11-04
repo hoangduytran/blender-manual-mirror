@@ -34,8 +34,8 @@ ID
    geometry if it exists, and otherwise the :doc:`index </modeling/geometry_nodes/input/index>`.
 
 Seed
-   A field to :term:`Seed` the random number generator. This can be used to generate an different
-   set of random values, even for two nodes with the same *ID* input.
+   A field to :term:`Seed` the random number generator. This can be used to generate
+   a different set of random values, even for two nodes with the same *ID* input.
 
 
 Properties
