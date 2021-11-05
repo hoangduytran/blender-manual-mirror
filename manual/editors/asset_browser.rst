@@ -27,10 +27,18 @@ Source List Region
 Todo Catalogs.
 
 
+.. _bpy.types.AssetMetaData:
+
 Asset Details Region
 --------------------
 
 Todo.
+
+.. _bpy.types.AssetMetaData.author:
+
+Author
+   Name of the creator of the asset.
+
 
 Preview
 ^^^^^^^
