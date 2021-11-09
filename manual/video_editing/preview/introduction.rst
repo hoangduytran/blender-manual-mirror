@@ -65,17 +65,7 @@ Toggle Sequencer/Preview :kbd:`Ctrl-Tab`
 Display Mode
 ------------
 
-Mode to show different aspects of the composite result,
-for the current frame:
-
-Image Preview
-   Render image preview.
-Luma Waveform
-   Brightness/contrast analyzer.
-Chroma Vectorscope
-   Color hue and saturation analyzer.
-Histogram
-   RGB distribution histogram.
+See :doc:`/video_editing/preview/display_mode`.
 
 
 Display Channels
