@@ -180,6 +180,9 @@ Select All Toggles
 Alt Click Tool Prompt
    Tapping :kbd:`Alt` shows a prompt in the Status Bar prompting a second keystroke to activate the tool.
 
+Alt Tool Access
+   Hold :kbd:`Alt` to use the :doc:`Active Tool </interface/tool_system>` when the gizmo would normally be required.
+
 
 3D Viewport
 -----------
