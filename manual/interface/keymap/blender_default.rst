@@ -174,14 +174,14 @@ Activate Gizmo Event
    :Drag:
       Allows click events to pass through to the tool, adding a small delay.
 
-Select All Toggles
-   Causes selection shortcut :kbd:`A` to deselect all when any selection exists.
-
 Alt Click Tool Prompt
    Tapping :kbd:`Alt` shows a prompt in the Status Bar prompting a second keystroke to activate the tool.
 
 Alt Tool Access
    Hold :kbd:`Alt` to use the :doc:`Active Tool </interface/tool_system>` when the gizmo would normally be required.
+
+Select All Toggles
+   Causes selection shortcut :kbd:`A` to deselect all when any selection exists.
 
 
 3D Viewport
@@ -227,3 +227,10 @@ Pie Menu on Drag
 
 Extra Shading Pie Menu Items
    Show additional items in the shading menu (:kbd:`Z` key).
+
+
+File Browser
+------------
+
+Open Folders on Single Click
+  Navigate into folders by clicking on them once instead of twice.
