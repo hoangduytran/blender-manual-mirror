@@ -1,12 +1,8 @@
-
-********************
-List Views & Presets
-********************
-
 .. _ui-list-view:
 
+**********
 List Views
-==========
+**********
 
 .. figure:: /images/interface_controls_templates_list-presets_view-filter.png
    :align: right
@@ -56,30 +52,3 @@ Specials ``v``
    A :ref:`Specials <ui-specials-menu>` menu with tools to operate on list entries.
 Move (up/down arrow icon)
    Moves the selected item up/down one position.
-
-
-.. _bpy.ops.script.execute_preset:
-.. _ui-presets:
-
-Presets
-=======
-
-.. figure:: /images/interface_controls_templates_list-presets_preset.png
-   :align: right
-
-   Example Presets menu.
-
-.. Share between properties. i.e. different nodes color presets.
-
-Selector
-   A list of available presets. A selection will override the included properties.
-Add ``+``
-   New presets can be added based on currently applied set of properties, which will be saved for later reuse.
-   A pop-up opens where you can set a name, after which you can select it from the list and
-   in some cases additional settings.
-Remove ``-``
-   Deletes the selected preset.
-Specials
-   Optional :ref:`Specials <ui-specials-menu>` menu with tools to operate on list entries.
-
-.. saving preset: data-system?
