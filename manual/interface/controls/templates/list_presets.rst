@@ -34,13 +34,10 @@ Filter
    Filter Exclude
       When the magnifying glass icon has a ``-`` sign then only items that do not match text will be displayed.
 
-   Sort
-      Sort list items.
-
-      Alphabetical
-         This button switches between alphabetical and non-alphabetical ordering.
-      Inverse
-         Sort objects in ascending or descending order. This also applies to alphabetical sorting, if selected.
+   Sort by Name
+      This button switches between alphabetical and non-alphabetical ordering.
+   Reverse
+      Sort objects in ascending or descending order. This also applies to alphabetical sorting, if selected.
 
 On the right of the list view are list modification buttons:
 
