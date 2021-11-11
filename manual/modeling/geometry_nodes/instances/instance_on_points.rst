@@ -17,8 +17,8 @@ with a *Point* domain, including meshes, point clouds, and curve control points.
 
 .. tip::
 
-   The :ref:`bpy.ops.object.duplicates_make_real` tool can be used to create objects from instances
-   generated with this node.
+   The :ref:`bpy.ops.object.duplicates_make_real` operator can be used to create objects
+   from instances generated with this node.
 
 
 Inputs
