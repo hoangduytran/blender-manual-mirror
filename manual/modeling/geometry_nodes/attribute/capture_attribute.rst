@@ -57,8 +57,8 @@ Examples
 Here, a noise texture is evaluated in along the path of the curve in 1 dimension
 and rendered with a shader. The capture node is essential because the output of
 the :doc:`/modeling/geometry_nodes/curve/curve_to_mesh` does not have "Curve Parameter",
-so the :doc:`/modeling/geometry_nodes/curve/curve_parameter` must be evaluated
-while the geometry is still a curve.
+since it is a mesh and not a curve. So the :doc:`/modeling/geometry_nodes/curve/curve_parameter`
+must be evaluated while the geometry is still a curve.
 
 Internally, after the noise texture is evaluated on the curve,
 it is automatically copied to the mesh result of the curve to mesh node.
