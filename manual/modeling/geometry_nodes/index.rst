@@ -12,6 +12,7 @@
    introduction.rst
    inspection.rst
    attributes_reference.rst
+   fields.rst
 
 
 Node Types
