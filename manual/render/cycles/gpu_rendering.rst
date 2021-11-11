@@ -21,7 +21,7 @@ and select either *CUDA* or *OptiX*. Next, you must configure each scene to use 
 Supported Hardware
 ==================
 
-Blender supports different technologies to render on the GPU depending on the particular GPU manufacture.
+Blender supports different technologies to render on the GPU depending on the particular GPU manufacturer.
 
 
 Nvidia
