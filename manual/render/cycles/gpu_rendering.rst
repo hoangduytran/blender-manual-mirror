@@ -95,7 +95,7 @@ This is can be enabled with :ref:`Distributed Memory Across Devices <prefs-syste
 
 
 What renders faster?
-----------------------------------------------------------
+--------------------
 
 This varies depending on the hardware used. Different technologies also have different compute times
 depending on the scene tested. For the most up to date information on the performance of different devices,
