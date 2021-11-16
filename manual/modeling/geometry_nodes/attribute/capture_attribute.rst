@@ -22,6 +22,12 @@ This node is essential because field input nodes like the :doc:`/modeling/geomet
 work in the context of the node they are connected to. Meaning that in order to pass data like ``radius``
 to a geometry that doesn't have radius, an explicit node link with the output of this node must be used.
 
+.. note::
+
+   Because this node stores an :ref:`anonymous attribute <anonymous-attributes>` in the geometry,
+   it's essential use the geometry output for further operations in the node tree. The anonymous
+   attribute will not exist for any other geometry besides the output.
+
 
 Inputs
 ======
