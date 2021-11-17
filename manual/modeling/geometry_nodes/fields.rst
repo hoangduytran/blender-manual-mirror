@@ -24,11 +24,11 @@ depends on two inputs, :doc:`position </modeling/geometry_nodes/input/position>`
 into a vector using a single instruction.
 
 
-Node Socket Types
-=================
+Field Visualization
+===================
 
 Socket shapes are used to convey which sockets are fields and which regular data.
-There are three possible socket shapes, each conveying the socket's "field status".
+There are three possible socket shapes, each conveying the socket's "field status":
 
 :Circle:
    The socket requires a single real value, it cannot accept a field input.
@@ -46,7 +46,7 @@ There are three possible socket shapes, each conveying the socket's "field statu
 .. figure:: /images/modeling_geometry-nodes_fields_constant.png
    :align: center
 
-   The socket shape is a diamon with a dot, meaning the field has the same value
+   The socket shape is a diamond with a dot, meaning the field has the same value
    for every element. Every point will be moved up by 5m.
 
 .. figure:: /images/modeling_geometry-nodes_fields_varying.png
@@ -63,6 +63,12 @@ There are three possible socket shapes, each conveying the socket's "field statu
    the :doc:`/modeling/geometry_nodes/attribute/transfer_attribute` in *Index* mode
    or the :doc:`/modeling/geometry_nodes/attribute/attribute_statistic` can be used
    to retrieve a single value from a field evaluated on a geometry.
+
+
+When a connection is made between two node sockets that support
+fields the node connection will be drawn as a dashed line.
+If you make the mistake of connecting a non field socket to a field socket,
+the connection will be drawn as a solid red line indicating that there is an error in the connection.
 
 
 Node Types
