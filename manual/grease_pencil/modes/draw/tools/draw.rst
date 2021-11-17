@@ -46,9 +46,19 @@ Strength
       The gradient of the pressure can be customized using
       the :doc:`curve widget </interface/controls/templates/curve>`.
 
+.. _bpy.types.BrushGpencilSettings.caps_type:
+
+Caps Type
+   The shape of the start and end of the stroke.
+
+   :Round: Strokes start and stop with a curved shape.
+   :Flat: Strokes start and stop with a straight cutoff.
+
 
 Advanced
 --------
+
+.. _bpy.types.BrushGpencilSettings.input_samples:
 
 Input Samples
    Controls how often the input device is read to generate points on the stroke.
@@ -60,23 +70,27 @@ Input Samples
    the right balance between accuracy and softness for your strokes.
    See :doc:`Input Device </getting_started/configuration/hardware>` for more information.
 
+.. _bpy.types.BrushGpencilSettings.active_smooth_factor:
+
 Active Smooth
    The number of smoothing iterations to apply to the stroke while drawing.
+
+.. _bpy.types.BrushGpencilSettings.angle:
 
 Angle
    Direction of the input device that gives the maximum thickness to the stroke (0° for horizontal).
 
-   Factor
-      Amount of thickness reduction when the stroke is perpendicular to the *Angle* value.
+.. _bpy.types.BrushGpencilSettings.angle_factor:
+
+Factor
+   Amount of thickness reduction when the stroke is perpendicular to the *Angle* value.
 
 Hardness
    Amount of transparency (alpha) to apply from the border of the point to the center.
    Works only when the brush is using stroke materials of *Dot* or *Box* style.
 
-   Aspect Ratio
-      Controls the width and height of the alpha gradient.
-
-      X, Y
+Aspect X, Y
+   Controls the width and height of the alpha gradient.
 
 
 Stroke
