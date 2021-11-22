@@ -4,7 +4,7 @@
  Asset Catalogs
 ################
 
-:term:`Asset Catalogs` help you to organise your assets. They look a little bit
+Asset Catalogs help you to organise your assets. They look a little bit
 like directories on disk, but they're totally independent of the location of
 your .blend files. Assign each asset in a .blend file to its own catalog, or
 have one big catalog with all the assets of all the .blend files combined. It's
