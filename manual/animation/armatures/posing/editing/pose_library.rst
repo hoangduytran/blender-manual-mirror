@@ -274,6 +274,13 @@ the new system. The old pose library will be removed in a future release
 
    :doc:`Pose Library Properties </animation/armatures/properties/pose_library>`.
 
+.. figure:: /images/animation_armatures_properties_pose-library_panel.png
+   :align: right
+
+   The old Pose Library panel.
+
+.. _pose-library-convert-old:
+.. _bpy.ops.poselib.convert_old_poselib:
 
 Converting Old Pose Libraries
 --------------------------------------------
@@ -298,8 +305,12 @@ in order to use the pose assets from other blend files.
 
 .. _bpy.ops.poselib.browse_interactive:
 
-Browse Poses
-------------
+Browse Poses (Old Pose Library)
+-------------------------------
+
+.. warning::
+   This section describes the deprecated pose library. For the new, Asset
+   Browser based pose library, see :doc:`pose_library`.
 
 .. reference::
 
@@ -319,8 +330,12 @@ Pose
 
 .. _bpy.ops.poselib.pose_add:
 
-Add Pose
---------
+Add Pose (Old Pose Library)
+---------------------------
+
+.. warning::
+   This section describes the deprecated pose library. For the new, Asset
+   Browser based pose library, see :doc:`pose_library`.
 
 .. reference::
 
@@ -346,8 +361,12 @@ Replace Existing
 
 .. _bpy.ops.poselib.pose_rename:
 
-Rename Pose
------------
+Rename Pose (Old Pose Library)
+------------------------------
+
+.. warning::
+   This section describes the deprecated pose library. For the new, Asset
+   Browser based pose library, see :doc:`pose_library`.
 
 .. reference::
 
@@ -365,8 +384,12 @@ Pose
 
 .. _bpy.ops.poselib.pose_remove:
 
-Remove Pose
------------
+Remove Pose (Old Pose Library)
+------------------------------
+
+.. warning::
+   This section describes the deprecated pose library. For the new, Asset
+   Browser based pose library, see :doc:`pose_library`.
 
 .. reference::
 

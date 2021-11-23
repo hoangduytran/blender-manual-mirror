@@ -89,6 +89,8 @@ from its blend file, and then the pose is applied to the active Armature.
 In the future, the asset type definition will be expanded; see
 :ref:`asset-libraries-future-development` for more info.
 
+.. _asset-library-current-file:
+
 The *Current File* Asset Library
 ======================================
 

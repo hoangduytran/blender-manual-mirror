@@ -11,6 +11,80 @@ assets, and design choices, see :doc:`/files/asset_libraries/index`.
 *The Asset Browser was introduced in Blender 3.0, and will be improved and
 expanded over multiple subsequent releases.*
 
+Interface
+=========
+
+Main Region
+-----------
+
+The main region of the Asset Browser acts similar to the
+:doc:`/editors/file_browser` built into Blender. It shows the assets contained
+in the selected catalog.
+
+Click an asset to select and activate it. Box-select by dragging :kbd:`LMB` or
+extend the selection with :kbd:`Shift-LMB` to select multiple assets.
+
+Depending on the selected keymap, either use :kbd:`RMB` or :kbd:`W` to show the
+asset browser context menu.
+
+
+Navigation & Usage Panel
+------------------------
+
+The left-hand panel, toggled with :kbd:`T`, can be used for navigating and
+:ref:`using assets <assets-using>`.
+
+Library Selector
+   Shows the active :doc:`asset library </files/asset_libraries/index>`, and
+   allows switching between Asset Libraries. The library
+   ":ref:`Current File <asset-library-current-file>`" is special, and will
+   always show the assets from the current .blend file, regardless of whether it
+   is part of an Asset Library or not.
+
+Catalog Tree
+   Shows the :doc:`catalogs </files/asset_libraries/catalogs>` of the active
+   Asset Library.
+
+Optional Panels
+   Add-ons and features like the
+   :doc:`/animation/armatures/posing/editing/pose_library`
+   can show custom panels here.
+
+
+.. _editing-asset-metadata:
+
+Asset Metadata Panel
+--------------------
+
+The right-hand panel, toggled with :kbd:`N`, shows metadata of the active asset.
+**Only metadata of assets contained in the current .blend file can be edited.**
+
+Name
+   The asset datablock name. This name is unique for the asset data type within
+   the same .blend file.
+Source
+   The full path of the .blend file that contains the asset.
+Open Blend File
+   This button will start a new Blender instance and open the .blend file that
+   contains the asset. In the background Blender will keep monitoring that new
+   Blender instance; when it quits, the Asset Browser will be refreshed to show
+   any updated assets.
+Description
+   Optional field for the asset description. Not used by Blender itself.
+Author
+   Optional field for the asset author. Not used by Blender itself.
+Preview
+   Shows the preview icon of the asset. See :ref:`asset-preview-icons`.
+Tags
+   Panel for viewing & editing asset tags. These do not have any meaning to
+   Blender, and can be chosen freely. When using the search bar to filter the
+   assets, those assets whose tags (partially) match the search string will also
+   be shown.
+
+Depending on the current object mode and the selected asset types, more panels
+may appear. For example, see :doc:`/animation/armatures/posing/editing/pose_library`.
+
+
 .. _assets-using:
 
 Using Assets
@@ -69,70 +143,3 @@ make the Object itself local (Object > Relations > Make Local... > Selected
 Objects), while keeping the Mesh and Materials linked to the asset files. This
 will result in a local, and thus editable, Object, and keep the Mesh and
 Materials automatically up to date with any changes in the asset library.
-
-.. _editing-asset-metadata:
-
-Asset Metadata
-==============
-
-Interface
-=========
-
-Main Region
------------
-
-The main region of the Asset Browser acts similar to the :doc:`/editors/file_browser` built into Blender.
-
-
-Header Region
--------------
-
-The Header Region is above the main region and can aid in navigating and adjust how items are displayed.
-
-
-Source List Region
-------------------
-
-Todo Catalogs.
-
-
-.. _bpy.types.AssetMetaData:
-
-Asset Details Region
---------------------
-
-Todo.
-
-.. _bpy.types.AssetMetaData.author:
-
-Author
-   Name of the creator of the asset.
-
-
-Preview
-^^^^^^^
-
-Todo.
-
-Tags
-^^^^
-
-Todo.
-
-
-Navigating
-==========
-
-See file browser...
-
-
-Selecting
-=========
-
-See file browser...
-
-
-Editing
-=======
-
-Todo explain items in the context menu.
