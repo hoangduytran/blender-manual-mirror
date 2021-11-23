@@ -12,6 +12,7 @@ releases.
 
 .. seealso::
   - :doc:`/editors/asset_browser`
+  - :doc:`catalogs`
   - :doc:`/animation/armatures/posing/editing/pose_library`
 
   The following blog posts were written during the design & development of the asset browser. They are linked here for historical reasons, and to give some more context to the current design.
@@ -43,7 +44,7 @@ What is an Asset Library?
 An Asset Library is a directory on your harddisk that is registered in the
 Preferences as an asset library. Registering it means that you give the library
 a name (like "Sprite Fright") and the location on disk (like
-`/home/sybren/projects/sprite-fright/assets`).
+``/home/sybren/projects/sprite-fright/assets``).
 
 .. TODO::
   add image of preferences, so that it's clear what things look like and where the settings are.
@@ -230,7 +231,7 @@ is actually simple, but often enough it gets quite complex. For example, when
 you want to push an object into an external asset library, should that also copy
 the materials? What about the texture images referenced by those materials? What
 about objects referenced by custom properties, constraints, or modifiers? And in
-which files would they have to go? Do they all go into one big `assets.blend`,
+which files would they have to go? Do they all go into one big ``assets.blend``,
 individual Blend files, or into a directory per asset type? Blender should not
 be making such decisions for you.
 
