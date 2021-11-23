@@ -143,6 +143,8 @@ click the **Assign Action** button to assign the pose action to the currently
 selected armature. Then you can use all of the animation tooling to edit the
 pose, remove or add keys, etc.
 
+Editing asset metadata can be done via the :ref:`Asset Browser <editing-asset-metadata>`.
+
 
 Sharing Assets
 ---------------------------
@@ -165,6 +167,7 @@ Assets can be used from the :doc:`/editors/asset_browser`.
   Add documentation for / link to docs of the Asset View, which is used in the
   pose library.
 
+.. _asset-libraries-design-limitations:
 
 Design Limitations
 ======================================

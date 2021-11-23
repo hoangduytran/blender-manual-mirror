@@ -19,7 +19,8 @@ Using Assets
 As a general rule, **an asset can be used by dragging it from the Asset Browser
 to the desired location**. Objects and Worlds can be dragged from the asset
 browser into the scene, Materials can be dragged onto the object that should use
-them. The use of pose assets is described in :ref:`pose-library-using`.
+them. The use of pose assets is different, and is described in
+:doc:`/animation/armatures/posing/editing/pose_library`.
 
 There are several things that can happen when an asset is used, depending on the
 **Import Type** configuration of the asset browser:
@@ -69,7 +70,10 @@ Objects), while keeping the Mesh and Materials linked to the asset files. This
 will result in a local, and thus editable, Object, and keep the Mesh and
 Materials automatically up to date with any changes in the asset library.
 
+.. _editing-asset-metadata:
 
+Asset Metadata
+==============
 
 Interface
 =========
