@@ -24,9 +24,11 @@ via the Create Pose Asset button (see below), but any Action that is keyed on
 exactly one frame can be seen as pose asset.
 
 Each pose in the library is stored in its own Action data-block. This means that
-it can get its own name, its own preview icon, and can be organised in
+it can get its own name, its own preview image, and can be organised in
 :doc:`/files/asset_libraries/catalogs`.
 
+
+.. _bpy.ops.poselib.create_pose_asset:
 
 Creating a Pose Library
 =================================
@@ -35,8 +37,9 @@ A *pose library file* is typically a .blend file that is dedicated to poses. It
 can link in a character, props, etc., which can then not only be used to create
 the poses, but also for :ref:`rendering previews <poselib-preview-images>`.
 
-.. TODO::
-   ![Example library of poses from Sprite Fright](https://i.imgur.com/ZHIz1jL.png)
+.. figure:: /images/asset_browser-pose_library_ellie.png
+
+   Example pose library of the Sprite Fright character Ellie.
 
 
 Pose Creation via Action Editor
@@ -47,8 +50,9 @@ select the relevant bones, and click the *Create Pose Asset* button**. This will
 create the new pose Action, which will contain keys for the current value of
 each bone’s location, rotation, scale, and bendy-bone properties.
 
-.. TODO::
-   https://i.imgur.com/QFlVvgW.jpg
+.. figure:: /images/asset_browser-pose_library-create_from_action_editor.png
+
+   To create a new pose asset, use the Create Pose Asset button in the Action editor.
 
 **The created Action is now assigned to the armature.** This makes it possible
 to inspect which bones are included and to tweak anything. In that respect, it’s
@@ -81,6 +85,8 @@ pose asset as the armature’s active Action.
    assets from the same character pose.
 
 
+.. _bpy.ops.poselib.restore_previous_action:
+
 Pose Creation from Existing Animation
 --------------------------------------------
 
@@ -106,6 +112,8 @@ differences:
   had before.
 
 
+.. _bpy.ops.poselib.copy_as_asset:
+
 Pose Creation by Copying from Other File
 --------------------------------------------
 
@@ -127,7 +135,7 @@ a pose library file, see the following steps:
   will only find a single pose, but future versions of Blender may extend this
   for other asset types. This is why the button is named so generically — it is
   not pose-specific.
-- Give the pose a name, and click on the “refresh” button in the preview icon
+- Give the pose a name, and click on the “refresh” button in the preview image
   panel to render a new preview if you want.
 - **Save the file and quit Blender**.
 - The original Blender is still running in the background and notices that the
@@ -153,8 +161,9 @@ browsers open, it performs the following steps:
 Controlling the Look of Preview Images
 --------------------------------------------
 
-The preview images are rendered with the active Scene camera. This approach was
-preferred over rendering a specific 3D Viewport for two main reasons:
+The preview images are rendered with the active :ref:`Scene camera <bpy-types-scene-camera>`.
+This approach was preferred over rendering a specific 3D Viewport for two main
+reasons:
 
 - There is only one scene camera active at any time, making it predictable which
   camera is used.
@@ -162,10 +171,11 @@ preferred over rendering a specific 3D Viewport for two main reasons:
   rendering the thumbnails. Pose library files are intended for that purpose: to
   contain the poses and render their preview images.
 
-The preview images are rendered using the Workbench Engine. Switch the scene to
-use that as render engine, and you’ll see various options to influence the look.
-Select a pose asset and press the Generate Preview button to re-render the
-preview icon with the current settings.
+The preview images are rendered using the
+:doc:`Workbench Engine </render/workbench/index>`. Switch the scene to use that
+as render engine, and you’ll see various options to influence the look. Select a
+pose asset and press the Generate Preview button to re-render the preview image
+with the current settings.
 
 You can also animate settings, such as the background colour, light positions
 and intensities, etc. Use this to your advantage!
@@ -179,12 +189,12 @@ for your poses. Many facial poses are made with a specific camera angle in mind.
 - Background colour can be animated. In this case just for fun, but for more
   serious applications this could be used to indicate a certain character, or a
   mood, or anything else.
-- The active camera can be switched by using camera markers.
+- The active camera can be switched by using :ref:`camera markers <bind-camera-to-markers>`.
 
 Both make it possible to choose a specific frame to pick the background colour
-and camera angle. Pose the character, click the Create Pose Asset button, and
+and camera angle. Pose the character, click the *Create Pose Asset* button, and
 the pose Action will be keyed on the current frame. This means it’s easy to edit
-the pose and refresh its preview icon, because you know exactly which frame it
+the pose and refresh its preview image, because you know exactly which frame it
 was originally created on.
 
 
@@ -234,6 +244,10 @@ remind yourself what was part of the pose and what wasn’t.
 Use from 3D Viewport
 --------------------------------------------
 
+.. figure:: /images/asset_browser-pose_library-use_from_viewport.png
+
+   The pose library as a side-panel of the 3D Viewport.
+
 The right-hand panel of the 3D Viewport (toggle it with the N key) has a **Pose
 Library panel in the Animations tab**. Contrary to the Asset Browser, which can
 be used for different asset types and also for some asset management tasks, this
@@ -251,9 +265,6 @@ current pose. Just release the mouse button to confirm.
 
 To search for poses, hover your mouse over the poses, then press Ctrl+F and type
 a search query. This will filter the poses to match what you typed.
-
-.. TODO::
-   ![Ellie, pose library use from the 3D Viewport](https://i.imgur.com/tmD7Abe.png)
 
 
 Old Pose Library
@@ -289,7 +300,7 @@ Old-style pose libraries can be converted to pose assets in the following way:
 
 - In the Armature properties Pose Library panel, select the pose library you
   want to convert.
-- Make sure the scene camera is set up correctly for rendering preview icons.
+- Make sure the scene camera is set up correctly for rendering preview images.
 - Click the "Convert Old-Style Pose Library" button.
 - Open the Asset Browser, and see the poses have been converted.
 - If you're happy with the result, remove the old pose library Action.

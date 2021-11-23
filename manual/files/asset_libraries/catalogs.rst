@@ -38,7 +38,12 @@ and in child catalogs. So, in the example above, selecting
 Assigning an Asset
 ==============================
 
-To assign an action to a catalog, just drag the asset on top of the catalog.
+.. figure:: /images/asset_browser-assign_catalog.png
+
+   Assigning a selection of "Scale material" assets to a catalog.
+
+To assign assets to a catalog, just select and drag the assets on top of the catalog.
+
 
 Components of a Catalog
 ==============================
@@ -144,3 +149,9 @@ Catalog paths follow the following rules:
 - Invalid characters: ``:``, ``\``.
 - Paths are always interpreted as UTF-8.
 
+Standard Catalogs
+=================
+
+There are a few standardised top-level catalogs that can be used by anyone who
+wants to build an asset bundle that's compatible with others. These are
+documented on the `Blender Wiki <https://wiki.blender.org/wiki/Source/Architecture/Asset_System/Catalogs#Standard_Catalogs>`_

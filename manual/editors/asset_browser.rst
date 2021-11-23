@@ -14,6 +14,11 @@ expanded over multiple subsequent releases.*
 Interface
 =========
 
+.. figure:: /images/asset_browser-gold-material.png
+
+   Asset Browser, showing materials in a small asset library.
+
+
 Main Region
 -----------
 
@@ -41,6 +46,17 @@ Library Selector
    always show the assets from the current .blend file, regardless of whether it
    is part of an Asset Library or not.
 
+.. _bpy.ops.asset.bundle_install:
+
+Copy Asset Bundle to Library
+   Shown when the Library Selector is set to Current File, the current .blend
+   file is considered an :ref:`Asset Bundle <asset-bundles>`, and is not yet
+   located inside any Asset Library.
+
+   The Copy Asset Bundle operator makes it simple to copy the file into the
+   asset library. The catalogs of the asset bundle will be merged into the asset
+   library.
+
 Catalog Tree
    Shows the :doc:`catalogs </files/asset_libraries/catalogs>` of the active
    Asset Library.
@@ -64,6 +80,9 @@ Name
    the same .blend file.
 Source
    The full path of the .blend file that contains the asset.
+
+.. _bpy.ops.asset.open_containing_blend_file:
+
 Open Blend File
    This button will start a new Blender instance and open the .blend file that
    contains the asset. In the background Blender will keep monitoring that new
@@ -74,7 +93,7 @@ Description
 Author
    Optional field for the asset author. Not used by Blender itself.
 Preview
-   Shows the preview icon of the asset. See :ref:`asset-preview-icons`.
+   Shows the preview image of the asset. See :ref:`asset-previews`.
 Tags
    Panel for viewing & editing asset tags. These do not have any meaning to
    Blender, and can be chosen freely. When using the search bar to filter the
@@ -143,3 +162,39 @@ make the Object itself local (Object > Relations > Make Local... > Selected
 Objects), while keeping the Mesh and Materials linked to the asset files. This
 will result in a local, and thus editable, Object, and keep the Mesh and
 Materials automatically up to date with any changes in the asset library.
+
+
+.. _asset-previews:
+
+Asset Previews
+===================
+
+Preview images are typically automatically generated when you
+:ref:`mark a data-block as asset <bpy.ops.asset.mark>`.
+
+
+
+
+.. _asset-bundles:
+
+Asset Bundles
+==============
+
+*Asset Bundles* are .blend files that do not reference any other file, and whose
+name ends in ``_bundle.blend``. Any textures and other external files need to be
+:doc:`packed </files/blend/packed_data>` into the current blend file.
+
+Asset Bundles can be installed via the :ref:`Asset Browser
+<bpy.ops.asset.bundle_install>`:
+
+- Open the asset bundle .blend file.
+- Switch its Asset Browser to Current File (if it's not set at that already).
+- Click on *Copy Bundle to Asset Library*.
+- Choose the asset library to copy it to.
+- A file dialog will open, showing the files of the selected Asset Library.
+  Choose the desired location of the .blend file, and click the *Copy to Asset
+  Library* button.
+- The .blend file will be saved at the chosen location, and any
+  :ref:`catalogs </files/asset_libraries/catalogs>` of the asset bundle will be
+  merged into the target asset library.
+

@@ -48,8 +48,9 @@ Preferences as an asset library. Registering it means that you give the library
 a name (like "Sprite Fright") and the location on disk (like
 ``/home/sybren/projects/sprite-fright/assets``).
 
-.. TODO::
-   add image of preferences, so that it's clear what things look like and where the settings are.
+.. figure:: /images/asset_browser-asset_library_preferences.png
+
+   Name & Location of asset libraries in the Preferences.
 
 Once registered, you can select the asset library in the asset browser. All the
 .blend files in the asset library will be scanned for assets, and all those
@@ -110,6 +111,7 @@ Life Cycle of an Asset
 This section describes how to create, edit, share, and use assets.
 
 .. _asset-create:
+.. _bpy.ops.asset.mark:
 
 Creating an Asset
 ---------------------------
