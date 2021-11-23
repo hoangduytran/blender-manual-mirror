@@ -24,3 +24,13 @@ Node Group
 Inputs
    A list of the node group's inputs which can have unique values even
    if the group is shared among multiple modifiers.
+
+
+Output Attributes
+-----------------
+
+By connecting a field socket to the group output node,
+you can create custom :doc:`Attributes </modeling/geometry_nodes/attributes_reference>`
+from a :doc:`Field </modeling/geometry_nodes/fields>` output of any node in the node tree.
+The domain of the attribute must be specified in the group node's output properties.
+Note, this does not work with :ref:`Instanced Data </modeling/geometry_nodes/instances>`.
