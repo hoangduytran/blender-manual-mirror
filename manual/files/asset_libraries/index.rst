@@ -11,21 +11,23 @@ releases.
 .. _blog-workshop: https://code.blender.org/2021/06/asset-browser-workshop-outcomes/
 
 .. seealso::
-  - :doc:`/editors/asset_browser`
-  - :doc:`catalogs`
-  - :doc:`/animation/armatures/posing/editing/pose_library`
+   - :doc:`/editors/asset_browser`
+   - :doc:`catalogs`
+   - :doc:`/animation/armatures/posing/editing/pose_library`
 
-  The following blog posts were written during the design & development of the asset browser. They are linked here for historical reasons, and to give some more context to the current design.
+   The following blog posts were written during the design & development of the
+   asset browser. They are linked here for historical reasons, and to give some
+   more context to the current design.
 
-  - `2020-03: Asset Manager <https://code.blender.org/2020/03/asset-manager/>`_
-  - `2021-06: Asset Browser Project Update <https://code.blender.org/2020/03/asset-manager/>`_
-  - `2021-06: Asset Browser Workshop Outcomes <https://code.blender.org/2020/03/asset-manager/>`_
+   - `2020-03: Asset Manager <https://code.blender.org/2020/03/asset-manager/>`_
+   - `2021-06: Asset Browser Project Update <https://code.blender.org/2020/03/asset-manager/>`_
+   - `2021-06: Asset Browser Workshop Outcomes <https://code.blender.org/2020/03/asset-manager/>`_
 
 What is an Asset?
 ======================================
 
-    | **An asset is a data-block with meaning.**
-    | *Ton Roosendaal*
+   | **An asset is a data-block with meaning.**
+   | *Ton Roosendaal*
 
 A .blend file is a database with multiple data-blocks: objects, textures,
 materials, etc. When planning to re-use or share these, the data needs a
@@ -33,10 +35,10 @@ meaning. What is this? What is this for? **Assets are curated data-blocks that
 are meant for reuse.**
 
 .. note::
-  The general term "asset" often also refers to other file types, such as
-  images, sounds, video files, etc. These are currently not supported as asset
-  in Blender.
-  For more info, see :ref:`asset-libraries-future-development`.
+   The general term "asset" often also refers to other file types, such as
+   images, sounds, video files, etc. These are currently not supported as asset
+   in Blender.
+   For more info, see :ref:`asset-libraries-future-development`.
 
 What is an Asset Library?
 ======================================
@@ -47,18 +49,18 @@ a name (like "Sprite Fright") and the location on disk (like
 ``/home/sybren/projects/sprite-fright/assets``).
 
 .. TODO::
-  add image of preferences, so that it's clear what things look like and where the settings are.
+   add image of preferences, so that it's clear what things look like and where the settings are.
 
 Once registered, you can select the asset library in the asset browser. All the
 .blend files in the asset library will be scanned for assets, and all those
 assets will be shown in the asset browser.
 
 .. note::
-  Note that this scanning process may take a while, depending on the number of
-  blend files and the number of assets contained within them. Blender 3.1 will
-  add indexing of these assets, greatly improving the speed at which an asset
-  library can be reopened. See `T91406 <https://developer.blender.org/T91406>`_
-  for more info.
+   Note that this scanning process may take a while, depending on the number of
+   blend files and the number of assets contained within them. Blender 3.1 will
+   add indexing of these assets, greatly improving the speed at which an asset
+   library can be reopened. See `T91406 <https://developer.blender.org/T91406>`_
+   for more info.
 
 The .blend files can be directly in the asset library's top-level directory, or
 in any sub-directory. The on-disk organisation of asset libraries is all up to
@@ -165,8 +167,8 @@ Using Assets
 Assets can be used from the :doc:`/editors/asset_browser`.
 
 .. TODO::
-  Add documentation for / link to docs of the Asset View, which is used in the
-  pose library.
+   Add documentation for / link to docs of the Asset View, which is used in the
+   pose library.
 
 .. _asset-libraries-design-limitations:
 

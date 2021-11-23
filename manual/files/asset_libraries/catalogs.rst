@@ -14,9 +14,9 @@ For more technical information, see `Asset Catalogs on the Blender
 Wiki <https://wiki.blender.org/wiki/Source/Architecture/Asset_System/Catalogs>`_.
 
 .. figure:: /images/asset-browser-catalogs.png
-  :width: 640px
+   :width: 640px
 
-  Example filesystem and catalog structures.
+   Example filesystem and catalog structures.
 
 
 The Home Location of Assets
@@ -56,9 +56,9 @@ which would result in the following catalog tree. The highlighted catalog has
 path ``Characters/Ellie/Poses/Hand``.
 
 .. figure:: /images/asset-catalog-tree.png
-  :width: 257px
+   :width: 257px
 
-  Example tree of asset catalogs
+   Example tree of asset catalogs
 
 
 UUID
@@ -115,21 +115,21 @@ Example
 
 This is an example of a valid catalog definition file::
 
-  # This is an Asset Catalog Definition file for Blender.
-  #
-  # Empty lines and lines starting with `#` will be ignored.
-  # The first non-ignored line should be the version indicator.
-  # Subsequent lines are of the format "CATALOG_UUID:catalog/path/for/assets:simple catalog name"
+   # This is an Asset Catalog Definition file for Blender.
+   #
+   # Empty lines and lines starting with `#` will be ignored.
+   # The first non-ignored line should be the version indicator.
+   # Subsequent lines are of the format "CATALOG_UUID:catalog/path/for/assets:simple catalog name"
 
-  VERSION 1
+   VERSION 1
 
-  313ea471-7c81-4de6-af81-fb04c3535d0e:catalog/without/simple/name:
-  ee9c7b60-02f1-4058-bed6-539b8d2a6d34:character/Ellie/poselib:character-Ellie-poselib
-  cd66bf52-58f4-45cb-a4e2-dc0e0ee8f3fe:character/Ellie/poselib:character-Ellie
-  4eb44ec6-3424-405b-9782-ca006953e799:character/Ellie/poselib/white space:character-Ellie-poselib-white space
-  b63ed357-2511-4b96-8728-1b5a7093824c:character/Ružena/poselib:Ružena pose library
-  dcdee4df-926e-4d72-b995-33106983bb9a:character/Ružena/poselib/face:Ružena face
-  fb698f2e-9e2b-4146-a539-3af292d44899:character/Ružena/poselib/hand:Ružena hands
+   313ea471-7c81-4de6-af81-fb04c3535d0e:catalog/without/simple/name:
+   ee9c7b60-02f1-4058-bed6-539b8d2a6d34:character/Ellie/poselib:character-Ellie-poselib
+   cd66bf52-58f4-45cb-a4e2-dc0e0ee8f3fe:character/Ellie/poselib:character-Ellie
+   4eb44ec6-3424-405b-9782-ca006953e799:character/Ellie/poselib/white space:character-Ellie-poselib-white space
+   b63ed357-2511-4b96-8728-1b5a7093824c:character/Ružena/poselib:Ružena pose library
+   dcdee4df-926e-4d72-b995-33106983bb9a:character/Ružena/poselib/face:Ružena face
+   fb698f2e-9e2b-4146-a539-3af292d44899:character/Ružena/poselib/hand:Ružena hands
 
 
 Valid Catalog Paths
