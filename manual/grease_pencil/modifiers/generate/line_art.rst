@@ -195,6 +195,14 @@ Composition
 
    Composition subpanel.
 
+.. _bpy.types.LineartGpencilModifier.overscan:
+
+Overscan
+   To optimize rendering, Blender only renders the lines for portions of the object that are in the camera's view.
+   This optimization however, can result in strokes ending abruptly at the edge of the image.
+
+   This value prevents this error by adding a margin outside the camera's view to continue computing strokes.
+
 .. _bpy.types.LineartGpencilModifier.stroke_depth_offset:
 
 Depth Offset
