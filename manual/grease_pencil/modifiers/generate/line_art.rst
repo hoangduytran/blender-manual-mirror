@@ -173,6 +173,11 @@ Image Threshold
    Allow the end point of short segments to be chained together if the 2D image space distance
    between them are within the specified threshold.
 
+.. _bpy.types.LineartGpencilModifier.smooth_tolerance:
+
+Smooth Tolerance
+   The strength of smoothing applied on jagged chains.
+
 Angle Splitting
    Split a chain at sharp "turning" points specified by this angle.
 
