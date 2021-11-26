@@ -7,9 +7,14 @@ Blender 3.0, and will be improved and expanded over multiple subsequent releases
 
 .. seealso::
 
-   - :doc:`/editors/asset_browser`
-   - :doc:`catalogs`
-   - :doc:`/animation/armatures/posing/editing/pose_library`
+   :doc:`/editors/asset_browser`
+      the main interface for organising and using assets
+
+   :doc:`/files/asset_libraries/catalogs`
+      for organizing assets.
+
+   :doc:`/animation/armatures/posing/editing/pose_library`
+      build on top of the Asset Browser.
 
    The following blog posts were written during the design & development of the
    asset browser. They are linked here for historical reasons, and to give some
@@ -26,7 +31,7 @@ What is an Asset?
    | **An asset is a data-block with meaning.**
    | *Ton Roosendaal*
 
-A blend-file is a database with multiple data-blocks: objects, textures,
+A blend-file is a database with multiple :doc:`/files/data_blocks`: objects, textures,
 materials, etc. When planning to re-use or share these, the data needs a
 meaning. What is this? What is this for? **Assets are curated data-blocks that
 are meant for reuse.**
@@ -38,6 +43,7 @@ are meant for reuse.**
 
    For more info, see :ref:`asset-libraries-future-development`.
 
+.. _what-is-asset-library:
 
 What is an Asset Library?
 =========================
@@ -76,7 +82,7 @@ Asset Types
 ===========
 
 Assets can be broadly divided into two types: **primitive** and **preset**
-assets. Which is which depends on the data-block type.
+assets. Which is which depends on the :doc:`/files/data_blocks` type.
 
 Primitive assets are data-blocks that are either **linked or appended** to the
 current file. Examples are Objects, Materials, and Worlds. These can be dragged
@@ -174,10 +180,36 @@ Using Assets
 
 Assets can be used from the :doc:`/editors/asset_browser`.
 
-.. TODO::
+The pose library extends this, and adds an Asset View to the 3D Viewport. See
+:ref:`pose-library-from-viewport`.
 
-   Add documentation for / link to docs of the Asset View, which is used in the
-   pose library.
+
+.. _bpy.ops.asset.clear:
+.. _assets-clear-set-fake-user:
+
+Removing Assets
+---------------
+
+Asset metadata can be erased by the *Clear Asset* operator. This operator is
+available in data-block selectors, the Asset Browser, and for Objects in the 3D
+Viewport menu.
+
+.. figure:: /images/asset_browser-clear-asset.png
+
+   *Clear Asset* in the Asset Browser.
+
+Clear Asset
+   Removes the asset metadata (catalog, description, author, preview, tags),
+   effectively turning an asset into a regular data-block. As such, the same
+   removal rules apply as with other data-blocks. For example, if a mesh object
+   is still placed in the scene, *Clear Asset* will not remove it from the
+   scene. See :ref:`data-system-datablock-life-time`.
+
+Clear Asset (Set Fake User)
+   Performs the same operation as *Clear Asset*, and then marks the data-block
+   as :ref:`protected <data-system-datablock-fake-user>`. This makes it possible
+   to no longer have the data-block marked as asset, and still be sure it is
+   not lost when saving the blend file.
 
 
 .. _asset-libraries-design-limitations:
