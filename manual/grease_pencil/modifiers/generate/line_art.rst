@@ -63,6 +63,16 @@ Clipping Boundaries
    When enabled, line art will generate clipping lines as contour type at the place
    where near or far clipping planes cut the model. Otherwise there will be no lines.
 
+.. _bpy.types.LineartGpencilModifier.use_crease_on_smooth:
+
+Crease on Smooth
+   Allow crease edges to show inside smooth surfaces.
+
+.. _bpy.types.LineartGpencilModifier.use_crease_on_sharp:
+
+Crease on Sharp
+   Allow creases to show on sharp edges.
+
 
 Edge Types
 ----------
