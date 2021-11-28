@@ -106,7 +106,7 @@ and press :kbd:`M`.
 Pose Markers
 ------------
 
-If *Show Pose Markers* is checked, a pose marker and
+If *Show Pose Markers* is enabled, a pose marker and
 a new pose in the :ref:`Old Pose Library <pose-library-old>` are added.
 
 
