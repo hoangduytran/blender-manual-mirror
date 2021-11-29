@@ -58,7 +58,7 @@ Grid
 .. _bpy.types.SequencerTimelineOverlay.waveform_display_type:
 
 Waveform Display
-   Global options for waveform display on sound strips.
+   Global options for waveform display on Sound strips.
 
    :Waveform Off: Disable waveforms for all strips.
    :Waveform On: Enable waveforms for all strips.
