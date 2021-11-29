@@ -170,8 +170,8 @@ the scene to use that as render engine, and you'll see various options to influe
 Select a pose asset and press the Generate Preview button to re-render the preview image with
 the current settings.
 
-You can also animate settings, such as the background color, light positions
-and intensities, etc. Use this to your advantage!
+You can also animate settings such as matcap rendering, light positions, and
+intensities, etc. Use this to your advantage!
 
 
 Scene Animation for Preview Images
@@ -180,9 +180,10 @@ Scene Animation for Preview Images
 Sometimes it's handy to have a few different background colors or camera angles
 for your poses. Many facial poses are made with a specific camera angle in mind.
 
-- Background color can be animated. In this case just for fun, but for more serious
-  applications this could be used to indicate a certain character, or a mood,
-  or anything else.
+- Background color can be animated by placing a plane behind the character and
+  animating its material. In this case just for fun, but for more serious
+  applications this could be used to indicate a certain character, or a mood, or
+  anything else.
 - The active camera can be switched by using :ref:`camera markers <bpy.ops.marker.camera_bind>`.
 
 Both make it possible to choose a specific frame to pick the background color
