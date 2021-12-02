@@ -169,6 +169,26 @@ Exact Match
    Demonstration of the usage of material masks.
 
 
+Intersection
+------------
+
+Allows you to select edges that intersect between two collections.
+
+.. _bpy.types.LineartGpencilModifier.use_intersection_mask:
+
+Collection Mask
+   Mask bits to match from :ref:`Collection Line Art <bpy.types.Collection.lineart_intersection_mask>` properties.
+
+.. _bpy.types.LineartGpencilModifier.use_intersection_match:
+
+Exact Match
+   Require matching all intersection masks instead of just one.
+
+.. figure:: /images/grease-pencil_modifiers_generate_line-art_collection-mask.png
+
+   Demonstration of the usage of collection masks.
+
+
 .. _bpy.types.LineartGpencilModifier.use_face_mark:
 
 Face Mark Filtering
