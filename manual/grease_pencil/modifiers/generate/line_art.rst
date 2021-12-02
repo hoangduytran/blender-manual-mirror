@@ -91,6 +91,11 @@ Line Art can identify different edge types. Selected edge types will be included
 Contour
    Where the edge becomes the separation line of front/backfacing faces.
 
+.. _bpy.types.LineartGpencilModifier.use_loose:
+
+Loose
+   Generate strokes for edges that do not form a :term:`Face`.
+
 Material Borders
    Where the edge separates faces with different materials.
 
@@ -105,6 +110,12 @@ Crease
 
    Crease Threshold
       Edge angles that are smaller than this value will be treated as crease.
+
+.. _bpy.types.LineartGpencilModifier.use_overlap_edge_type_support:
+
+Allow Overlap
+   Allow an edge to have multiple overlapping types.
+   This will create a separate stroke for each overlapping type.
 
 
 Style
@@ -177,6 +188,15 @@ Chain
 
    All Lines
       Enabling this option will cause all lines to have the type of contour and to be chained together.
+
+   Loose Edges
+      Allow floating Edges that do not form a face to be chained together.
+   
+   Loose as Contour
+      Edges that do not form a face will be classified as contour lines.
+
+   Geometry Space
+      Use geometry distance for chaining instead of image space.
 
 Image Threshold
    Allow the end point of short segments to be chained together if the 2D image space distance
