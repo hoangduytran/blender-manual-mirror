@@ -23,6 +23,15 @@ Options
 
    The Line Art modifier.
 
+.. _bpy.types.LineartGpencilModifier.use_cache:
+
+Use Cache
+   Optimize rendering by using cached scene data from the first line art modifier in the stack.
+   This option has the disadvantage of certain settings becoming unavailable
+
+   This option only available when you have more than one Line Art modifier
+   is the same modifier stack and the modifier is not the first Line Art modifier in the stack.
+
 Source Type
    What type of geometry source should line art be generated from.
 
