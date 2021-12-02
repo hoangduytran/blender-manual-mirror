@@ -149,23 +149,24 @@ Level
    A value of 1 means selecting lines that have been occluded by exactly one layer of faces.
 
 
-Transparency
-^^^^^^^^^^^^
+Material Mask
+^^^^^^^^^^^^^
 
 If enabled, Line Art will only select lines that are occluded by certain faces whose material
 have specific occlusion masks set.
 
 Masks
-   To select edges that have been occluded by selected masks.
+   To select edges that have been occluded by the selected
+   :ref:`Material Mask <bpy.types.MaterialLineArt.use_material_mask_bits>`.
 
 Exact Match
-   If enabled, only lines that are occluded with the exact transparency bit combination will be selected.
-   Otherwise, lines that have been occluded by any one of specified transparency masks will be selected.
+   If enabled, only lines that are occluded with the exact mask bit combination will be selected.
+   Otherwise, lines that have been occluded by any one of specified material masks will be selected.
 
 .. figure:: /images/grease-pencil_modifiers_generate_line-art_transparency-mask.png
    :align: right
 
-   Demonstration of the usage of transparency masks.
+   Demonstration of the usage of material masks.
 
 
 .. _bpy.types.LineartGpencilModifier.use_face_mark:
@@ -189,6 +190,8 @@ Invert
 
 Boundaries
    Filter feature lines based on face mark boundaries.
+
+.. figure:: /images/grease-pencil_modifiers_generate_line-art_face-mark-filtering-example.png
 
 
 Chaining
