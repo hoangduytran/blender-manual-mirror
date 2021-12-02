@@ -52,7 +52,16 @@ Instance Offset X, Y Z
 Line Art
 --------
 
-Todo.
+.. _bpy.types.Collection.lineart_usage:
+
+Usage
+   How to use this collection in line art.
+
+   :Include: Generate feature lines for this collection.
+   :Occlusion Only: Only use the collection to produce occlusion.
+   :Exclude: Don’t use this collection in line art.
+   :Intersection Only: Only generate intersection lines for this collection.
+   :No Intersection: Include this collection but do not generate intersection lines.
 
 
 Collections Menu
