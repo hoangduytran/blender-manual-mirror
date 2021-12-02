@@ -43,7 +43,7 @@ Display As
    :Black: Display black edges.
    :White: Display white edges.
 
-.. _bpy.types.SpaceUVEditor.show_modified_edges::
+.. _bpy.types.SpaceUVEditor.show_modified_edges:
 
 Modified Edges
    Show results of modifiers in the UV display.
