@@ -235,7 +235,6 @@ This is useful when modifying the UVs of already unwrapped meshes.
 
 
 .. _bpy.ops.uv.pack_islands:
-.. _editors-uv-editing-layout-pack_islands:
 
 Pack Islands
 ============
@@ -252,6 +251,11 @@ that tries to efficiently fill the :term:`Texture Space`.
 
 First it will uniformly scale the selected island,
 then individually transform each island so that they fill up the UV space as much as possible.
+
+Rotate
+   Allow islands to be rotated to possible get a tighter fit.
+Margin
+   The target empty space between islands.
 
 
 .. _bpy.ops.uv.average_islands_scale:
