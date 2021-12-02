@@ -68,6 +68,17 @@ Annotations
 Options for the :doc:`annotation tool </interface/annotate_tool>`.
 
 
+.. _bpy.types.SpaceUVEditor.use_custom_grid:
+
+Custom Grid
+-----------
+
+.. _bpy.types.SpaceUVEditor.custom_grid_subdivisions:
+
+Subdivisions
+   The number of grid units in UV that make one UV unit.
+
+
 .. (TODO add) images per type
 
 Scopes
