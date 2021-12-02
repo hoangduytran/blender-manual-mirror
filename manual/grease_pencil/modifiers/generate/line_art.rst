@@ -55,6 +55,13 @@ Material
 Geometry Processing
 -------------------
 
+.. _bpy.types.LineartGpencilModifier.source_camera:
+.. _bpy.types.LineartGpencilModifier.use_custom_camera:
+
+Custom Camera
+   Use custom camera instead of the active camera for calculating strokes.
+   Useful when baking multiple shots in different angle as well as for motion graphics effects.
+
 Remove Doubles
    Perform a "merge by distance" operation when loading geometry into Line Art.
    The threshold of this operation is internally set to a value that is optimal for Line Art algorithm precision.
@@ -303,6 +310,11 @@ Image Boundary Trimming
 Depth Offset
    Move strokes slightly towards the camera to avoid clipping while preserve depth for the viewport.
    This option will be grayed out unless :ref:`Show in Front <bpy.types.Object.show_in_front>` is disabled.
+
+.. _bpy.types.LineartGpencilModifier.use_offset_towards_custom_camera:
+
+Towards Custom Camera
+   Offset strokes towards selected camera (see *Custom Camera* above) instead of the active camera.
 
 
 Bake
