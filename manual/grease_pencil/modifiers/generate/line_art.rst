@@ -168,6 +168,29 @@ Exact Match
    Demonstration of the usage of transparency masks.
 
 
+.. _bpy.types.LineartGpencilModifier.use_face_mark:
+
+Face Mark Filtering
+-------------------
+
+.. figure:: /images/grease-pencil_modifiers_generate_line-art_face-mark-filtering-panel.png
+
+   Face Mark Filtering subpanel.
+
+*Face Mark Filtering* can be used to have manual control over which
+feature edges produce strokes by using Freestyle face marks.
+
+.. _bpy.types.LineartGpencilModifier.use_face_mark_invert:
+
+Invert
+   Invert face mark filtering.
+
+.. _bpy.types.LineartGpencilModifier.use_face_mark_boundaries:
+
+Boundaries
+   Filter feature lines based on face mark boundaries.
+
+
 Chaining
 --------
 
