@@ -11,11 +11,11 @@ Sample
 
    In the order of appearance, the following information is shown:
 
-   - The X and Y coordinates of the clicked pixel. Remember that the left bottom corner is location (0,0) and that the project resolution is set to 1920 x 1080.
+   - The X and Y coordinates of the clicked pixel. Remember that the left bottom corner is location (0, 0).
    - The values for the Red, Green, and Blue component as from the Color Picker.
    - The Alpha value of the pixel.
-   - The Color Managed values of the Red, Green and Blue component or the color as you see in the Preview.
-   - The Hue, Saturation, Value and Luminance equivalent values of the Color Managed values.
+   - The Color Managed values of the Red, Green, and Blue component (the color as you see in the Preview).
+   - The Hue, Saturation, Value, and Luminance equivalent values of the Color Managed values.
 
    .. figure:: /images/editors_vse_preview_sample-tool.png
       :alt: Sample Tool
