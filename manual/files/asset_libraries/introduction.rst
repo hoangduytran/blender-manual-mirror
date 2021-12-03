@@ -198,11 +198,12 @@ Viewport menu.
    *Clear Asset* in the Asset Browser.
 
 Clear Asset
-   Removes the asset metadata (catalog, description, author, preview, tags),
+   Removes the asset metadata (catalog, description, author, tags),
    effectively turning an asset into a regular data-block. As such, the same
    removal rules apply as with other data-blocks. For example, if a mesh object
    is still placed in the scene, *Clear Asset* will not remove it from the
-   scene. See :ref:`data-system-datablock-life-time`.
+   scene. See :ref:`data-system-datablock-life-time`. The preview will be kept
+   inside the data-block and not be removed.
 
 Clear Asset (Set Fake User)
    Performs the same operation as *Clear Asset*, and then marks the data-block
