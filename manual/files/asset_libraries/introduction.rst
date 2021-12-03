@@ -28,13 +28,12 @@ Blender 3.0, and will be improved and expanded over multiple subsequent releases
 What is an Asset?
 =================
 
-   | **An asset is a data-block with meaning.**
-   | *Ton Roosendaal*
+**An asset is a data-block with meaning.**
 
 A blend-file is a database with multiple :doc:`/files/data_blocks`: objects, textures,
 materials, etc. When planning to re-use or share these, the data needs a
 meaning. What is this? What is this for? **Assets are curated data-blocks that
-are meant for reuse.**
+are meant for easy reuse.**
 
 .. note::
 
