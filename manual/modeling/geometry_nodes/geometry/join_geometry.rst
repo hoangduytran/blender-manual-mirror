@@ -33,6 +33,13 @@ and a vector data type on another geometry, the ``weight`` attribute on the outp
 a vector data type. The same heuristic is used for attribute domains, the domain with the most information
 will be used for the output.
 
+.. warning::
+
+   Like other geometry nodes, this node always outputs generic typed attributes. So instead of a
+   :term:`Vertex Group` attribute, it will create a "Float" attribute on the result, and it will
+   create a generic 2D vector attribute instead of a special "UV Map" attribute. Some other areas
+   of Blender don't properly handle generic attributes in version 3.0.
+
 
 Inputs
 ======
