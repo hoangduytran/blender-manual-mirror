@@ -38,8 +38,9 @@ will be used for the output.
    Like other geometry nodes, this node always outputs generic typed attributes. So instead of a
    :term:`Vertex Group` attribute, it will create a "Float" attribute on the result, and it will
    create a generic 2D vector attribute instead of a special "UV Map" attribute. Some other areas
-   of Blender don't properly handle generic attributes in version 3.0.
-
+   of Blender don't properly handle generic attributes in version 3.0. 
+   
+   Custom face corner normals are also not transferred currently.
 
 Inputs
 ======
