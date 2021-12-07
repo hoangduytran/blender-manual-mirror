@@ -52,7 +52,7 @@ Anonymous attributes are still stored on the geometry like other attributes, and
 automatically interpolated when the geometry changes with other nodes, except for a few cases.
 So generally, if the node link is still accessible, the attribute it references will be too.
 However, anonymous attributes cannot be connected to a completely separate geometry
-that was not created from their source. To transfer attributes between separate pieces of geometry,
+that was not created from their source. To transfer attributes between separate geometries,
 the :doc:`/modeling/geometry_nodes/attribute/transfer_attribute` can be used.
 
 
