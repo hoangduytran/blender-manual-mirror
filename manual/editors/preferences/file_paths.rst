@@ -100,18 +100,18 @@ I18n Branches
 Asset Libraries
 ===============
 
-Name and on-disk directory paths of Asset Libraries. To make Blender aware of an
-asset library, add it to this list. The name is for your reference only, and
-will appear in asset library selectors. The path should point to the location of
-the asset library.
+Name and on-disk directory paths of Asset Libraries.
+To make Blender aware of an asset library, add it to this list.
+The name is for your reference only, and will appear in asset library selectors.
+The path should point to the location of the asset library.
 
 .. figure:: /images/asset_browser-asset_library_preferences.png
 
    Name & Location of asset libraries in the Preferences.
 
-To create a new asset library, just create an empty directory and add it to the
-list. Any asset from any blend file contained in that directory (or
-subdirectories thereof) will appear in the :doc:`/editors/asset_browser`.
+To create a new asset library, just create an empty directory and add it to the list.
+Any asset from any blend file contained in that directory
+(or subdirectories thereof) will appear in the :doc:`/editors/asset_browser`.
 
 
 Known Limitations
