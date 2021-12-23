@@ -322,7 +322,7 @@ Browse Poses (Old Pose Library)
 .. warning::
 
    This section describes the deprecated pose library. For the new, Asset
-   Browser based pose library, see :ref:`pose_library`.
+   Browser based pose library, see :doc:`/animation/armatures/properties/pose_library`.
 
 .. reference::
 
@@ -348,7 +348,7 @@ Add Pose (Old Pose Library)
 .. warning::
 
    This section describes the deprecated pose library. For the new, Asset
-   Browser based pose library, see :ref:`pose_library`.
+   Browser based pose library, see :doc:`/animation/armatures/properties/pose_library`.
 
 .. reference::
 
@@ -380,7 +380,7 @@ Rename Pose (Old Pose Library)
 .. warning::
 
    This section describes the deprecated pose library. For the new, Asset
-   Browser based pose library, see :ref:`pose_library`.
+   Browser based pose library, see :doc:`/animation/armatures/properties/pose_library`.
 
 .. reference::
 
@@ -404,7 +404,7 @@ Remove Pose (Old Pose Library)
 .. warning::
 
    This section describes the deprecated pose library. For the new, Asset
-   Browser based pose library, see :ref:`pose_library`.
+   Browser based pose library, see :doc:`/animation/armatures/properties/pose_library`.
 
 .. reference::
 
