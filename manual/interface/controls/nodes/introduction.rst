@@ -120,8 +120,6 @@ Adding Nodes
 
 .. reference::
 
-   :Mode:      All Modes
-   :Tool:      :menuselection:`Toolbar`
    :Menu:      :menuselection:`Add`
    :Shortcut:  :kbd:`Shift-A`
 
