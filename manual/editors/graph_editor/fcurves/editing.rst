@@ -65,6 +65,22 @@ Flatten Handles
 
              After Flatten Handles.
 
+.. _bpy.ops.graph.equalize_handles:
+
+Equalize Handles
+   Ensure selected keyframes' handles have equal length.
+
+   Side
+      Side of the keyframes' Bézier handles to affect
+
+      :Left: Equalize selected keyframes' left handles.
+      :Right: Equalize selected keyframes' right handles.
+      :Both: Equalize both of a keyframe's handles.
+   Handle Length
+      Length to make selected keyframes' Bézier handles.
+   Flatten
+      Make the values of the selected keyframes' handles the same as their respective keyframes.
+
 Cursor to Selected :kbd:`Ctrl-G`
    Places the cursor at the midpoint between selected keyframes.
 
