@@ -304,8 +304,8 @@ Mode
       which controls how much the new decimated curve is allowed to deviate from the original.
 
 
-Slider Operations
-=================
+Slider Operators
+================
 
 .. _bpy.ops.graph.breakdown:
 
@@ -314,12 +314,30 @@ Breakdown
 
 .. reference::
 
-   :Menu:      :menuselection:`Key --> Slider Operations --> Breakdown`
+   :Menu:      :menuselection:`Key --> Slider Operators --> Breakdown`
 
 Moves the selected keyframes to an in between position relative to the adjacent keyframes.
 Drag the mouse left or right to adjust the operator's *Factor* property.
 
 Factor
+   The amount to favor either the left or the right key. Values less than 0.5 favor the left keyframe,
+   values greater than 0.5 favor the right keyframe, a value of 0.5 results in no change.
+
+
+.. _bpy.ops.graph.blend_to_neighbor:
+
+Blend to Neighbor
+-----------------
+
+.. reference::
+
+   :Menu:      :menuselection:`Key --> Slider Operators --> Blend to Neighbor`
+
+Transitions the current keyframe with the neighboring keyframes in the timeline.
+In order for this operator to work, there must be a keyframe before and after the current frame.
+Drag the mouse left or right to adjust the operator's *Blend* property.
+
+Blend
    The amount to favor either the left or the right key. Values less than 0.5 favor the left keyframe,
    values greater than 0.5 favor the right keyframe, a value of 0.5 results in no change.
 
