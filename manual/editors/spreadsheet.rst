@@ -85,6 +85,11 @@ Point Cloud
 
    :Point: Display attributes that are stored per point.
 
+Volume Grids
+   Display OpenVDB volume drid data, each grid will be represented
+   with the *Grid Name*, the *Data Type*, and the *Class*.
+   The class can be either of: Fog Volume, Level Set, or Unknown.
+
 Instances
    Display which objects and collections are instanced and their transforms.
 
