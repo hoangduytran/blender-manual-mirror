@@ -229,6 +229,11 @@ Invert
 Boundaries
    Filter feature lines based on face mark boundaries.
 
+.. _bpy.types.LineartGpencilModifier.use_face_mark_keep_contour:
+
+Keep Contour
+   Preserve contour lines while filtering.
+
 .. figure:: /images/grease-pencil_modifiers_generate_line-art_face-mark-filtering-example.png
 
 
