@@ -264,6 +264,10 @@ Chain
    Loose as Contour
       Edges that do not form a face will be classified as contour lines.
 
+   Preserve Details
+      Instead of splitting at each occlusion change, keep small details from the initial chain.
+      When details are not kept, will create a much smoother result.
+
    Geometry Space
       Use geometry distance for chaining instead of image space.
 
