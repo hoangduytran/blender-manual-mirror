@@ -94,6 +94,12 @@ Crease on Smooth
 Crease on Sharp
    Allow creases to show on sharp edges.
 
+.. _bpy.types.LineartGpencilModifier.use_back_face_culling:
+
+Force Backface Culling
+   Remove all back faces to speed up calculation.
+   Note, removing back faces will create edges in different occlusion levels than when disabled.
+
 
 Edge Types
 ----------
