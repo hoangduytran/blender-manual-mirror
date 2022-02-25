@@ -69,7 +69,7 @@ spherical coordinates :math:`(1, \theta, \phi)` in radians as follows:
 
 .. math::
   & r = \sqrt{x^2 + y^2}\\
-  & \theta = k_0 + k_1 r + r^2 k_2 + r^3 k_3 + r^4 k_4\\
+  & \theta = k_0 + k_1 r + k_2 r^2 + k_3 r^3 + k_4 r^4\\
   & \phi = acos(x/r)
 
 This can be used to model both fisheye and perspective cameras.
