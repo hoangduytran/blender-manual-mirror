@@ -3,6 +3,22 @@
   Toolbar
 ###########
 
+Cursor
+   Changes the location of the :ref:`editors_sequencer_preview_2d-cursor`.
+
+   To use the tool, :kbd:`LMB` within the preview area to move the cursor to that position.
+   You can also click and drag to interactively position the cursor.
+
+   The movement of the cursor can be constrained along the global/local X or Y axis by pressing :kbd:`X` or :kbd:`Y`,
+   pressing the hotkeys will cycle between global/local orientations and disabling constraints.
+
+   Holding :kbd:`Shift` will move the cursor in smaller increments for more precision.
+   You may also type in an exact amount to move for absolute precision.
+
+   While the operation is running a message will display in the header indicating
+   the distance in pixels the cursor has moved in each of the cardinal directions.
+   The third number, between parenthesis, is the Euclidean distance the cursor has moved.
+
 Move :kbd:`G`
    Changes the location of the selected image by adjusting the strip's
    :ref:`Position <bpy.types.SequenceTransform.offset>` properties.
