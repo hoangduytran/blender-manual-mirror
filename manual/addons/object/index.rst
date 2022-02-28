@@ -15,7 +15,6 @@ These add-ons relate to Object Mode and related tools.
    edit_linked_library.rst
    greasepencil_tools.rst
    color_rules.rst
-   oscurart_tools.rst
    real_snow.rst
    scatter_objects.rst
    skinify.rst
