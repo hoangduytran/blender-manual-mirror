@@ -330,6 +330,7 @@ Integer and Float sliders can be created in order to find the proper parameters 
 
 .. figure:: /images/addons_mesh_tissue_weight-formula.jpg
 
+
 Weight Laplacian
 ----------------
 
@@ -408,6 +409,7 @@ that generate the various patterns of many living organisms.
 .. figure:: /images/addons_mesh_tissue_weight-reaction-diffusion.jpg
 
 See `this video <https://youtu.be/J-0NzU1TmIY>`__ for an example of the Reaction-Diffusion simulation with Tissue.
+
 
 Radom Materials
 ---------------
