@@ -197,6 +197,7 @@ Iterations
       All
         Combine the tessellation with all the faces from the previous iteration.
 
+
 Dual Mesh
 ---------
 
@@ -213,6 +214,7 @@ Polygon Method
 Preserve Borders
    Prevent alteration of the open boundaries of the mesh.
 
+
 Convert to Curve
 ----------------
 
@@ -226,11 +228,13 @@ with the addition of a pattern effect.
 
 (To Do)
 
+
 Refresh
 -------
 
 Update the active object according to the changes in the base geometries.
 This operator works on the objects generated through *Tessellate* and *Convert to Curve*.
+
 
 Rotate Faces
 ------------
@@ -239,20 +243,24 @@ Rotate the indexes of the selected faces (in Edit-Mode). This allows to control 
 of Tessellated objects, when using *Default* rotation.
 Once the operator is executed, then the interested Tessellated objects are automatically refreshed.
 
+
 Convert to Dual Mesh
 --------------------
 
 Destructive version of the Dual-Mesh operator. This directly convert the active object to its Dual-Mesh.
+
 
 Polyhedra Wireframe
 -------------------
 
 (To Do)
 
+
 Lattice Along Surface
 ---------------------
 
 (To Do)
+
 
 UV to Mesh
 ----------
@@ -267,11 +275,13 @@ Random Materials
 
 Assign random materials to the face's of the active mesh object.
 
+
 Weight to Materials
 -------------------
 
 Distribute existing materials according to the weight of the active vertex group.
 It is also possible to automatically create new materials.
+
 
 Tissue Render Animation
 -----------------------
@@ -285,6 +295,7 @@ Tissue Weight Tools
 ===================
 
 .. figure:: /images/addons_mesh_tissue_weight-tools.jpg
+
 
 Area
 ----
@@ -310,6 +321,7 @@ Different methods can be used: *Geodesic*, *Euclidean* or *Topology* distance.
 
 .. figure:: /images/addons_mesh_tissue_weight-distance.jpg
 
+
 Weight Formula
 --------------
 
@@ -323,6 +335,7 @@ Weight Laplacian
 
 (To Do)
 
+
 Harmonic
 --------
 
@@ -330,10 +343,12 @@ Harmonic function based on active Weight
 
 .. figure:: /images/addons_mesh_tissue_weight-harmonic.jpg
 
+
 Random
 ------
 
 (To Do)
+
 
 Edges Deformation
 -----------------
@@ -343,6 +358,7 @@ Generate a Vertex Group based on Edges Deformation evaluated on the Modifiers re
 
 .. figure:: /images/addons_mesh_tissue_weight-edges-deformation.jpg
 
+
 Edges Bending
 -------------
 
@@ -351,10 +367,12 @@ Generate a Vertex Group based on Edges Bending evaluated on the Modifiers result
 
 .. figure:: /images/addons_mesh_tissue_weight-edges-bending.jpg
 
+
 Streamlines Curves
 ------------------
 
 (To Do)
+
 
 Contour Curves
 --------------
@@ -396,10 +414,12 @@ Radom Materials
 
 (To Do)
 
+
 Weight to Materials
 -------------------
 
 (To Do)
+
 
 Convert to Colors
 -----------------
@@ -408,6 +428,7 @@ Convert To
    Value Channel, Red Channel, Green Channel, Blue Channel, False Color
 Invert
    Invert the values read from vertex weight.
+
 
 Convert to UV
 -------------
@@ -422,6 +443,7 @@ Tissue Color Tools
 
 .. figure:: /images/addons_mesh_tissue_color-tools.jpg
 
+
 Convert to Weight
 -----------------
 
@@ -435,7 +457,6 @@ Value Channel
    Add a vertex group derived to value channel of the active vertex color.
 Invert
    Invert the values read from vertex weight.
-
 
 
 Example
