@@ -86,6 +86,9 @@ Toolbar
 :doc:`/sculpt_paint/sculpting/tools/mask`
    Paints a selection on parts of the mesh to be unaffected by other brushes.
 
+:doc:`/sculpt_paint/sculpting/tools/draw_facesets`
+   Paints a new Face Set with each stroke.
+
 :doc:`/sculpt_paint/sculpting/tools/multires_displacement_eraser`
    Deletes displacement information applied on a Multiresolution modifier.
 
