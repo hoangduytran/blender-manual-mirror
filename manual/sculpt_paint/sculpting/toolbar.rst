@@ -92,6 +92,12 @@ Toolbar
 :doc:`/sculpt_paint/sculpting/tools/multires_displacement_smear`
    Deforms displacement information applied on a Multiresolution modifier.
 
+:doc:`/sculpt_paint/sculpting/tools/paint`
+   Paints on the active color attribute.
+
+:doc:`/sculpt_paint/sculpting/tools/smear`
+   Smears the colors of the active color attribute.
+
 :doc:`/sculpt_paint/sculpting/tools/box_trim`
    Creates a mask based on box select.
 
@@ -122,8 +128,14 @@ Toolbar
 :doc:`/sculpt_paint/sculpting/tools/cloth_filter`
    Applies a cloth simulation to all vertices in the mesh at the same time.
 
+:doc:`/sculpt_paint/sculpting/tools/color_filter`
+   Changes the active color attribute on all vertices in the mesh at the same time.
+
 :doc:`/sculpt_paint/sculpting/tools/edit_face_set`
    Modifies the face set under the cursor.
+
+:doc:`/sculpt_paint/sculpting/tools/mask_by_color`
+   Creates a mask from the color attribute. Click on any color on the mesh to create a new mask.
 
 Move
    Translation tool.
