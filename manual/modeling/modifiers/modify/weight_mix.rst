@@ -69,6 +69,8 @@ Mix Mode
    :Divide: Divides the values of *Group A* by *Group B*.
    :Difference: Subtracts the smaller of the two values from the larger.
    :Average: Adds the values together, then divides by 2.
+   :Minimum: Uses the smallest weight value of VGroup A's or VGroup B's weights.
+   :Maximum: Uses the largest weight value of VGroup A's or VGroup B's weights.
 
 Normalize Weights
    Scale the weights in the vertex group to keep the relative weight
