@@ -637,7 +637,7 @@ Geometry
 
 Apply Modifiers
    Export objects using the evaluated mesh, meaning the resulting mesh after all
-:doc:`Modifiers </modeling/modifiers/index>` have been calculated.
+   :doc:`Modifiers </modeling/modifiers/index>` have been calculated.
 UVs
    Export UVs (texture coordinates) with meshes.
 Normals
@@ -651,7 +651,7 @@ Loose Edges
 Loose Points
    Export loose points as glTF points, using the material from the first material slot.
 Materials
-   Export full materials, only placeholders (all primitives but without materials), 
+   Export full materials, only placeholders (all primitives but without materials),
    or does not export materials. (In that last case, primitive are merged, lossing material slot information).
 Images
    Output format for images. PNG is lossless and generally preferred, but JPEG might be preferable for
