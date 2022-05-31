@@ -121,8 +121,9 @@ Display Device
    It would typically be changed when viewing the image on another display device connected to the computer,
    or when writing out image files intended to be displayed on another device.
 
-   *Rec709* is commonly used for HDTVs, while *XYZ* and *DCI-P3* are common for digital projectors.
-   Color management can be disabled by setting the device to *None*.
+   :sRGB: Used by most displays.
+   :XYZ: Commonly used by digital projectors.
+   :None: Disables color management.
 
 .. _bpy.types.ColorManagedViewSettings.view_transform:
 
