@@ -93,8 +93,8 @@ that no color space conversion happens on them.
 
 .. _render-post-color-management:
 
-Settings
-========
+Render Settings
+===============
 
 .. reference::
 
@@ -105,6 +105,11 @@ Settings
    :align: right
 
    Color Management properties.
+
+These are color management settings that are used across Blender.
+These color management settings are Scene specific so settings can be customized per Scene.
+Color management can also be overridden when saving images;
+this behavior can be set in the :ref:`Output Color Management Properties <render-output-color-management-panel>`.
 
 .. _bpy.types.ColorManagedDisplaySettings.display_device:
 

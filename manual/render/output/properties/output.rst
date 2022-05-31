@@ -73,6 +73,24 @@ Image Sequence
    - Start as many machines as you wish rendering to that directory.
 
 
+.. _render-output-color-management-panel:
+
+Color Management
+================
+
+This panel controls how :doc:`/render/color_management` is applied when saving images.
+
+:Follow Scene:
+   Uses the same color management settings defined by the active Scene.
+   These properties are defined in the Render Settings
+:Override:
+   Uses custom color management settings defined by the properties below in the panel;
+   disregarding any color management settings set at the Scene level.
+
+For a detailed description of color management properties,
+see the :ref:`Color Management <render-post-color-management>` page.
+
+
 .. _render-output-video-encoding-panel:
 .. _bpy.types.FFmpegSettings:
 
