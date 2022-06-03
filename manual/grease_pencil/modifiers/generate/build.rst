@@ -56,13 +56,16 @@ Frames
 Factor
    Use a defined percentage factor to control the amount of the stroke that is visible.
 
+Object
+   Object to use as the start position of the build transition.
+
 
 Custom Range
 ------------
 
 If enabled, only modify strokes during the specified frame range.
 
-Start/End
+Start, End
    Determines the start and end frame for the build effect.
 
 
