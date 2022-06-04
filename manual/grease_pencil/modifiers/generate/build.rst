@@ -69,6 +69,22 @@ Start, End
    Determines the start and end frame for the build effect.
 
 
+Fade
+----
+
+Factor
+   Defines home much the stroke is fading in/out.
+
+Thickness
+   How much strength fading is applied to the stroke's thickness.
+
+Opacity
+   How much strength fading applies to the stroke's opacity.
+
+Weight Output
+   Assign a weight value to points that have started/finished the fade.
+
+
 Influence Filters
 -----------------
 
