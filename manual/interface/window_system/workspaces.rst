@@ -3,11 +3,10 @@
 Workspaces
 **********
 
-Workspaces are essentially predefined window layouts.
-Blender's flexibility with :doc:`Areas </interface/window_system/areas>`
-lets you create customized workspaces for different tasks such as
-modeling, animating, and scripting. It is often useful to quickly switch between
-different workspaces within the same file.
+Workspaces provide a way to store a user interface configuration that is optimized for certain tasks, such as
+modelling, animating, and scripting. Most notably, workspaces hold screen layouts (see :doc:`Areas
+</interface/window_system/areas>`). But they may also define things like the :ref:`Mode <editors-3dview-modes>` or
+add-ons to use.
 
 .. figure:: /images/interface_window-system_workspaces_screen.png
    :align: center

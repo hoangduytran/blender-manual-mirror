@@ -1,3 +1,4 @@
+.. _editors-3dview-modes:
 
 ************
 Object Modes
