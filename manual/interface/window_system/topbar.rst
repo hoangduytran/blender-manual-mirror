@@ -281,5 +281,7 @@ Scenes & Layers
 .. figure:: /images/interface_window-system_topbar_scenes-layers.png
    :align: center
 
-These :ref:`data-block menus <ui-data-block>` are used to select
-the current active :doc:`Scene </scene_layout/scene/index>` and :doc:`View Layer </scene_layout/view_layers/index>`.
+These :ref:`data-block menus <ui-data-block>` are used to select the current active :doc:`Scene
+</scene_layout/scene/index>` and :doc:`View Layer </scene_layout/view_layers/index>`. The pin icon in the scene
+name field toggles the :ref:`Pin Scene <interface_window-system_workspaces_pin_scene>` setting of the current
+workspace.

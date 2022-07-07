@@ -104,6 +104,12 @@ Workspace Settings
    :Editor:    Properties
    :Menu:      :menuselection:`Active Tool and Workspace Settings --> Workspace`
 
+.. _interface_window-system_workspaces_pin_scene:
+
+Pin Scene
+   Remember the last scene that was active in this workspace. When activating this
+   workspace again, this scene will be re-activated with it.
+
 .. _bpy.types.WorkSpace.object_mode:
 
 Mode
