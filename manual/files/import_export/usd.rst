@@ -335,6 +335,12 @@ Create Collection
 Light Intensity Scale
    Scale for the intensity of imported lights.
 
+Material Name Collision
+   Behavior when the name of an imported material conflicts with an existing material.
+
+   :Make Unique: Import each USD material as a unique Blender material.
+   :Reference Existing: If a material with the same name already exists, reference that instead of importing.
+
 
 Experimental
 ------------
