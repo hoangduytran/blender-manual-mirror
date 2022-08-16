@@ -3,22 +3,23 @@
 Shape Keys Panel
 ****************
 
-.. figure:: /images/animation_shape-keys_shape-keys-panel_basis.png
-   :align: right
-
-   Shape Keys panel.
-
 .. reference::
 
    :Editor:    Properties
    :Mode:      All modes
    :Panel:     :menuselection:`Object Data --> Shape Keys`
 
+.. figure:: /images/animation_shape-keys_shape-keys-panel_basis.png
+   :align: right
+
+   Shape Keys panel.
+
+
 The Shape Keys panel is used for authoring shape keys.
 
+.. container:: lead
 
-Settings
-========
+   .. clear
 
 .. _bpy.types.Object.active_shape_key_index:
 
@@ -87,16 +88,21 @@ Shape Key Edit Mode (edit mode icon)
 
 
 Relative Shape Keys
--------------------
+===================
+
+.. figure:: /images/animation_shape-keys_shape-keys-panel_relative.png
+   :align: right
+
+   Relative Shape Keys options.
 
 See :ref:`animation-shapekeys-relative-vs-absolute`.
 
 With absolute shape keys, the value shown for each shape in the list represents
 the current weight or influence of that shape in the current *Mix*.
 
-.. figure:: /images/animation_shape-keys_shape-keys-panel_relative.png
+.. container:: lead
 
-   Relative Shape Keys options.
+   .. clear
 
 .. _bpy.ops.object.shape_key_clear:
 
@@ -132,16 +138,21 @@ Relative To
 
 
 Absolute Shape Keys
--------------------
+===================
+
+.. figure:: /images/animation_shape-keys_shape-keys-panel_absolute.png
+   :align: right
+
+   Absolute Shape Keys options.
 
 See :ref:`animation-shapekeys-relative-vs-absolute`.
 
 With absolute shape keys, the value shown for each shape in the list represents
 the *Evaluation Time* at which that shape key will be active.
 
-.. figure:: /images/animation_shape-keys_shape-keys-panel_absolute.png
+.. container:: lead
 
-   Absolute Shape Keys options.
+   .. clear
 
 .. _bpy.ops.object.shape_key_retime:
 
