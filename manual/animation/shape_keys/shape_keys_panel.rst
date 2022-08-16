@@ -41,32 +41,51 @@ Active Shape Key Index
       If unchecked, the shape key will not be taken into consideration when
       mixing the shape key stack into the result visible in the 3D Viewport.
 
-   Specials
-      New Shape from Mix
-         Add a new shape key with the current deformed shape of the object.
-         This differs from the ``+`` button of the list, as that one always copies
-         the Basis shape independently of the current mix.
-      Mirror Shape Key
-         If your mesh is symmetrical, in *Object Mode*, you can mirror the shape keys on the X axis.
-         This will not work unless the mesh vertices are perfectly symmetrical.
-         Use the :menuselection:`Mesh --> Symmetrize` tool in *Edit Mode*.
-      Mirror Shape Key (Topology)
-         Same as *Mirror Shape Key* though it detects the mirrored vertices based on the topology of the mesh.
-         The mesh vertices do not have to be perfectly symmetrical for this action to work.
-      Join as Shapes (Transfer Mix)
-         Transfer the current resulting shape from a different object.
+Shape Key Specials
+   .. _bpy.ops.object.shape_key_add:
 
-         Select the object to copy, then the object to copy into.
-         Use this action and a new shape key will be added to the active object
-         with the current mix of the first object.
+   New Shape from Mix
+      Add a new shape key with the current deformed shape of the object.
+      This differs from the ``+`` button of the list, as that one always copies
+      the Basis shape independently of the current mix.
 
-      Transfer Shape Key
-         Transfer the active shape key from a different object
-         regardless of its current influence.
+   .. _bpy.ops.object.shape_key_mirror:
 
-         Select the object to copy, then the object to copy into.
-         Use this action and a new shape key will be added to the active object
-         with the active shape of the first object.
+   Mirror Shape Key
+      If your mesh is symmetrical, in *Object Mode*, you can mirror the shape keys on the X axis.
+      This will not work unless the mesh vertices are perfectly symmetrical.
+      Use the :menuselection:`Mesh --> Symmetrize` tool in *Edit Mode*.
+
+   Mirror Shape Key (Topology)
+      Same as *Mirror Shape Key* though it detects the mirrored vertices based on the topology of the mesh.
+      The mesh vertices do not have to be perfectly symmetrical for this action to work.
+
+   .. _bpy.ops.object.join_shapes:
+
+   Join as Shapes (Transfer Mix)
+      Transfer the current resulting shape from a different object.
+
+      Select the object to copy, then the object to copy into.
+      Use this action and a new shape key will be added to the active object
+      with the current mix of the first object.
+
+   .. _bpy.ops.object.shape_key_transfer:
+
+   Transfer Shape Key
+      Transfer the active shape key from a different object
+      regardless of its current influence.
+
+      Select the object to copy, then the object to copy into.
+      Use this action and a new shape key will be added to the active object
+      with the active shape of the first object.
+
+   .. _bpy.ops.object.shape_key_remove:
+
+   Delete All Shape Keys
+      Removes all Shape Keys and any effect that they had on the mesh.
+
+   Apply All Shape Keys
+      Saves the current visible shape to the mesh data and deletes all Shape Keys.
 
 .. _bpy.types.Key.use_relative:
 
