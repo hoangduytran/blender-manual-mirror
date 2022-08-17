@@ -16,6 +16,8 @@
 import sys
 import os
 
+from sphinx import version_info as sphinx_version
+
 # Sphinx errors out on single threaded builds see T86621
 sys.setrecursionlimit(2000)
 
