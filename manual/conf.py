@@ -518,6 +518,12 @@ def monkey_patch_babl_locale_dash():
     except ImportError:
         return
     CatalogInfo._write_mo_real = CatalogInfo.write_mo
-    CatalogInfo.write_mo = lambda self, locale: CatalogInfo._write_mo_real(self, locale.replace('-', '_'))
+    if sphinx_version >= (4, 3, 0):
+        CatalogInfo.write_mo = lambda self, locale, use_fuzzy: CatalogInfo._write_mo_real(
+            self, locale.replace('-', '_'))
+    else:
+        CatalogInfo.write_mo = lambda self, locale: CatalogInfo._write_mo_real(
+            self, locale.replace('-', '_'))
+
 
 monkey_patch_babl_locale_dash()
