@@ -267,3 +267,11 @@ Pack
 
 Caching
    Sound file is decoded and loaded into the RAM.
+
+Source Information
+   Displays information about the strip's media.
+
+   Samplerate
+      The number of samples per second the audio is encoded at.
+   Channels
+      The number of audio channels encoded into the audio stream.
