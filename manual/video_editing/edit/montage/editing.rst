@@ -488,6 +488,19 @@ Swap Data
    Swaps two sequence strips.
 
 
+Change
+======
+
+.. reference::
+
+   :Shortcut:  :kbd:`C`
+
+.. _bpy.ops.sequencer.change_scene:
+
+Change Scene
+   Change the scene assigned to the selected strip.
+
+
 Context Menu
 ============
 
