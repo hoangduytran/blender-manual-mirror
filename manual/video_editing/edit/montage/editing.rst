@@ -343,6 +343,9 @@ Delete
 
 Delete the selected strip(s).
 
+Delete Data
+   After removing the Strip, delete the associated data also.
+
 
 Separate Images
 ===============
