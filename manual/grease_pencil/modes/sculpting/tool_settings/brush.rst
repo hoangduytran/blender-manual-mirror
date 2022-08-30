@@ -54,6 +54,18 @@ Sculpt Strokes
 Direction
    The influence direction of the brush. This can be Add or Subtract.
 
+Advanced
+========
+
+Auto-Masking
+   Strokes
+      Affect only strokes under the cursor.
+
+   Material
+      Affect only the active material.
+
+   Layer
+      Affect only the active layer.
 
 Cursor
 ======
