@@ -58,7 +58,7 @@ Face
    This is useful for retopologizing.
 Volume
    Snaps to regions within the volume of the first object found below the mouse cursor.
-   Unlike the other options, this one controls the depth
+   Unlike the other options, this option controls the depth
    (i.e. Z coordinates in current view space) of the transformed element.
    By toggling *Snap Peel Object* (see below),
    target objects will be considered as a whole when determining the volume center.

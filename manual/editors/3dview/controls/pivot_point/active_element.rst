@@ -10,7 +10,7 @@ Active Element
    :Header:    |pivot-icon| :menuselection:`Pivot Point --> Active Element`
    :Shortcut:  :kbd:`Period`
 
-Places the pivot point at the active element, which is the one that was selected last.
+Places the pivot point at the active element, which is the element that was selected most recently.
 
 
 In Object Mode
@@ -18,7 +18,7 @@ In Object Mode
 
 When in Object Mode,
 rotation and scaling happen around the origin of the active object,
-which is the one with a lighter outline than the others.
+which is the element with a lighter outline than the others.
 
 The effect of the pivot point is shown in the image below, where the active object (the cube)
 remains in the same location while the others move.
@@ -33,7 +33,7 @@ In Edit Mode
 ============
 
 When in Edit Mode, rotation and scaling happen around the centerpoint of
-the active element, which is the one with a white outline.
+the active element, which is the element with a white outline.
 That centerpoint remains in the same location while everything else
 is transformed around it.
 

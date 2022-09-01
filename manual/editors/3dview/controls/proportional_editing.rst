@@ -20,7 +20,7 @@ Proportional Editing
    Proportional Editing popover.
 
 Proportional Editing is a way of transforming selected elements while also affecting
-nearby unselected ones. The farther away an unselected element is, the less it will be affected
+the nearby unselected elements. The farther away an unselected element is, the less it will be affected
 (hence the "proportional"). This feature is very useful for smoothly deforming dense meshes.
 
 .. note::
