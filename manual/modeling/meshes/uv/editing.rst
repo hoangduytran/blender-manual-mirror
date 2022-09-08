@@ -244,7 +244,6 @@ Pack Islands
    :Editor:    UV Editor
    :Mode:      Edit Mode
    :Menu:      :menuselection:`UV --> Pack Islands`
-   :Shortcut:  :kbd:`Ctrl-P`
 
 The *Pack Islands* tool generates an optimized UV layout with non-overlapping islands
 that tries to efficiently fill the :term:`Texture Space`.
@@ -273,7 +272,6 @@ Average Island Scale
    :Editor:    UV Editor
    :Mode:      Edit Mode
    :Menu:      :menuselection:`UV --> Average Island Scale`
-   :Shortcut:  :kbd:`Ctrl-A`
 
 Using the *Average Island Scale* tool, will scale each
 UV island so that they are all approximately the same scale.
@@ -289,7 +287,6 @@ Minimize Stretch
    :Editor:    UV Editor
    :Mode:      Edit Mode
    :Menu:      :menuselection:`UV --> Minimize Stretch`
-   :Shortcut:  :kbd:`Ctrl-V`
 
 The *Minimize Stretch* tool, reduces UV stretch by minimizing angles. This essentially relaxes the UVs.
 
