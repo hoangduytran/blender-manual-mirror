@@ -276,6 +276,11 @@ Average Island Scale
 Using the *Average Island Scale* tool, will scale each
 UV island so that they are all approximately the same scale.
 
+Non-Uniform
+   Reduces average texture stretching within islands by scaling the U and V axes independently.
+Shear
+   Reduces average texture shearing within islands by shearing the U axis.
+
 
 .. _bpy.ops.uv.minimize_stretch:
 
