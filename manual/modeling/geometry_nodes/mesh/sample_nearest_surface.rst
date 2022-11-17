@@ -32,8 +32,7 @@ Value
 
 Sample Position
    The position to start from when finding the closest location on the target mesh.
-   Used in the *Nearest Face Interpolated* and *Nearest* modes. By default, this is the same as
-   if the :doc:`/modeling/geometry_nodes/input/position` was connected.
+   By default, this is the same as if the :doc:`/modeling/geometry_nodes/input/position` was connected.
 
 
 Properties
