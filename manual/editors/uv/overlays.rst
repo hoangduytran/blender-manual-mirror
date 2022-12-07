@@ -21,6 +21,11 @@ Guides
 Grid
    Show the grid background and borders.
 
+.. _bpy.types.SpaceUVEditor.show_grid_over_image:
+
+Over Image
+   Allows the grid overlay to be shown on top of the image rather than behind it.
+
 .. _bpy.types.SpaceUVEditor.use_custom_grid:
 
 Fixed Subdivisions X, Y
