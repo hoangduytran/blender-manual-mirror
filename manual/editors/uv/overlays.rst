@@ -23,7 +23,7 @@ Grid
 
 .. _bpy.types.SpaceUVEditor.use_custom_grid:
 
-Fixed Subdivisions
+Fixed Subdivisions X, Y
    Displays a grid that does not depend on the zoom level to determine
    the number of subdivisions. The Custom Grid is useful in combination with
    :ref:`Absolute Grid Snap <bpy.types.ToolSettings.use_snap_uv_grid_absolute>`
