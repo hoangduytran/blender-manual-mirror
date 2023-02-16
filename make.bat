@@ -50,7 +50,6 @@ if "%1" == "help" (
 	echo Convenience targets provided for building docs
 	echo.
 	echo - livehtml [default]   to auto build on file changes and host on localhost
-	echo - clean                to delete all old build files
 	echo.
 	echo Translations
 	echo ------------
