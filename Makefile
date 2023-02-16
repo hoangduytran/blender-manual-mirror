@@ -11,7 +11,6 @@ Convenience targets provided for building docs.
 - singlehtml           to build the HTML web-site as a single page.
 - livehtml             to auto build on file changes on host on localhost.
 - epubpdf              to convert an epub file to PDF.
-- readme               to make a 'readme.html' file.
 - clean                to delete all old build files.
 
 Translations
@@ -111,12 +110,6 @@ epubpdf: .SPHINXBUILD_EXISTS
 		--pdf-page-margin-right 50 \
 		--pdf-page-margin-top 50 \
 		--pdf-page-margin-bottom 50 \
-
-readme:
-	@rst2html5 readme.rst > $(BUILDDIR)/readme.html
-	@echo "Build finished. The HTML page is in $(BUILDDIR)/readme.html."
-	@echo "To view, run:"
-	@echo "  "$(OPEN_CMD) $(shell pwd)"/$(BUILDDIR)/readme.html"
 
 check_syntax:
 	@python3 tools_rst/rst_check_syntax.py --long --title --kbd > rst_check_syntax.log
