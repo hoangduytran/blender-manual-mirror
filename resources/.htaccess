@@ -127,7 +127,7 @@ RedirectMatch "^/manual/{lang}/{version}/modeling/geometry_nodes/text/" "/manual
 
 RedirectMatch "^/manual/{lang}/{version}/modeling/geometry_nodes/vector/" "/manual/{lang}/{version}/modeling/geometry_nodes/utilities/vector/$1"
 
-RedirectMatch "^/manual/{lang}/{version}/modeling/geometry_nodes/utilities/field/accumulate_field.html" "/manual/{lang}/{version}/modeling/geometry_nodes/utilities/accumulate_field.html"
+RedirectMatch "^/manual/{lang}/{version}/modeling/geometry_nodes/utilities/accumulate_field.html" "/manual/{lang}/{version}/modeling/geometry_nodes/utilities/field/accumulate_field.html"
 RedirectMatch "^/manual/{lang}/{version}/modeling/geometry_nodes/utilities/field_at_index.html" "/manual/{lang}/{version}/modeling/geometry_nodes/utilities/field/evaluate_at_index.html"
 RedirectMatch "^/manual/{lang}/{version}/modeling/geometry_nodes/utilities/interpolate_domain.html" "/manual/{lang}/{version}/modeling/geometry_nodes/utilities/field/evaluate_on_domain.html"
 
