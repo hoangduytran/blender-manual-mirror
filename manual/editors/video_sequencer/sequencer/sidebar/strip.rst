@@ -165,6 +165,8 @@ Mono
    Mixdown all audio channels into a single one.
 
 
+.. _sequencer-strips-properties-time:
+
 Time
 ====
 

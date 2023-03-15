@@ -347,6 +347,20 @@ Delete Data
    After removing the Strip, delete the associated data also.
 
 
+.. _bpy.ops.sequencer.scene_frame_range_update:
+
+Update Scene Frame Range
+========================
+
+.. reference::
+
+   :Menu:      :menuselection:`Strip --> Update Scene Frame Range`
+
+For Scene strips only -- Updates the strip's :ref:`sequencer-strips-properties-time`
+properties to match the referenced scene's frame range.
+This operator should be used when the referenced scene's length is extended or shortened.
+
+
 .. _bpy.ops.sequencer.images_separate:
 
 Separate Images
