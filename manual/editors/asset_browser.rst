@@ -165,6 +165,7 @@ Using Assets
 As a general rule, **an asset can be used by dragging it from the Asset Browser to the desired location**.
 Objects and worlds can be dragged from the Asset Browser into the scene,
 Materials can be dragged onto the object that should use them.
+Geometry nodes can also be dragged onto objects to add a :doc:`/modeling/modifiers/generate/geometry_nodes`.
 The use of pose assets is different, and is described in :doc:`/animation/armatures/posing/editing/pose_library`.
 
 There are several things that can happen when an asset is used,
