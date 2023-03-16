@@ -48,7 +48,7 @@ The Source List region can be used for navigating and `Using Assets`_.
 
 .. _bpy.types.FileAssetSelectParams.asset_library_ref:
 
-Library
+Asset Library
    Shows the active :doc:`asset library </files/asset_libraries/index>`,
    and allows switching between asset libraries.
    The library ":ref:`Current File <asset-library-current-file>`" is special,
@@ -67,9 +67,11 @@ Copy Asset Bundle to Library
 
 Catalog
    Tree view that shows the :doc:`catalogs </files/asset_libraries/catalogs>` of the active asset library.
+   Selecting a catalog limits shown assets to assets only from the selected library.
 
    Catalogs can be renamed by double clicking on there name.
    Catalogs can also be nested inside others by dragging and dropping one catalog into another.
+   The "All" catalogs is built-in asset library that contains all other asset libraries.
 
 Add-ons and features like the :doc:`/animation/armatures/posing/editing/pose_library`
 can show custom panels here.
