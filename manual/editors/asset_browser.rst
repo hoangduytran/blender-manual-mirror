@@ -22,6 +22,9 @@ expanded over multiple upcoming releases.
       Build on top of the Asset Browser.
 
 
+.. _bpy.ops.asset.catalog_undo:
+.. _bpy.ops.asset.catalog_redo:
+
 Interface
 =========
 
