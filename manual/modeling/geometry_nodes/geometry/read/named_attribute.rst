@@ -36,4 +36,4 @@ Attribute
    The attribute data stored on the geometry.
 
 Exists
-   True if the attribute accessed by the node is present in connected context.
+   True if the attribute accessed by the node is present in the connected context.
