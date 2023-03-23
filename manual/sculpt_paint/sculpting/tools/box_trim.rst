@@ -54,6 +54,14 @@ Trim Mode
       Similar to *Union* but joins the mesh as separate geometry,
       without performing any Boolean operations with existing geometry.
 
+Shape Orientation
+   The method used to orientate the trimming shape.
+
+   :View:
+      Use the view to orientate the trimming shape.
+   :Surface:
+      Use the surface normal to orientate the trimming shape.
+
 Extrude Mode
    :Fixed:
       Aligns new geometry orthogonally for 90 degree angles in depth.
