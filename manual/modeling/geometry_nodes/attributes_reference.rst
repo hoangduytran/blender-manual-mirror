@@ -301,6 +301,17 @@ However, the attributes might be expected by Blender to have a certain type.
      - *Vector*
      - Used to create motion blur when rendering animations.
 
+   * - ``rest_position``
+     - *Vector*
+     - Holds the position of points or vertices from before a geometry is deformed procedurally.
+       Can be created automatically before :doc:`Shape Keys </animation/shape_keys/index>`and
+       :doc:`modifiers </modeling/modifiers/introduction>` are evaluated with the
+       `Add Rest Position <bpy.types.Object.add_rest_position_attribute>` option.
+
+   * - ``surface_uv_coordinate``
+     - *2D Vector*
+     - Used to describe curve attachment locations on a mesh surface, typically used for hair use cases.
+
 
 Custom Attributes
 =================
