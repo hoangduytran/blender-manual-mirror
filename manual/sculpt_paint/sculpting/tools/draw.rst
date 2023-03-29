@@ -27,17 +27,21 @@ Brush Settings
 VDM Displacement
 ================
 
-*Vector Dispalcement Maps* are supported for the *Draw* brush to insert complex & overhanging shapes.
+*Vector Displacement Maps* are supported for the *Draw* brush to insert complex & overhanging shapes.
 Unlike regular displacement, this uses all 3 color channels of the image
 to displace geometry in three directions instead of just one.
 
 .. figure:: /images/sculpt-paint_sculpt_vdm_example.png
    :width: 580px
 
-   Example of a horn VDM brush being used on the monkey object.
+   An example of various VDM brushes used on a smooth head from the offical demo file.
 
-To use this feature, enable :ref:`Vector Displacement <bpy.types.Brush.use_color_as_displacement>` in the texture panel.
-All :ref:`stroke methods <bpy.types.Brush.stroke_method>` are supported, but the recommended behavior is *Anchored*.
+`Download the demo file <https://www.blender.org/download/demo-files/#sculpting>`_ for more information and to try
+the feature out.
+
+To use this feature, enable :ref:`Vector Displacement <bpy.types.Brush.use_color_as_displacement>` in the texture
+panel. All :ref:`stroke methods <bpy.types.Brush.stroke_method>` are supported, but the recommended behavior is
+*Anchored*.
 
 Ideal images for vector displacement are open EXR files
 with :doc:`color clamping </render/materials/legacy_textures/colors>` disabled.
@@ -45,5 +49,3 @@ with :doc:`color clamping </render/materials/legacy_textures/colors>` disabled.
 .. note::
 
    This feature is only supported with Area Plane mapping.
-
-.. A demo file with examples, additional information and a premade baking setup can be found here.
