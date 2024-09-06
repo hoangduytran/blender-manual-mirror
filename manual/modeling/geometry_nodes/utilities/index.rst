@@ -20,6 +20,7 @@ General purpose nodes for modifying data.
    Field <field/index.rst>
    Math <math/index.rst>
    Rotation <rotation/index.rst>
+   Deprecated <deprecated/index.rst>
 
 -----
 
