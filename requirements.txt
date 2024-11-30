@@ -19,7 +19,7 @@ sphinx-basic-ng==1.0.0b2
 # Only for convenience, allows live updating while editing RST files.
 # Access by running:
 #   make livehtml
-sphinx-autobuild==2024.9.19
+sphinx-autobuild==2024.10.3
 
 # Required for spell-checking
 pyenchant
