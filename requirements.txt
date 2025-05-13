@@ -22,3 +22,6 @@ sphinx-autobuild==2021.3.14
 
 # Required for spell-checking
 pyenchant
+
+# Needed until workers have updated Python versions
+click<8.2.0
