@@ -21,6 +21,7 @@ var all_langs = {
 	"sk": "Sloven&#269;ina",
 	"sl": "Sloven&#353;&#269;ina",
 	"sr": "&#1089;&#1088;&#1087;&#1089;&#1082;&#1080;",
+	'sv': 'Svenska',
 	"uk": "Ukra&#1111;na",
 	"vi": "Ti&#x1EBF;ng Vi&#x1EC7;t",
 	"zh-hans": "&#x4E2D;&#x6587;(&#x7B80;&#x4F53;)",
