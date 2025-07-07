@@ -204,7 +204,10 @@ Usage Guides
 Useful Constructs
 =================
 
-- ``|BLENDER_VERSION|`` -- Resolves to the current Blender version.
+- ``|BLENDER_VERSION|``:
+  Inserts the current Blender version number automatically. e.g. "4.2".
+- ``|BLENDER_VERSION_LABEL|``:
+  Inserts the current Blender version label automatically. e.g. "4.2 LTS".
 - ``:abbr:`SSAO (Screen Space Ambient Occlusion)``` --
   Abbreviations display the full text as a tooltip for the reader.
 - ``:term:`Manifold``` -- Links to an entry in the :doc:`Glossary </glossary/index>`.
