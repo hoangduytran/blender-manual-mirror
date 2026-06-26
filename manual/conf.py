@@ -66,6 +66,8 @@ extensions = [
     "icons",
     "peertube",
     "reference",
+    # Keep translated key names with parenthesized English hints together.
+    "kbd_fix",
     "sphinx.ext.mathjax",
     "sphinx.ext.todo",
 ]
