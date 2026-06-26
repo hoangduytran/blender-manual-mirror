@@ -11,7 +11,7 @@ Duplicate and Rename
 
 Duplicates the selected bones and automatically renames the copies by replacing part of their names.
 
-This operator behaves similarly to :ref:`bpy.ops.armature.duplicate`,
+This operator behaves similarly to :ref:`bpy.ops.armature.duplicate_move`,
 preserving parenting and connectivity relationships between duplicated bones where possible.
 
 The duplicated bones become selected and can immediately be repositioned.

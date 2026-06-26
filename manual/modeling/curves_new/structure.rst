@@ -121,7 +121,8 @@ For more information, refer to the `Wikipedia page <https://en.wikipedia.org/wik
    If all control points have the same weight, their influences cancel out.
    Differences in weight cause the curve to move toward or away from specific control points.
 
-.. _curves-catmullrom
+
+.. _curves-catmullrom:
 
 Catmull Rom
 -----------

@@ -1,4 +1,5 @@
 .. _bpy.types.Bone.use_deform:
+.. _bpy.types.EditBone.use_deform:
 
 ******
 Deform
