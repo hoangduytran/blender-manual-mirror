@@ -18,9 +18,8 @@ Inputs
 Image
    Standard color input.
 Size
-   The optional Size input will be multiplied with the X and Y blur radius values.
+   The horizontal and vertical blur radius, in pixels.
    It also accepts a value image, to control the blur radius with a mask.
-   The values should be mapped between (0 to 1) for an optimal effect.
 Type
    The difference between the types is in the way they handle sharp edges,
    smooth gradients and preserve the highs and the lows.
