@@ -10,7 +10,7 @@ Mesh Bevel Node
    :alt: Mesh Bevel node.
 
 The *Mesh Bevel Node* allows you to bevel edges or vertices of a Mesh geometry. 
-This node is very similar to the :doc:`Boolean modifier </modeling/modifiers/generate/bevel>` but
+This node is very similar to the :doc:`Bevel modifier </modeling/modifiers/generate/bevel>` but
 with some differences to fit better with the Geometry Nodes way of doing things.
 Some modifier options are omitted because they can be done with external helper node groups.
 
