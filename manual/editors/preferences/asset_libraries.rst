@@ -4,62 +4,120 @@
 Asset Libraries
 ***************
 
-Name and on-drive directory paths of asset libraries.
-To make Blender aware of an asset library, add it to this list.
-The name is for your reference only, and will appear in asset library selectors.
-The path should point to the location of the asset library.
+Asset Libraries define locations where Blender searches for assets.
+
+Asset libraries can point to directories on the local file system or to
+online asset repositories. Once added, assets contained in those libraries
+are available in the :doc:`/editors/asset_browser` and other asset selectors.
 
 .. figure:: /images/asset_browser-asset_library_preferences.png
 
-   Name and Location of asset libraries in the Preferences.
+   Name and location of asset libraries in the Preferences.
 
-To create a new asset library, just create an empty directory and add it to the :ref:`ui-list-view`.
-Any asset from any blend-file contained in that directory
-(or subdirectories thereof) will appear in the :doc:`/editors/asset_browser`.
+To create a local asset library, create an empty directory and add it to the
+:ref:`ui-list-view`. Any asset contained in blend-files within that directory
+or its subdirectories will automatically become available in the Asset Browser.
+
+The library name is only used within Blender to identify the asset library
+and can be changed at any time.
+
+
+Options
+=======
+
+.. _bpy.types.UserAssetLibrary.path:
+
+Path
+   Directory containing the asset library.
+
+   Only available for local asset libraries.
+
+.. _bpy.types.UserAssetLibrary.remote_url:
+
+URL
+   URL of the online asset library.
+
+   Only available for online asset libraries.
 
 .. _bpy.types.UserAssetLibrary.import_method:
 
 Import Method
-   Determines how data is managed when an asset is imported,
-   unless overridden by the :ref:`Asset Browser <bpy.types.FileAssetSelectParams.import_method>`.
+   Default method used when importing assets from this library.
+
+   This setting is used unless overridden by the
+   :ref:`Asset Browser <bpy.types.FileAssetSelectParams.import_method>`.
+
+   This option is not available for built-in asset libraries.
 
    :ref:`Link <bpy.ops.wm.link>`
-      The asset will be linked to the current blend-file, and thus be read-only.
-      Later changes to the asset file will be reflected in all files that link it in.
+      Links the asset into the current blend-file.
 
-      *Note, *Link* is not supported for online asset libraries.*
+      Linked assets remain read-only and continue to reference the original
+      asset library. Changes made to the source asset are reflected in all
+      files that link it.
+
+      .. note::
+
+         Linking is not supported for online asset libraries.
+
    :ref:`Append <bpy.ops.wm.append>`
-      The asset and all its dependencies will be appended to the current file.
-      Dragging a material into the scene three times will result in three independent copies.
-      Dragging an object into the scene three times will also result in three independent copies.
+      Creates an independent copy of the asset and all of its dependencies.
 
-      "Dependencies" in this case means everything the asset refers to.
-      For an object, this can be its mesh and materials, but also other objects
-      used by modifiers, constraints, or drivers.
+      Every imported asset is appended as new data, even if the same asset
+      has already been imported previously.
 
-      Since the file now has its own copy of the asset, later changes to
-      the asset file will not be reflected in the file it's appended to.
+      Dependencies include any data referenced by the asset, such as meshes,
+      materials, node groups, objects, constraints, or drivers.
+
+      Later changes made to the original asset library are not reflected in
+      the appended copy.
+
    Append (Reuse Data)
-      *Specific to the Asset Browser*.
+      *Specific to the Asset Browser.*
 
-      The first time an asset is used, it will be appended, including its dependencies,
-      just like described previously. However, Blender will keep track of where it originated,
-      and the next time the asset is used, as much data as possible will be reused.
-      Dragging a material into the scene three times will only load it once,
-      and just assign the same material three times.
-      Dragging an object into the scene three times will create three copies of the object,
-      but all copies will share their mesh data, materials, etc.
+      Behaves like *Append* the first time an asset is imported.
 
-      Since the file now has its own copy of the asset, later changes to
-      the asset file will not be reflected in the file it's appended to.
+      Blender remembers the source of imported assets and reuses compatible
+      data on subsequent imports whenever possible.
+
+      For example, importing the same material multiple times reuses the
+      existing material instead of creating duplicates, while importing an
+      object multiple times creates new object instances that share the same
+      mesh, materials, and other reusable data.
+
+      Like *Append*, later changes to the original asset library are not
+      reflected in the current blend-file.
+
    Pack
-      Imports the asset as *linked* data and immediately packs it into the current blend-file.
-      This ensures that the asset remains available even if the original library data is modified
-      or becomes unavailable.
+      Imports the asset as linked data and immediately packs it into the
+      current blend-file.
 
-      Useful for maintaining self-contained files that do not rely on external asset library paths.
+      This creates a self-contained blend-file while preserving the behavior
+      of linked assets during import.
+
+      Useful when sharing files or archiving projects that should not depend
+      on the original asset library.
 
 .. _bpy.types.UserAssetLibrary.use_relative_path:
 
 Relative Path
-   Use relative path when linking assets from this asset library.
+   Stores the library location as a relative path whenever possible.
+
+   This is useful when the asset library resides alongside a project and may
+   be moved together with it.
+
+
+Essentials Library
+==================
+
+The built-in *Essentials* asset library provides assets that are included
+with Blender.
+
+.. _bpy.types.PreferencesAssetLibraries.use_online_essentials:
+
+Include Online Essentials
+   Includes additional assets hosted online in the *Essentials* library.
+
+   Downloading these assets requires
+   :ref:`Online Access <bpy.types.PreferencesSystem.use_online_access>`
+   to be enabled in the Preferences.
