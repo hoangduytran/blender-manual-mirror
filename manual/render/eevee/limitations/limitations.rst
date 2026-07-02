@@ -13,7 +13,6 @@ Attributes and Properties
 =========================
 
 - Only 14 attributes from Geometry Nodes are supported in a material
-- Only 8 custom object properties are supported in a material
 
 
 Cameras
