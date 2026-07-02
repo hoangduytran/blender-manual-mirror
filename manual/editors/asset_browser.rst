@@ -44,7 +44,7 @@ Import Method
    This option can be found in the center of the Asset Browser header
    (when an asset library other than *Current File* or *Essentials* is selected):
 
-   :Follow Preferences:
+   :Follow Asset or Preferences:
       Use the import method set in the :ref:`File Path Preferences <bpy.types.UserAssetLibrary.import_method>`.
    :Link:
       The asset will be :ref:`linked <bpy.ops.wm.link>` to the current blend-file, and thus be read-only.
@@ -278,6 +278,21 @@ the search term will also be shown.
 
    Depending on the current mode of the object and the selected asset types, more panels may be shown.
    For example, see :doc:`/animation/armatures/posing/editing/pose_library`.
+
+
+Import
+^^^^^^
+
+.. _bpy.types.AssetMetaData.use_preferred_import_method:
+
+Preferred Method
+   Uses the asset's preferred import method when
+   :ref:`Follow Asset or Preferences <bpy.types.FileAssetSelectParams.import_method>`
+   is selected in the Asset Browser.
+
+   This allows assets to specify the import method that best suits their
+   intended use. For example, a base mesh for sculpting can specify that it
+   should always be appended so it is immediately editable after import.
 
 
 .. _assets-using:
