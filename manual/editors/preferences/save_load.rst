@@ -116,8 +116,10 @@ Default To -- Load UI
 .. _bpy.types.PreferencesFilePaths.use_tabs_as_spaces:
 
 Text Files -- Tabs as Spaces
-   Entering :kbd:`Tab` in the Text Editor adds the appropriate number of spaces
-   instead of using characters.
+   Sets the default indentation mode for new Text Editor data-blocks.
+   When enabled, pressing :kbd:`Tab` inserts spaces instead of a tab character.
+   Individual text files can override this default in the Text Editor sidebar
+   under :menuselection:`Properties --> Indentation`.
 
 
 .. _bpy.ops.preferences.autoexec_path:
