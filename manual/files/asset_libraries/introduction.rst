@@ -96,6 +96,11 @@ copy instead of downloading it again.
 
 See :ref:`local-cache-dir` for more information about the cache location.
 
+.. tip::
+
+   Downloading can be canceled by clicking the *Downloading Asset(s)*
+   button in the :doc:`/interface/window_system/status_bar`.
+
 
 Limitations
 -----------
