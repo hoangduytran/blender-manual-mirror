@@ -113,6 +113,29 @@ Sort By
       The catalogs are in order of the flattened catalog hierarchy.
 
 
+.. _bpy.types.FileAssetSelectIDFilter:
+
+Filter
+^^^^^^
+
+Controls which asset types are displayed when browsing an asset library.
+
+.. _bpy.types.FileAssetSelectParams.asset_access:
+
+Access
+   Filters assets based on whether they are available locally or must be
+   downloaded from an online asset library.
+
+   :Online and Offline:
+      Shows both downloaded assets and assets that are available online.
+   :Online Only:
+      Shows only assets that are available online and have not yet been
+      downloaded.
+   :Offline Only:
+      Shows only assets that are already available locally, either from
+      local asset libraries or previously downloaded online assets.
+
+
 Main Region
 -----------
 
