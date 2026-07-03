@@ -15,5 +15,6 @@ and vignetting, all of which help replicate the subtleties of physical camera sy
    :maxdepth: 1
 
    chromatic_aberration.rst
+   film_grain.rst
    sensor_noise.rst
    vignette.rst

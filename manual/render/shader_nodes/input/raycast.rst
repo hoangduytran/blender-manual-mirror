@@ -20,6 +20,16 @@ It doesn't take transparency into account to discard hits.
 :guilabel:`EEVEE Only`
 The Raycast node has the usual :ref:`Screen-Space Effects limitations<eevee-limitations-screenspace>`.
 
+.. tip::
+
+   Objects can be excluded from ray cast intersections by disabling
+   :ref:`Raycast <bpy.types.Object.visible_raycast>` in the object's
+   visibility settings.
+
+   This can be useful to prevent helper geometry or other objects from
+   being detected by the Raycast node.
+
+
 Inputs
 ======
 

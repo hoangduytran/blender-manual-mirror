@@ -24,6 +24,7 @@ Opacity
    Toggle :doc:`onion skinning </grease_pencil/properties/onion_skinning>`.
 :bl-icon:`hide_off` / :bl-icon:`hide_on`
    Toggle layer visibility in the viewport and in render.
+   Use :kbd:`Ctrl-LMB` to solo the selected channel.
 :bl-icon:`checkbox_hlt` / :bl-icon:`checkbox_dehlt` Show all keyframes
    When unchecked, the layer gets frozen in its current state, and moving to
    a different keyframe will no longer change its appearance.
