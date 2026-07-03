@@ -22,10 +22,10 @@ Mesh
    Standard mesh input.
 
 Selection
-   A selection of which edges to bevel (if Affect Type is Edges)
-   or which vertices to bevel (if Affect Type is Vertices).
+   A selection of which edges to bevel (if Affect Kind is Edges)
+   or which vertices to bevel (if Affect Kind is Vertices).
 
-Affect Type
+Affect Kind
    :Edges:
       Selected edges will be beveled.
 
