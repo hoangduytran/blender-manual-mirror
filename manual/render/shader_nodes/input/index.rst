@@ -26,6 +26,7 @@
    particle_info.rst
    point_info.rst
    raycast.rst
+   scene_time.rst
    tangent.rst
    texture_coordinate.rst
    uv_map.rst
