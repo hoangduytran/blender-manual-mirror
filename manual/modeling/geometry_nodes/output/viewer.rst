@@ -60,12 +60,16 @@ When enabled, the current evaluated value is shown beside the socket input, maki
 to inspect and debug data flow without connecting a Viewer node.
 
 This feature is available for scalar and small data types, such as *Float*, *Integer*, *Boolean*, or *Vector* sockets.
-The displayed value updates interactively as the node tree evaluates or parameters change.
+
+When viewing data-block values, the Viewer node displays the data-block's name along with its
+icon, making it easy to identify the referenced data-block.
+
+The displayed values update interactively as the node tree evaluates or parameters change.
 
 .. note::
 
    Complex data types such as geometry or grids cannot be previewed this way and must be visualized
-   using the Viewer node or the Spreadsheet editor.
+   using the Viewer node or the Spreadsheet Editor.
 
 
 Attribute Field Visualization
