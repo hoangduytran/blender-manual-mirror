@@ -21,6 +21,7 @@
 .. toctree::
    :maxdepth: 1
 
+   get_geometry_components.rst
    separate_components.rst
    separate_geometry.rst
 
