@@ -264,7 +264,7 @@ In *Object Mode*, select the child/children and then the parent object.
 that defines a single point, or select three vertices that define an area
 (the three vertices do not have to form a complete face;
 they can be any three vertices of the parent object),
-and then press :kbd:`Ctrl-P` and confirm.
+and then press :kbd:`Ctrl-P` to set the vertex parent.
 
 At this point, if a single vertex was selected,
 a relationship/parenting line will be drawn from the vertex to the child/children. If three
