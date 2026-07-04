@@ -13,3 +13,4 @@ Nodes to manipulate lists.
    filter_list.rst
    get_list_item.rst
    list_length.rst
+   sort_list.rst
