@@ -26,7 +26,7 @@ the node is evaluated. This means the unused input is not computed.
 
 .. seealso::
 
-   The :doc:`/menu_switch` and :doc:`/index_switch`
+   The :doc:`menu_switch` and :doc:`index_switch`
    can be used to switch between an arbitrary amount of inputs.
 
 
