@@ -10,6 +10,7 @@ Nodes for working with data stored per object element, e.g. vertex groups.
 
    attribute_statistic.rst
    domain_size.rst
+   get_attribute_names.rst
 
 -----
 
