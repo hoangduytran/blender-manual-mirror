@@ -295,3 +295,42 @@ The compositor searches for the active *Group Output* node, if none was found, i
 active *Viewer* node. If none was found, the compositor doesn't run altogether.
 Consequently, note that adding a *Viewer* node will have no effect on the viewport render if there
 is a *Group Output* node, since the priority is given to *Group Output* nodes.
+
+
+.. _compositor-socket-inspection:
+
+Socket Inspection
+=================
+
+.. figure:: /images/compositing_socket-inspection.png
+   :align: center
+
+   Socket Inspection.
+
+Socket inspection displays information about the image contained in a socket
+after the node tree has been evaluated.
+
+Rather than displaying the image itself, the inspection panel summarizes
+properties of the image, making it easier to verify intermediate results and
+debug node trees.
+
+The following information is displayed:
+
+- **Resolution** -- Displays the image resolution. If the image has a display
+  window, both the data window and display window are shown instead.
+- **Transform** -- Displays the image transform. If no transformation has been
+  applied, *Identity* is shown. Otherwise, the translation, rotation, and scale
+  are displayed.
+- **Sampling** -- Displays the interpolation and sampling modes used by the image.
+- **Precision** -- Indicates whether the image is stored using *Full* or *Half*
+  precision.
+
+.. note::
+
+   Socket values are only available after the node tree has been evaluated.
+   Nodes that do not contribute to the final output are generally not evaluated
+   and therefore have no inspection data available.
+
+.. note::
+
+   Pixel sockets are currently not supported.
