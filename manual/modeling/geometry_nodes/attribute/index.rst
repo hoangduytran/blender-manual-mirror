@@ -22,3 +22,4 @@ Nodes for working with data stored per object element, e.g. vertex groups.
    remove_named_attribute.rst
    rename_attribute.rst
    store_named_attribute.rst
+   transfer_attributes.rst
