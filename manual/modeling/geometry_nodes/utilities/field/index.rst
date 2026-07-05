@@ -13,3 +13,10 @@
    field_average.rst
    field_min_max.rst
    field_variance.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
+   principal_components.rst
