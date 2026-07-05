@@ -64,6 +64,9 @@ This feature is available for scalar and small data types, such as *Float*, *Int
 When viewing data-block values, the Viewer node displays the data-block's name along with its
 icon, making it easy to identify the referenced data-block.
 
+For :doc:`Collections </scene_layout/collections/index>`, the assigned
+:ref:`color tag <scene_layout-collections-color-tagging>` is also displayed.
+
 The displayed values update interactively as the node tree evaluates or parameters change.
 
 .. note::
