@@ -15,7 +15,7 @@ Bundles can store arbitrary data alongside geometry, allowing information to
 be passed between node groups, modifiers, and objects without modifying the geometry itself.
 
 The bundle stored on a geometry can later be retrieved with the
-:doc:`Get Geometry Bundle </modeling/geometry_nodes/bundles/get_geometry_bundle>` node.
+:doc:`Get Geometry Bundle </modeling/geometry_nodes/geometry/read/get_geometry_bundle>` node.
 
 
 Inputs
