@@ -30,6 +30,7 @@
 
    field_to_grid.rst
    clip_grid.rst
+   deactivate_voxels.rst
    grid_dilate_erode.rst
    grid_mean.rst
    grid_median.rst
