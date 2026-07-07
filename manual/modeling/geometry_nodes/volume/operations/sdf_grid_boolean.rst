@@ -24,15 +24,19 @@ Inputs
 ======
 
 Grid :guilabel:`Intersect`
-   The input grid used for intersection operations.
+   The input grids used for intersection operations.
    Only the regions common to all intersecting grids will remain active.
 
-Grid 1 :guilabel:`Union` :guilabel:`Difference`
-   The first input grid for boolean combination.
-   Acts as the base grid to which the second grid is added or subtracted.
+Grid :guilabel:`Union`
+   The input grids used for union operations.
+   All grid interior regions are added.
 
-Grid 2 :guilabel:`Union` :guilabel:`Difference`
-   The second input grid used to modify *Grid 1* according to the selected operation.
+Grid 1 :guilabel:`Difference`
+   The first input grid for boolean combination.
+   Acts as the base grid from which the secondary grids are subtracted.
+
+Grid 2 :guilabel:`Difference`
+   The secondary input grids subtracted from *Grid 1*.
 
 
 Properties

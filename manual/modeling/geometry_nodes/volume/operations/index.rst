@@ -35,4 +35,5 @@
    grid_mean.rst
    grid_median.rst
    prune_grid.rst
+   grid_topology_boolean.rst
    voxelize_grid.rst
