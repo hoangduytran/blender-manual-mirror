@@ -35,7 +35,7 @@ The following nodes are provided for working with bundles:
 Bundle nodes allow adding or removing an arbitrary number of sockets,
 with flexible type support.
 
-Bundles can be attached to geometry using get/set geometry bundle nodes. This can used to pass
+Bundles can be attached to geometry using get/set geometry bundle nodes. These can be used to pass
 bundled data between modifiers and objects.
 
 .. toctree::
