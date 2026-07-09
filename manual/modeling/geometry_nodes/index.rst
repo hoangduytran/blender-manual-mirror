@@ -59,7 +59,7 @@ Node Types
    :maxdepth: 3
    :titlesonly:
 
-   simulation/simulation_zone.rst
+   simulation/index.rst
 
 -----
 
