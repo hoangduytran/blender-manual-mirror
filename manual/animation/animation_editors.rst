@@ -219,6 +219,15 @@ Play In
 Show -- Subframes
    Display and allow setting fractional frame values for the current frame.
 
+.. _bpy.types.SpaceSequenceEditor.show_scrubbing_region:
+
+Show -- Scrubbing Region :guilabel:`Video Sequencer`
+   Show a dedicated region above the timeline for scrubbing through the
+   entire playback range without changing the current timeline zoom level.
+
+   Like other editor regions, the Scrubbing Region can be hidden by dragging
+   its boundary toward the edge of the editor.
+
 Set Start/End Frame
    Set the scene's start/end frame to the current frame.
    If the Preview Range is active (see `Frame Controls`_), that one is changed instead.

@@ -64,6 +64,11 @@ Font
       Use an italicized font face with a slanted visual appearance.
 Size
    Size of the text.
+Line Spacing
+   Controls the vertical spacing between lines of text.
+
+   By default, the spacing is specified as a factor of the text size.
+   Press :bl-icon:`fixed_size` to switch to an absolute spacing using a pixel value.
 Color
    The text color.
 

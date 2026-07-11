@@ -76,6 +76,11 @@ Proxy
 
 ----------
 
+Use Timecode :kbd:`Ctrl-T`
+   Shows seconds instead of frames on the time axis.
+
+----------
+
 Sequence Render Image
    Show the current frame preview as a Render Result where you can save it as an image file.
 Sequence Render Animation
