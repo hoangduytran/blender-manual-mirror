@@ -35,3 +35,4 @@ Nodes to manipulate strings.
    :maxdepth: 1
 
    special_characters.rst
+   tag_filter.rst
