@@ -2,9 +2,12 @@ import argparse
 
 import sys
 import os
-import requests
 
 from pathlib import Path
+from urllib.parse import quote
+
+import requests
+
 from make_utils import check_output
 
 from typing import (
@@ -18,9 +21,11 @@ def parse_arguments() -> argparse.Namespace:
     return parser.parse_args()
 
 
-repo_url_base = "https://projects.blender.org/blender/blender-manual-translations/"
-repo_url_browse = "src/branch/main/"
 repo_url_git = "https://projects.blender.org/blender/blender-manual-translations.git"
+repo_api_url_base = "https://projects.blender.org/api/v1/repos/"
+repo_api_repo = "blender/blender-manual-translations"
+repo_api_contents = "contents"
+repo_api_ref = "main"
 
 
 def run_git(path: Path, commands: List, exit_on_error: bool = True) -> str:
@@ -46,14 +51,28 @@ def get_lang_code():
     return str(input())
 
 
-def check_lang_exists(lang: str) -> bool:
-    url = repo_url_base + repo_url_browse + lang
+def get_lang_api_url(lang: str) -> str:
+    lang = quote(lang.strip().lower(), safe="")
+    return f"{repo_api_url_base}{repo_api_repo}/{repo_api_contents}/{lang}?ref={repo_api_ref}"
 
-    url_status = requests.get(url).status_code
+
+def check_lang_exists(lang: str) -> bool:
+    url = get_lang_api_url(lang)
+
+    try:
+        url_status = requests.get(url, timeout=10).status_code
+    except requests.RequestException as ex:
+        print(f"Could not check language code {lang!r}: Exception:{ex}")
+        return False
+
+    if url_status == 404:
+        print(f"Status: {url_status}. No translation files found for language code {lang!r}, at URL: {url}.")
+        return False
 
     if url_status == 200:
         return True
 
+    print(f"Unexpected response while checking language code {lang!r}: HTTP {url_status}, tried URL: {url}")
     return False
 
 
@@ -74,10 +93,9 @@ if __name__ == "__main__":
         print("locale directory already exists quitting")
         sys.exit(1)
 
-    lang = get_lang_code()
+    lang = get_lang_code().strip().lower()
 
     if not check_lang_exists(lang):
-        print("The translation files for that language do not exist")
         sys.exit(1)
 
     partial_checkout(lang)
