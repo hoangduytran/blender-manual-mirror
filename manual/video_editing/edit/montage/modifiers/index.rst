@@ -22,6 +22,30 @@ or you can use them within an :doc:`Adjustment Layer </video_editing/edit/montag
 strip, making them apply to several media strips in one go.
 
 
+Modifier Assets
+===============
+
+Compositor node groups marked as :doc:`Assets </editors/asset_browser>`
+can be used as strip modifiers.
+
+Asset modifiers appear in the :menuselection:`Add` menu alongside Blender's
+built-in modifiers. Assets assigned to :doc:`Catalogs
+</files/asset_libraries/catalogs>` are organized into matching submenus.
+
+This makes it possible to build reusable modifier libraries and share custom
+effects across multiple projects.
+
+.. tip::
+
+   To make a compositor node group available as a strip modifier,
+   mark it as an asset by right-clicking its data-block selector and choosing
+   :menuselection:`Mark as Asset`.
+
+   After saving the file, the asset will appear in the modifier
+   :menuselection:`Add` menu. Existing assets created in older Blender versions
+   may need to be re-saved before they become available.
+
+
 Common Options
 ==============
 
@@ -66,7 +90,9 @@ Extras
 Types
 =====
 
-Currently, the following modifiers are supported:
+Strip modifiers include built-in image and sound modifiers as well as custom
+compositor modifier assets.
+
 
 Image Modifiers
 ---------------
@@ -83,6 +109,15 @@ Image Modifiers
    mask.rst
    tone_map.rst
    white_balance.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 2
+   :class: toc-list
+
+   camera_lens_effects/index.rst
+   creative/index.rst
 
 
 Sound Modifiers

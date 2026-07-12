@@ -8,18 +8,23 @@ Film Grain Node
    :align: right
    :alt: Film Grain node.
 
-The *Film Grain* node simulates the appearance of photographic film by
+.. --- modifier-intro-start ---
+
+The *Film Grain* simulates the appearance of photographic film by
 adding realistic grain and subtle optical characteristics to an image.
 
 Several presets are provided to emulate the look of different film gauges
 and stocks, while custom controls allow fine adjustment of the grain characteristics.
 
+.. --- modifier-intro-end ---
 
 Inputs
 ======
 
 Image
    Standard color input.
+
+.. --- modifier-options-start ---
 
 Factor
    Blends the generated film grain with the input image.
@@ -123,6 +128,8 @@ Luma Bias
 
 Texture Scale
    Scales the size of the generated grain texture.
+
+.. --- modifier-options-end ---
 
 
 Outputs
