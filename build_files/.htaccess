@@ -376,3 +376,5 @@ RedirectMatch "^/manual/{lang}/{version}/addons/rigging/rigify/(.*)" "/manual/{l
 RedirectMatch "^/manual/{lang}/{version}/addons/system/ui_translations.html" "/manual/{lang}/{version}/addons/ui_translations.html"
 
 RedirectMatch "^/manual/{lang}/{version}/sculpt_paint/sculpting/introduction/general.html" "/manual/{lang}/{version}/sculpt_paint/sculpting/index.html"
+
+RedirectMatch "^/manual/{lang}/{version}/video_editing/edit/montage/strip_modifiers.html" "/manual/{lang}/{version}/video_editing/edit/montage/modifiers/index.html"
