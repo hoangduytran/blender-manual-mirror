@@ -45,11 +45,11 @@ Force Space :guilabel:`Field`
 
 Closure :guilabel:`Closure`
    A closure that computes the force field on demand.
-   
+
    It has a *Geometry* input and output, receiving the geometry to which the force is applied.
    The output geometry may be modified, but any changes are temporary and only used during field
    evaluation. The input geometry is in simulation space.
-   
+
    It receives a *To World Transform* matrix which transforms from simulation space to world space.
 
    The closure must output a *Selection* boolean field defining the points to which force is applied

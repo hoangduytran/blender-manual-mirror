@@ -134,7 +134,7 @@ Scale X, Y, Z
    Additional scaling factor to apply to the custom shape.
 
 Override Transform
-   A bone that defines the display transform of the custom shape. 
+   A bone that defines the display transform of the custom shape.
    The shape defined in *Custom Object* will be placed at the location and orientation of that bone.
    This is only visual and does not affect the transform values of this bone.
 

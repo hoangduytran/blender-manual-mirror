@@ -4,7 +4,7 @@
 Bone Roll
 *********
 
-The bone roll is a part of a bone's :term:`rest pose` defining its default rotation around the bone's length. 
+The bone roll is a part of a bone's :term:`rest pose` defining its default rotation around the bone's length.
 You can control the bone roll in *Edit Mode*.
 
 .. _bpy.ops.armature.calculate_roll:
@@ -23,7 +23,7 @@ Automatically align the roll of all selected bones to various points of referenc
 Axis Orientation
    Local (X, Z, -X, -Z) Tangent
       Align the roll of the selected bones relative to the axis defined by the bones and their parent.
-      If a bone has no parent, use the first child as a point of reference instead, 
+      If a bone has no parent, use the first child as a point of reference instead,
       even if that child is not connected and another one is.
       For bones with no parent and no children, this option does nothing.
 

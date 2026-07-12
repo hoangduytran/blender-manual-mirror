@@ -29,7 +29,7 @@ Attribute Name
    The default attribute name is position.
 
 Data Type
-   Data type of the sampled attribute. 
+   Data type of the sampled attribute.
    The type will determine which components will be used for transforming the constraint object.
 
    :Vector:
@@ -57,7 +57,7 @@ Domain
       Instance domain from an Instance.
 
 Sample Index
-   Index of the geometry element to sample the attribute. 
+   Index of the geometry element to sample the attribute.
    Index values are clamped to what is present on the target geometry.
 
 Mix Mode

@@ -20,8 +20,8 @@ The *Sample Index* node retrieves values from a source geometry at a specific in
 
 .. tip::
 
-   The Point domain is shared by different components (Mesh, Point Cloud, Curve). 
-   This node simply samples the *Value* from the first non-empty component, 
+   The Point domain is shared by different components (Mesh, Point Cloud, Curve).
+   This node simply samples the *Value* from the first non-empty component,
    checked in the order: Mesh, Point Cloud, Curve.
    The :doc:`/modeling/geometry_nodes/geometry/operations/separate_components` can be used to sample directly from a
    specific component.

@@ -24,7 +24,7 @@ Add Object Tools
 .. figure:: /images/sculpt-paint_sculpting_toolbar_primitives.png
    :align: right
 
-General interactive tools to contruct primitive geometry directly in Sculpt Mode. 
+General interactive tools to contruct primitive geometry directly in Sculpt Mode.
 
 .. warning::
 

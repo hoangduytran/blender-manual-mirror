@@ -243,11 +243,11 @@ For this there are two options.
 
 Replace Action
    Looks at the action of the active object and swaps it on any object
-   that is directly animated by it. This excludes usage in NLA strips 
+   that is directly animated by it. This excludes usage in NLA strips
    and action constraints. It can be found in the :ref:`Action Editor <bpy.ops.anim.replace_action>`.
 
 Remap Users
-   Right click the action in the outliner and choose :ref:`Remap Users <bpy.ops.outliner.id_operation>`. 
+   Right click the action in the outliner and choose :ref:`Remap Users <bpy.ops.outliner.id_operation>`.
    This will replace the usage on *all* users, including NLA strips and action constraints. Use with caution.
 
 

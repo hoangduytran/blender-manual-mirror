@@ -66,7 +66,7 @@ Configure the internal physical properties of cloth geometry.
 
 Mass
    Mass attribute of curve points.
-   
+
    This value does not have to be "realistic" based on physical cloth weight, but should be
    considered an influence factor for external forces. Extreme values can lead to numerical
    instability.
@@ -74,7 +74,7 @@ Mass
 Friction
    Coefficient for static and dynamic friction. Small friction coefficients model a slippery
    material while larger values create sticky behavior.
-   
+
    The exact meaning of the coefficient can be understood as the tangent of the *friction angle*
    (`wikipedia <https://en.wikipedia.org/wiki/Friction#Role_of_the_normal_force>`__):
    When the angle of the contact force to the surface normal is small the contact is in
@@ -180,7 +180,7 @@ Insufficient constraint iterations
 The more complex a simulation setup becomes, the more *Constraint Iterations* the solver needs to
 arrive at a correct solution. A simulation with insufficient iterations can look physically
 plausible, but can exhibit much more stretching and bending than should be expected.
-  
+
 Check the *Residual Error* value to confirm that the solution is accurate enough. The value should
 ideally not exceed 1.
 

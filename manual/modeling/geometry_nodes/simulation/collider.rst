@@ -19,7 +19,7 @@ Geometry
 Deforming
    Should be enabled if the collider geometry is deforming over time.
    In this case each point of the collider is interpolated individually.
-   
+
    If the geometry is not deforming then this option can be disabled for improved performance.
    This is also possible when the surface is transformed as an instance without changing local
    positions.
@@ -44,7 +44,7 @@ Margin
 Friction
    Coefficient for static and dynamic friction. Small friction coefficients model a slippery
    material while larger values create sticky behavior.
-   
+
    The exact meaning of the coefficient can be understood as the tangent of the *friction angle*
    (`wikipedia <https://en.wikipedia.org/wiki/Friction#Role_of_the_normal_force>`__):
    When the angle of the contact force to the surface normal is small the contact is in

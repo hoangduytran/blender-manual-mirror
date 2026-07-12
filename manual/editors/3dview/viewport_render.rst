@@ -74,7 +74,7 @@ Render a Still Image
 Render an Animation
    To render an animation, use :menuselection:`3D Viewport --> View --> Render Playblast`.
 Render Keyframes
-   To render an animation, but only those frames that have a keyframe, use 
+   To render an animation, but only those frames that have a keyframe, use
    :menuselection:`3D Viewport --> View --> Render Playblast on Keyframes`. This only renders those frames for which
    the selected objects have an animation key. The other frames are still written to the output, but will simply
    repeat the last-rendered frame.
