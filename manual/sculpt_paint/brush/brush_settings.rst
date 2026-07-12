@@ -50,6 +50,8 @@ Size
 
          For the curve controls see: :ref:`Curve widget <ui-curve-widget>`.
 
+.. _bpy.types.Brush.use_locked_size:
+
 Size Unit :guilabel:`Sculpt Mode`
    Controls how the brush *Size* is measured.
 
