@@ -3,11 +3,50 @@
 Using The Compositor
 ********************
 
-The compositor can be used directly inside the Video Sequencer through
-compositor strips and compositor-based modifiers.
+The Compositor provides a node-based workflow for processing and combining
+images. Node groups can perform tasks such as color correction, filtering,
+blending, keying, masking, stylization, and other image-processing operations.
 
-This allows node-based image processing and effects to be integrated into
-editing workflows without leaving the Sequencer.
+In addition to the standard Compositor editor, compositor node groups can be
+used directly in the Video Sequencer through compositor strips and compositor
+modifiers. This allows node-based effects to be integrated into editing
+workflows without leaving the Sequencer.
+
+
+.. _compositor-node-gizmos:
+
+Node Gizmos
+===========
+
+Some compositor nodes provide interactive gizmos for adjusting their
+properties directly in the image.
+
+Node gizmos are available in both:
+
+- The :ref:`Compositor backdrop <bpy.types.SpaceNodeEditor.show_backdrop>`
+  when :ref:`Active Node <bpy.types.SpaceNodeEditor.show_gizmo_active_node>`
+  is enabled in the Compositor's gizmo popover.
+- The built-in *Viewer Node* image in the
+  :doc:`Image Editor </editors/image/index>` when
+  :ref:`Active Node <bpy.types.SpaceImageEditor.show_gizmo_active_node>`
+  is enabled.
+
+To use node gizmos:
+
+#. Connect the node to a :doc:`Viewer Node </compositing/types/output/viewer>`
+   or make it the active viewer.
+#. Display either the compositor backdrop or the built-in *Viewer Node* image.
+#. Enable the *Active Node* gizmo if it is not already enabled.
+#. Drag the displayed gizmos to adjust the node interactively.
+
+Changes made with the gizmos are immediately reflected in the node's
+properties and the compositor output.
+
+.. note::
+
+   When multiple Compositor editors are open, the Image Editor displays the
+   gizmos from the node editor that was used most recently.
+
 
 Video Sequence Strips & Modifiers
 =================================
