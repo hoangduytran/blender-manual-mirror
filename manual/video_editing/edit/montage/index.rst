@@ -41,7 +41,7 @@ Grouping is the creating of a meta strip whereby several strips are grouped toge
    :maxdepth: 2
 
    strips/index.rst
-   strip_modifiers.rst
+   modifiers/index.rst
    Selecting <selecting.rst>
    Editing <editing.rst>
    meta.rst
