@@ -13,6 +13,30 @@ The options that are visible in the pop-over depend on the Image Editor mode.
 The following overlay categories are available:
 
 
+Guides
+======
+
+Grid
+   Show the grid.
+
+Over Image
+   Show the grid on top of the image rather than behind it.
+
+Grid Shape Source
+   How the row and column counts are determined.
+
+   :Dynamic: The grid starts at 8×8 cells that are automatically subdivided further as you zoom in.
+   :Fixed: The row and column counts are fixed and can be configured manually.
+   :Pixel: Each grid cell matches one image pixel.
+
+Fixed Subdivisions X, Y
+   Number of columns/rows in the grid.
+
+Tiles X, Y
+   The number of :doc:`UDIM </modeling/meshes/uv/workflows/udims>`
+   tile grids to display in each cardinal direction.
+
+
 Image
 =====
 
