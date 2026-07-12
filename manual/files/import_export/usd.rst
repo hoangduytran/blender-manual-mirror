@@ -365,6 +365,11 @@ Include
       When checked, the entire scene frame range is exported.
       When unchecked, only the current scene frame is exported.
 
+Incremental Save :guilabel:`Animation`
+   Incrementally save after the specified number of frames to reduce peak memory usage.
+   Incremental saves can result in longer export times and potential issues with some
+   file synchronization services. Zero disables incremental save.
+
 Blender Data
    Custom Properties
       Exports :ref:`Custom Properties <files-data_blocks-custom-properties>` as USD attributes.
