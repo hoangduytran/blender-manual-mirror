@@ -13,17 +13,6 @@ The options that are visible in the pop-over depend on the Image Editor mode.
 The following overlay categories are available:
 
 
-Geometry
-========
-
-Display UVs
-   Display selected and active object's UVs.
-
-UV Face Opacity
-   Opacity of faces. Useful to differentiate between UV islands. Can also be reduced when
-   texture painting to prevent faces from tinting the texture's colors.
-
-
 Image
 =====
 
