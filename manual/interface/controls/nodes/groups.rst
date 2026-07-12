@@ -387,7 +387,7 @@ Expanded :guilabel:`Menu`
 
 .. _bpy.types.NodeTreeInterfaceSocket.default_input:
 
-Default Input :guilabel:`Geometry Nodes`, :guilabel:`Compositing Nodes` -- :guilabel:`Input` -- :guilabel:`Integer` :guilabel:`Vector` :guilabel:`Matrix`
+Default Input :guilabel:`Geometry Nodes`, :guilabel:`Compositing Nodes` -- :guilabel:`Input` -- :guilabel:`Integer` :guilabel:`Vector` :guilabel:`Matrix` :guilabel:`Object`
    The value used when the socket is unconnected.
    The available options depends on the socket type.
    Requires *Hide Value* to be enabled.
@@ -401,6 +401,7 @@ Default Input :guilabel:`Geometry Nodes`, :guilabel:`Compositing Nodes` -- :guil
    :Right Handle: The right Bézier control point handle from the context.
    :Scene Frame: The current frame in the scene.
    :Uniform Image Coordinates: The uniform image coordinates of the compositing space.
+   :Self Object: The object that contains the geometry nodes modifier currently being executed.
 
 .. _bpy.types.NodeTreeInterfaceSocket.optional_label:
 
