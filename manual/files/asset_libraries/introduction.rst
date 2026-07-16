@@ -14,6 +14,8 @@ This section describes Blender's asset library system.
       Built on top of the Asset Browser.
 
 
+.. _what-is-asset:
+
 What is an Asset?
 =================
 

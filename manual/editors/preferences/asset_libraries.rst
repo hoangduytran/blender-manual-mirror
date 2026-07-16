@@ -107,6 +107,8 @@ Relative Path
    be moved together with it.
 
 
+.. _essentials-library:
+
 Essentials Library
 ==================
 
