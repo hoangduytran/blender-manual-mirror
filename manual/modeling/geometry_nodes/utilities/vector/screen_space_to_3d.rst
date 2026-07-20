@@ -1,15 +1,15 @@
-.. index:: Geometry Nodes; Screen Space to 3D
+.. index:: Geometry Nodes; Screen to 3D Space
 .. --- copy below this line ---
 
 ***********************
-Screen Space to 3D Node
+Screen to 3D Space Node
 ***********************
 
 .. figure:: /images/node-types_GeometryNodeScreenSpaceTo3D.webp
    :align: right
-   :alt: Screen Space to 3D node.
+   :alt: Screen to 3D Space node.
 
-The *Screen Space to 3D* node reconstructs a 3D position from normalized
+The *Screen to 3D Space* node reconstructs a 3D position from normalized
 screen coordinates and a depth value relative to a camera.
 
 This is the inverse operation of the :doc:`3D to Screen Space <3d_to_screen_space>` node.
