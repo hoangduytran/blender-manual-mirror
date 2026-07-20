@@ -204,6 +204,7 @@ if html_theme == "furo":
     ]
     html_js_files = [
         "js/version_switch.js",
+        "js/sidebar_scroll.js",
     ]
 
 # Add any paths that contain custom static files (such as style sheets) here,
