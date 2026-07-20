@@ -29,7 +29,7 @@ This node has no inputs.
 Outputs
 =======
 
-Instance Reference
+Reference Index
    Integer field representing the reference index of each instance source.
 
    Instances sharing the same referenced geometry output the same value.
