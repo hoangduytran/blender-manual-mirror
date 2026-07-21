@@ -144,15 +144,12 @@ Maximize Area
    :Menu:      :menuselection:`View --> Area --> Toggle Maximize Area`
    :Shortcut:  :kbd:`Ctrl-Spacebar`
 
-Expands the editor area so it fills the whole window, while keeping the Topbar and Status Bar visible.
+Expands the editor area so it fills the whole window, keeping only the editor's menu bar and status bar visible.
 This is useful for focusing on a single editor (e.g. 3D Viewport, Shader Editor) without changing your workspace
 layout.
 
-In the 3D Viewport, maximizing the area temporarily hides:
-
-- :ref:`Navigation Gizmos <navigation-gizmo>`
-- :ref:`bpy.types.View3DOverlay.show_text` overlay
-- :ref:`bpy.types.View3DOverlay.show_stats` overlay
+Unlike :ref:`Focus Mode <focus-mode>`, the editor's menu bar and
+status bar remain visible.
 
 To return to normal size, use the shortcut again or click the *Back to Previous* button in the Topbar.
 
@@ -169,6 +166,8 @@ Restore Area
 
 Returns the maximized area back to its original size and restores the previous screen layout.
 
+
+.. _focus-mode:
 
 Focus Mode
 ==========
