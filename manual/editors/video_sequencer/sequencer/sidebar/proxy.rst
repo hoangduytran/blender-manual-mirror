@@ -69,8 +69,7 @@ Strip Proxy & Timecode
 
    :Panel:     :menuselection:`Sidebar region --> Proxy & Timecode --> Strip Proxy & Timecode`
 
-.. figure:: /images/editors_video-sequencer_sequencer_sidebar_proxy-panel
-
+.. figure:: /images/editors_video-sequencer_sequencer_sidebar_proxy-panel.png
    :align: right
 
 Contains strip-specific proxy settings. The checkbox in the header can be used to
