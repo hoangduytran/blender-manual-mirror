@@ -43,6 +43,17 @@ the attribute values from the base geometry take precedence.
      then an attribute will be a vertex group on the output mesh.
 
 
+Indices of Instanced Geometries
+-------------------------------
+
+When merging multiple geometry inputs that contain instances of geometries, The indices of the instanced
+geometries may be reordered when merging. This means that while the order of the indices of the instances
+are guaranteed to be the same as before merging, the order of the indices of the geometries that are
+being instanced may be different than before merging.
+
+The same behavior applies to material indices.
+
+
 Inputs
 ======
 

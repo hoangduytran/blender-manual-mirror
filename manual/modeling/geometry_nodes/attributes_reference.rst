@@ -124,6 +124,32 @@ Valid conversions:
 - Between float and boolean -- values greater than 0 are true, true maps to 1, and false maps to 0.
 
 
+.. _default-initialization:
+
+Default-Initialization
+======================
+
+Attributes always have a clearly defined value. In the case where the value of an attribute is read
+from a part of geometry on which its value hasn't been specified prior to the read, the value of
+that attribute is default-initialized on that part of geometry. This applies whether that attribute
+is named or anonymous. The default-intialization value is dependant on the data type of that attribute:
+
+:Float: 0
+:Boolean: False
+:Integer: 0
+:Vector: (0, 0, 0)
+:Color: (0, 0, 0, 0)
+:Byte Color: (0, 0, 0, 0)
+:String: Empty string.
+:2D Vector: (0, 0)
+:4D Vector: (0, 0, 0, 0)
+:8-Bit Integer: 0
+:2D 16-Bit Integer Vector: (0, 0)
+:2D Integer Vector: (0, 0)
+:Quaternion: (1, 0, 0, 0)
+:4x4 Matrix: Matrix with all components set to 0.
+
+
 .. _attribute-domains:
 
 Attribute Domains
