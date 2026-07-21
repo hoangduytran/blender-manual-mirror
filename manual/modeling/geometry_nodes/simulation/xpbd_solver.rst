@@ -21,7 +21,7 @@ the geometry, and external effectors such as damping and collision.
 
 The *XPBD Solver* node is complex and intended to used inside more user-friendly assets. Full
 documentation of its behavior and supported components of the *World* input can be found in the
-`developer documentation <https://developer.blender.org/docs/features/nodes/xpbd_solver/>`__
+`developer documentation <https://developer.blender.org/docs/features/nodes/xpbd_solver/>`__.
 
 
 Inputs
@@ -47,6 +47,7 @@ Simulation to World
    transformed accordingly beforehand. Collider geometry is converted to simulation space
    internally.
 
+
 Solver
 ------
 
@@ -62,6 +63,7 @@ Path
    Optional output path for solver result data. If the path is not empty a new bundle is added to
    the *World* output with the results of the solver step.
 
+
 Interpolation Range
 -------------------
 
@@ -69,7 +71,7 @@ Begin
    Fractional start of the substep interval. This can be used for executing an external substep
    loop.
 
-Begin
+End
    Fractional end of the substep interval. This can be used for executing an external substep
    loop.
 
