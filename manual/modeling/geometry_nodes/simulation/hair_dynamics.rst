@@ -12,9 +12,8 @@ The *Hair Dynamics* node creates movement of curve geometry as animated or dynam
 
 The node has two general modes:
 
-   :Animated:
+   :Animation:
       Curves follow animation of the surface to which hair is attached.
-
    :Physics:
       Curves are simulated as a flexible, thin rods, attached to the hair surface.
 
@@ -24,7 +23,9 @@ The node has two general modes:
       such as gravity, daming, and collision with the surface mesh. Additional effects can be
       added through *typed bundles*.
 
-      .. warning:: Physics simulation for hair dynamics is an experimental feature and may change
+      .. warning::
+
+         Physics simulation for hair dynamics is an experimental feature and may change
          significantly in the future.
 
 
@@ -36,7 +37,7 @@ Hair
    natural *rest shape*.
 
 Mode
-   Select between *Animated* and *Physics* behavior.
+   Select between *Animation* and *Physics* behavior.
 
 
 Solver :guilabel:`Physics`
@@ -59,6 +60,7 @@ Simulation to World
    Optional transform from object space into simulation space. This defines the space in which all
    physical simulation takes place. If no transform is specified the object should usually be
    stationary.
+
 
 Structure :guilabel:`Physics`
 -----------------------------
@@ -95,9 +97,9 @@ Bendiness
    factor of 1 corresponds to a soft curve that has almost no bending resistance.
 
 Root Bendiness
-
    Separate bending stiffness factor for hair roots. Root bendiness 0 keeps hair roots stiff
    relative to the surface normal, while bendiness 1 allows arbitrary bending away from the normal.
+
 
 Structure Randomness :guilabel:`Physics`
 ----------------------------------------
@@ -113,6 +115,7 @@ Bendiness
 Root Bendiness
    Range of random offset added to the *Root Bendiness* input.
 
+
 Damping :guilabel:`Physics`
 ---------------------------
 
@@ -125,6 +128,7 @@ Linear
 
 Angular
    Damping coefficient for angular velocity.
+
 
 Surface Collision :guilabel:`Physics`
 -------------------------------------
@@ -153,6 +157,7 @@ Surface Friction
    The effective friction coefficient of a contact is the geometric mean (square root of the
    product) of the coefficients of the contacting materials.
 
+
 Gravity :guilabel:`Physics`
 ---------------------------
 
@@ -160,6 +165,7 @@ Enable gravity.
 
 Gravity
    Acceleration vector in simulation space, typically in negative Z direction.
+
 
 Effectors :guilabel:`Physics`
 -----------------------------
@@ -207,6 +213,7 @@ Residual error :guilabel:`Physics`
       The final value is computed as the root mean square of the sum of all relative constraint
       errors.
 
+
 Common Issues
 =============
 
@@ -220,6 +227,7 @@ plausible, but can exhibit much more stretching and bending than should be expec
 Check the *Residual Error* value to confirm that the solution is accurate enough. The value should
 ideally not exceed 1.
 
+
 Open collider boundaries
 ------------------------
 
@@ -232,6 +240,7 @@ the mesh a contact is then suddenly detected and the point gets ejected from the
 
 Example bug report: `#159657 <https://projects.blender.org/blender/blender/issues/159657>`_.
 
+
 Tunneling through colliders
 ---------------------------
 
@@ -240,6 +249,7 @@ Fast moving geometry may not reliably collide with thin meshes ("tunneling").
 Colliders must have a certain thickness to avoid tunneling, depending on the speed of collision and
 the number of substeps: with more substeps thinner colliders are possible, up to a certain point
 (see `Too many substeps`_).
+
 
 Stretchiness without bendiness
 ------------------------------
@@ -256,6 +266,7 @@ direction of rotation (blue arrows in the figure below), but rotation remains st
 
 This case is not well supported by the Cosserat model for thin rods, where stretching and bending
 are directly related. Future constraint models may support such configurations better.
+
 
 Too many substeps
 -----------------
