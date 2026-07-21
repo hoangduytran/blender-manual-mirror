@@ -100,6 +100,12 @@ Smooth Wires
    Edit Mode
       Display smooth wire in Edit Mode, without this wires will be rendered aliased.
 
+.. _bpy.types.PreferencesSystem.use_rt_shadows:
+
+Shadows
+   Hardware Raytracing
+      Enable hardware raytracing for solid mode shadows. Requires Vulkan and a GPU with hardware raytracing support.
+
 
 Textures
 ========
