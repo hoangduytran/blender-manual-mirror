@@ -11,6 +11,7 @@ Brushes for Curves *Sculpt Mode* bundled in the *Essentials* library.
    selection_paint.rst
    add_curves.rst
    delete_curves.rst
+   cut_curves.rst
    density_curves.rst
    comb_curves.rst
    snake_hook_curves.rst
