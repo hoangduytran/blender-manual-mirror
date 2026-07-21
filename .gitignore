@@ -25,9 +25,6 @@ build/
 locale/
 
 # Patchs
-*.orig
-*.rej
-*.diff
 *.patch
 
 # Temp files - commit.txt is for storing commit message temporarily so can enter detail commit messages
