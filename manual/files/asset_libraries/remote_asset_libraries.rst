@@ -52,16 +52,16 @@ It just needs a set of files called the **asset listing**, which Blender can gen
 
 From the asset library directory, run this command in a :ref:`terminal <command_line-launch-index>`:
 
-```bash
-$ cd /path/to/asset-library
-$ blender -b -c asset_listing generate .
-```
+.. code-block:: bash
+
+  $ cd /path/to/asset-library
+  $ blender -b -c asset_listing generate .
 
 These can also be combined into one command:
 
-```bash
-$ blender -b -c asset_listing generate /path/to/asset-library
-```
+.. code-block:: bash
+
+  $ blender -b -c asset_listing generate /path/to/asset-library
 
 This command should be run any time an asset or asset catalog changes. This includes edits (even re-saving the file), removing assets, or creating new assets.
 
