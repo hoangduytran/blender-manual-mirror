@@ -5,14 +5,14 @@
 Mesh to Volume Modifier
 ***********************
 
-.. reference::
+The *Mesh to Volume* modifier generates a volume from the surface of a mesh object,
+creating a new scalar grid named ``density``. This is the inverse of the
+:doc:`Volume to Mesh </modeling/modifiers/generate/volume_to_mesh>` modifier.
 
-   This modifier is only available for :doc:`Volume Objects </modeling/volumes/index>`.
-
-The *Mesh to Volume* modifier uses a mesh to create a new volume grid.
-All previously existing volume grids on the volume object are discarded.
-So this modifier is usually added to an empty volume object.
-The new volume grid is called "density".
+The modifier is available on :doc:`Volume Objects </modeling/volumes/index>` and
+uses a separate mesh object as its source. The generated volume replaces any
+existing grids on the volume object, so this modifier is typically added to an
+empty volume object.
 
 .. tip::
 

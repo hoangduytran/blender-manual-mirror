@@ -9,15 +9,16 @@ Mesh to Volume Node
    :align: right
    :alt: Mesh to Volume node.
 
-The *Mesh to Volume* node creates a fog volumes based on the shape of a mesh.
-The volume is created with a grid of the name ``"density"``.
+The *Mesh to Volume* node converts a mesh into a fog volume by generating a
+scalar grid named ``density``. Voxels inside the mesh are assigned the specified
+density value, while voxels outside remain empty.
 
 
 Inputs
 ======
 
 Mesh
-   Standard Mesh input.
+   The mesh geometry used to generate the volume.
 
 Density
    Value of voxels inside the generated fog volume.
@@ -45,4 +46,4 @@ Outputs
 =======
 
 Volume
-   The generated volume grid.
+   The generated volume geometry containing a ``density`` grid.

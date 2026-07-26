@@ -18,7 +18,7 @@ Inputs
 ======
 
 Volume
-   Standard geometry input.
+   The volume geometry to convert.
 
 Resolution Mode
    Mode for how the resolution of the final mesh is controlled.
@@ -58,4 +58,4 @@ Outputs
 =======
 
 Mesh
-   Standard geometry output.
+   The generated mesh geometry.

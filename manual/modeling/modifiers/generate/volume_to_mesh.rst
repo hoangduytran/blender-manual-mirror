@@ -5,9 +5,16 @@
 Volume to Mesh Modifier
 ***********************
 
-This modifier is the inverse of the *Mesh to Volume* modifier.
-It takes an existing volume object and converts one of its grids to a mesh.
-Only scalar grids (such as the density grid) can be converted.
+The *Volume to Mesh* modifier generates a mesh from a volume object by converting
+one of its scalar grids (such as the ``density`` grid) into a polygonal surface.
+This is the inverse of the :doc:`Mesh to Volume </modeling/modifiers/generate/mesh_to_volume>`
+modifier.
+
+The modifier is available on mesh objects and uses a separate volume object as its source.
+The generated mesh is evaluated as part of the mesh object's geometry and updates automatically
+when the source volume changes.
+
+Only scalar grids can be converted to a mesh.
 
 .. tip::
 
