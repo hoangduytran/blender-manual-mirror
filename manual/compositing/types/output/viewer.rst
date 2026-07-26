@@ -17,6 +17,12 @@ To switch between multiple Viewer nodes, simply select one with :kbd:`LMB`.
 Only the active Viewer node (with the :bl-icon:`restrict_view_off` icon in the header)
 will be displayed in the backdrop or Image Editor.
 
+.. note::
+
+   The *Viewer* node is optional. When no Viewer node exists, Blender uses the
+   *Group Output* node for interactive previews. Adding a Viewer node allows
+   previewing intermediate results without affecting the compositor's final output.
+
 
 Inputs
 ======

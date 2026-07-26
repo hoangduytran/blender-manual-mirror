@@ -282,19 +282,24 @@ as shown in the following figure.
 Output
 ======
 
-The compositor only supports a single active output target, that is, only one of the
-:doc:`Group Output nodes </compositing/types/output/group_output>` or :ref:`Viewer nodes
-<bpy.types.CompositorNodeViewer>` in the node tree will be considered active and the rest will be
-ignored. In particular, the compositor searches the *Active Node Tree Context* and falls back to the
-*Root Node Tree Context* if no active output was found in the active node tree context. The active
-node tree context is the node tree of an expanded node group, that is, when the user selects a node
-group node and edits its underlying tree, while the root node tree context is the top level node
-tree without any expanded node groups.
+The compositor only supports a single active output target. This is determined by
+searching the current node tree context in the following order:
 
-The compositor searches for the active *Group Output* node, if none was found, it searches for the
-active *Viewer* node. If none was found, the compositor doesn't run altogether.
-Consequently, note that adding a *Viewer* node will have no effect on the viewport render if there
-is a *Group Output* node, since the priority is given to *Group Output* nodes.
+#. The active :ref:`Viewer node <bpy.types.CompositorNodeViewer>` in the
+   *Active Node Tree Context*.
+#. If none exists, the active :ref:`Viewer node <bpy.types.CompositorNodeViewer>`
+   in the *Root Node Tree Context*.
+#. If no Viewer node is found, the active
+   :doc:`Group Output node </compositing/types/output/group_output>`.
+
+The *Active Node Tree Context* is the node tree currently being edited, such as
+the contents of an expanded node group. The *Root Node Tree Context* is the
+top-level compositor node tree.
+
+Consequently, a *Viewer* node is optional. When no Viewer node exists, the
+active *Group Output* node is used for interactive previews in addition to
+providing the compositor's final output. Adding a Viewer node allows previewing
+intermediate results without affecting the final composited output.
 
 
 .. _compositor-socket-inspection:

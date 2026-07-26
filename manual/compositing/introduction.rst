@@ -72,10 +72,11 @@ branches can process the same input independently before being combined later in
 the node tree.
 
 The sockets on the *Group Output* node define the compositor's outputs. By
-default, the *Image* output is used as the final composited image for rendering,
-while additional outputs can be connected to
-:doc:`File Output </compositing/types/output/file_output>` nodes to save
-intermediate or auxiliary results.
+default, the *Image* output is used as the final composited image for rendering.
+
+When no :doc:`Viewer </compositing/types/output/viewer>` node exists in the
+active node tree, the *Group Output* node is also used for interactive previews,
+such as the Viewport Compositor.
 
 Node groups follow the same evaluation model. Data enters through a *Group Input*
 node, flows through the internal node network, and leaves through a *Group Output*
