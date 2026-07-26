@@ -53,6 +53,40 @@ to build effects ranging from simple color corrections to complex composites.
    the :doc:`Nodes </interface/controls/nodes/index>` reference.
 
 
+Node Flow
+=========
+
+A compositing node tree processes image data by passing it from one node to the next.
+The flow begins at the :doc:`Group Input </interface/controls/nodes/groups>` node,
+continues through any number of processing nodes, and ends at the
+:doc:`Group Output </interface/controls/nodes/groups>` node.
+
+The sockets on the *Group Input* node provide the inputs to the compositor.
+By default, the *Image* socket contains the rendered image, equivalent to the
+*Combined* render pass. Additional input sockets can be added to expose custom
+inputs to the node tree.
+
+Each node receives data through its input sockets, performs an operation, and
+passes the result through its output sockets to the next connected node. Multiple
+branches can process the same input independently before being combined later in
+the node tree.
+
+The sockets on the *Group Output* node define the compositor's outputs. By
+default, the *Image* output is used as the final composited image for rendering,
+while additional outputs can be connected to
+:doc:`File Output </compositing/types/output/file_output>` nodes to save
+intermediate or auxiliary results.
+
+Node groups follow the same evaluation model. Data enters through a *Group Input*
+node, flows through the internal node network, and leaves through a *Group Output*
+node. The sockets exposed on these nodes become the inputs and outputs of the
+node group.
+
+A compositor node tree is evaluated from the outputs backwards to determine
+which nodes contribute to the final result. Nodes that are not connected to a
+*Group Output* are ignored during evaluation.
+
+
 Examples
 ========
 

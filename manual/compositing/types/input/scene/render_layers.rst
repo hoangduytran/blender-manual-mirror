@@ -9,8 +9,11 @@ Render Layers Node
    :align: right
    :alt: Render Layers Node.
 
-Renders a :doc:`View Layer </render/layers/introduction>` and reads its
-:doc:`Passes </render/layers/passes>` into the compositing node graph.
+The *Render Layers* node renders a :doc:`View Layer </render/layers/introduction>`
+from a scene and outputs its image and any enabled
+:doc:`render passes </render/layers/passes>` to the compositor.
+This allows render results to be combined, processed, or composited with other
+images and render layers.
 
 
 Inputs
@@ -30,23 +33,25 @@ View Layer
 
 .. hint::
 
-   To use the compositing output from another scene rather than its "raw" render output,
-   first render that scene into a series of multi-layered images (using e.g. the OpenEXR format),
-   then load those images into the Compositor of the current scene using the
-   :doc:`/compositing/types/input/image`.
+   To use the composited output of another scene instead of its raw render
+   passes, first render that scene to a multilayer image format such as
+   :doc:`OpenEXR </files/media/image_formats>`. The resulting image can then be
+   loaded using the :doc:`Image </compositing/types/input/image>` node.
+
 
 Outputs
 =======
 
 Image
-   Rendered image.
+   The combined rendered image.
+
 Alpha
-   Alpha channel.
-Render pass sockets
-   Additional outputs for any enabled render passes.
+   The alpha channel of the rendered image.
+
+Additional outputs corresponding to the render passes enabled for the selected view layer.
 
 .. note::
 
-   The :ref:`viewport compositor <bpy.types.View3DShading.use_compositor>`
-   only supports render passes when using EEVEE.
-   For other engines, the passes will be empty.
+   The :ref:`Viewport Compositor <bpy.types.View3DShading.use_compositor>`
+   only provides render pass outputs when using EEVEE. With other render
+   engines, these outputs are empty.
