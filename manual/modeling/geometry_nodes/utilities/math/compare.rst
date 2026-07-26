@@ -1,5 +1,6 @@
 .. index:: Geometry Nodes; Compare
 .. _bpy.types.FunctionNodeCompare:
+.. --- copy below this line ---
 
 ************
 Compare Node
