@@ -16,7 +16,8 @@ constraint results, or custom property values into a new default state.
 .. note::
 
    Applying a pose from a pose Library can still work correctly
-   even when the bone's rotation mode has changed since the pose was created.
+   even when the bone's :doc:`rotation mode </advanced/appendices/rotations>`
+   mode has changed since the pose was created.
 
    Blender determines the stored rotation representation from the pose data's
    RNA paths and converts the rotation internally before applying it to the

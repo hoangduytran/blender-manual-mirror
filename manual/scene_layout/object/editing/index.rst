@@ -23,6 +23,7 @@
    relations/index.rst
    link_transfer/index.rst
    shading.rst
+   animation.rst
    rigid_body.rst
    convert.rst
    show_hide.rst

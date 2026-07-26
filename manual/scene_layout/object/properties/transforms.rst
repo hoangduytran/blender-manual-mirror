@@ -47,6 +47,10 @@ Rotation Mode
    Method for calculating rotations, additional information can be found
    in the :doc:`manual's appendix </advanced/appendices/rotations>`.
 
+   Changing the rotation mode does not convert existing animation. To preserve
+   animated motion when switching rotation modes, use the
+   :ref:`Convert Rotation Mode <bpy.ops.anim.rotation_mode_convert>` operator.
+
    :Euler:
       The gizmo handles are aligned to the :term:`Euler` axis,
       allowing you to see the discrete XYZ axis underlying the Euler rotation,
