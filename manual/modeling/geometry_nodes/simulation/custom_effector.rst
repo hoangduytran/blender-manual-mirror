@@ -12,6 +12,7 @@ Create a custom effector for use in a simulation. This can be used to modify geo
 simulation world as a whole. A closure must be provided which is evaluated by the simulation
 at some point during the time step update, depending on the *Stage*.
 
+
 Inputs
 ======
 
@@ -30,9 +31,9 @@ Stage
       Executed at the end of each time step (same as *Post-Solver*).
    :Pre-Simulation:
       Executed at the beginning of each frame before simulation state is applied.
-   :Pre Solver:
+   :Pre-Solver:
       Executed during the time step before the simulation is updated.
-   :Post Solver:
+   :Post-Solver:
       Executed during the time step after the simulation is updated.
    :Custom:
       Named effector stage for custom solver builds. This is not used by the XPBD simulation Nodes
@@ -51,6 +52,7 @@ World Effector :guilabel:`World`
 Filter :guilabel:`Geometry`
    Optional comma-separated list of filter tags to limit the geometries that effector is applied to.
    Only geometries with at least one matching tag will be processed by the effector.
+
 
 Outputs
 =======
