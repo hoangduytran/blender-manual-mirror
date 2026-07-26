@@ -130,7 +130,7 @@ Only Show Errors
 ----------
 
 Cache
-   Which simulation caches to show on the timeline.
+   Which caches to show on the timeline.
    See :ref:`bpy.types.SpaceDopeSheetEditor.show_cache` for more information.
 
 ----------

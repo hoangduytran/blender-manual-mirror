@@ -81,6 +81,15 @@ This panel helps you tweak the performance of the Compositor.
    :start-after: .. --- copy below this line ---
    :end-before: .. --- end copy above this line - compositor sidebar ---
 
+.. _bpy.types.RenderSettings.use_compositor_frames_cache:
+
+Cache -- Frames
+   Cache the results of the interactive compositor across multiple frames to
+   improve playback performance when revisiting previously evaluated frames.
+
+   Cached frames can be displayed in the Timeline by enabling
+   :ref:`bpy.types.SpaceDopeSheetEditor.show_cache`.
+
 .. Currently removed from UI see https://projects.blender.org/blender/blender/commit/a079875ffe
 .. .. _bpy.types.CompositorNodeTree.use_viewer_border:
 
