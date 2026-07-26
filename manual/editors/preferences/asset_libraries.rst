@@ -72,22 +72,6 @@ Import Method
       Later changes made to the original asset library are not reflected in
       the appended copy.
 
-   Append (Reuse Data)
-      *Specific to the Asset Browser.*
-
-      Behaves like *Append* the first time an asset is imported.
-
-      Blender remembers the source of imported assets and reuses compatible
-      data on subsequent imports whenever possible.
-
-      For example, importing the same material multiple times reuses the
-      existing material instead of creating duplicates, while importing an
-      object multiple times creates new object instances that share the same
-      mesh, materials, and other reusable data.
-
-      Like *Append*, later changes to the original asset library are not
-      reflected in the current blend-file.
-
    Pack
       Imports the asset as linked data and immediately packs it into the
       current blend-file.
