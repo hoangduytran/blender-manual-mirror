@@ -122,13 +122,13 @@ within which it can influence vertices of child objects.
 
 .. _bpy.ops.armature.align:
 
-Align Bones
-===========
+Align to Active Bone or Parent
+==============================
 
 .. reference::
 
    :Mode:      Edit Mode
-   :Menu:      :menuselection:`Armature --> Transform --> Align Bones`
+   :Menu:      :menuselection:`Armature --> Transform --> Align to Active Bone or Parent`
    :Shortcut:  :kbd:`Ctrl-Alt-A`
 
 Rotates the selected bones to achieve the same orientation as the active one.

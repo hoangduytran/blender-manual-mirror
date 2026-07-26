@@ -43,3 +43,16 @@ Using local axis constraints allows each selected bone to rotate around its own
 axes independently. For example, pressing :kbd:`R Y Y` rotates the selected
 bones around their individual local Y axes, making it easy to twist multiple
 bones at the same time.
+
+
+Align to Transform Orientation
+==============================
+
+.. reference::
+
+   :Mode:      Pose Mode
+   :Menu:      :menuselection:`Pose --> Transform --> Align to Transform Orientation`
+
+.. include:: /scene_layout/object/editing/transform/align_transform_orientation.rst
+   :start-after: .. --- intro-start ---
+   :end-before: .. --- intro-end ---
