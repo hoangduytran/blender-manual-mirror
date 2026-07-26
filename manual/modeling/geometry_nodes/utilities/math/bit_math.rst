@@ -1,5 +1,6 @@
 .. index:: Geometry Nodes; Bit Math
 .. _bpy.types.FunctionNodeBitMath:
+.. --- copy below this line ---
 
 *************
 Bit Math Node

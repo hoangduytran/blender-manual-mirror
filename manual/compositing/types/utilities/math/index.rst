@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    bit_math.rst
+   boolean_math.rst
    clamp.rst
    float_curve.rst
    map_range.rst
