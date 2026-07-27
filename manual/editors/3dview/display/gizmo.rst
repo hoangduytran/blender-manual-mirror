@@ -76,7 +76,7 @@ Rotate
    Show the gizmo to control the rotation.
    Dragging the large white circle allows rotation around the viewing direction.
    Dragging the translucent white disc within that circle (only visible when
-   hovering over the gizmo) allows :ref:`trackball rotation <view3d-transform-trackball>`.
+   hovering over the gizmo) allows :ref:`trackball rotation <bpy.ops.transform.trackball>`.
 
 .. _bpy.types.SpaceView3D.show_gizmo_object_scale:
 
