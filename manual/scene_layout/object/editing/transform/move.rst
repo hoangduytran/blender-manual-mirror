@@ -34,8 +34,8 @@ While moving items, the amount of change along the X, Y, and Z axis is displayed
    See :doc:`Transform Control </scene_layout/object/editing/transform/control/index>`.
 
 
-Options
-=======
+.. rubric:: Options
+   :heading-level: 2
 
 Move X, Y, Z
    The amount to move the selection on the respective axis.

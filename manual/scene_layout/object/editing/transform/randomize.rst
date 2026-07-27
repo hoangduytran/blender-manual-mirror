@@ -19,6 +19,9 @@ This tool randomizes the move, rotate, and scale values to an object or multiple
 When applied on multiple objects, each object gets its own seed value,
 and will get different transform results from the rest.
 
+.. rubric:: Options
+   :heading-level: 2
+
 Random Seed
    The random seed is an offset to the randomized transformation.
    A different seed will produce a new result.

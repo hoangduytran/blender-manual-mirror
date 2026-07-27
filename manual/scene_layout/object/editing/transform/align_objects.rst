@@ -12,8 +12,8 @@ Align Objects
 The Align tool is used to align multiple selected objects so they line up on a specified axis.
 
 
-Options
-=======
+.. rubric:: Options
+   :heading-level: 2
 
 High Quality
    Uses more precise math to better determine the locations for the objects.

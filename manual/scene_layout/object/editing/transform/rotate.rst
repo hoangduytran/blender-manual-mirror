@@ -38,8 +38,8 @@ rotate counterclockwise around the chosen axis, while negative values rotate clo
    See :doc:`Transform Control </scene_layout/object/editing/transform/control/index>`.
 
 
-Options
-=======
+.. rubric:: Options
+   :heading-level: 2
 
 Angle
    The angle to rotate the selected elements.

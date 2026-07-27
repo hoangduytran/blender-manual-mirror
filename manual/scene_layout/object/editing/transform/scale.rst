@@ -35,8 +35,8 @@ The amount of scaling will be displayed in the header of the 3D Viewport.
    See :doc:`Transform Control </scene_layout/object/editing/transform/control/index>`.
 
 
-Options
-=======
+.. rubric:: Options
+   :heading-level: 2
 
 Scale X, Y, Z
    The amount to resize the selection on the respective axis.
