@@ -3,26 +3,76 @@
 Sidebar
 *******
 
+The *Sidebar* contains context-sensitive panels for viewing and editing
+properties related to the 3D Viewport, the current selection, and the active
+tool. Press :kbd:`N` to show or hide the sidebar.
+
+Some tabs are always available, while others are added by Blender features,
+add-ons, or the current editor mode.
+
+
 Item
 ====
 
-Shows :doc:`Transform </scene_layout/object/editing/transform/introduction>` settings
-of the active object.
+The *Item* tab displays properties of the active selection. The available panels
+depend on the selected object type and the current mode.
+
+
+Transform
+---------
+
+Shows the :doc:`Transform Properties </scene_layout/object/properties/transforms>`
+of the active object or selected element.
+
+Additional panels may be shown depending on the active object type or mode.
 
 
 Tool
 ====
 
-Shows settings of the active tool and Workspace.
+The *Tool* tab displays settings for the currently active
+:doc:`tool </interface/tool_system>`, along with any settings defined by the
+current workspace.
+
+Unlike the :doc:`Adjust Last Operation </interface/undo_redo>` panel, which
+modifies the most recently executed operation, the settings in this tab control
+how the active tool behaves before and during its use.
+
+
+Active Tool
+-----------
+
+Shows settings specific to the active tool. The available options depend on the
+selected tool and may include properties such as snapping behavior, falloff,
+brush settings, selection modes, or other tool-specific options.
+
+These settings remain available while the tool is active and are preserved when
+switching between tools or saving the blend-file.
+
+
+Workspace
+---------
+
+Shows settings defined by the current :doc:`workspace </interface/window_system/workspaces>`.
+
+Workspace settings can be used to customize the behavior of tools and editors
+for a specific workflow. Since these settings belong to the workspace rather
+than the scene or objects, they are shared by all editors within that workspace.
+
+See :ref:`workspace-settings` for more information.
 
 
 View
 ====
 
+The *View* tab contains settings that affect only the current 3D Viewport.
+Changes made here do not affect other viewports unless noted otherwise.
+
+
 View Panel
 ----------
 
-The *View* panel lets you change other settings regarding the 3D Viewport.
+The *View* panel lets you change display and navigation settings for the current 3D Viewport.
 
 .. _bpy.types.SpaceView3D.lens:
 

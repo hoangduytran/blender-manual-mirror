@@ -130,6 +130,8 @@ use the file's screen layout rather than the current one.
 A custom set of workspaces can be saved as a part of the :doc:`/getting_started/configuration/defaults`.
 
 
+.. _workspace-settings:
+
 Workspace Settings
 ==================
 
