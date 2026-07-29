@@ -78,16 +78,16 @@ Bézier curves support four handle types, which can be changed with :kbd:`V`:
 
 :Automatic:
    Automatically adjusts handle length and direction for the smoothest curve.
-   Displayed as yellow handles. Converts to *Aligned* when moved.
+   Displayed as red handles. Converts to *Aligned* when moved.
 :Vector:
    Handles point directly toward adjacent control points, enabling straight lines or sharp corners.
-   Displayed as green handles. Converts to *Free* when moved.
+   Displayed as blue handles. Converts to *Free* when moved.
 :Aligned:
    Handles remain on a straight line, ensuring smooth, continuous curves.
-   Displayed as purple handles.
+   Displayed as green handles.
 :Free:
    Handles move independently, allowing for asymmetric curves.
-   Displayed as black handles.
+   Displayed as yellow handles.
 
 .. note::
 
