@@ -8,16 +8,30 @@ Layer Weight Node
    :align: right
    :alt: Layer Weight Node.
 
-The *Layer Weight* node outputs a weight typically used for layering shaders with the *Mix Shader* node.
+The *Layer Weight* node outputs weight values used for blending between two shaders
+via the *Mix Shader* node. It provides two types of angle-dependent weights that control
+how much of each shader is visible at different viewing angles.
+
+It is most commonly used to create realistic materials where the surface appearance
+changes depending on whether you are looking at it head-on or at a glancing angle —
+such as a glossy coating over a rough base, or edge highlights on a diffuse surface.
 
 
 Inputs
 ======
 
 Blend
-   Bias the output towards all 0 or all 1. Useful for uneven mixing of shaders.
+   Controls the spread and sharpness of the transition. The default value of
+   0.5 is a good starting point. Higher values sharpen the edge, lower values
+   produce a wider, more gradual blend.
+   For the *Fresnel* output, *Blend* maps to the index of refraction:
+   0.5 corresponds to IOR 1.5 (glass/plastic), lower values approximate lower
+   IOR (weaker reflection), higher values produce stronger, mirror-like reflection.
 Normal
-   Input meant for plugging in bump or normal maps which will affect the output.
+   Optional input for a bump or normal map. When connected, the surface angle
+   at each point is modified by the bump/normal detail before computing the weight.
+   This makes the weight respond to surface texture — raised areas and depressions
+   produce different blending values, adding realism to layered materials.
 
 
 Properties
@@ -30,9 +44,70 @@ Outputs
 =======
 
 Fresnel
-   Dielectric Fresnel weight, useful for example for layering diffuse and
-   glossy shaders to create a plastic material. This is like the Fresnel node,
-   except that the input of this node is in the often more convenient 0.0 to 1.0 range.
+   Dielectric Fresnel weight in the range 0.0 to 1.0. At 0.0 the surface is
+   viewed head-on (no Fresnel effect); at 1.0 the surface is at a grazing angle
+   (maximum reflection). Use this as the *Fac* input of a *Mix Shader* node.
+
+   Common use: mix a diffuse base shader with a glossy coating shader
+   to create plastic or clear-coated materials.
+
 Facing
-   Weight that blends from the first to the second shader
-   as the surface goes from facing the viewer to viewing it at a grazing angle.
+   Geometric angle weight in the range 0.0 to 1.0. Outputs 1.0 when the surface
+   directly faces the viewer, and 0.0 when viewed at a grazing angle.
+   Unlike *Fresnel*, this output is not affected by the index of refraction —
+   it is purely based on surface orientation.
+
+   Common use: create edge glow or rim light effects by placing an *Emission*
+   shader in the first slot of a *Mix Shader* node (since Fac = 0 at edges
+   shows the first shader), with a diffuse surface in the second slot.
+
+.. tip::
+
+   Use *Fresnel* when you need physically accurate reflection (plastic, glass, coated).
+   Use *Facing* for artistic control or when IOR-based behavior is not desired.
+
+
+Examples
+========
+
+Glossy Coating over Diffuse (Fresnel)
+-------------------------------------
+
+A classic setup for plastic or clear-coated materials:
+
+- Connect the *Fresnel* output to the *Fac* input of a *Mix Shader* node.
+- Connect a *Diffuse BSDF* to the first shader input (the base).
+- Connect a *Glossy BSDF* to the second shader input (the coating).
+- Adjust *Blend* to control how strong the reflection appears at edges.
+- At grazing angles, the glossy coating dominates; straight-on, the diffuse base shows through.
+
+
+Edge Glow with Emission (Facing)
+--------------------------------
+
+Since *Facing* outputs 1.0 at the center and 0.0 at edges,
+place the emission in the first shader slot of the *Mix Shader* node:
+
+- Connect the *Facing* output to the *Fac* input of a *Mix Shader* node.
+- Connect an *Emission* shader to the first shader input.
+- Connect a *Diffuse BSDF* (or *Principled BSDF*) to the second shader input.
+- At the center (Fac ≈ 1.0), the second shader (diffuse) dominates.
+- At the edges (Fac ≈ 0.0), the first shader (emission) dominates,
+  creating a rim light effect.
+
+Alternatively, use the *Fresnel* output for a more intuitive setup:
+connect *Diffuse* to the first slot, *Emission* to the second slot —
+*Fresnel* naturally puts the weight at the edges.
+Adjust *Blend* to control the width of the glow band.
+
+
+Bump/Normal Map Interaction
+---------------------------
+
+To make the weight respond to surface texture:
+
+- Connect a *Noise Texture* to a *Bump* node.
+- Connect the *Bump* node output to the *Normal* input of the *Layer Weight* node.
+- Now the *Fresnel* (or *Facing*) weight varies across the bumps —
+  raised areas and depressions produce different mixing values,
+  giving the material surface a more realistic, detailed appearance.
