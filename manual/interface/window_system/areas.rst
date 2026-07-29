@@ -61,8 +61,8 @@ a double-headed arrow, then click and drag.
 Docking
 =======
 
-Docking describes several ways an area a user can interactively manipulate
-the size and location of areas along with splitting an area into new areas.
+Docking describes several ways a user can interactively manipulate the
+size and location of areas along with splitting an area into new areas.
 
 To start the interactive process, placing the mouse cursor
 in an area corner will change the cursor to a cross (+).
