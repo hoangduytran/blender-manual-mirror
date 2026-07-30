@@ -45,11 +45,14 @@ Value
 Color
    Output random color.
 
-
 .. _shader-white-noise-notes:
+
 
 Notes
 =====
+
+Precision
+---------
 
 The slightest difference in seed values would result in completely different outputs.
 Consequently, bad precision may have significant impact on the output.
@@ -79,6 +82,13 @@ Usually, we can mitigate this issue by:
      - .. figure:: /images/render_shader-nodes_textures_white-noise_solution3.png
 
           Mitigating the issue by taking the absolute value.
+
+Uniqueness
+----------
+
+The random values of the Value output and the random colors of the Color output are not
+guaranteed to be unique. This means that two different input seeds may result in the same
+random value and/or the same random color being generated.
 
 
 Examples
