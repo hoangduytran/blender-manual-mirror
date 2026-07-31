@@ -109,17 +109,17 @@ Creating Assets for Specific Versions of Blender
 
 Assets in online libraries can target Blender versions, as long as they are stored in different
 files. For example, an asset originally made for Blender 5.2 can sit next to one for Blender 5.3.
-This works by saving the new version in another blend file, with `@b5_3` added to its name:
+This works by saving the new version in another blend file, with ``@b5_3`` added to its name:
 
-- `my_asset.blend`: the original asset for Blender 5.2.
-- `my_asset@b5_3.blend`: its replacement for Blender 5.3.
+- ``my_asset.blend``: the original asset for Blender 5.2.
+- ``my_asset@b5_3.blend``: its replacement for Blender 5.3.
 
-When the library listing is generated (see above), it will mark the assets from `my_asset.blend`
-to be used until (but not including) Blender 5.3, and the assets in `my_asset@b5_3.blend` for 5.3
+When the library listing is generated (see above), it will mark the assets from ``my_asset.blend``
+to be used until (but not including) Blender 5.3, and the assets in ``my_asset@b5_3.blend`` for 5.3
 onwards.
 
-This can be extended indefinitely: a third file `my_asset@b47_0.blend` will become available in
-Blender 47.0, and the assets in `my_asset@b5_3.blend` will then be used before that version.
+This can be extended indefinitely: a third file ``my_asset@b47_0.blend`` will become available in
+Blender 47.0, and the assets in ``my_asset@b5_3.blend`` will then be used before that version.
 
 
 Requirements to the Web Server
