@@ -58,3 +58,8 @@ Outputs
 
 Value
    Random values as a field.
+
+.. note::
+
+   The random values of the Value output are not guaranteed to be unique. This means that two different
+   ID and/or Seed input values may result in the same random value being generated.
