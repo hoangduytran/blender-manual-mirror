@@ -73,6 +73,11 @@ Examples
 Glossy Coating over Diffuse (Fresnel)
 -------------------------------------
 
+.. figure:: /images/render_shader-nodes_input_layer-weight_example-coating.png
+
+   Glossy coating over a diffuse base: the *Diffuse BSDF* shows through the center
+   while the *Glossy BSDF* dominates the edges.
+
 A classic setup for plastic or clear-coated materials:
 
 - Connect the *Fresnel* output to the *Fac* input of a *Mix Shader* node.
@@ -84,6 +89,11 @@ A classic setup for plastic or clear-coated materials:
 
 Edge Glow with Emission (Facing)
 --------------------------------
+
+.. figure:: /images/render_shader-nodes_input_layer-weight_example-edge-glow.png
+
+   Edge glow effect: the *Diffuse BSDF* is visible at the center while the *Emission*
+   shader creates a bright rim light at the edges.
 
 Since *Facing* outputs 1.0 at the center and 0.0 at edges,
 place the emission in the first shader slot of the *Mix Shader* node:
@@ -103,6 +113,12 @@ Adjust *Blend* to control the width of the glow band.
 
 Bump/Normal Map Interaction
 ---------------------------
+
+.. figure:: /images/render_shader-nodes_input_layer-weight_example-bump.png
+
+   Connecting a *Bump* node to the *Normal* input of *Layer Weight* makes the
+   Fresnel/Facing weight respond to surface texture. The reflection becomes
+   irregular, following the bumps and depressions instead of a smooth gradient.
 
 To make the weight respond to surface texture:
 
