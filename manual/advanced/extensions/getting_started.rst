@@ -80,8 +80,9 @@ This example is a good starting point to the ``blender_manifest.toml`` that shou
    # Supported types: "add-on", "theme"
    type = "add-on"
 
-   # # Optional: link to documentation, support, source files, etc
+   # # Optional: link to documentation, support (public bug tracker), source files, etc.
    # website = "https://extensions.blender.org/add-ons/my-example-package/"
+   # support = "https://projects.blender.org/user/my-example-package/issues"
 
    # # Optional: tag list defined by Blender and server, see:
    # # https://docs.blender.org/manual/en/latest/advanced/extensions/tags.html
