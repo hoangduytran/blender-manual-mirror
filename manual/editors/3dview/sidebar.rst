@@ -34,7 +34,7 @@ The *Tool* tab displays settings for the currently active
 :doc:`tool </interface/tool_system>`, along with any settings defined by the
 current workspace.
 
-Unlike the :doc:`Adjust Last Operation </interface/undo_redo>` panel, which
+Unlike the :ref:`Adjust Last Operation <bpy.ops.screen.redo_last>` panel, which
 modifies the most recently executed operation, the settings in this tab control
 how the active tool behaves before and during its use.
 
