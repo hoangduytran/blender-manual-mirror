@@ -28,12 +28,12 @@ Stage
    Stage during the simulation update at which the effector is executed.
 
    :Default:
-      Executed at the end of each time step (same as *Post-Solver*).
+      Executed at the end of each time step (same as *Post-Solve*).
    :Pre-Simulation:
       Executed at the beginning of each frame before simulation state is applied.
-   :Pre-Solver:
+   :Pre-Solve:
       Executed during the time step before the simulation is updated.
-   :Post-Solver:
+   :Post-Solve:
       Executed during the time step after the simulation is updated.
    :Custom:
       Named effector stage for custom solver builds. This is not used by the XPBD simulation Nodes
