@@ -32,6 +32,8 @@ These arguments are passed as parameters to the server via a query URL:
    :query URL: ``https://extensions.blender.org/api/v1/extensions/?blender_version=4.2.0&platform=linux-x64``
 
 
+.. _access-token:
+
 Access Token
 ============
 

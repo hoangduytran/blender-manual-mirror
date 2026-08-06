@@ -135,3 +135,14 @@ It is highly recommended, but not required, to support `conditional requests`_ v
 This will greatly reduce the bandwidth used by Blender's periodic syncing of the asset listing. When that listing did not change, the server will just return ``304 Not Modified`` instead of re-transferring the files.
 
 .. _conditional requests: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Conditional_requests
+
+
+Access Token
+============
+
+Similarly to :ref:`Extensions repositories <access-token>`, some remote asset libraries may require authentication.
+
+.. figure:: /images/remote_asset_library-token.png
+   :scale: 50%
+
+   The user can specify an ``access token`` for an asset library as part of its advanced settings.
