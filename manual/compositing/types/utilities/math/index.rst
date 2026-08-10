@@ -11,6 +11,7 @@
    clamp.rst
    compare.rst
    float_curve.rst
+   float_to_integer.rst
    map_range.rst
    math.rst
    mix.rst
