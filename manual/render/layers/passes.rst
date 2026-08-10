@@ -95,8 +95,9 @@ Include
          In these cases, compositing the *Grease Pencil* pass separately can produce different results.
 
    .. _bpy.types.CyclesRenderLayerSettings.denoising_store_passes:
+   .. _bpy.types.ViewLayerEEVEE.denoising_store_passes:
 
-   Denoising Data :guilabel:`Cycles`
+   Denoising Data :guilabel:`Cycles`, :guilabel:`EEVEE`
       Includes auxiliary passes used for denoising, along with the combined image before denoising.
       These passes can be used with the :doc:`/compositing/types/filter/denoise`
       as an alternative to :ref:`automatic denoising <render-cycles-settings-viewport-denoising>`.
