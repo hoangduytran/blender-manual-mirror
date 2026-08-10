@@ -9,42 +9,60 @@ Curve to Mesh Node
    :align: right
    :alt: The Curve to Mesh node.
 
-The Curve to Mesh node converts all splines of a curve to a mesh.
-Optionally, a profile curve can be provided to give the curve a custom shape.
+The *Curve to Mesh* node converts the splines of a curve into a mesh.
+A profile curve can optionally be provided to define the cross-section of the
+generated mesh. Without a profile, each spline is converted into a chain of edges.
 
-The node transfers attributes to the result. Attributes that are built-in on meshes but not curves,
-like ``sharp_face``, will be transferred to the correct domain as well.
+Attributes from the input curves are transferred to the resulting mesh.
+Attributes that are built-in on meshes but not curves, such as ``sharp_face``,
+are transferred to the appropriate mesh domain.
 
 .. tip::
 
-   The output mesh has :ref:`sharp edges <geometry-nodes_builtin-attributes>` set from
-   the profile curve tagged automatically. If any splines in the profile curve
-   are Bézier splines and any of the control points use *Free* or *Vector* handles,
-   the corresponding edges will be shaded sharp.
+   The output mesh can have :ref:`sharp edges <geometry-nodes_builtin-attributes>`
+   generated automatically from the profile curve. If a spline in the profile
+   curve is a Bézier spline and any of its control points use *Free* or *Vector*
+   handles, the corresponding edges of the generated mesh are marked sharp.
 
 
 Inputs
 ======
 
 Curve
-   Standard geometry input.
-   All non-curve components are ignored.
+   The curve geometry to convert to a mesh.
+   Non-curve components are ignored.
 
 Profile Curve
-   If a profile curve is provided, it will be extruded along all splines.
-   Otherwise the generated mesh will just be a chain of edges.
+   The cross-section to extrude along each spline of the input *Curve*.
+
+   When no profile is provided, each spline is converted into a chain of edges.
 
 Scale
-   The scale used at each control point of the input curve to scale the profile curve.
+   Scales the profile at each point of the input curve.
 
 Fill Caps
-   If the profile spline is cyclic, fill the ends of the generated mesh with n-gons.
-   The resulting mesh is :term:`Manifold`, the two new faces for each spline are
-   simply connected to existing edges.
+   Fills the ends of the generated mesh with n-gons when the corresponding
+   profile spline is cyclic.
+
+   The resulting mesh is :term:`Manifold`, with each cap connected directly to
+   the existing boundary edges.
+
+
+Miter Scale
+-----------
+
+Controls how the profile is scaled around sharp turns in the input curve.
+The profile is stretched along the direction of the turn to maintain a more
+consistent apparent width around corners.
+
+Limit
+   Limits the amount of miter scaling at sharp corners. When the corner angle
+   reaches the specified limit, the scale stops increasing, preventing
+   excessively long geometry at very sharp turns.
 
 
 Outputs
 =======
 
 Mesh
-   Standard geometry output.
+   The generated mesh geometry.
