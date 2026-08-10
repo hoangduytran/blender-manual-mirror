@@ -8,8 +8,8 @@
 
    combine_matrix.rst
    combine_transform.rst
-   invert_matrix.rst
    matrix_determinant.rst
+   invert_matrix.rst
    matrix_svd.rst
    multiply_matrices.rst
    project_point.rst

@@ -9,8 +9,9 @@ Nodes for modifying color data passed through color sockets.
    :maxdepth: 1
 
    blackbody.rst
-   gamma.rst
    color_ramp.rst
+   gamma.rst
+   mix_rgb.rst
    rgb_curves.rst
 
 -----
@@ -19,5 +20,4 @@ Nodes for modifying color data passed through color sockets.
    :maxdepth: 1
 
    combine_color.rst
-   mix_rgb.rst
    separate_color.rst

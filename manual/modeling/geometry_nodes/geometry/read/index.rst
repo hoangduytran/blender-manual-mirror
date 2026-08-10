@@ -12,8 +12,14 @@
    normal.rst
    position.rst
    radius.rst
-   selection.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
    active_element.rst
+   selection.rst
 
 -----
 

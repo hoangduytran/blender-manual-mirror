@@ -31,12 +31,18 @@ General purpose nodes for modifying data.
 .. toctree::
    :maxdepth: 1
 
-   implicit_conversion.rst
    for_each_geometry_zone.rst
-   index_switch.rst
-   menu_switch.rst
+   implicit_conversion.rst
    random_value.rst
    repeat_zone.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
+   index_switch.rst
+   menu_switch.rst
    switch.rst
 
 -----

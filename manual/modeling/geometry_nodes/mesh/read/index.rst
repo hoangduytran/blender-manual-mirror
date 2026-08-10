@@ -15,8 +15,8 @@
    face_group_boundaries.rst
    face_neighbors.rst
    face_set.rst
-   face_is_planar.rst
    is_edge_smooth.rst
+   face_is_planar.rst
    is_face_smooth.rst
    mesh_island.rst
    shortest_edge_paths.rst

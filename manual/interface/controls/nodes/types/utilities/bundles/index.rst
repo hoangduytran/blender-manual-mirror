@@ -27,11 +27,23 @@ The following nodes are provided for working with bundles:
    :maxdepth: 1
 
    combine_bundle.rst
+   join_bundle.rst
    separate_bundle.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
    get_bundle_item.rst
    get_nested_bundle_paths.rst
    store_bundle_item.rst
-   join_bundle.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
    Typed Bundle <typed_bundle.rst>
 
 Bundle nodes allow adding or removing an arbitrary number of sockets,
