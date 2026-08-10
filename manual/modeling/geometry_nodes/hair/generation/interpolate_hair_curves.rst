@@ -6,6 +6,7 @@ Interpolate Hair Curves
 
 The *Interpolate Hair Curves* node generates new hair curves by interpolating existing *guide* curves
 on a surface mesh.
+The existing guide curves are also included in the resulting geometry with the interpolated hair curves.
 It allows for efficient grooming workflows where a small number of guide curves define the overall
 shape, and the node fills in additional interpolated curves to create a dense, detailed hair system.
 
@@ -93,7 +94,8 @@ Geometry
    The resulting geometry containing the interpolated hair curves.
 
 Guide Index
-   An integer attribute storing the index of the main guide curve used to generate each interpolated curve.
+   An integer attribute storing the index of the closest guide curve. The index of a guide curve when
+   evaluated after the Interpolate Hair Curves node is always identical to the Guide Index output.
 
 Surface Normal
    The surface normal direction at each curve's root attachment point.
