@@ -89,7 +89,7 @@ Refresh File List :kbd:`R`, :kbd:`NumpadPeriod`
 
 .. _bpy.ops.file.directory_new:
 
-Create New Directory :kbd:`I`
+Create New Directory :kbd:`Ctrl-Shift-N`
    Create a new directory inside the current one.
 
 .. _bpy.types.FileSelectParams.directory:
