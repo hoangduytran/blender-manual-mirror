@@ -15,7 +15,7 @@ on the geometry, the existing material index will be reused.
 
 .. note::
 
-   This node adjusts mesh, point clouds, and volume data;
+   This node adjusts mesh, curves, point clouds, and volume data;
    other data types do not support materials.
 
 
