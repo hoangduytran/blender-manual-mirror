@@ -27,6 +27,7 @@
    flatten.rst
    shrink-fatten.rst
    space_edge_loops_evenly.rst
+   relax_edge_loops.rst
    skin_resize.rst
    warp.rst
    randomize.rst
