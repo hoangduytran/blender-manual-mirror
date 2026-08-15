@@ -136,7 +136,7 @@ between different node trees, or even between Blender instances.
 
 .. _bpy.ops.node.delete_copy_reconnect:
 
-Cut
+Cut :kbd:`Ctrl-X`
    Removes the selected nodes and places them on the clipboard.
    When possible, links are automatically reconnected to preserve the node flow.
 
@@ -218,7 +218,7 @@ Delete with Reconnect
 .. reference::
 
    :Menu:      :menuselection:`Node --> Delete`
-   :Shortcut:  :kbd:`Ctrl-Delete`
+   :Shortcut:  :kbd:`Shift-X` :kbd:`Ctrl-Delete`
 
 Deletes the selected node(s), then creates new links connecting their former input nodes
 to their former output nodes.
