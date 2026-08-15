@@ -22,6 +22,23 @@ or you can use them within an :doc:`Adjustment Layer </video_editing/edit/montag
 strip, making them apply to several media strips in one go.
 
 
+.. _bpy.ops.sequencer.add_strip_modifier_menu:
+
+Adding Modifiers
+================
+
+To add a modifier, select a strip in the Sequencer and open the
+:menuselection:`Properties Editor --> Strip Modifiers` panel.
+Click :menuselection:`Add` or press :kbd:`Shift-A` and choose a modifier from the menu.
+
+The available modifiers depend on the type of the selected strip.
+Image strips provide image-processing modifiers, while sound strips provide
+audio modifiers.
+
+Multiple modifiers can be added to the same strip. They are evaluated from
+top to bottom in the modifier stack, so the order of modifiers can affect the final result.
+
+
 Modifier Assets
 ===============
 
