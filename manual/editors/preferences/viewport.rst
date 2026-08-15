@@ -114,8 +114,8 @@ Textures
 
 Limit Size
    Limit the maximum resolution for pictures used in textured display to save memory.
-   The limit options are specified in a square of pixels
-   (e.g: the option 256 means a texture of 256×256 pixels). This is useful for game engineers,
+   The limit options applies to either of texture dimensions while preserving aspect ratio.
+   (e.g: the option 256 means a texture of maximum 256×256 pixels). This is useful for game engineers,
    whereas the texture limit matches paging blocks of the textures in the target graphic card memory.
 
 .. _bpy.types.PreferencesSystem.anisotropic_filter:
