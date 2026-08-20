@@ -370,8 +370,8 @@ These buttons are used to set the current frame and control playback.
    Sets the Playhead to the end of the frame range.
 
 
-Time Jump
-^^^^^^^^^
+Playback Options
+^^^^^^^^^^^^^^^^
 
 The popover next to the transport controls contains settings
 that determine how far the Playhead moves when using these operators.
@@ -379,6 +379,23 @@ that determine how far the Playhead moves when using these operators.
 .. figure:: /images/editors_timeline_player-jump_delta_panel.png
 
    Playback Options for time jumps.
+
+.. _bpy.types.Scene.wrap_timeline_navigation:
+
+Wrap Timeline Navigation
+   Wrap the Playhead around the active playback range when navigating beyond its boundaries.
+
+   Wrapping applies when:
+
+   - Stepping between frames.
+   - Jumping forward or backward by a specified delta.
+   - Jumping between keyframes.
+   - Jumping between markers.
+
+   Keyframes and markers outside the playback range are ignored when navigating.
+
+   When a :ref:`Preview Range <bpy.ops.anim.previewrange_set>` is active,
+   its boundaries are used instead of the scene's frame range.
 
 .. _bpy.types.Scene.time_jump_unit:
 
