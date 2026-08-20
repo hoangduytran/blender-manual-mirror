@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    active_camera.rst
+   bone_info.rst
    camera_info.rst
    object_info.rst
    render_layers.rst

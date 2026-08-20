@@ -1,5 +1,6 @@
 .. index:: Geometry Nodes; Bone Info
 .. _bpy.types.GeometryNodeBoneInfo:
+.. --- copy below this line ---
 
 **************
 Bone Info Node
