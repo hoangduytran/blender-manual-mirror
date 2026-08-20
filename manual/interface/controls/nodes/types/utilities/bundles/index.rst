@@ -18,6 +18,8 @@ or even nested bundles.
    A cube and cylinder combined into a bundle, then separated again.
 
 
+.. --- section-nodes ---
+
 Nodes
 =====
 

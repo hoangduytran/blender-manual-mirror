@@ -15,6 +15,7 @@
 .. toctree::
    :maxdepth: 1
 
+   bundle/index.rst
    matrix/index.rst
    rotation/index.rst
 
