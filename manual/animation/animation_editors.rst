@@ -369,9 +369,33 @@ These buttons are used to set the current frame and control playback.
 :bl-icon:`ff` Jump to End :kbd:`Shift-Right`
    Sets the Playhead to the end of the frame range.
 
-Additionally, there is a menu accessible to the right of the Jump by Delta buttons where their delta can be set:
+
+Time Jump
+^^^^^^^^^
+
+The popover next to the transport controls contains settings
+that determine how far the Playhead moves when using these operators.
 
 .. figure:: /images/editors_timeline_player-jump_delta_panel.png
+
+   Playback Options for time jumps.
+
+.. _bpy.types.Scene.time_jump_unit:
+
+Jump Unit
+   Determines the unit used by the *Jump Forward/Backward by Delta* operators.
+
+   :Frame:
+      Jumps by a specified number of frames.
+   :Second:
+      Jumps by a specified amount of time in seconds. The corresponding number
+      of frames depends on the scene's :ref:`frame rate <bpy.types.RenderSettings.fps>`.
+
+.. _bpy.types.Scene.time_jump_delta:
+
+Delta
+   The number of frames or seconds to move the Playhead when using
+   *Jump Forward/Backward by Delta*. The unit is determined by *Jump Unit*.
 
 
 .. _animation-editors-frame_controls:
