@@ -348,8 +348,12 @@ These buttons are used to set the current frame and control playback.
 
    Transport controls.
 
+.. _bpy.ops.screen.time_jump:
+
 :bl-icon:`rew` Jump to Start :kbd:`Shift-Left`
    Sets the Playhead to the start of the frame range.
+:bl-icon:`frame_prev` Jump Backward by Delta :kbd:`Ctrl-Left`
+   Jumps the playhead backwards by a user-configured delta.
 :bl-icon:`prev_keyframe` Jump to Previous Keyframe :kbd:`Up`
    Moves the Playhead to the previous keyframe.
 :bl-icon:`play_reverse`  Rewind :kbd:`Shift-Ctrl-Spacebar`
@@ -360,19 +364,15 @@ These buttons are used to set the current frame and control playback.
    Stops playing the animation.
 :bl-icon:`next_keyframe` Jump to Next Keyframe :kbd:`Down`
    Moves the Playhead to the next keyframe.
-:bl-icon:`ff` Jump to End :kbd:`Shift-Right`
-   Sets the Playhead to the end of the frame range.
-
-.. _bpy.ops.screen.time_jump:
-
-:bl-icon:`frame_prev` Jump Backward by Delta :kbd:`Ctrl-Left`
-   Jumps the playhead backwards by a user-configured delta.
 :bl-icon:`frame_next` Jump Forward by Delta :kbd:`Ctrl-Right`
    Jumps the playhead forward by a user-configured delta.
+:bl-icon:`ff` Jump to End :kbd:`Shift-Right`
+   Sets the Playhead to the end of the frame range.
 
 Additionally, there is a menu accessible to the right of the Jump by Delta buttons where their delta can be set:
 
 .. figure:: /images/editors_timeline_player-jump_delta_panel.png
+
 
 .. _animation-editors-frame_controls:
 
