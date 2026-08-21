@@ -10,9 +10,9 @@ Asset libraries can point to directories on the local file system or to
 online asset repositories. Once added, assets contained in those libraries
 are available in the :doc:`/editors/asset_browser` and other asset selectors.
 
-.. figure:: /images/asset_browser-asset_library_preferences.png
+.. figure:: /images/editors_preferences_section_assets.webp
 
-   Name and location of asset libraries in the Preferences.
+   Blender Preferences Asset Libraries section.
 
 To create a local asset library, create an empty directory and add it to the
 :ref:`ui-list-view`. Any asset contained in blend-files within that directory

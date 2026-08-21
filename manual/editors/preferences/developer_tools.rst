@@ -7,6 +7,10 @@ These preferences are reserved for features that aid Blender and add-on developm
 This category is hidden by default and is visible after enabling
 :ref:`Developer Extras <bpy.types.PreferencesView.show_developer_ui>`.
 
+.. figure:: /images/editors_preferences_section_developer-tools.webp
+
+   Blender Preferences Developer Tools section.
+
 
 Debug
 =====
