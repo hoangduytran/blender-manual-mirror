@@ -1,5 +1,6 @@
 .. index:: Geometry Nodes; Random Value
 .. _bpy.types.FunctionNodeRandomValue:
+.. --- copy below this line ---
 
 *****************
 Random Value Node
@@ -28,9 +29,13 @@ Probability
    This input is only available for *Boolean* types.
 
 ID
-   An ID to drive the random number generator seed. By default, this input uses the same value
-   as of the :doc:`/modeling/geometry_nodes/geometry/read/id`, which is the ``id`` attribute of the context
-   geometry if it exists, and otherwise the :doc:`index </modeling/geometry_nodes/geometry/read/input_index>`.
+   An ID to drive the random number generator seed.
+
+   .. note::
+
+      For geometry nodes, by default, this input uses the same value
+      as of the :doc:`/modeling/geometry_nodes/geometry/read/id`, which is the ``id`` attribute of the context
+      geometry if it exists, and otherwise the :doc:`index </modeling/geometry_nodes/geometry/read/input_index>`.
 
    .. tip:: Single Random Value
 

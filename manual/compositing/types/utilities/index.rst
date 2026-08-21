@@ -27,6 +27,7 @@
    implicit_conversion.rst
    levels.rst
    normalize.rst
+   random_value.rst
 
 ----------
 
