@@ -41,6 +41,14 @@ Render
 Samples
    The number of samples to use in the final render.
 
+.. _bpy.types.SceneEEVEE.time_limit:
+
+Time Limit
+   Stops rendering if the time exceeds the limit, even if the desired sample count
+   hasn't been reached yet. Setting this value to zero disables the limit.
+
+   .. note:: The time limit does not include pre-render processing time, only render time.
+
 
 .. _bpy.types.SceneEEVEE.use_shadows:
 
