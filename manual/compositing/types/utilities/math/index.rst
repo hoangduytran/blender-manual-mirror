@@ -10,6 +10,7 @@
    boolean_math.rst
    clamp.rst
    compare.rst
+   integer_math.rst
    float_to_integer.rst
    float_curve.rst
    hash_value.rst
