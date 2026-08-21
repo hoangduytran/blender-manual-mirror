@@ -40,6 +40,7 @@ if "bpy" not in sys.modules:
         # For preferences this wont matter, for other screen-shots it may.
         # Size is odd, this is based on the screenshot in the manual.
         "--window-geometry", "0", "0", "1440", "900",
+        "--no-window-frame",
         "--enable-event-simulate",
         "--python", __file__,
     ]
