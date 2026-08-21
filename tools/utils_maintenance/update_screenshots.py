@@ -365,7 +365,7 @@ def screenshot_splash_screen(window):
 
     yield from window_tap_key(window=window, type='ESC')
 
-    crop(filepath, [520, 487])
+    crop(filepath, [520, 520])
     convert_png_to_webp(filepath)
 
 
