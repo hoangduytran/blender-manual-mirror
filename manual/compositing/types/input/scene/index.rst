@@ -9,6 +9,7 @@
    active_camera.rst
    bone_info.rst
    camera_info.rst
+   is_viewport.rst
    object_info.rst
    render_layers.rst
    scene_time.rst
