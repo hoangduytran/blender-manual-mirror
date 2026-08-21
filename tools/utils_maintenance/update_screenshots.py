@@ -395,7 +395,7 @@ def screenshot_preferences(window):
         move_old_to_preview(stem)
         filepath = os.path.join(IMAGE_DIR_FINAL, stem + ".png")
 
-        if section == 'EXPERIMENTAL':
+        if section == 'EXPERIMENTAL' or 'DEVELOPER_TOOLS':
             set_developer_ui(prefs, True)
 
         setattr(prefs, "active_section", section)
