@@ -8,6 +8,13 @@ Nodes that work with materials.
 .. toctree::
    :maxdepth: 1
 
+   geometry_materials.rst
+
+----
+
+.. toctree::
+   :maxdepth: 1
+
    replace_material.rst
 
 ----
