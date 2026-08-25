@@ -166,10 +166,10 @@ Jitter Unit
 Input Samples
    Recent mouse locations (input samples) are averaged together to smooth brush strokes.
 
-   .. _bpy.types.UnifiedPaintSettings.use_unified_input_samples:
+   .. _bpy.types.Brush.use_unified_input_samples:
 
    :bl-icon:`brushes_all` Use Unified Input Samples
-      Use the same brush *Input Samples* across all brushes.
+      Use the shared brush *Input Samples* value for this brush.
 
 
 .. _bpy.types.Brush.use_smooth_stroke:

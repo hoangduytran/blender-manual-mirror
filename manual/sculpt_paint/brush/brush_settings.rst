@@ -17,8 +17,8 @@ Unified Settings
 
 Some settings (e.g. size, strength, color), indicated with :bl-icon:`brushes_all`,
 allow for using a per-mode setting instead of the individual brush setting.
-These settings are shared across all brushes of a given mode (e.g. Sculpt Mode)
-but do not overwrite the individual brush value.
+These settings are shared across all brushes of a given mode (e.g. Sculpt Mode) but do not overwrite the individual
+brush value. Whether a brush uses the shared value or its own individual value is controlled per brush.
 
 
 .. _sculpt-tool-settings-brush-settings-general:
@@ -40,7 +40,7 @@ Size
    :bl-icon:`stylus_pressure` (Size Pressure)
       Adjusts the size based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
    :bl-icon:`brushes_all` (Use Unified Size)
-      Use the same brush *Size* across all brushes.
+      Use the shared brush *Size* value for this brush.
    :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
       Show or hide the customizable pressure curve.
 
@@ -80,7 +80,7 @@ Strength
    :bl-icon:`stylus_pressure` (Strength Pressure)
       Adjusts the strength based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
    :bl-icon:`brushes_all` (Use Unified Strength)
-      Use the same brush *Strength* across all brushes.
+      Use the shared brush *Strength* value for this brush.
    :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
       Show or hide the customizable pressure curve.
 
@@ -322,10 +322,10 @@ painting. The two colors can also be swapped at any time using
 :bl-icon:`file_refresh` (Swap Colors) :kbd:`X`
    Swaps the primary and secondary colors.
 
-.. _bpy.types.UnifiedPaintSettings.use_unified_color:
+.. _bpy.types.Brush.use_unified_color:
 
 :bl-icon:`brushes_all` (Use Unified Color)
-   Use the same brush color across all brushes.
+   Use the shared brush color value for this brush.
 
 .. note::
 
