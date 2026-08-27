@@ -132,6 +132,7 @@ whether they are editing keyframes, adjusting curves, or sequencing actions.
 
 .. figure:: /images/editors_playback_controls.png
 
+
 .. _animation-editors-playback:
 
 Playback
@@ -140,6 +141,10 @@ Playback
 Properties for how animations are played.
 
 .. figure:: /images/editors_timeline_playback.png
+
+
+Timeline
+^^^^^^^^
 
 .. _bpy.types.Scene.sync_mode:
 
@@ -160,11 +165,6 @@ Sync
       Drop frames if playback becomes slower than the scene's frame rate.
    :Sync to Audio:
       Drop frames if playback becomes too slow to remain synced with audio.
-
-Audio -- Scrubbing
-   Play bits of the sound in the animation (if there is any) while you drag the Playhead around.
-Audio -- Play Audio
-   Uncheck to mute all sound.
 
 .. _bpy.types.Scene.lock_frame_selection_to_range:
 
@@ -202,6 +202,24 @@ Loop
    :Bounce:
       When the last frame is reached, playback reverses direction.
 
+.. _bpy.types.Scene.show_subframe:
+
+Show -- Subframes
+   Display and allow setting fractional frame values for the current frame.
+
+
+Audio
+^^^^^
+
+Audio -- Scrubbing
+   Play bits of the sound in the animation (if there is any) while you drag the Playhead around.
+Audio -- Play Audio
+   Uncheck to mute all sound.
+
+
+Editors
+^^^^^^^
+
 .. _bpy.types.Screen.use_play:
 
 Play In
@@ -214,19 +232,14 @@ Play In
    all editors will play back regardless of the settings.
    This is a feature requested by animators to easily play back all views.
 
-.. _bpy.types.Scene.show_subframe:
 
-Show -- Subframes
-   Display and allow setting fractional frame values for the current frame.
+Sequencer
+^^^^^^^^^
 
-.. _bpy.types.SpaceSequenceEditor.show_scrubbing_region:
+Sync -- Scene Time
+   See :ref:`bpy.types.WorkSpace.use_scene_time_sync`.
 
-Show -- Scrubbing Region :guilabel:`Video Sequencer`
-   Show a dedicated region above the timeline for scrubbing through the
-   entire playback range without changing the current timeline zoom level.
-
-   Like other editor regions, the Scrubbing Region can be hidden by dragging
-   its boundary toward the edge of the editor.
+------
 
 Set Start/End Frame
    Set the scene's start/end frame to the current frame.

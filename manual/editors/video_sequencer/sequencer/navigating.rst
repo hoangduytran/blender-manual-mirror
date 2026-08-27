@@ -33,6 +33,15 @@ Channels
 Playback Controls
    Show or hide the :ref:`Playback Controls <animation-editors-footer>`.
 
+.. _bpy.types.SpaceSequenceEditor.show_scrubbing_region:
+
+Scrubbing Region
+   Show a dedicated region below the timeline for scrubbing through the
+   entire playback range without changing the current timeline zoom level.
+
+   Like other editor regions, the Scrubbing Region can be hidden by dragging
+   its boundary toward the edge of the editor.
+
 ----------
 
 .. _bpy.ops.sequencer.refresh_all:

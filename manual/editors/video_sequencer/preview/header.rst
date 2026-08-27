@@ -21,6 +21,12 @@ Tool Settings
    Show or hide the settings for the currently selected tool.
 Footer
    Show or hide the :ref:`Sidebar <ui-region-footer>`.
+Scrubbing Region
+   Show a dedicated region below the preview for scrubbing through the
+   entire playback range without changing the current timeline zoom level.
+
+   Like other editor regions, the Scrubbing Region can be hidden by dragging
+   its boundary toward the edge of the editor.
 
 ----------
 
