@@ -143,18 +143,6 @@ Tilt Strength :guilabel:`Sculpt Mode`
    Determines how much the tilt of the user's tablet pen affects the brush normal.
    Negative values correspond to inverting the direction of the tilt.
 
-.. _bpy.types.Brush.hardness:
-
-Hardness :guilabel:`Sculpt Mode`
-   How close the brush falloff starts from the edge of the brush.
-
-.. _bpy.types.Brush.tip_roundness:
-
-Tip Roundness
-   The factor to control how round the brush is. A value of zero will make the brush square.
-   Note, the :doc:`Brush Falloff </sculpt_paint/brush/falloff>`
-   is only applied to the rounded portions of the brush.
-
 .. _bpy.types.Brush.auto_smooth_factor:
 
 Auto-smooth :guilabel:`Sculpt Mode`

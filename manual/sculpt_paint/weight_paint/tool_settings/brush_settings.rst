@@ -17,6 +17,9 @@ Information on brush settings for every mode can be found in these pages:
 :doc:`Stroke </sculpt_paint/brush/stroke>`
    Stroke methods and settings.
 
+:doc:`Shape </sculpt_paint/brush/shape>`
+   Brush shape settings.
+
 :doc:`Falloff </sculpt_paint/brush/falloff>`
    Falloff curves and settings.
 
@@ -27,5 +30,6 @@ Information on brush settings for every mode can be found in these pages:
    :hidden:
 
    Stroke </sculpt_paint/brush/stroke.rst>
+   Shape </sculpt_paint/brush/shape.rst>
    Falloff </sculpt_paint/brush/falloff.rst>
    Cursor </sculpt_paint/brush/cursor.rst>

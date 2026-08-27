@@ -7,6 +7,8 @@ The *Falloff* is a curve that determines how the strength of the brush decreases
 with increasing distance from the center. You can set up a custom curve or choose
 a predefined one.
 
+See also: :doc:`Shape <shape>` for mesh sculpting and painting
+
 .. figure:: /images/sculpt-paint_brush_falloff_brush-curve.png
 
    Brush falloff example.

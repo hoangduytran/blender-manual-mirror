@@ -69,9 +69,3 @@ Density
    Amount of random elements that are going to be affected by this brush.
    Use this for a more detailed airbrush effect.
    This works best on a high resolution.
-
-.. _bpy.types.Brush.tip_scale_x:
-
-Tip Scale X
-   Scale of the brush tip in the X axis.
-   This is useful for a achieving a painting stroke like a marker or paint roller.

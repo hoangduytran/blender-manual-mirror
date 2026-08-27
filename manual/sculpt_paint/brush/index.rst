@@ -19,5 +19,6 @@ Brush Settings
    brush_settings.rst
    texture.rst
    stroke.rst
+   shape.rst
    falloff.rst
    cursor.rst
