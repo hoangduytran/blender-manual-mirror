@@ -1,69 +1,98 @@
+********************
+Weight Paint Brushes
+********************
 
-*******
-Brushes
-*******
+.. _bpy.types.Brush.weight_brush_type:
 
 Brush Types
 ===========
 
 See :ref:`Brush Type <sculpt-tool-settings-brush-type>`.
 
-Available brush types are listed here, together with brushes from the
-*Essentials* asset library using them.
+Available brush types are listed below, together with brushes from the
+*Essentials* asset library that use them.
+
+:Draw:
+   Paints weight onto the affected vertices.
+
+   Brush Settings:
+
+   - :ref:`bpy.types.Brush.blend`
+   - :ref:`bpy.types.Brush.weight`
+   - :ref:`bpy.types.Brush.size`
+   - :ref:`bpy.types.Brush.strength`
 
 
-Draw
-   Brushes: Paint
+   Brushes: Set Weight, Add Weight
 
-   Paints a specified weight over the object.
+:Blur:
+   Smooths the weights of adjacent vertices by reducing differences between them.
+   Strength controls how strongly the weights are smoothed.
 
-   Blend
-      The brush :term:`Blend Modes` defines in which way the weight value is
-      applied to the vertex group while painting.
+   Brush Settings:
 
-      Mix
-         In this Blending mode the Weight value defines the *target weight*
-         that will eventually be reached when you paint long enough on the same
-         location of the mesh. And the strength determines how many strokes
-         you need to place at the target weight. Note that for strength = 1.0
-         the target weight is painted immediately and for Weight = 0.0 the brush just does nothing.
-      Add
-         In this Blending mode the specified weight value is *added* to the vertex weights.
-         The strength determines which fraction of the weight gets added per stroke.
-         However, the brush will not paint weight values above 1.0.
-      Subtract
-         In this Blending mode the specified weight value is *subtracted* from the vertex weights.
-         The strength determines which fraction of the weight gets removed per stroke.
-         However, the brush will not paint weight values below 0.0.
-      Lighten
-         In this Blending mode the specified weight value is interpreted as the target weight.
-         Very similar to the Mix Blending mode, but only weights below the target weight are affected.
-         Weights above the target weight remain unchanged.
-      Darken
-         This Blending mode is very similar to the Lighten Blending mode.
-         But only weights above the target weight are affected.
-         Weights below the target weight remain unchanged.
-      Multiply
-         Multiplies the vertex weights with the specified weight value.
-         This is somewhat like subtract, but the amount of removed weight is now
-         dependent on the Weight value itself.
-      Blur
-         Smooths out the weighting of adjacent vertices. In this mode the Weight
-         Value is ignored. The strength defines how much the smoothing is applied.
+   - :ref:`bpy.types.Brush.size`
+   - :ref:`bpy.types.Brush.strength`
 
-Blur
    Brushes: Blur
 
-   Smooths out the weighting of adjacent vertices. In this mode the Weight
-   Value is ignored. The strength defines how much the smoothing is applied.
+:Average:
+   Paints the average weight of the vertices under the brush.
 
-Average
+   Brush Settings:
+
+   - :ref:`bpy.types.Brush.size`
+   - :ref:`bpy.types.Brush.strength`
+
    Brushes: Average
 
-   Smooths weights by painting the average resulting weight from all weights under the brush.
+:Smear:
+   Smudges weights by sampling them from the initial brush position and
+   dragging them across the surface.
 
-Smear
+   Brush Settings:
+
+   - :ref:`bpy.types.Brush.size`
+   - :ref:`bpy.types.Brush.strength`
+
    Brushes: Smear
 
-   Smudges weights by grabbing the weights under the brush and "dragging" them.
-   This can be imagined as a finger painting tool.
+
+Brush Assets
+============
+
+Add Weight
+----------
+
+Adds weight to vertices with a relatively low strength.
+Uses the *Add* blend mode and accumulation, allowing repeated brush strokes
+to progressively increase the weight.
+
+
+Average
+-------
+
+Smooths variations in weight by painting the average weight of the vertices
+under the brush.
+
+
+Blur
+----
+
+Smooths the weights of adjacent vertices, reducing differences between them.
+Uses accumulation with a low strength for gradual smoothing.
+
+
+Set Weight
+----------
+
+Paints the specified weight onto vertices using the *Mix* blend mode.
+Uses a constant falloff curve so the weight is applied uniformly within
+the main area of the brush.
+
+
+Smear
+-----
+
+Smudges existing weights by sampling them from the initial brush position
+and dragging them across the surface.

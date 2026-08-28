@@ -27,6 +27,7 @@ General
 =======
 
 .. _bpy.types.Brush.size:
+.. _bpy.types.UnifiedPaintSettings.size:
 
 Size
    This option controls the size of the brush, measured in pixels.
@@ -93,21 +94,49 @@ Strength
 .. _bpy.types.Brush.blend:
 
 Blend
-   Set the way the color or value is applied over the targeted Color Attribute, Vertex Group or Image Texture.
+   Defines how the brush value or color is combined with the existing data.
+
+   Depending on the painting mode, this can affect an Image Texture, Color Attribute,
+   Vertex Group weight, or other paintable data.
+
    See :term:`Color Blend Modes`.
 
-   - Add Alpha: makes the image more opaque where painted.
-   - Erase Alpha: makes the image transparent where painted,
-     allowing background colors and lower-level textures to show through.
-     As you "paint", the false checkerboard background will be revealed.
-     Using a tablet pen's eraser end will toggle on this mode.
+   :Mix:
+      Blends the brush value or color with the existing value.
+      Strength controls how quickly repeated strokes approach the brush value.
+   :Add:
+      Adds the brush value or color to the existing value.
+      Strength controls the amount added by each stroke.
+   :Subtract:
+      Subtracts the brush value or color from the existing value.
+      Strength controls the amount removed by each stroke.
+   :Lighten:
+      Applies the brush only where it produces a lighter or greater value than
+      the existing value.
+   :Darken:
+      Applies the brush only where it produces a darker or lower value than
+      the existing value.
+   :Multiply:
+      Multiplies the existing value or color by the brush value or color.
+   :Blur:
+      Smooths neighboring values or colors to reduce local variation.
+      The brush value or color is ignored, while Strength controls the amount
+      of smoothing.
+   :Add Alpha:
+      Increases the alpha of the painted image, making painted areas more opaque.
+   :Erase Alpha:
+      Decreases the alpha of the painted image, making painted areas more transparent
+      and revealing content underneath.
 
-   .. tip::
+      Using the eraser end of a tablet pen can activate this blend mode.
 
-      In order to see the effects of the Erase and Add Alpha mix modes in the Image Editor,
-      the :ref:`Display Channels <bpy.types.SpaceImageEditor.display_channels>`
-      must be set to *Color & Alpha* or *Alpha*.
-      Transparent (no alpha) areas will then show a checkered background.
+      .. tip::
+
+         To see the effect of the *Add Alpha* and *Erase Alpha* blend modes in the Image Editor,
+         :ref:`Display Channels <bpy.types.SpaceImageEditor.display_channels>` must be set to
+         *Color & Alpha* or *Alpha*. Transparent areas are displayed with a checkered background.
+
+.. _bpy.types.Brush.weight:
 
 Weight :guilabel:`Weight Paint`
    The weight value that is applied to the vertex group.
@@ -211,7 +240,7 @@ Brush Type
 
    - :doc:`Sculpt </sculpt_paint/sculpting/brushes/brushes>`
    - :doc:`Vertex Paint </sculpt_paint/vertex_paint/brushes>`
-   - :doc:`Weight Paint </sculpt_paint/weight_paint/brushes>`
+   - :ref:`Weight Paint <bpy.types.Brush.weight_brush_type>`
    - :doc:`Texture Paint </sculpt_paint/texture_paint/brushes>`
 
 Affect Alpha :guilabel:`2D Painting Only`
