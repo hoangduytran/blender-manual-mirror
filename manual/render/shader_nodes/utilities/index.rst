@@ -41,6 +41,7 @@
 
    index_switch.rst
    menu_switch.rst
+   switch.rst
 
 -----
 
