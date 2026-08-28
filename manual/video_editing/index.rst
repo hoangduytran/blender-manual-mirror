@@ -27,6 +27,7 @@ Getting Started
 .. toctree::
    :maxdepth: 2
 
+   workspaces.rst
    sequencer_scene.rst
    setup/index.rst
 

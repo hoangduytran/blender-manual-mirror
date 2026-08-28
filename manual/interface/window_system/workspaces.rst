@@ -118,6 +118,10 @@ Blender has a couple additional Workspaces to choose from when adding a new Work
 .. rubric:: Video Editing
 
 :Video Editing: For sequencing together media into one video.
+:Rendering: For rendering out video sequences.
+:Composting: For making procedural node effects that can be applied to video sequences.
+
+See :doc:`/video_editing/workspaces` for more detailed information.
 
 
 Save and Override
