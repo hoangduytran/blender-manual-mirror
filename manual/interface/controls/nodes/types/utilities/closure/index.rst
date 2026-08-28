@@ -37,7 +37,7 @@ They let users define operations that can be executed in a controlled environmen
    excessive recursion depth and stack overflows.
 
    The stack limit can be adjusted in the user preferences:
-   :ref:`bpy.types.PreferencesSystem.geometry_nodes_stack_limit`
+   :ref:`bpy.types.PreferencesSystem.nodes_stack_limit`
 
 
 Nodes

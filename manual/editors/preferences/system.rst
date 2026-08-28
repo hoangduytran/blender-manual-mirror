@@ -250,10 +250,10 @@ Threads / Subprocesses
    - Changing this setting requires restarting Blender to take effect.
 
 
-.. _bpy.types.PreferencesSystem.geometry_nodes_stack_limit:
+.. _bpy.types.PreferencesSystem.nodes_stack_limit:
 
 Geometry Nodes Stack Limit
-   Approximate maximum size of the call stack used by :doc:`/modeling/geometry_nodes/index`.
+   Approximate maximum size of the call stack used by node group evaluation.
    For example, this corresponds to the number of allowed nested node groups.
    Setting this too high can result in crashes caused by running out of stack memory.
 
