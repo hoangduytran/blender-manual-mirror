@@ -299,7 +299,7 @@ Transmission
 ------------
 
 Transmission is used to render materials like glass and liquids, where the surface both
-reflects light and transmits it into the interior of the object
+reflects light and transmits it into the interior of the object.
 
 Weight
    Mix between fully opaque surface at zero and fully transmissive at one.
@@ -308,6 +308,27 @@ Weight
       :align: center
 
       Weight from 0.0 to 1.0
+
+Dispersion Scale :guilabel:`Cycles Only`
+   Linearly scales the amount of dispersion, causing the light to be split in rainbow colors.
+
+   .. figure:: /images/render_shader-nodes_shader_principled-transmission-dispersion.webp
+      :align: center
+
+      IOR = 2.4, Dispersion Abbe Number = 20, Dispersion Scale from 0.0 to 1.0
+
+Dispersion Abbe Number :guilabel:`Cycles Only`
+   `Abbe number <https://web.archive.org/web/20260825151347/https://www.rp-photonics.com/abbe_number.html>`__
+   of the material.
+   The amount of dispersion is roughly proportional to
+   :math:`\frac{\mathrm{Dispersion\ Scale}}{\mathrm{Dispersion\ Abbe\ Number}}`,
+   so lower Abbe number (together with higher refractive index) gives stronger dispersion.
+
+.. note::
+   Dispersion works via randomly sampling from visible wavelengths. To reduce the color noise,
+   higher amount of :ref:`Samples <bpy.types.CyclesRenderSettings.samples>`
+   and higher value of :ref:`Indirect Light Clamping <bpy.types.CyclesRenderSettings.sample_clamp_indirect>`
+   are needed.
 
 Coat
 ----
