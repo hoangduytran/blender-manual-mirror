@@ -248,14 +248,11 @@ Set Start/End Frame
 
 .. _animation-editors-keying:
 
-Keying
-------
+Keyframing
+----------
 
-The *Keying* popover contains options that affect keyframe insertion.
-
-.. note::
-
-   The name of this popover will change depending on the active keying set.
+The *Keyframing* popover contains options that affect keyframe insertion.
+The record button (:bl-icon:`rec`) enables auto keying (see below).
 
 .. figure:: /images/editors_timeline_keying.png
 
@@ -284,12 +281,12 @@ Active Keying Set
 
 .. _bpy.types.ToolSettings.keyframe_type:
 
-New Keyframe Type
+New Keyframes
    The :ref:`keyframe type <keyframe-type>` for newly created keyframes.
 
 .. _bpy.types.ToolSettings.use_keyframe_cycle_aware:
 
-Cycle-Aware Keying
+Cycle Aware
    When inserting keyframes into :ref:`trivially cyclic curves <bpy.types.FModifierCycles>`,
    special handling is applied to preserve the cycle integrity (most useful while tweaking an established cycle):
 
@@ -306,7 +303,7 @@ Cycle-Aware Keying
 .. _bpy.types.ToolSettings.use_keyframe_insert_auto:
 
 Auto Keying
------------
+^^^^^^^^^^^
 
 .. figure:: /images/editors_timeline_keyframes-auto.png
    :align: right

@@ -158,13 +158,9 @@ Playback Popover
    Properties for how animations are played.
    See :ref:`animation-editors-playback` for more information.
 
-Keying Popover
+Keyframing Popover
    Properties for how keyframes are added.
    See :ref:`animation-editors-keying` for more information.
-
-Auto Keying
-   Options for automatically adding keyframes.
-   See :ref:`bpy.types.ToolSettings.use_keyframe_insert_auto` for more information.
 
 Transport Controls
    These buttons are used to control playback.
