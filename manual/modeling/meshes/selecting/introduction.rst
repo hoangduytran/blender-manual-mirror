@@ -1,4 +1,3 @@
-
 ************
 Introduction
 ************
@@ -192,9 +191,9 @@ Select Loops
       Selects the edges that lie in the same *edge loop* as the currently selected ones.
    :ref:`Edge Rings <bpy.ops.mesh.select_edge_ring_multi>`
       Selects the edges that lie in the same *edge ring* as the currently selected ones.
-   :ref:`Select Loop Inner-Region <bpy.ops.mesh.loop_to_region>`
+   :ref:`Loop Inner-Region <bpy.ops.mesh.loop_to_region>`
       Selects the faces that are enclosed by the currently selected boundary edges.
-   :ref:`Select Boundary Loop <bpy.ops.mesh.region_to_loop>`
+   :ref:`Boundary of Selected <bpy.ops.mesh.region_to_loop>`
       Replaces the current face selection by an edge selection of its boundaries.
 
 :doc:`Sharp Edges </modeling/meshes/selecting/sharp_edges>`
