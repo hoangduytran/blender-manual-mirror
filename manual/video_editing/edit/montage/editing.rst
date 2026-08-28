@@ -565,13 +565,10 @@ Length
    You have to specify the duration you want the resulting strips will be.
 
 
-Movie Strip
-===========
-
 .. _bpy.ops.sequencer.rendersize:
 
 Set Render Size
----------------
+===============
 
 .. reference::
 
@@ -579,6 +576,9 @@ Set Render Size
 
 Sets the render resolution and aspect to match the strip's resolution.
 
+
+Movie Strip
+===========
 
 .. _bpy.ops.sequencer.deinterlace_selected_movies:
 
