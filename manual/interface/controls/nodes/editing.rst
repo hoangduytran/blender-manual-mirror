@@ -197,33 +197,6 @@ Duplicate Linked
 Duplicate selected nodes, but not their node trees (in the case of group nodes), and move them.
 
 
-.. _bpy.ops.node.delete:
-
-Delete
-======
-
-.. reference::
-
-   :Menu:      :menuselection:`Node --> Delete`
-   :Shortcut:  :kbd:`X`, :kbd:`Delete`
-
-Deletes the selected node(s).
-
-
-.. _bpy.ops.node.delete_reconnect:
-
-Delete with Reconnect
-=====================
-
-.. reference::
-
-   :Menu:      :menuselection:`Node --> Delete`
-   :Shortcut:  :kbd:`Shift-X` :kbd:`Ctrl-Delete`
-
-Deletes the selected node(s), then creates new links connecting their former input nodes
-to their former output nodes.
-
-
 .. _bpy.ops.node.swap_node:
 
 Swap
@@ -348,6 +321,33 @@ And also for recovering some information from a failed render.
 For this to work, :ref:`Cache Result <bpy.types.RenderSettings.use_render_cache>` must be enabled.
 
 .. note:: This operator are only available in the :doc:`Compositor </compositing/index>`.
+
+
+.. _bpy.ops.node.delete:
+
+Delete
+======
+
+.. reference::
+
+   :Menu:      :menuselection:`Node --> Delete`
+   :Shortcut:  :kbd:`X`, :kbd:`Delete`
+
+Deletes the selected node(s).
+
+
+.. _bpy.ops.node.delete_reconnect:
+
+Delete with Reconnect
+=====================
+
+.. reference::
+
+   :Menu:      :menuselection:`Node --> Delete`
+   :Shortcut:  :kbd:`Shift-X` :kbd:`Ctrl-Delete`
+
+Deletes the selected node(s), then creates new links connecting their former input nodes
+to their former output nodes.
 
 
 .. _bpy.ops.node.connect_to_output:
