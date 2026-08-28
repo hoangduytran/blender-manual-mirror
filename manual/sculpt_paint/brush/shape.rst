@@ -12,6 +12,17 @@ Falloff
 Hardness :guilabel:`Sculpt Mode`
    How close the brush falloff starts from the edge of the brush.
 
+   :bl-icon:`stylus_pressure` (Hardness Pressure)
+      Adjusts the hardness based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
+   :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
+      Show or hide the customizable pressure curve.
+
+      Custom Curve
+         By default this is a straight line with positive slope such that
+         increased pressure results in a harder brush falloff.
+
+         For the curve controls see: :ref:`Curve widget <ui-curve-widget>`.
+
 .. _bpy.types.Brush.tip_roundness:
 
 Tip Roundness :guilabel:`Sculpt Mode`

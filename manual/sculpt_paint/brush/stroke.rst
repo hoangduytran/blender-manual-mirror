@@ -38,6 +38,14 @@ Stroke Method :kbd:`Alt-E`
          :bl-icon:`stylus_pressure` (Spacing Pressure)
             Brush *Spacing* can be affected by enabling the pressure sensitivity icon,
             if you are using a :ref:`Graphics Tablet <hardware-tablet>`.
+         :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
+            Show or hide the customizable pressure curve.
+
+            Custom Curve
+               By default this is a straight line with positive slope such that
+               increased pressure results in a larger brush spacing.
+
+               For the curve controls see: :ref:`Curve widget <ui-curve-widget>`.
 
    :Airbrush:
       Flow of the brush continues as long as the mouse click is held (spray),

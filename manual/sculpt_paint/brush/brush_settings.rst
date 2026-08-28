@@ -177,6 +177,20 @@ Tilt Strength :guilabel:`Sculpt Mode`
 Auto-smooth :guilabel:`Sculpt Mode`
    Sets the amount of smoothing to be applied to each stroke.
 
+   .. _bpy.types.Brush.use_smooth_pressure:
+
+   :bl-icon:`stylus_pressure` (Smooth Pressure)
+      Adjusts the auto-smooth factor based on the stylus pressure when using
+      a :ref:`Graphics Tablet <hardware-tablet>`.
+   :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
+      Show or hide the customizable pressure curve.
+
+      Custom Curve
+         By default this is a straight line with negative slope such that
+         lighter pressure results in more smoothing being applied.
+
+         For the curve controls see: :ref:`Curve widget <ui-curve-widget>`.
+
 .. _bpy.types.Brush.topology_rake_factor:
 
 Topology Rake :guilabel:`Sculpt Mode`
