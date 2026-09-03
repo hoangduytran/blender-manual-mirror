@@ -13,6 +13,8 @@ Meshes are the most common object type used in 3D scenes.
 Blender provides a variety of built-in mesh primitives that serve as starting points for modeling.
 These primitives can be added in both Object Mode and Edit Mode, where they appear at the location of the 3D Cursor.
 
+.. TODO: update the image, it's missing the quad-sphere.
+
 .. figure:: /images/modeling_meshes_primitives_all.png
 
    Blender's standard mesh primitives.
@@ -111,6 +113,30 @@ Fill Type
    :Nothing: Leaves the circle unfilled; only the perimeter vertices are created.
 Radius
    Distance from the center to the outer edge of the circle.
+
+
+.. _bpy.ops.mesh.primitive_quad_sphere_add:
+
+Quad Sphere
+===========
+
+A quad sphere is built by subdividing a cube and projecting the result onto a sphere,
+so the surface is made entirely of quads.
+The topology is close to uniform over the whole surface,
+which makes it well suited to sculpting and :term:`Subdivision Surface` modeling.
+
+Segments
+   Number of faces along each edge of the underlying cube.
+Method
+   The mapping used to project the cube onto the sphere:
+
+   :Even Area:
+      Distributes the area evenly between faces, giving the most uniform face sizes.
+   :Even Angle:
+      Places vertices at an even angle, so the profile along each axis forms an exact circle.
+      Useful when the sphere is halved and connected with other circular shapes such as cylinders.
+Radius
+   Distance from the center to the outer surface of the sphere.
 
 
 .. _bpy.ops.mesh.primitive_uv_sphere_add:

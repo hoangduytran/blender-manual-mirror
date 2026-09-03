@@ -20,6 +20,8 @@ General interactive tools to contruct primitive geometry directly in Sculpt Mode
       Interactively add a cone mesh object.
    :ref:`Add Cylinder <tool-add-cylinder>`
       Interactively add a cylinder mesh object.
+   :ref:`Add Quad Sphere <tool-add-quadsphere>`
+      Interactively add a quad sphere mesh object.
    :ref:`Add UV Sphere <tool-add-uvsphere>`
       Interactively add a UV sphere mesh object.
    :ref:`Add Icosphere <tool-add-icosphere>`

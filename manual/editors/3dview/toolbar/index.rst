@@ -12,6 +12,7 @@ Toolbar
    add_cube.rst
    add_cone.rst
    add_cylinder.rst
+   add_quadsphere.rst
    add_uvsphere.rst
    add_icosphere.rst
 
