@@ -1,3 +1,3 @@
 .. index:: Compositor Nodes; Hash Value
-.. include:: /render/shader_nodes/utilities/math/hash_value.rst
+.. include:: /modeling/geometry_nodes/utilities/math/hash_value.rst
    :start-after: .. --- copy below this line ---

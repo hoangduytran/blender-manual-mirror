@@ -151,20 +151,23 @@ An Example
 
 This is a very basic shader implementing a perspective camera:
 
+.. NOTE: ``:force:`` is needed as OSL has no Pygments lexer and ``c`` fails on ``[[ ... ]]`` meta-data.
+
 .. code-block:: c
+   :force:
 
-  shader perspective_camera(
-      float focal_length = 90.0 [[ float sensitivity = 0.2, float min = 0 ]],
-      output point position = 0.0,
-      output vector direction = 0.0,
-      output color throughput = 1.0) {
-    vector sensor_size;
-    getattribute("cam:sensor_size", sensor_size);
+   shader perspective_camera(
+       float focal_length = 90.0 [[ float sensitivity = 0.2, float min = 0 ]],
+       output point position = 0.0,
+       output vector direction = 0.0,
+       output color throughput = 1.0) {
+     vector sensor_size;
+     getattribute("cam:sensor_size", sensor_size);
 
-    point Pcam = camera_shader_raster_position() - point(0.5);
-    Pcam *= sensor_size / focal_length;
-    direction = normalize(vector(Pcam.x, Pcam.y, 1.0));
-  }
+     point Pcam = camera_shader_raster_position() - point(0.5);
+     Pcam *= sensor_size / focal_length;
+     direction = normalize(vector(Pcam.x, Pcam.y, 1.0));
+   }
 
 More examples can be found in :menuselection:`Text Editor --> Templates --> Open Shading Language`.
 

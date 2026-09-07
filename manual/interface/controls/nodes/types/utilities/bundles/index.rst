@@ -1,3 +1,4 @@
+.. _nodes-typed-bundles:
 .. --- copy below this line ---
 
 ************
@@ -60,8 +61,6 @@ bundled data between modifiers and objects.
    /modeling/geometry_nodes/geometry/read/get_geometry_bundle.rst
    /modeling/geometry_nodes/geometry/write/set_geometry_bundle.rst
 
-
-.. _nodes-typed-bundles:
 
 Typed Bundles
 =============

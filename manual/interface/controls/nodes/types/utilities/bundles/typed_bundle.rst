@@ -34,4 +34,4 @@ Type
 
 .. seealso::
 
-   See :ref:`nodes-typed-bundles` for more information about typed bundles.
+   See :ref:`Typed Bundles <nodes-typed-bundles>` for more information about typed bundles.

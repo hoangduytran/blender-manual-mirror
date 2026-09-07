@@ -24,8 +24,9 @@ It provides a node-based workflow for processing the output of the
 :doc:`Video Sequencer </video_editing/index>`, allowing effects such as color adjustments,
 blurs, masks, and other image processing operations to be applied to the sequence.
 
-See :doc:`/video_editing/edit/montage/compositing` for more information about using
-the Compositor with the Video Sequencer.
+See the :doc:`Compositor Strip </video_editing/edit/montage/strips/compositor>` and the
+:doc:`Compositor Modifier </video_editing/edit/montage/modifiers/compositor>` for more information
+about using the Compositor with the Video Sequencer.
 
 
 Rendering
