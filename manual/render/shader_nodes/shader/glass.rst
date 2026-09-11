@@ -24,11 +24,23 @@ Color
    Color of the surface, or physically speaking, the probability that light is transmitted for each wavelength.
 Roughness
    Influences sharpness of the refraction; perfectly sharp at 0.0 and smoother with higher values.
+Anisotropy :guilabel:`Cycles Only`
+   Controls the amount the reflection and refraction stretch along the surface of the material.
+   A value of 0.0 means isotropic.
+   Higher values give elongated highlights orthogonal to the tangent direction;
+   negative values give highlights shaped along the tangent direction.
+Rotation :guilabel:`Cycles Only`
+   Rotation of the anisotropic tangent direction.
+   Value 0.0 equals 0° rotation, 0.25 equals 90° and 1.0 equals 360° = 0°.
+   This can be used to texture the tangent direction.
 IOR
-   Index of refraction (:term:`IOR`) defining how much the ray changes direction. At 1.
-   0 rays pass straight through like transparent; higher values give more refraction.
+   Index of refraction (:term:`IOR`) defining how much the ray changes direction. At 1.0
+   rays pass straight through like transparent; higher values give more refraction.
 Normal
-   Normal used for shading.
+   Normal used for shading; if nothing is connected the default shading normal is used.
+Tangent
+   Tangent used for shading; if nothing is connected the default shading tangent is used.
+
 
 
 Thin Film :guilabel:`Cycles Only`
