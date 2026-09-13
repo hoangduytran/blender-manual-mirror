@@ -119,7 +119,7 @@ Blender has a couple additional Workspaces to choose from when adding a new Work
 
 :Video Editing: For sequencing together media into one video.
 :Rendering: For rendering out video sequences.
-:Composting: For making procedural node effects that can be applied to video sequences.
+:Compositing: For making procedural node effects that can be applied to video sequences.
 
 See :doc:`/video_editing/workspaces` for more detailed information.
 
