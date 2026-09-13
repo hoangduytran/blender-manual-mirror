@@ -1,4 +1,3 @@
-
 ***********
 Editing UVs
 ***********
@@ -147,7 +146,7 @@ Copy Mirrored UV Coordinates
 
    :Editor:    UV Editor
    :Mode:      Edit Mode
-   :Menu:      :menuselection:`UV --> Copy Mirrored UV Coordinates`
+   :Menu:      :menuselection:`UV --> Mirror --> Copy Mirrored UV Coordinates`
 
 Copies UV coordinates from one side of a symmetrical mesh to the mirrored side.
 
@@ -274,17 +273,17 @@ Selection :kbd:`Y`
 
 .. _bpy.ops.uv.rip_move:
 
-Rip Move UV
-===========
+Rip Move UVs
+============
 
 .. reference::
 
    :Editor:    UV Editor
    :Mode:      Edit Mode
-   :Menu:      :menuselection:`UV --> Rip Move UV`
+   :Menu:      :menuselection:`UV --> Rip Move UVs`
    :Shortcut:  :kbd:`V`
 
-The *Rip Move UV* operator separates selected UV elements (vertices, edges, or faces) from connected components,
+The *Rip Move UVs* operator separates selected UV elements (vertices, edges, or faces) from connected components,
 creating a "rip" in the UV map. After the separation, the selection enters move mode,
 allowing precise control over where and how the UV elements are pulled apart.
 
@@ -587,7 +586,7 @@ Set User Region
    :Menu:      :menuselection:`UV --> Set User Region`
    :Shortcut:  :kbd:`Ctrl-B`
 
-Defines a rectangular region in the UV Editor to be used as a *Custom Region*
+Defines a rectangular region in the UV Editor to be used as a *Custom Region*.
 
 Once defined, this region can be selected as the *Pack To* target in the *Pack Islands* operator
 by choosing **Custom Region** and enabling :ref:`bpy.types.ToolSettings.use_uv_custom_region`.
