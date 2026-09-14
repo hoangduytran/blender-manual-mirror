@@ -9,6 +9,7 @@ on a surface mesh.
 The existing guide curves are also included in the resulting geometry with the interpolated hair curves.
 It allows for efficient grooming workflows where a small number of guide curves define the overall
 shape, and the node fills in additional interpolated curves to create a dense, detailed hair system.
+This modifier transfers surface attributes to the curves.
 
 For simpler duplication-based setups, the
 :doc:`Duplicate Hair Curves </modeling/geometry_nodes/hair/generation/duplicate_hair_curves>`

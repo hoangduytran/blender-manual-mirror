@@ -6,6 +6,8 @@ Generate Hair Curves
 
 The *Generate Hair Curves* node procedurally creates new hair curves on the surface of a mesh.
 It generates curves from scratch at sampled point locations rather than using existing hair data.
+This modifier transfers surface attributes to the curves.
+
 For cases where curves should interpolate or follow existing guides, use the
 :doc:`Interpolate Hair Curves </modeling/geometry_nodes/hair/generation/interpolate_hair_curves>` node instead.
 
