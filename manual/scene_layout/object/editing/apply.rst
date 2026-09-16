@@ -45,6 +45,11 @@ since they often depend on an object's transform values.
    animation curves, or constraints.
    It is recommended to apply transforms before rigging and animation.
 
+.. warning:: 3D Gaussian Splat Point Cloud Objects
+
+   Applying transforms to Point Cloud objects only affects point positions and does not modify
+   3D Gaussian Splat attributes for scale, rotation, and spherical harmonics.
+
 .. important::
 
    When applying transforms to an object that shares Object Data with other objects,

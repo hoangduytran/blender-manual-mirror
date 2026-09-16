@@ -1,7 +1,20 @@
-
 **********************
 Point Cloud Properties
 **********************
+
+Type
+====
+
+Representation type of the pointcloud. Options:
+
+* Points - simple point cloud represented by points with position and radius.
+* 3D Gaussian Splat - a point cloud that represents the original 3D Gaussian Splats technique.
+
+.. warning:: Rendering of 3D Gaussian Splats
+
+   The 3D Gaussian Splats are expected to be trained in sRGB space. However, since render engines operate
+   in linear space, render results in areas with low opacity and high radiance will mismatch with the
+   ground-truth.
 
 Attributes
 ==========
@@ -55,6 +68,27 @@ The following are common built-in attributes supported by point cloud objects:
      - *Point*
      - Indicates the directional movement and speed of the point (e.g., for simulations or motion blur).
 
+   * - ``scale``
+     - *Vector*
+     - *Point*
+     - Scale of the point. Only used if the Point Cloud object is of type 3D Gaussian Splat.
+
+   * - ``rotation``
+     - *Quaternion*
+     - *Point*
+     - Rotation the point. Only used if the Point Cloud object is of type 3D Gaussian Splat.
+
+   * - ``radiance:base``
+     - *4D Vector*
+     - *Point*
+     - The base (DC) radiance of the point, followed by opacity. Only used if the Point Cloud object is of type 3D Gaussian Splat.
+
+   * - ``radiance:sh_{index}``
+     - *Vector*
+     - *Point*
+     - Spherical harmonics coefficients for bands >= 1. The order is `<L=1 M=-1>`, `<L=1 M=0>`, `<L=1 M=1>`, `<L=2 M=-2>` ..
+       where `L` is the band index, `M` is the basis function. Only used if the Point Cloud object is of type 3D Gaussian Splat.
+
 Custom Attributes
    Custom attribute can be given to particles to hold a custom characteristic.
 
@@ -83,4 +117,3 @@ These properties are stored at the object level and not per point.
 
 See the :ref:`Custom Properties <files-data_blocks-custom-properties>`
 documentation for more information on how to add and use them.
-
