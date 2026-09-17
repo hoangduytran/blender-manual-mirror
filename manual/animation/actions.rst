@@ -29,10 +29,16 @@ exported as a distinct animation.
 Action Slots
 ============
 
-The animation data inside an action is further organized into *Slots*. Each
-action has a set of slots and different animation data for each of those slots.
+The animation data inside an action is further organized into *Slots*. The slot
+describes *what the animation is for*. For example, you're animating a sphere that
+orbits a cube, standing in for a moon orbiting a (cubic) planet. These can be
+animated with one Action using two Slots, one named "Planet" and the other "Moon".
+
+**In short: The Action name describes the animation, the Slot names describe the subjects of that animation.**
+
+Each action has a set of slots, and different animation data for each of those slots.
 An animated data-block then specifies both an action and a slot within that
-action, and that determines which animation data the data-block is animated by.
+action, determining which animation data the data-block is animated by.
 
 .. figure:: /images/animation_actions_slots_ui.png
 
