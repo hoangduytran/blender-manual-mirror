@@ -34,6 +34,7 @@
    grid_dilate_erode.rst
    grid_mean.rst
    grid_median.rst
+   grid_solve_poisson.rst
    prune_grid.rst
    grid_topology_boolean.rst
    voxelize_grid.rst
