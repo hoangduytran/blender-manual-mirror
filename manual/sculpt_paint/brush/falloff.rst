@@ -81,13 +81,12 @@ Falloff Shape
    Texture Paint Mode does not have this option -- it always uses *Projected*.
 
 .. _bpy.types.ImagePaint.use_normal_falloff:
-.. _bpy.types.Brush.use_frontface_falloff:
 
-Normal Falloff / Front-Face Falloff
+Normal Falloff
    Weakens the brush strength for faces whose normal points towards the screen edges
    instead of the camera.
 
-   This feature is not available in Sculpt Mode.
+   This feature is not available in Texture Paint Mode.
 
    .. _bpy.types.ImagePaint.normal_angle:
 
