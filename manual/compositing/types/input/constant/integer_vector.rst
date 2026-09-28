@@ -1,4 +1,4 @@
-.. index:: Compositing Nodes; Integer Vector
+.. index:: Compositor Nodes; Integer Vector
 .. _bpy.types.FunctionNodeInputIntVector:
 .. --- copy below this line ---
 
