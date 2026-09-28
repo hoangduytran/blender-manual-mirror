@@ -12,6 +12,7 @@ Nodes to manipulate strings.
    match_string.rst
    replace_string.rst
    reverse_string.rst
+   set_string_case
    slice_string.rst
    trim_string.rst
 
