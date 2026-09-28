@@ -12,5 +12,6 @@ Nodes used mainly as input to other nodes.
    color.rst
    integer.rst
    menu.rst
+   string.rst
    value.rst
    vector.rst

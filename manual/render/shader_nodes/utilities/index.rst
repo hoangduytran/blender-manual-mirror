@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    math/index.rst
+   text/index.rst
    vector/index.rst
 
 -----
