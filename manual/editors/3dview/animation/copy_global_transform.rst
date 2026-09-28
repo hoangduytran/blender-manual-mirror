@@ -1,16 +1,16 @@
 
 ****************
-Global Transform
+World Space Transform
 ****************
 
-Copy and paste object and bone transforms with ease.
+Copy and paste object and bone :term:`world space` transforms with ease.
 
 When copying, the global (:term:`World Space`) transform is placed on the clipboard.
 This can then be pasted onto any object or bone, at the current frame or at another one.
 
 .. reference::
 
-   :Panel:     :menuselection:`3D Viewport --> Sidebar --> Animation --> Global Transform`
+   :Panel:     :menuselection:`3D Viewport --> Sidebar --> Animation --> World Space Transform`
 
 .. figure:: /images/copy_global_transform-main.webp
    :align: right
