@@ -15,6 +15,7 @@
    glossy.rst
    hair.rst
    holdout.rst
+   light_accumulation.rst
    mix.rst
    metallic.rst
    principled.rst

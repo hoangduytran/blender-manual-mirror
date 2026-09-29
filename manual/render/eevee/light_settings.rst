@@ -107,6 +107,8 @@ Absolute Resolution Limit
       does not exist for Sun Light.
 
 
+.. _render_eevee_light_settings_influence:
+
 Influence
 =========
 

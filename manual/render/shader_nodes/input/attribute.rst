@@ -22,6 +22,8 @@ Properties
 
 Attribute Type
    Specifies the type of the attribute.
+   The property value must be an integer, float, boolean, or a vector of 1 to 4 floats or ints; properties of other
+   types are ignored. If a suitable property is not found, all sockets of the node, including *Alpha*, output 0.
 
    :Geometry:
       The attribute is associated with the geometry of the object, and its value varies from
@@ -45,9 +47,6 @@ Attribute Type
       The values of attributes of this type are defined once per object. The name or path is looked up
       first in the object data-block, followed by the mesh data-block if not found.
       Custom properties have priority over built-in ones.
-
-      The property value must be an integer, float, boolean, or a vector of 1 to 4 floats or ints; properties of other
-      types are ignored. If a suitable property is not found, all sockets of the node, including *Alpha*, output 0.
 
       .. tip::
 
@@ -86,6 +85,18 @@ Attribute Type
          An alternative method to access the same set of properties is to use driver
          :ref:`Context Properties <bpy.types.DriverVariable.type>`,
          possibly with a :ref:`manually emulated <driver-attribute-node-emulation>` lookup fallback chain.
+   :Light: :guilabel:`EEVEE Only`
+      The attribute name specifies a :ref:`custom property <files-data_blocks-custom-properties>` name from the evaluated *Light*.
+
+      The name or path is looked up first in the object data-block, followed by the light data-block if not found.
+
+      These built-ins are also available:
+       - ``is_sun``, ``is_area``, ``is_point``, ``is_spot``: Boolean flags (1.0 or 0.0) indicating the Light :ref:`type <bpy.types.Light.type>`.
+       - ``cutoff_distance``: The distance at which light attenuation reaches 0, respecting the light's :ref:`Custom Distance <bpy.types.Light.use_custom_distance>` setting.
+      
+      .. note::
+
+         When reading Light attributes, this node must be used alongside :ref:`Light Accumulation <bpy.types.ShaderNodeLightAccumulation>`.
 
 Name
    The name of the attribute to retrieve.

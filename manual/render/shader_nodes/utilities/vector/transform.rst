@@ -9,7 +9,7 @@ Vector Transform Node
    :alt: Vector Transform node.
 
 The *Vector Transform* node allows converting a vector, point, or normal between
-world and camera and object coordinate space.
+world, camera, object, and light coordinate spaces.
 
 
 Inputs
@@ -29,12 +29,16 @@ Type
 Convert From
    Coordinate Space to convert from:
 
-   World, Object, Camera.
+   World, Object, Camera, Light *(EEVEE Only)*.
 Convert To
    Coordinate Space to convert to:
 
-   World, Object, Camera.
+   World, Object, Camera, Light *(EEVEE Only)*.
 
+.. note::
+
+   *Light* space represents the object coordinate space of the light source currently being evaluated.
+   When converting from or to Light space, this node must be used alongside :ref:`Light Accumulation <bpy.types.ShaderNodeLightAccumulation>`.
 
 Outputs
 =======

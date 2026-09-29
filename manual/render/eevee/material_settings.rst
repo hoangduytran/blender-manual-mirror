@@ -110,7 +110,7 @@ Displacement
 .. _bpy.types.Material.max_vertex_displacement:
 
 Max Distance
-   The maximum distance a vertex can be displaced when using true displacement.
+   The maximum distance a vertex can be displaced when using true displacement, or that the surface position can be offset in the :ref:`Shadow Raycast <bpy.types.ShaderNodeShadowRaycast>` node.
    Displacements over this threshold may cause visibility issues.
    These visibility issues can be observed when the object is out of view at the edge of screen
    with parts being displaced inside the view. The object would then disappear because of camera culling.

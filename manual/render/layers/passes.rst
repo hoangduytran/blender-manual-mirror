@@ -151,6 +151,7 @@ Alpha Threshold :guilabel:`Cycles`
    regardless of opacity. With higher values, surfaces that are mostly transparent will be skipped until
    an opaque surface is encountered.
 
+.. _render_layers_passes_light:
 
 Light
 =====
@@ -235,6 +236,8 @@ Other
       Can be multiplied with existing footage to (for example) have a rendered object cast a shadow
       on recorded ground.
 
+
+.. _render_layers_passes_light_eevee:
 
 EEVEE
 -----
