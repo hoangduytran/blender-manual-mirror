@@ -95,6 +95,42 @@ Select More
 Adds neighboring strips to the selection.
 
 
+.. _bpy.ops.sequencer.select_by_type:
+
+Select All by Type
+==================
+
+.. reference::
+
+   :Menu:      :menuselection:`Select --> Select All by Type`
+
+Selects strips of a specified type.
+
+Type
+   The type of strip to select.
+
+   :Scene: Selects all Scene strips.
+   :Clip: Selects all Movie Clip strips.
+   :Mask: Selects all Mask strips.
+   :Movie: Selects all Movie strips.
+   :Sound: Selects all Sound strips.
+   :Image: Selects all Image strips.
+   :Color: Selects all Color strips.
+   :Text: Selects all Text strips.
+   :Adjustment Layer: Selects all Adjustment Layer strips.
+   :Compositor: Selects all Compositor strips.
+   :Effect: Selects all effect strips.
+   :Visual: Selects all strips that can produce an image in the preview, excluding Sound strips.
+
+Extend
+   Adds matching strips to the current selection.
+   When disabled, the existing selection is cleared before selecting matching strips.
+
+Same Channel
+   Only selects matching strips on the same channel as the active strip.
+   This option only applies when the operator is invoked from the timeline.
+
+
 .. _bpy.ops.sequencer.select_grouped:
 
 Select Grouped
@@ -105,30 +141,31 @@ Select Grouped
    :Menu:      :menuselection:`Select --> Select Grouped`
    :Shortcut:  :kbd:`Shift-G`
 
-Selects strips that are similar to the active strip. By default, unsimilar strips are deselected,
-but this can be changed in the :ref:`Adjust Last Operation <bpy.ops.screen.redo_last>` region.
+Selects strips that share a property or relationship with the active strip.
 
 Type
-   Selects strips that have the same specific type as the active strip.
-   For example, if the active strip is a Movie strip, this selects all Movie strips.
-Global Type
-   Selects strips that have the same general type (graphics or audio) as the active strip.
-Effect Type
-   If the active strip is an effect strip, selects all effect strips.
-   Otherwise, selects all non-effect strips.
-   Despite the name, this operator does not check the effect type.
-Data
-   Selects strips that use the same source (file, scene, movie clip or mask) as the active strip.
-Effect
-   Finds the effect types that are applied to the active strip, and selects all strips that have
-   any of the same effect types applied to them. For example, if the active strip has a
-   Gaussian Blur effect on it, this selects all other strips that are also blurred.
-Effect/Linked
-   Selects strips that are on a lower channel than a selected strip and overlap it in time;
-   then, effect strips linked to the selected content strips; and finally, content strips
-   linked to the selected effect strips.
-Overlap
-   Selects strips that partially or completely overlap the active strip in time.
+   The property or relationship used to determine which strips are selected.
+
+   :Type:
+      Selects all strips of the same specific type as the active strip.
+   :Data:
+      Selects strips referencing the same source data as the active strip,
+      with matching file directory, scene, clip, or mask.
+   :Strips Under Effect:
+      Selects strips that are inputs to the same effect type as the active strip.
+   :Time Overlap:
+      Selects strips on any channel whose time range overlaps the active strip.
+   :Visual Overlap:
+      Selects strips on channels below the active strip's channel whose time range overlaps,
+      plus their full effect chains.
+
+Extend
+   Adds matching strips to the current selection.
+   When disabled, the existing selection is cleared before selecting matching strips.
+
+Same Channel
+   Only selects matching strips on the same channel as the active strip.
+   This option only applies when the operator is invoked from the timeline.
 
 
 .. _bpy.ops.sequencer.select_linked:
