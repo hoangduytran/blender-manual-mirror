@@ -45,6 +45,10 @@ Properties
 Node Group
    The compositing node group to use.
 
+Node Group Inputs
+   Inputs exposed by the selected node group are displayed here.
+   The available properties and their behavior depend on the node group's interface.
+
 Input 1
    The first strip used as an input for the compositor effect.
 
