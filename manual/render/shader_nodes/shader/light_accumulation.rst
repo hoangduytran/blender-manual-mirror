@@ -78,7 +78,7 @@ Examples
       
    Diffuse Halftone Toon Shader.
 
-.. figure:: /images/render_shader-nodes_light_accumulation_example_Nodes.webp
+.. figure:: /images/render_shader-nodes_light_accumulation_example_nodes.webp
    :alt: Diffuse Halftone Toon Shader Nodes.
       
    Diffuse Halftone Toon Shader setup.
