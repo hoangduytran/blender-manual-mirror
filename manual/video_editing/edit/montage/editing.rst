@@ -525,6 +525,28 @@ drag it to a time and channel, and drop it by :kbd:`LMB` click.
 For strips that reference an ID, for example scene strips, this will
 use the same scene in the duplicated strip.
 
+.. _bpy.ops.sequencer.ripple_delete:
+
+Ripple Delete
+=============
+
+.. reference::
+
+   :Menu:      :menuselection:`Strip --> Ripple Delete`
+   :Shortcut:  :kbd:`Shift-Delete`, :kbd:`Shift-X`
+
+Deletes the selected strips and closes the resulting gaps by moving later strips earlier in the timeline.
+
+All Channels
+   Also shifts strips on channels other than those containing the deleted strips.
+
+   When disabled, only strips on the same channels as the deleted strips are shifted.
+
+Markers
+   Shifts timeline :doc:`/animation/markers` together with the affected strips,
+   keeping their positions relative to the sequence.
+
+
 .. _bpy.ops.sequencer.delete:
 
 Delete
@@ -535,7 +557,10 @@ Delete
    :Menu:      :menuselection:`Strip --> Delete`
    :Shortcut:  :kbd:`Delete`, :kbd:`X`
 
-Delete the selected strip(s).
+Deletes the selected strips from the sequence.
+
+The remaining strips keep their current positions in the timeline, which can leave gaps where the deleted strips
+were located. To automatically close these gaps, use :ref:`Ripple Delete <bpy.ops.sequencer.ripple_delete>`.
 
 
 .. _bpy.ops.sequencer.scene_frame_range_update:
