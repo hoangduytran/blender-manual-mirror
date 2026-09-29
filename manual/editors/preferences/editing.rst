@@ -177,6 +177,16 @@ Auto-Offset
       Margin to use for :ref:`offsetting nodes <editors-nodes-usage-auto-offset>`.
 
 
+Video Sequencer
+===============
+
+.. _bpy.types.PreferencesEdit.clamp_strips_by_default:
+
+Clamp Strips by Default
+   When :ref:`slipping or adjusting handles <bpy.ops.sequencer.slip>`,
+   clamps movement to the underlying content bounds by default to avoid producing extra hold frames or silence.
+
+
 Miscellaneous
 =============
 

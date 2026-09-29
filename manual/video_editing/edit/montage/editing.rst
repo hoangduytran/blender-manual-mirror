@@ -186,7 +186,11 @@ Additional options are available during the operation:
 - **Cancel**: :kbd:`Esc`, :kbd:`RMB`
 - **Precision Mode**: Hold :kbd:`Shift` to enable subframe slipping which slips the audio.
   The subframe amount is shown in the header as *Sound Offset*.
-- **Clamp**: Press :kbd:`C` to clamp the slip range to the strip's start and end bounds.
+- **Clamp**: Press :kbd:`C` to toggle the clamping of the slip range to the strip's start and end bounds.
+
+.. tip::
+
+   Use :ref:`bpy.types.PreferencesEdit.clamp_strips_by_default` to toggle the clamping default.
 
 
 .. _bpy.ops.sequencer.snap:
