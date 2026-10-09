@@ -1,4 +1,3 @@
-
 *****
 Track
 *****
@@ -21,7 +20,7 @@ Name
 
 .. _bpy.types.MovieTrackingTrack.lock:
 
-:bl-icon:`unlock` / :bl-icon:`locked` Lock
+:bl-icon:`unlocked` / :bl-icon:`locked` Lock
    The toggle controls whether the track is locked. Locked tracks cannot be edited at all.
    This helps to prevent accidental changes to tracks which are "finished"
    (tracked accurate along the whole footage).
