@@ -88,12 +88,12 @@ Over the years, Cycles has introduced support for a wide range of rendering poss
 Similarly, it's grown to include support for many features including hair, motion blur, smoke and fire, major shaders
 and materials, adaptive subdivisions, and much more.
 
-With its watershed 2.8 release in July, 2019, Blender broke into the 3D mainstream. Starting with a drastically
-revamped User Interface, the 2.8 series included a multitude of innovations, from EEVEE (a real-time render engine),
+With its watershed 2.80 release in July, 2019, Blender broke into the 3D mainstream. Starting with a drastically
+revamped User Interface, the 2.8x series included a multitude of innovations, from EEVEE (a real-time render engine),
 to new remeshing options for sculptors, to the integration of Mantaflow, to a fully functioning 2D animation workspace
 that also offered the possibility of a 2D/3D hybrid workflow.
 
-Although industry recognition for Blender had grown over the decades, 2.8 marked the moment when it was widely
+Although industry recognition for Blender had grown over the decades, 2.80 marked the moment when it was widely
 accepted as a legitimate alternative to paid competitors. As well as using Blender in their own projects, some of the
 world's largest and most recognized companies became regular contributors to the Blender Development Fund, ensuring
 that Blender can continue to innovate.
@@ -291,7 +291,7 @@ Version/Revision Milestones
    Pencil and Alembic. Support was also added for application templates.
 
 
-.. rubric:: Blender 2.8 -- Revamped UI
+.. rubric:: Blender 2.8x -- Revamped UI
 
 `2.80 <https://www.blender.org/download/releases/2-80>`__ -- July 2019:
    A totally redesigned UI for easier navigation; improved viewport, gizmos, and tools. With EEVEE a new physically
@@ -310,7 +310,7 @@ Version/Revision Milestones
    project use.**
 
 
-.. rubric:: Blender 2.9 -- Refining 2.8
+.. rubric:: Blender 2.9x -- Refining 2.8
 
 `2.90 <https://www.blender.org/download/releases/2-90/>`__ -- August 2020:
    Improved sky texture, EEVEE motion blur, sculpting improvements, revamped modifier UI, improved modeling tools, and
