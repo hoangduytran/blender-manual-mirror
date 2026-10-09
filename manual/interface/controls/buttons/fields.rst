@@ -101,13 +101,13 @@ Incremental Steps
    You can also use :kbd:`Ctrl-Wheel` while hovering over the field to edit the value.
 Dragging
    To change the value with the mouse, hold down :kbd:`LMB` and drag to left or right.
-
-   Hold :kbd:`Ctrl` to snap to the discrete steps while dragging or :kbd:`Shift` for precision input.
 Keyboard Input
    Press :kbd:`LMB` or :kbd:`Return` to enter value by typing it with keyboard.
 
    When entering values by keyboard, number fields work like text fields:
 
+   - Hold :kbd:`Ctrl` to snap to the discrete steps.
+   - Hold :kbd:`Shift` for precision input.
    - Press :kbd:`Return` or :kbd:`LMB` outside the field to apply the change.
    - Press :kbd:`Esc` or :kbd:`RMB` to cancel.
    - Press :kbd:`Tab` to jump to the next field or :kbd:`Shift-Tab` to go to the previous field.

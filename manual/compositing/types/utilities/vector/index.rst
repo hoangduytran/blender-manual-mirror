@@ -9,6 +9,8 @@ These nodes can be used to manipulate various types of vectors, such as surface 
    :maxdepth: 1
 
    combine_xyz.rst
+   get_vector_component.rst
+   mix_vector.rst
    separate_xyz.rst
 
 ----------
@@ -16,7 +18,6 @@ These nodes can be used to manipulate various types of vectors, such as surface 
 .. toctree::
    :maxdepth: 1
 
-   mix_vector.rst
    radial_tiling.rst
    vector_curves.rst
    vector_math.rst

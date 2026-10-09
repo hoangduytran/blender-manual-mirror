@@ -22,6 +22,7 @@ Nodes generate or modify point clouds.
    points_to_sdf_grid.rst
    points_to_vertices.rst
    points_to_volume.rst
+   rasterize_points.rst
 
 ----
 

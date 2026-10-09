@@ -18,11 +18,6 @@ Inputs
 
 Grease Pencil
    The input Grease Pencil geometry.
-
-
-Properties
-==========
-
 Depth Order
    Defines how the strokes are ordered in 3D space (for objects not displayed *In Front*).
 

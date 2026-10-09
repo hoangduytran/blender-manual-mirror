@@ -7,6 +7,7 @@
    :maxdepth: 1
 
    combine_xyz.rst
+   get_vector_component.rst
    mix_vector.rst
    separate_xyz.rst
 

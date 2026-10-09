@@ -23,21 +23,17 @@ Selection
    A boolean field to determine which elements to affect.
    Elements with a value of true will be modified.
 
-Color
-   The new color to apply.
-
-Opacity
-   The opacity value to apply.
-
-
-Properties
-==========
-
 Mode
    Determines which component of the stroke is affected:
 
    :Stroke: Apply the color and opacity to stroke points.
    :Fill: Apply the color and opacity to stroke fills.
+
+Color
+   The new color to apply.
+
+Opacity
+   The opacity value to apply.
 
 
 Outputs
