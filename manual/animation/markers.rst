@@ -26,12 +26,31 @@ Markers can be created and edited in the following editors:
    A marker created in one of these editors will also appear in all others that support them.
 
 
+.. _marker-types:
+
 Types
 =====
 
-Besides standard markers, *pose markers* are another type of markers,
-which are specific to armatures and shape keys.
-They are used to denote poses in the Action Editor mode and Shape Keys Editor of Dope Sheet.
+Blender supports two types of markers: *timeline markers* and *pose markers*.
+
+- **Timeline Markers** -- Mark specific frames in the scene's timeline.
+  They are shared across animation editors and can be used to identify important events,
+  animation transitions, or other points of interest.
+
+  See :doc:`Timeline Markers </animation/markers>` for more information.
+
+- **Pose Markers** -- Mark specific frames within an :doc:`Action </animation/actions>`,
+  allowing poses or shape key configurations to be identified and organized.
+
+  Unlike timeline markers, pose markers belong to an individual Action rather than the scene.
+  They are displayed in the *Action Editor* and *Shape Key Editor* modes of the Dope Sheet
+  when the corresponding Action is active.
+
+  Pose markers can be used to label key poses, identify important animation states,
+  and make it easier to navigate and reuse poses within an Action.
+
+  Existing timeline markers can be converted into pose markers using
+  :ref:`Convert to Pose Markers <bpy.ops.action.markers_make_local>`.
 
 
 Visualization
@@ -266,16 +285,19 @@ Shows markers belonging to the active action instead of scene markers.
 
 .. _bpy.ops.action.markers_make_local:
 
-Make Markers Local
-------------------
+Convert to Pose Markers
+-----------------------
 
 .. reference::
 
-   :Mode:      All modes
-   :Menu:      :menuselection:`Marker --> Make Markers Local`
+   :Editor:    Dope Sheet (Action Editor mode only)
+   :Menu:      :menuselection:`Marker --> Convert to Pose Markers`
 
-It is possible to convert standard markers into pose markers with :menuselection:`Marker --> Make Markers Local`.
-Note that the original marker will be gone. If you want to keep it, make a duplicate before you convert.
+Converts timeline markers into :ref:`Pose Markers <marker-types>`
+associated with the active Action.
+
+The original timeline markers are removed during conversion.
+To preserve them, duplicate the markers before converting.
 
 
 .. _bpy.ops.screen.marker_jump:
