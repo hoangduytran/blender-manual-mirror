@@ -20,13 +20,6 @@ actions through :doc:`Nonlinear Animation tracks </editors/nla/tracks>`.
 Header
 ======
 
-.. note::
-
-   The Previous/Next Layer (down/up arrows) operators have been removed from the UI in 4.4
-   and are slated to be removed completely in 5.0.
-   See `#119626 <https://projects.blender.org/blender/blender/issues/119626>`_.
-
-
 .. _dopesheet-action-action:
 
 Action
