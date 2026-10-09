@@ -28,6 +28,27 @@ Expanded items show their child entries indented beneath them.
 Collapsed items hide their contents.
 
 
+Navigation
+==========
+
+Tree Views can be navigated using the keyboard and mouse.
+
+Mouse Wheel
+   Scrolls through the Tree View vertically.
+
+Page Up :kbd:`PageUp`
+   Scrolls up by one page.
+
+Page Down :kbd:`PageDown`
+   Scrolls down by one page.
+
+Home :kbd:`Home`
+   Scrolls to the beginning of the Tree View.
+
+End :kbd:`End`
+   Scrolls to the end of the Tree View.
+
+
 Select
 ======
 
