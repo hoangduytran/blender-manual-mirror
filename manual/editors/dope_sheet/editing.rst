@@ -103,9 +103,11 @@ Sync Markers
 Show Pose Markers :guilabel:`Action Editor`
    Instead of showing the global scene markers, show the local pose markers (which only exist inside the action).
    While this option is active, the *Add Marker* menu item will also create pose markers instead of scene markers.
-Make Markers Local :guilabel:`Action Editor`
-   Converts the selected scene markers into pose markers,
-   making them only visible inside the currently selected action.
+Convert to Pose Markers :guilabel:`Action Editor`
+   Converts timeline markers into pose markers associated with the active Action.
+   The original timeline markers are removed during conversion.
+
+   See :ref:`Convert to Pose Markers <bpy.ops.action.markers_make_local>` for more information.
 
 For information about the other marker tools, see :ref:`Editing Markers <animation-markers-editing>`.
 
