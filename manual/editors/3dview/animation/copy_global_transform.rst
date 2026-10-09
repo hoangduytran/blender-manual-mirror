@@ -1,7 +1,7 @@
 
-****************
+*********************
 World Space Transform
-****************
+*********************
 
 Copy and paste object and bone :term:`world space` transforms with ease.
 
