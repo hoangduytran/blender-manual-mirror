@@ -13,7 +13,8 @@ The *Deactivate Voxels* node deactivates any active voxels or tiles of a grid wh
 field is *true*. The *Selection* field is evaluated at every voxel and tile position of the input
 grid.
 
-The values of the output grid are unchanged, only the active state is changed.
+If *Set Background Value* is enabled the value of deactivated voxels is reset to the grid background
+value. Otherwise the values of the output grid are unchanged, only the active state is changed.
 
 
 Inputs
@@ -24,6 +25,15 @@ Grid
 
 Selection
    Boolean field defining which voxels to deactivate.
+
+Set Background Value
+   If enabled all deactivated voxels will be set to the background value of the grid.
+
+   .. note::
+
+      Inactive voxels are usually invisible but still have values assigned, which can be accessed
+      by sampling from the grid. To avoid unexpected behavior the value of deactivated voxels is
+      reset to the background value by default.
 
 
 Outputs
