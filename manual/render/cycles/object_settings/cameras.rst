@@ -1,4 +1,3 @@
-
 *******
 Cameras
 *******
@@ -33,6 +32,38 @@ Latitude Min, Max
 
 Longitude Min, Max
    Limits of the horizontal field of view angles.
+
+
+.. _cycles-camera-central-cylindrical:
+
+Central Cylindrical
+-------------------
+
+Projects the scene onto a virtual cylinder surrounding the camera, then unwraps it into a flat image. Useful
+for panoramas displayed on curved screens. Unlike equirectangular projection, vertical positions correspond to
+heights on the cylinder rather than latitude angles. Lines parallel to the cylinder axis remain straight and
+vertical in the image.
+
+.. _bpy.types.Camera.central_cylindrical_range_v_min:
+.. _bpy.types.Camera.central_cylindrical_range_v_max:
+
+Height Min, Max
+   Vertical limits on the cylinder, measured relative to the camera's height. Negative values extend below the
+   camera; positive values extend above it.
+
+.. _bpy.types.Camera.central_cylindrical_range_u_min:
+.. _bpy.types.Camera.central_cylindrical_range_u_max:
+
+Longitude Min, Max
+   Limits of the horizontal field of view. A range from -180° to 180° covers a full panorama.
+
+.. _bpy.types.Camera.central_cylindrical_radius:
+
+Cylinder Radius
+   Radius of the cylinder, which determines the vertical field of view together with the height limits. A
+   radius of 1 with heights from -1 to 1 gives a vertical field of view of 90°.
+
+The poles cannot be included at a finite cylinder height.
 
 
 Equiangular Cubemap Face
