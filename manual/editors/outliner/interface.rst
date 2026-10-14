@@ -89,6 +89,16 @@ Sync Selection
    :doc:`3D Viewport </editors/3dview/index>` and
    :doc:`Video Sequencer </video_editing/index>` editors.
 
+.. _bpy.types.SpaceOutliner.scroll_to_active:
+
+Scroll to Active
+   Scroll the active item into view when it changes outside of the outliner.
+
+.. _bpy.types.SpaceOutliner.expand_on_focus:
+
+Expand on Focus
+   Uncollapse the active item when scrolling it into view.
+
 .. _bpy.types.SpaceOutliner.show_mode_column:
 
 Show Mode Column
