@@ -33,10 +33,16 @@ Paste Pose
    :Menu:      :menuselection:`Pose --> Paste Pose`
    :Shortcut:  :kbd:`Ctrl-V`
 
-Pastes the buffered pose onto the current armature.
+Applies the transforms stored in the pose buffer to bones in the active armature.
+Bones are matched by name, so only bones with corresponding names are affected.
 
-Bones are matched by name, regardless of their selection state.
-Only bones with matching names receive the copied transforms.
+Flipped on X-Axis
+   Mirrors the pasted pose across the X axis.
+   This is useful for transferring poses between opposite sides of an armature,
+   such as from the left arm to the right arm.
+On Selected Only
+   Applies the stored pose only to selected bones.
+   When disabled, all bones with matching names can be affected, regardless of selection.
 
 
 Paste Pose Flipped
@@ -48,10 +54,8 @@ Paste Pose Flipped
    :Menu:      :menuselection:`Pose --> Paste Pose Flipped`
    :Shortcut:  :kbd:`Shift-Ctrl-V`
 
-Pastes the buffered pose mirrored across the X axis.
-
-This is useful for transferring poses between the left and right sides of an armature,
-such as copying the pose of one arm to the other.
+Pastes the buffered pose with the *Flipped on X-Axis* option enabled,
+mirroring the pose across the X axis.
 
 
 How Copy/Paste Works
