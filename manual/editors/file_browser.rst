@@ -69,22 +69,22 @@ Above the file list, there's a textbox showing the current folder path, along wi
 
 .. _bpy.ops.file.previous:
 
-Previous Folder :kbd:`Backspace`, :kbd:`Alt-Left`, :kbd:`Mouse4`
+Previous Folder :kbd:`Backspace`, :kbd:`Alt-Left`, :kbd:`Ctrl-[`, :kbd:`Mouse4`
    Move to previous folder in navigation history.
 
 .. _bpy.ops.file.next:
 
-Next Folder :kbd:`Shift-Backspace`, :kbd:`Alt-Right` :kbd:`Mouse5`
+Next Folder :kbd:`Shift-Backspace`, :kbd:`Alt-Right`, :kbd:`Ctrl-]`, :kbd:`Mouse5`
    Move to next folder in navigation history.
 
 .. _bpy.ops.file.parent:
 
-Parent Directory :kbd:`P`, :kbd:`Alt-Up`
+Parent Directory :kbd:`P`, :kbd:`Alt-Up`, :kbd:`Ctrl-Up`
    Move up to parent directory.
 
 .. _bpy.ops.file.refresh:
 
-Refresh File List :kbd:`R`, :kbd:`NumpadPeriod`
+Refresh File List :kbd:`R`, :kbd:`Ctrl-R`
    Refresh current folder.
 
 .. _bpy.ops.file.directory_new:
@@ -113,9 +113,9 @@ Search :kbd:`Ctrl-F`
 Display Mode
    Control how files are displayed.
 
-   :Vertical List: Displays files and folders in a vertical list.
-   :Horizontal List: Displays files and folders in a horizontal list.
-   :Thumbnails: Shows :ref:`previews <file_browser-previews>`.
+   :Vertical List: Displays files and folders in a vertical list. :kbd:`Ctrl-1`
+   :Horizontal List: Displays files and folders in a horizontal list. :kbd:`Ctrl-2`
+   :Thumbnails: Shows :ref:`previews <file_browser-previews>`. :kbd:`Ctrl-3`
 
 
 Display Settings
@@ -179,7 +179,7 @@ Blender IDs
 
 .. _bpy.types.FileSelectParams.show_hidden:
 
-Show Hidden :kbd:`H`
+Show Hidden :kbd:`H`, :kbd:`Ctrl-H`, :kbd:`Ctrl-Shift-Period`
    Shows hidden files (starting with a ``.``).
 
 
@@ -297,26 +297,38 @@ You can also drag and drop a file or directory from your file manager into the B
 This will navigate to the item and select it.
 
 
-.. _bpy.ops.file.select_all:
-
 Selecting
 =========
 
-Select
-   Click :kbd:`LMB` to select a single item. Additionally hold :kbd:`Ctrl` to add/remove that item
-   to/from the selection, or :kbd:`Shift` to select a range of items.
+Files and folders can be selected individually or in groups.
+
+Click :kbd:`LMB` to select a single item.
+Hold :kbd:`Ctrl` while clicking to add or remove individual items from the selection,
+or :kbd:`Shift` to select a range of items.
+
+.. _bpy.ops.file.select_all:
+
+All :kbd:`A`
+   Selects all files and folders.
+
+None :kbd:`Alt-A`
+   Deselects all files and folders.
+
+Invert :kbd:`Ctrl-I`
+   Inverts the selection, selecting unselected items and deselecting selected ones.
 
 .. _bpy.ops.file.select_box:
 
-Dragging
-   Dragging with :kbd:`LMB` starts a :ref:`box selection <tool-select-box>`.
+Box Select
+   Drag with :kbd:`LMB` to :ref:`box select <tool-select-box>` multiple items.
 
 .. note::
 
-   You can always select several entries in the File Browser --
-   the last selected one is considered the active one.
-   If the calling operation expects a single path (like e.g. the main blend-file *Open* one),
-   it will get that active item's path, and the other selected items will be ignored.
+   Multiple items can be selected in the File Browser, with the last selected item
+   considered the active one.
+
+   If an operation only accepts a single path, such as opening a blend-file,
+   only the active item's path is used. Other selected items are ignored.
 
 
 Arrow Keys
