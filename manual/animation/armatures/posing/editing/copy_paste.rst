@@ -43,6 +43,10 @@ Flipped on X-Axis
 On Selected Only
    Applies the stored pose only to selected bones.
    When disabled, all bones with matching names can be affected, regardless of selection.
+Factor
+   Blends between the current pose and the pasted pose.
+   A value of 0 leaves the current pose unchanged, while a value of 1 fully applies the pasted pose.
+   Values in between produce a blend of the two poses.
 
 
 Paste Pose Flipped
