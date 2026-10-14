@@ -50,7 +50,7 @@ Roll
 .. reference::
 
    :Mode:      All Modes
-   :Menu:      :menuselection:`View --> Navigation --> Roll`
+   :Menu:      :menuselection:`View --> Navigation --> Roll Left/Right`
    :Shortcut:  :kbd:`Shift-Numpad4`, :kbd:`Shift-Numpad6`
 
 Rotates the 3D Viewport around its viewing direction, tilting the view
@@ -74,10 +74,23 @@ roll of the other. Switching between these views restores their respective orien
    the camera around its local Z axis, which changes the camera's orientation
    and affects the rendered image.
 
-.. tip::
 
-   To reset the regular viewport roll, align the view to a global axis using
-   a shortcut such as :kbd:`Numpad3`, then orbit back to the desired perspective.
+.. _bpy.ops.view3d.view_roll_set:
+
+Reset Roll
+==========
+
+.. reference::
+
+   :Mode:      All Modes
+   :Menu:      :menuselection:`View --> Navigation --> Reset Roll`
+
+Resets the roll of the 3D Viewport, removing any tilt around the viewing direction
+without changing the direction the view faces.
+
+When in :ref:`Camera View <3dview-camera-navigate>`, this operator resets
+the camera view's roll instead of the regular viewport's roll.
+These roll values are stored separately, so resetting one does not affect the other.
 
 
 .. _bpy.ops.view3d.view_pan:
