@@ -267,9 +267,16 @@ Compositor
 :bl-icon:`shading_rendered` -- Rendered
 =======================================
 
-Render the 3D Viewport using the scene's *Render Engine*, for interactive rendering.
-This gives a preview of the final result before compositing, including scene lighting effects.
+Renders the 3D Viewport using the scene's *Render Engine* for interactive rendering.
+This provides a preview of the final result, including scene lighting, materials,
+and other rendering effects.
 
-The options are the same as for *Material Preview*, except that
-the *Render Pass* selector will offer different passes if the scene
-uses the :doc:`Cycles </render/cycles/index>` render engine.
+The options are the same as for *Material Preview*, except that the *Render Pass*
+selector offers different passes when using the :doc:`Cycles </render/cycles/index>` render engine.
+
+.. _bpy.types.RegionView3D.pause_render:
+
+:bl-icon:`pause` / :bl-icon:`play` Pause Render :guilabel:`Cycles`
+   Pauses interactive rendering in the 3D Viewport while keeping the current rendered image visible.
+   This prevents the viewport from updating when the scene or view changes,
+   reducing the processing resources used by the render engine.
