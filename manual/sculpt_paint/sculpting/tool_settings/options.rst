@@ -8,6 +8,14 @@ Options
    :Mode:      Sculpt Mode
    :Tool:      :menuselection:`Toolbar --> Options`
 
+.. _sculpt-options-transform_only_origin:
+
+Transform Only -- Pivot
+   Transforms the sculpt pivot without affecting the shape of the mesh
+   when using sculpt transform operators.
+
+   See :doc:`Transforming </sculpt_paint/sculpting/introduction/transforming>` for more information.
+
 .. _bpy.types.Paint.show_low_resolution:
 
 Display -- Fast Navigate
