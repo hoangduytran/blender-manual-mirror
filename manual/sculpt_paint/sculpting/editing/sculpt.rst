@@ -239,31 +239,34 @@ Set Pivot
    :Mode:      Sculpt Mode
    :Menu:      :menuselection:`Sculpt --> Set Pivot`
 
-Like Object and Edit Mode, Sculpt Mode also has a :term:`Pivot Point`.
-This is because the basic :doc:`move, rotate and scale </sculpt_paint/sculpting/tools/transforms>`
-transforms are also supported in Sculpt Mode.
-But the pivot point in Sculpt Mode is unique. It always moves together with the transformed mesh
-and can be both manually & automatically placed.
+Sets the :term:`Pivot Point` used by the
+:doc:`Move, Rotate, and Scale </sculpt_paint/sculpting/tools/transforms>` operators
+in Sculpt Mode.
+
+Unlike the pivot point in Object and Edit Modes, the sculpt pivot is independent
+of the transform orientation and can be positioned manually or automatically.
+It moves together with the mesh when applying sculpt transformations.
 
 Origin
-   Sets the pivot to the origin of the sculpt.
+   Sets the pivot to the object's origin.
 Unmasked
-   Sets the pivot position to the average position of the unmasked vertices.
+   Sets the pivot to the average position of all unmasked vertices.
 Mask Border
-   Sets the pivot position to the center of the mask's border.
-   This operation will automatically happen when using :ref:`bpy.ops.sculpt.expand`.
+   Sets the pivot to the average position of vertices along the mask boundary.
+   This is also performed automatically when using the :ref:`Expand <bpy.ops.sculpt.expand>` operator.
 Active Vertex
-   Sets the pivot position to the active vertex position.
+   Sets the pivot to the position of the active vertex.
 Surface :kbd:`Shift-RMB`
-   Sets the pivot position to the surface under the cursor.
+   Sets the pivot to the position on the mesh surface under the cursor.
 
 .. tip::
 
-   For more convenient placement of the pivot point it's recommended to use the shortcut assigned to *Surface*.
+   Use :kbd:`Shift-RMB` to quickly reposition the sculpt pivot on the mesh surface.
 
 .. seealso::
 
-   For a more general introduction see :doc:`Transforming </sculpt_paint/sculpting/introduction/transforming>`.
+   :doc:`Transforming </sculpt_paint/sculpting/introduction/transforming>`
+   for more information about transformations in Sculpt Mode.
 
 
 .. _bpy.ops.sculpt.optimize:
