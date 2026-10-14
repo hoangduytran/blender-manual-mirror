@@ -195,6 +195,14 @@ Rename :kbd:`F2`
 Select Linked
    Selects the data-blocks that use the currently selected one (e.g. selecting all the objects that use the
    selected material). See :ref:`bpy.ops.object.select_linked`.
+Pack
+   Packs the external file associated with the selected data-block into
+   the blend-file, making it available without the original external file.
+
+   This is supported by data-block types that reference external files,
+   such as images and sounds.
+
+   See :ref:`Packing Resources <pack-unpack-data>` for more information.
 
 
 Mark as Asset

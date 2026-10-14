@@ -45,11 +45,18 @@ Previews can be disabled for the whole node tree by using
 Sockets
 =======
 
-Sockets are input and output values for the node.
-They appear as little colored circles on either side of the node.
-Unused sockets can be hidden with :kbd:`Ctrl-H`.
+Sockets are the inputs and outputs of a node, displayed as small colored shapes
+along its left and right edges. Input sockets receive data from other nodes,
+while output sockets provide data to connected nodes.
 
-Each socket is color-coded depending on what type of data it handles.
+Each socket has a shape and color that indicate the type of data it handles.
+
+Sockets can be connected by dragging from an output socket to a compatible input socket.
+
+Some nodes allow sockets to be added dynamically.
+These sockets can be renamed by double-clicking their names.
+
+Unused sockets can be hidden using :kbd:`Ctrl-H`, reducing visual clutter in complex node trees.
 
 .. figure:: /images/interface_controls_nodes_parts_sockets.png
 

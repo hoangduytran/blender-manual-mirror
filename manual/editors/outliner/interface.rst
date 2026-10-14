@@ -89,6 +89,16 @@ Sync Selection
    :doc:`3D Viewport </editors/3dview/index>` and
    :doc:`Video Sequencer </video_editing/index>` editors.
 
+.. _bpy.types.SpaceOutliner.scroll_to_active:
+
+Scroll to Active
+   Scroll the active item into view when it changes outside of the outliner.
+
+.. _bpy.types.SpaceOutliner.expand_on_focus:
+
+Expand on Focus
+   Uncollapse the active item when scrolling it into view.
+
 .. _bpy.types.SpaceOutliner.show_mode_column:
 
 Show Mode Column
@@ -278,6 +288,7 @@ parent/child collections) and disables it for all others. Clicking again enables
    - :ref:`Collections <bpy.types.Collection.hide_select>`
    - :ref:`Objects <bpy.types.Object.hide_select>`
 
+.. _bpy.ops.outliner.hide:
 .. _bpy.types.ObjectBase.hide_viewport:
 .. _bpy.types.LayerCollection.hide_viewport:
 
@@ -286,7 +297,8 @@ parent/child collections) and disables it for all others. Clicking again enables
    The render is not affected.
 
    As an alternative to clicking this icon, you can press :kbd:`H` while hovering over the
-   3D Viewport to hide the selected objects, or :kbd:`Alt-H` to unhide all objects.
+   3D Viewport to hide the selected objects or :kbd:`Shift-H` to hide all unselected objects;
+   use :kbd:`Alt-H` to unhide all objects.
 
    This setting only applies within the current blend-file: when you
    :doc:`Link or Append </files/linked_libraries/link_append>` it to another
