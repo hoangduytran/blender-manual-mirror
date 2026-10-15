@@ -42,6 +42,15 @@ of the Playhead.
 When loading multiple files (such as movies and sounds) at the same time,
 each strip is added sequentially.
 
+The duration of strips without an inherent length, such as images and colors,
+is determined by the :ref:`Strip Length <bpy.types.PreferencesEdit.default_strip_length>`
+preference.
+
+When adding movies containing both video and audio,
+the corresponding strips can be connected automatically using the
+:ref:`Connect Movie Strips <bpy.types.PreferencesEdit.connect_strips_by_default>`
+preference.
+
 
 Adding Effects & Transitions
 ----------------------------

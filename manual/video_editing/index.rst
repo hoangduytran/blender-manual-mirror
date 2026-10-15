@@ -40,3 +40,15 @@ Workflows
 
    edit/index.rst
    storyboarding/index.rst
+
+
+Interchange
+===========
+
+Video editing timelines can be exchanged between Blender and other compatible
+applications using interchange formats such as OpenTimelineIO.
+
+.. toctree::
+   :maxdepth: 2
+
+   interchange/index.rst

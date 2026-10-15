@@ -127,6 +127,19 @@ which changes the orientation of the camera itself and affects the rendered imag
    rolling and its configurable rotation increment.
 
 
+Camera View Flip
+================
+
+The Camera View can be flipped horizontally to display a mirrored version
+of the composition. This can help identify visual imbalances or asymmetry
+that may be less noticeable in the original orientation.
+
+Use :ref:`Flip View <bpy.ops.view3d.view_flip>` to toggle the mirrored view.
+
+Flipping the view only affects the viewport display.
+It does not change the camera object's transform or the rendered image.
+
+
 Camera Positioning
 ==================
 

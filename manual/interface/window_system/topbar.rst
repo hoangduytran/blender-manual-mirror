@@ -100,10 +100,10 @@ Export
    but you can export some or all of your work to a format that can be processed by other graphics programs.
    See :doc:`Import/Export </files/import_export/index>`.
 
-.. _bpy.ops.wm.collection_export_all:
+   .. _bpy.ops.wm.collection_export_all:
 
-Export All Collections
-   Invokes all :ref:`configured exporters <collections-exporters>` for all collection.
+   Export All Collections
+      Invokes all :ref:`configured exporters <collections-exporters>` for all collection.
 
 -----
 

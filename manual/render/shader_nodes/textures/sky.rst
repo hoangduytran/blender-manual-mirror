@@ -61,7 +61,7 @@ Turbidity
 Ground Albedo
    Amount of light reflected from the planet surface back into the atmosphere.
 
-Sun Disc :guilabel:`Cycles Only`
+Sun Disc
    Enable/Disable sun disc lighting.
 
 Sun Size

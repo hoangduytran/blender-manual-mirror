@@ -195,9 +195,6 @@ Image Texture
 Point Density
    Not supported.
 
-Sky Texture
-   In Nishita mode, the *Sun Disc* property is not supported.
-
 
 Other Nodes
 -----------

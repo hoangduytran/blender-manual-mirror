@@ -187,6 +187,22 @@ Clamp Strips by Default
    clamps movement to the underlying content bounds by default to avoid producing extra hold frames or silence.
 
 
+New Strips
+----------
+
+.. _bpy.types.PreferencesEdit.default_strip_length:
+
+Strip Length
+   Default duration, in seconds, of newly added strips that do not have
+   an inherent duration, such as image or color strips.
+
+.. _bpy.types.PreferencesEdit.connect_strips_by_default:
+
+Connect Movie Strips
+   Automatically connects the video and audio strips when adding a movie
+   containing both video and audio, so they can be moved and edited together.
+
+
 Miscellaneous
 =============
 

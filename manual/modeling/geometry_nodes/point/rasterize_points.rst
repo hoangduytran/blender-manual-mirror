@@ -17,7 +17,7 @@ Each point contributes to surrounding voxels according to a weighting function,
 also called a *kernel*. The kernel determines how far each point's influence
 extends and how its value is distributed across the grid.
 
-This is the inverse operation of the :doc:`Sample Grid </modeling/geometry_nodes/volume/sample_grid>`
+This is the inverse operation of the :doc:`Sample Grid </modeling/geometry_nodes/volume/sample/sample_grid>`
 node, which samples values from a grid at specified positions.
 
 The node can generate multiple grids from different input fields,
