@@ -5,7 +5,7 @@
 Creating Extensions
 *******************
 
-Extensions are **add-ons** or **themes** used to extend the core functionality of Blender.
+Extensions are **add-ons**, **asset libraries** or **themes** used to extend the core functionality of Blender.
 They are shared in online platforms, and can be installed and updated from within Blender.
 
 The official extensions platform for the Blender project is `extensions.blender.org <https://extensions.blender.org>`__.
@@ -20,6 +20,7 @@ Other third party sites can also be supported, as long as they follow the Extens
    Version Number Guidelines <version_number_guidelines.rst>
    Add-ons <addons.rst>
    Python Wheels <python_wheels.rst>
+   Asset Libraries <asset_libraries.rst>
    Creating a Repository <creating_repository/index.rst>
 
 .. seealso::
