@@ -132,11 +132,6 @@ Useful Constructs
 - ``:bl-icon:`icon_name```:
   Include Blender icons as inline text, see the full list at :doc:`/contribute/manual/guides/icons`.
 
-.. toctree::
-   :hidden:
-
-   icons.rst
-
 
 Cross References and Links
 ==========================
