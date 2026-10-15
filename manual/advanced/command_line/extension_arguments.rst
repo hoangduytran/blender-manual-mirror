@@ -11,8 +11,7 @@ Extensions Command Line Arguments
 
 .. NOTE: usage is commented, currently unhelpful.
        blender --command extension [-h]
-
-                                   ...
+                                    ...
 
 Command for managing Blender extensions.
 
@@ -32,6 +31,7 @@ subcommands:
 
   `Repository Management`_
     :repo-list:           List repositories.
+    :repo-info:           Show repository information.
     :repo-add:            Add repository.
     :repo-remove:         Remove repository.
 
@@ -122,15 +122,15 @@ usage::
 Install a package file into a user repository.
 
 positional arguments:
-  :FILE:                  The packages file.
+  :FILE:             The packages file.
 
 options:
-  -h, --help            show this help message and exit
-  -r REPO, --repo REPO  The repository identifier.
-  -e, --enable          Enable the extension after installation.
-  --no-prefs            Treat the user-preferences as read-only,
-                        preventing updates for operations that would otherwise modify them.
-                        This means removing extensions or repositories for example, won't update the user-preferences.
+  -h, --help       show this help message and exit
+  -r, --repo REPO  The repository identifier.
+  -e, --enable     Enable the extension after installation.
+  --no-prefs       Treat the user-preferences as read-only,
+                   preventing updates for operations that would otherwise modify them.
+                   This means removing extensions or repositories for example, won't update the user-preferences.
 
 .. _command-line-args-extension-remove:
 
@@ -170,6 +170,25 @@ List all repositories stored in Blender's preferences.
 options:
   -h, --help  show this help message and exit
 
+.. _command-line-args-extension-repo-info:
+
+Subcommand: ``repo-info``
+-------------------------
+
+usage::
+
+       blender --command extension repo-info [-h] [-s] ID
+
+Show high level information about a repository,
+using the listing downloaded by the last "sync".
+
+positional arguments:
+  :ID:          The repository identifier.
+
+options:
+  -h, --help  show this help message and exit
+  -s, --sync  Sync the remote directory before performing the action.
+
 .. _command-line-args-extension-repo-add:
 
 Subcommand: ``repo-add``
@@ -196,7 +215,7 @@ options:
   --name NAME           The name to display in the interface (optional).
   --directory DIRECTORY
                         The directory where the repository stores local files (optional).
-                        When omitted a directory in the users directory is automatically selected.
+                        When omitted a directory in the user's directory is automatically selected.
   --url URL             The URL, for remote repositories (optional).
                         When omitted the repository is considered "local"
                         as it is not connected to an external repository,
@@ -271,7 +290,7 @@ options:
                         The contents must be a dictionary of lists where the ``key`` matches the extension type.
 
                         For example:
-                           ``{"add-ons": ["Example", "Another"], "theme": ["Other", "Tags"]}``
+                           ``{"add-on": ["Example", "Another"], "asset-library": ["Wildlife"], "theme": ["Other", "Tags"]}``
 
                         To disable validating tags, pass in an empty path ``--valid-tags=""``.
   --split-platforms     Build a separate package for each platform.
@@ -309,7 +328,7 @@ options:
                         The contents must be a dictionary of lists where the ``key`` matches the extension type.
 
                         For example:
-                           ``{"add-ons": ["Example", "Another"], "theme": ["Other", "Tags"]}``
+                           ``{"add-on": ["Example", "Another"], "asset-library": ["Wildlife"], "theme": ["Other", "Tags"]}``
 
                         To disable validating tags, pass in an empty path ``--valid-tags=""``.
 
@@ -322,6 +341,7 @@ usage::
 
        blender --command extension server-generate [-h] --repo-dir REPO_DIR
                                                    [--repo-config REPO_CONFIG]
+                                                   [--assetlib-auth-method {PER_LIBRARY,FROM_REPOSITORY}]
                                                    [--html]
                                                    [--html-template HTML_TEMPLATE_FILE]
 
@@ -346,6 +366,11 @@ options:
                            id = "other_extension"
                            reason = "Another reason for why this is blocked"
 
+  --assetlib-auth-method <PER_LIBRARY,FROM_REPOSITORY>
+                        How asset libraries provided by this repository's extensions authenticate:
+
+                        - PER_LIBRARY: Each asset library uses its own access token (default).
+                        - FROM_REPOSITORY: Asset libraries use the access token of this repository.
   --html                Create a HTML file (``index.html``) as well as the repository JSON
                         to support browsing extensions online with static-hosting.
   --html-template HTML_TEMPLATE_FILE
