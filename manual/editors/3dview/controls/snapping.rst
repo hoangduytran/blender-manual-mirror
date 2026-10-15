@@ -91,6 +91,8 @@ Determines the target which the selection will be snapped to.
    of the grid cell size.
 :Grid:
    Snaps to the grid that's displayed in the viewport.
+:Origin:
+   Snaps to the object's :doc:`Origin </scene_layout/object/origin>`.
 :Vertex:
    Snaps to the vertex that's closest to the mouse cursor.
 :Edge:
