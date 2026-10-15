@@ -247,11 +247,6 @@ Description
 Author
    Optional field for the asset author. Not used by Blender itself.
 
-.. _bpy.types.AssetMetaData.webpage:
-
-Webpage
-   URL to a webpage containing additional information about the asset, such as its documentation.
-
 
 Preview
 ^^^^^^^
