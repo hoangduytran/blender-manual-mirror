@@ -12,7 +12,7 @@ blend-file, allowing changes made in external audio editing software to be
 reflected by simply reloading the file.
 
 Multiple Sound strips can be layered to create a complete soundtrack,
-including dialogue, music, ambience, and sound effects. During playback and
+including dialogue, music, ambiance, and sound effects. During playback and
 rendering, overlapping Sound strips are mixed together.
 
 To add a Sound strip, choose :menuselection:`Add --> Sound` and select one or
@@ -35,7 +35,7 @@ select and move it, adjust its starting offset by dragging its handles, and
 split it with :kbd:`K`.
 
 Each strip has independent properties such as volume and name, allowing
-dialogue, music, ambience, and sound effects to be mixed separately.
+dialogue, music, ambiance, and sound effects to be mixed separately.
 
 Overlapping Sound strips are automatically mixed together during playback
 and rendering. Unlike image and movie strips, lower channels do not obscure
