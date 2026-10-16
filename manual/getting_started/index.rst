@@ -6,10 +6,9 @@
 
 .. keep up to date with :doc:`</index>`
 
-.. toctree::
-   :maxdepth: 2
+.. Not a toctree, these are in the root toctree already & this would warn.
 
-   about/index.rst
-   installing/index.rst
-   configuration/index.rst
-   help.rst
+- :doc:`about/index`
+- :doc:`installing/index`
+- :doc:`configuration/index`
+- :doc:`help`

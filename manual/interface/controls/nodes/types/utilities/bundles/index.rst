@@ -52,14 +52,10 @@ The following nodes are provided for working with bundles:
 Bundle nodes allow adding or removing an arbitrary number of sockets,
 with flexible type support.
 
-Bundles can be attached to geometry using get/set geometry bundle nodes. These can be used to pass
-bundled data between modifiers and objects.
-
-.. toctree::
-   :maxdepth: 1
-
-   /modeling/geometry_nodes/geometry/read/get_geometry_bundle.rst
-   /modeling/geometry_nodes/geometry/write/set_geometry_bundle.rst
+Bundles can be attached to geometry using the
+:doc:`/modeling/geometry_nodes/geometry/read/get_geometry_bundle` and
+:doc:`/modeling/geometry_nodes/geometry/write/set_geometry_bundle`.
+These can be used to pass bundled data between modifiers and objects.
 
 
 Typed Bundles

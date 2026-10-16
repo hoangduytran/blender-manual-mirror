@@ -8,8 +8,11 @@
 
    transforms.rst
    relations.rst
-   /scene_layout/collections/index.rst
    instancing/index.rst
    visibility.rst
    display.rst
    line_art.rst
+
+.. seealso::
+
+   :ref:`Collections Panel <scene-layout_collections_collections_panel>`.

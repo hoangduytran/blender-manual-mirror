@@ -25,11 +25,3 @@ Information on brush settings for every mode can be found in these pages:
 
 :doc:`Cursor </sculpt_paint/brush/cursor>`
    Cursor and appearance settings.
-
-.. toctree::
-   :hidden:
-
-   Stroke </sculpt_paint/brush/stroke.rst>
-   Shape </sculpt_paint/brush/shape.rst>
-   Falloff </sculpt_paint/brush/falloff.rst>
-   Cursor </sculpt_paint/brush/cursor.rst>

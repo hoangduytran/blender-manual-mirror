@@ -1,3 +1,4 @@
+.. _sculpt-paint-brush-index:
 
 ###########
   Brushes
