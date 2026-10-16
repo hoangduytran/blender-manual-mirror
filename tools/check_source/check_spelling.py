@@ -17,6 +17,7 @@ import docutils
 import docutils.parsers.rst
 import enchant
 from docutils.parsers.rst import directives, roles
+from docutils.parsers.rst.directives.body import Container
 
 from check_spelling_config import (
     dict_custom,
@@ -225,7 +226,11 @@ def directive_ignore(
     (contrast with `directive_ignore_recursive`, which drops content entirely).
     """
     text = '\n'.join(content)
-    return [docutils.nodes.doctest_block(text, text, codeblock=True)]
+    node = docutils.nodes.doctest_block(text, text, codeblock=True)
+    # Needed for `visit_Text` to locate the text in the source file,
+    # without this the content is silently skipped.
+    node.line = content_offset + 1
+    return [node]
 
 
 directive_ignore.content = True
@@ -248,9 +253,12 @@ directive_ignore_recursive.content = True
 directives.register_directive('index', directive_ignore)
 directives.register_directive('reference', directive_ignore)
 directives.register_directive('seealso', directive_ignore)
-directives.register_directive('only', directive_ignore)
+# Behaves as a container: the argument isn't prose, the content is regular RST.
+directives.register_directive('only', Container)
 directives.register_directive('hlist', directive_ignore)
 directives.register_directive('versionchanged', directive_ignore)
+# Sphinx adds a `heading-level` option, unknown to docutils.
+directives.register_directive('rubric', directive_ignore)
 
 # directives.register_directive('glossary', directive_ignore)  # wash this data instead
 # Custom directives from extensions

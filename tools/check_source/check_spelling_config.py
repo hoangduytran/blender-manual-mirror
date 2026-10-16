@@ -206,6 +206,7 @@ dict_custom = {
     "unselectable",
     "unsimilar",
     "url",
+    "user-scriptable",
     "verts",
     "viewport",
     "viewports",
@@ -275,6 +276,7 @@ dict_custom = {
     "downscaled",
     "dyntopo",
     "easings",
+    "effector",
     "enablement",
     "equirectangular",
     "equisolid",
@@ -454,6 +456,8 @@ dict_custom = {
     "subtarget",
     "superellipse",
     "surfel",
+    "symmetrize",
+    "symmetrizes",
     "texel",
     "texels",
     "thresholding",
@@ -549,6 +553,7 @@ dict_custom = {
     "weblate",
     "xinerama",
     "yello",
+    "zstandard",
 
     # Blender-specific terms - these should be terms used strictly within Blender, such as EEVEE.
     #
