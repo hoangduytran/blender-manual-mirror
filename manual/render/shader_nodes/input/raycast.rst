@@ -78,6 +78,10 @@ Attributes
 
 :guilabel:`Cycles Only`
 
-Geometry attributes at the intersection point can be accessed. Add attributes in the Sample Attributes panel in the node editor sidebar, and new attribute sockets appear on the node. Fill in the attribute name and link the new output socket to use the value. When no intersection is found, the attribute output is zero.
+Geometry attributes at the intersection point can be accessed.
+Add attributes in the Sample Attributes panel in the node editor sidebar,
+and new attribute sockets appear on the node.
+Fill in the attribute name and link the new output socket to use the value.
+When no intersection is found, the attribute output is zero.
 
 EEVEE does not support attribute access, and outputs attributes as zero.

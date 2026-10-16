@@ -43,7 +43,8 @@ Light emission can also be added. Light emits from below the coat and sheen laye
 to model for example emissive displays with a coat or dust.
 
 Thin Wall Mode
-----------------
+--------------
+
 When the :ref:`Thin Wall <bpy.types.ShaderNodePrincipled.thinWall>` Boolean is enabled,
 the surface is switched to thin-walled mode.
 In this mode the surface is a slab with its layers mirrored around the base,
@@ -272,7 +273,8 @@ Tint
       Tint from white to orange
 
 Anisotropy :guilabel:`Cycles Only`
-   Amount of anisotropy for specular reflection and transmission. Higher values give elongated highlights along the tangent direction;
+   Amount of anisotropy for specular reflection and transmission.
+   Higher values give elongated highlights along the tangent direction;
    negative values give highlights shaped perpendicular to the tangent direction.
 
    .. figure:: /images/render_shader-nodes_shader_principled-specular-anisotropic.webp

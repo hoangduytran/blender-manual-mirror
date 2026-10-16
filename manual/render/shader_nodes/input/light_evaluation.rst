@@ -10,7 +10,8 @@ Light Evaluation Node
    :align: right
    :alt: Light Evaluation Node.
 
-The *Light Evaluation* node computes shading reflection factors, direction, distance, and attenuation masks for the light source currently being evaluated.
+The *Light Evaluation* node computes shading reflection factors, direction, distance,
+and attenuation masks for the light source currently being evaluated.
 
 .. note::
 

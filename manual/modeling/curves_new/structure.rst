@@ -127,9 +127,8 @@ For more information, refer to the `Wikipedia page <https://en.wikipedia.org/wik
 Catmull Rom
 -----------
 
-Catmull Rom splines are a spline type which generates a smooth curve which passes through all control points. The advantage
-over Bézier curves is that the direction in each control point is derived from the previous and next point. This makes them
-less flexible, but since they don't need to store extra data for the handles Catmull Rom splines are more lightweight. This
-makes them a good choice for hair curves or generated vegetation.
-
-
+Catmull Rom splines are a spline type which generates a smooth curve which passes through all control points.
+The advantage over Bézier curves is that the direction in each control point
+is derived from the previous and next point. This makes them less flexible,
+but since they don't need to store extra data for the handles Catmull Rom splines are more lightweight.
+This makes them a good choice for hair curves or generated vegetation.

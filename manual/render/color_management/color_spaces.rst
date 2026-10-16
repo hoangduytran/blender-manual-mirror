@@ -96,7 +96,10 @@ Color spaces for displays and image files.
 :Display P3: Apple's Display P3 with sRGB compound (piece-wise) encoding transfer function, common on Mac devices.
 :Rec.2100 PQ: For high dynamic range images and video with Rec.2020 wide gamut, up to 10000 nits.
 :Rec.2100 HLG: For high dynamic range images and video with Rec.2020 wide gamut, up to 1000 nits.
-:Rec.709-A: Rec.709 1.961 Exponent EOTF Display, matching the interpretation of Rec.709 video on Apple devices. Use to match display of video files in e.g. QuickTime exactly. Not recommended to be used for any other purpose.
+:Rec.709-A:
+   Rec.709 1.961 Exponent EOTF Display, matching the interpretation of Rec.709 video on Apple devices.
+   Use to match display of video files in e.g. QuickTime exactly.
+   Not recommended to be used for any other purpose.
 
 Input
 -----

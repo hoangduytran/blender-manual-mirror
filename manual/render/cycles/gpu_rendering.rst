@@ -70,7 +70,8 @@ information about AMD graphics cards and their architectures.
 Hardware ray-tracing support is available with the most recent drivers.
 This can be enabled in the preferences, and is supported on Radeon RX 6000 and newer.
 
-GPU accelerated denoising is available on discrete Radeon RX 6000 and newer GPUs on Linux, and discrete Radeon RX 7000 and newer GPUs on Windows.
+GPU accelerated denoising is available on discrete Radeon RX 6000 and newer GPUs on Linux,
+and discrete Radeon RX 7000 and newer GPUs on Windows.
 
 oneAPI -- Intel
 ---------------

@@ -10,7 +10,8 @@ Light Info Node
    :align: right
    :alt: Light Info Node.
 
-The *Light Info* node outputs basic properties (color, power, and position) of the light source currently being evaluated.
+The *Light Info* node outputs basic properties (color, power,
+and position) of the light source currently being evaluated.
 
 .. note::
    This node must be used alongside :ref:`Light Accumulation <bpy.types.ShaderNodeLightAccumulation>`.

@@ -13,7 +13,8 @@ The *Grid Solve Poisson* node is an advanced math node for solving a wide range 
 geometry and physics simulation using 3D grids.
 
 It solves `Poisson's equation <https://en.wikipedia.org/wiki/Poisson%27s_equation>`__, which relates
-the value of each grid voxel to its neighbors using the `Laplace operator <https://en.wikipedia.org/wiki/Laplace_operator>`__.
+the value of each grid voxel to its neighbors using the
+`Laplace operator <https://en.wikipedia.org/wiki/Laplace_operator>`__.
 
 The Laplace operator computes the difference between a voxel and the average of its neighbors.
 The node solves the *inverse* problem, reconstructing the original potential where applying the
@@ -25,8 +26,10 @@ has as many degrees-of-freedom as there are boundary voxels. To fully define the
 *boundary conditions* at the edge of the solution space must also be specified.
 
 The default boundary condition enforces a solution value of *zero* at the
-boundary everywhere. Other modes allow enforcing custom fixed values (`Dirichlet condition <https://en.wikipedia.org/wiki/Dirichlet_boundary_condition>`__),
-or custom gradient values of the resulting function (`Neumann condition <https://en.wikipedia.org/wiki/Neumann_boundary_condition>`__),
+boundary everywhere. Other modes allow enforcing custom fixed values
+(`Dirichlet condition <https://en.wikipedia.org/wiki/Dirichlet_boundary_condition>`__),
+or custom gradient values of the resulting function
+(`Neumann condition <https://en.wikipedia.org/wiki/Neumann_boundary_condition>`__),
 or a combination of both ("Mixed" boundary condition).
 
 .. figure:: /images/modeling_geometry-nodes_volume_grid-poisson-solve-colors.png

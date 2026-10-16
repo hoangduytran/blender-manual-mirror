@@ -362,7 +362,8 @@ that should not normally be selected or edited directly by users.
 
 Hidden data-blocks can be made visible through user preferences:
 
-- Enable :ref:`Defaults -- Show Hidden Files/Data-Blocks <bpy.types.PreferencesFilePaths.show_hidden_files_datablocks>`
+- Enable
+  :ref:`Defaults -- Show Hidden Files/Data-Blocks <bpy.types.PreferencesFilePaths.show_hidden_files_datablocks>`
   to display dot-prefixed data-blocks in File Browsers and data ID selectors.
 - Enable :ref:`Search -- Show Hidden <bpy.types.Preferences.show_hidden_ids>`
   to display dot-prefixed data-blocks in search menus.

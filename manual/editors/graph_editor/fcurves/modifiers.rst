@@ -70,7 +70,8 @@ Single modifiers can be removed by clicking the *X* icon next to the modifier in
 Multiple modifiers can be removed at once with the *Delete F-Curve Modifiers* operator.
 
 This can be found in the Channel Menu, or the Channel Region context menu (right click in the channel region).
-After chosing this menu option, you can open the :ref:`redo panel <bpy.ops.screen.redo_last>` to adjust the settings if needed.
+After choosing this menu option, you can open the :ref:`redo panel <bpy.ops.screen.redo_last>`
+to adjust the settings if needed.
 
 
 .. figure::  /images/editors_graph-editor_fcurves_delete-f-mods-redo-panel.png
