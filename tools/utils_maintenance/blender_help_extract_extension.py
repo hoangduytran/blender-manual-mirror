@@ -37,6 +37,7 @@ sub_command_titles: Dict[str, Tuple[str, ...]] = {
     ),
     "Repository Management": (
         "repo-list",
+        "repo-info",
         "repo-add",
         "repo-remove",
     ),

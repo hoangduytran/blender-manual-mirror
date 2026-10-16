@@ -137,6 +137,8 @@ This will greatly reduce the bandwidth used by Blender's periodic syncing of the
 .. _conditional requests: https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/Conditional_requests
 
 
+.. _asset-library-access-token:
+
 Access Token
 ============
 
@@ -146,3 +148,9 @@ Similarly to :ref:`Extensions repositories <access-token>`, some remote asset li
    :scale: 50%
 
    The user can specify an ``access token`` for an asset library as part of its advanced settings.
+
+
+Distributing as an Extension
+============================
+
+An asset library hosted online can also be distributed as an :ref:`extension <extensions-asset_libraries>`.

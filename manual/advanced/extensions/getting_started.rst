@@ -52,6 +52,18 @@ A theme extension only needs the manifest and the .xml theme file.
    ├─ blender_manifest.toml
    └─ theme.xml
 
+
+Asset library extension
+-----------------------
+
+An :ref:`asset library <extensions-asset_libraries>` extension only needs the manifest,
+the assets are hosted online.
+
+.. code-block:: text
+
+   my_extension-0.0.1.zip
+   └─ blender_manifest.toml
+
 .. note::
 
    Extensions can optionally have all its files inside a folder (inside the archive).
@@ -77,7 +89,7 @@ This example is a good starting point to the ``blender_manifest.toml`` that shou
    name = "My Example Extension"
    tagline = "This is another extension"
    maintainer = "Developer name"
-   # Supported types: "add-on", "theme"
+   # Supported types: "add-on", "asset-library", "theme"
    type = "add-on"
 
    # # Optional: link to documentation, support (public bug tracker), source files, etc.
@@ -114,6 +126,12 @@ This example is a good starting point to the ``blender_manifest.toml`` that shou
    #   "./wheels/hexdump-3.3-py3-none-any.whl",
    #   "./wheels/jsmin-3.0.1-py3-none-any.whl",
    # ]
+
+   # # Required when `type = "asset-library"`, not allowed otherwise.
+   # # Asset library extensions need `blender_version_min = "5.3.0"` or newer.
+   # # https://docs.blender.org/manual/en/latest/advanced/extensions/asset_libraries.html
+   # [asset_library]
+   # remote_url = "https://example.com/my-assets/"
 
    # # Optional: add-ons can list which resources they will require:
    # # * files (for access of any filesystem operations)
@@ -154,7 +172,7 @@ Required values:
    :name: Complete name of the extension.
    :schema_version: Internal version of the file format - use ``1.0.0``.
    :tagline: One-line short description, up to 64 characters - cannot end with punctuation.
-   :type: "add-on", "theme".
+   :type: "add-on", "asset-library", "theme".
    :version: Version of the extension - must follow `semantic versioning <https://semver.org/>`__.
 
 Optional values:
@@ -172,6 +190,10 @@ Optional values:
       *files*, *network*, *clipboard*, *camera*, *microphone*.
       Each permission should be followed by an explanation (short single-sentence, up to 64 characters, with no end
       punctuation).
+
+Required values for "asset-library":
+   :asset_library:
+      Table with the ``remote_url`` of the library, see :ref:`Asset Libraries <extensions-asset_libraries>`.
 
 Optional values for "build":
    These values are only used by the :ref:`build <command-line-args-extension-build>` sub-command.

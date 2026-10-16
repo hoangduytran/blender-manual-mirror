@@ -6,8 +6,8 @@ Extensions Tags
 ***************
 
 A different set of tags is available for the different extensions types.
-This is the list of the tags currently supported by the `Blender Extensions Platform
-<https://extensions.blender.org/>`_:
+This is the list of tags Blender accepts when :ref:`building <command-line-args-extension-build>` an extension,
+matching the `Blender Extensions Platform <https://extensions.blender.org/>`__ for add-ons and themes:
 
 Add-ons
 =======
@@ -43,6 +43,18 @@ Add-ons
 - Tracking
 - User Interface
 - UV
+
+Asset Libraries
+===============
+
+- Brush
+- Compositor
+- Geometry Nodes
+- Hair
+- Material
+- Model
+- Shading
+- World
 
 Themes
 ======
