@@ -26,7 +26,8 @@ By default this bone will be:
 - Have no parent/child relationship with any other bone.
 - Have its :ref:`bpy.types.Bone.use_deform` option enabled
 
-It is also possible to edit the parameters of the bone in the :ref:`redo panel <bpy.ops.screen.redo_last>` when creating it.
+It is also possible to edit the parameters of the bone in the :ref:`redo panel <bpy.ops.screen.redo_last>`
+when creating it.
 
 .. figure:: /images/animation_armatures_add_bone_redo_panel.png
 

@@ -89,7 +89,7 @@ Refresh File List :kbd:`R`, :kbd:`Ctrl-R`
 
 .. _bpy.ops.file.directory_new:
 
-Create New Directory :kbd:`Ctrl-Shift-N`
+Create New Directory :kbd:`Shift-Ctrl-N`
    Create a new directory inside the current one.
 
 .. _bpy.types.FileSelectParams.directory:
@@ -179,7 +179,7 @@ Blender IDs
 
 .. _bpy.types.FileSelectParams.show_hidden:
 
-Show Hidden :kbd:`H`, :kbd:`Ctrl-H`, :kbd:`Ctrl-Shift-Period`
+Show Hidden :kbd:`H`, :kbd:`Ctrl-H`, :kbd:`Shift-Ctrl-Period`
    Shows hidden files (starting with a ``.``).
 
 

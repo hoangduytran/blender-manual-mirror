@@ -370,7 +370,8 @@ Select Overlap
    :Mode:      Edit Mode
    :Menu:      :menuselection:`Select --> Select All by Trait --> Overlap`
 
-Selects all UV faces that overlap with one another in the UV Editor. Selects the entire island when island selection mode is enabled
+Selects all UV faces that overlap with one another in the UV Editor.
+Selects the entire island when island selection mode is enabled.
 
 Overlapping UVs share the same or partially intersecting texture space,
 which can cause rendering artifacts, texture bleeding, or incorrect baking results.

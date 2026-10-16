@@ -11,7 +11,8 @@ General interactive tools to contruct primitive geometry directly in Sculpt Mode
 
 .. warning::
 
-   It's worth noting these tools do not work when Dynatopo is enabled or in the presence of an active Multires modifier.
+   It's worth noting these tools do not work when Dynatopo is enabled or
+   in the presence of an active Multires modifier.
 
 :ref:`Add Cube <tool-add-cube>`
    Interactively add a cube mesh object.

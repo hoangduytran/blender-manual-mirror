@@ -38,7 +38,8 @@ Convert To
 .. note::
 
    *Light* space represents the object coordinate space of the light source currently being evaluated.
-   When converting from or to Light space, this node must be used alongside :ref:`Light Accumulation <bpy.types.ShaderNodeLightAccumulation>`.
+   When converting from or to Light space,
+   this node must be used alongside :ref:`Light Accumulation <bpy.types.ShaderNodeLightAccumulation>`.
 
 Outputs
 =======

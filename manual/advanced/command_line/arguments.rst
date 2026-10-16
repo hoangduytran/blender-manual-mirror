@@ -74,7 +74,7 @@ Render Options
 
 ``-t``, ``--threads`` ``<threads>``
    Use amount of ``<threads>`` for rendering and other operations
-   [1-1024], 0 to use the systems processor count.
+   [1-1024], 0 to use the system's processor count.
 
 .. _command-line-args-cycles-render-options:
 
@@ -205,7 +205,12 @@ Python Options
    (only for scripts executed from the command line), zero disables.
 
 ``--python-use-system-env``
-   Allow Python to use system environment variables such as ``PYTHONPATH`` and the user site-packages directory.
+   Allow Python to use system environment variables such as ``PYTHONPATH``.
+   This also enables user environment, see: ``--python-use-user-env``.
+
+``--python-use-user-env``
+   Allow Python to use user's site-packages directory.
+   This disables full isolation for the Python environment.
 
 ``--addons`` ``<addon(s)>``
    Comma separated list (no spaces) of add-ons to enable in addition to any default add-ons.
@@ -320,7 +325,7 @@ Debug Options
    Enable colors for dependency graph debug messages.
 
 ``--debug-depsgraph-uid``
-   Verify validness of session-wide identifiers assigned to ID data-blocks.
+   Verify validity of session-wide identifiers assigned to ID data-blocks.
 
 ``--debug-ghost``
    Enable debug messages for Ghost (Linux only).
@@ -341,11 +346,12 @@ Debug Options
    Enable shader debug info generation (Vulkan only).
 
 ``--debug-gpu-scope-capture``
-   Capture the GPU commands issued inside the give scope name.
+   Capture the GPU commands issued inside the given scope name.
 
 ``--debug-gpu-shader-source``
    Save the compiled GPU shader source code for the given shader name.
-   The given name can contain leading or trailing wildcard "*" to match multiple shaders. Files are saved in the current working directory inside a directory named "Shaders".
+   The given name can contain leading or trailing wildcard "*" to match multiple shaders.
+   Files are saved in the current working directory inside a directory named "Shaders".
 
 ``--debug-gpu-shader-no-preprocessor``
    Skip preprocessor pass and rely on driver or shader compiler preprocessor instead.
@@ -356,6 +362,9 @@ Debug Options
 
 ``--debug-gpu-no-texture-pool``
    Disable memory aliasing optimizations in the GPU texture pool.
+
+``--debug-gpu-backend-no-fallback``
+   Fail instead of falling back to another GPU backend when the selected one is not supported. Skips the GPU backend support check.
 
 ``--debug-gpu-renderdoc``
    Enable RenderDoc integration for GPU frame grabbing and debugging.
@@ -389,6 +398,9 @@ Debug Options
 ``--debug-freestyle``
    Enable debug messages for Freestyle.
 
+``--console-crash-handler``
+   Use the console to report crashes.
+
 ``--disable-crash-handler``
    Disable the crash handler.
 
@@ -409,6 +421,22 @@ GPU Options
 
 ``--gpu-backend``
    Force to use a specific GPU backend. Valid options: ``vulkan``,  ``metal``,  ``opengl``.
+
+``--gpu-device`` ``<device>``
+   Select a specific GPU device, overriding the GPU device from user preferences for this
+   run only. Accepted forms:
+
+   * ``<vendor-hex>/<device-hex>/<index-hex>`` (matches the identifier used in user
+     preferences, with vendor PCI ID, device PCI ID and enumeration index all hex-encoded).
+   * ````<index>```` (no slashes) picks the Nth supported device by enumeration order, decimal.
+   * ``help`` prints supported Vulkan devices and exits.
+
+   Only used with the Vulkan backend. Other backends print a warning and ignore this option.
+   If the requested Vulkan device is unavailable, Blender falls back to the saved GPU
+   preference unless ``--gpu-device-no-fallback`` is also set.
+
+``--gpu-device-no-fallback``
+   Fail instead of falling back when ``--gpu-device`` does not match a usable Vulkan device.
 
 ``--gpu-vsync``
    Set the VSync.
@@ -437,8 +465,8 @@ Misc Options
 ``--app-template`` ``<template>``
    Set the application template (matching the directory name), use ``default`` for none.
 
-``--factory-startup``
-   Skip reading the ``startup.blend`` in the users home directory.
+``-X``, ``--factory-startup``
+   Skip reading the ``startup.blend`` in the user's home directory.
 
 ``--enable-event-simulate``
    Enable event simulation testing feature ``bpy.types.Window.event_simulate``.

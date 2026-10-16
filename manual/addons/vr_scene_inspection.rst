@@ -86,7 +86,9 @@ focus, and aperture settings while being immersed within the 3D environment.
 Capturing Shots
 ---------------
 
-Capturing is done inside the VR session using a virtual `director's viewfinder <https://en.wikipedia.org/wiki/Director%27s_viewfinder>`__, enabled in :menuselection:`Location Scouting --> Viewfinder`.
+Capturing is done inside the VR session using a virtual
+`director's viewfinder <https://en.wikipedia.org/wiki/Director%27s_viewfinder>`__,
+enabled in :menuselection:`Location Scouting --> Viewfinder`.
 
 .. list-table::
 
@@ -188,7 +190,7 @@ Review VR Captures operator
         - Add Camera from Capture
       * - :kbd:`M`
         - Add Marker from Capture
-      * - :kbd:`ESC`/:kbd:`RMB`
+      * - :kbd:`Esc`/:kbd:`RMB`
         - Exit Review
 
    This operator is non-blocking. Clicking the :guilabel:`Exit Review` button or leaving

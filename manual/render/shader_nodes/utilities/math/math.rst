@@ -87,10 +87,12 @@ Operation
 
       :Add: The sum of the two values.
       :Subtract: The difference between the two values.
-      :Multiply: The product of the two values. Multiplying by a value between 0 and 1 darkens; values above 1 brighten.
+      :Multiply:
+         The product of the two values. Multiplying by a value between 0 and 1 darkens; values above 1 brighten.
       :Divide: The division of the first value by the second value. Division by zero results in zero.
       :Multiply Add: Computes :math:`A × B + C`. Useful for scaling a value then adding an offset in a single node.
-      :Power: The *Base* raised to the power of *Exponent*. Values above 1 steepen the curve; values below 1 flatten it.
+      :Power:
+         The *Base* raised to the power of *Exponent*. Values above 1 steepen the curve; values below 1 flatten it.
       :Logarithm: The log of the value with a *Base* as its base.
       :Square Root: The square root of the value.
       :Inverse Square Root: One divided by the square root of the value.
@@ -108,12 +110,16 @@ Operation
       :Minimum: Outputs the smaller of the two values.
       :Maximum: Outputs the larger of the two values.
       :Less Than: Outputs 1.0 when the first value is smaller, and 0.0 otherwise. Useful for creating threshold masks.
-      :Greater Than: Outputs 1.0 when the first value is larger, and 0.0 otherwise. Useful for creating threshold masks.
+      :Greater Than:
+         Outputs 1.0 when the first value is larger, and 0.0 otherwise. Useful for creating threshold masks.
       :Sign: Outputs 1.0 for positive values, -1.0 for negative, and 0.0 for exactly zero.
-      :Compare: Outputs 1.0 when the two values are within *Epsilon* of each other. Increase *Epsilon* to widen the match tolerance.
+      :Compare:
+         Outputs 1.0 when the two values are within *Epsilon* of each other.
+         Increase *Epsilon* to widen the match tolerance.
       :Smooth Minimum:
          Like *Minimum*, but blends smoothly between the two values when they are close together.
-         The blend width is controlled by the *Distance* input. Useful for blending height maps or terrain without visible seams.
+         The blend width is controlled by the *Distance* input.
+         Useful for blending height maps or terrain without visible seams.
       :Smooth Maximum:
          Like *Maximum* but with a smooth transition controlled by *Distance*.
 
@@ -122,20 +128,27 @@ Operation
       These are essential for creating repeating patterns, quantization effects, and cyclic motion.
 
       :Round: Rounds to the nearest integer, rounding 0.5 upward.
-      :Floor: Rounds down to the nearest integer. For negative numbers, this moves away from zero (e.g. -1.3 becomes -2.0).
+      :Floor:
+         Rounds down to the nearest integer. For negative numbers, this moves away from zero (e.g. -1.3 becomes -2.0).
       :Ceil: Rounds up to the nearest integer.
       :Truncate: Removes the fractional part without rounding (e.g. 3.7 becomes 3.0, -3.7 becomes -3.0).
       :Fraction: Returns only the fractional part (e.g. 3.7 becomes 0.7). Useful for creating repeating gradients.
-      :Truncated Modulo: Outputs the remainder of dividing the first value by the second, preserving the sign of the first value.
-      :Floored Modulo: Outputs a positive remainder, even for negative inputs. Use this when you need the result to stay in the [0, divisor) range.
+      :Truncated Modulo:
+         Outputs the remainder of dividing the first value by the second, preserving the sign of the first value.
+      :Floored Modulo:
+         Outputs a positive remainder, even for negative inputs.
+         Use this when you need the result to stay in the [0, divisor) range.
       :Wrap:
          Wraps the input value so it stays between *Min* and *Max* in a repeating loop.
          When the value passes *Max*, it wraps back to *Min*, and vice versa.
          Works like a sawtooth wave — useful for tiling, repeating patterns, and cyclic animations.
-      :Snap: Rounds the value down to the nearest multiple of *Increment*. Use for quantization or grid-alignment effects.
+      :Snap:
+         Rounds the value down to the nearest multiple of *Increment*. Use for quantization or grid-alignment effects.
          Note that this uses floor rounding (towards negative infinity), not rounding to the nearest multiple.
-      :Ping-Pong: Bounces the value back and forth between 0.0 and *Scale* like a ball. As the input increases,
-         the output rises to *Scale* then falls back to 0.0, repeating. Useful for back-and-forth animation and folding patterns.
+      :Ping-Pong:
+         Bounces the value back and forth between 0.0 and *Scale* like a ball.
+         As the input increases, the output rises to *Scale* then falls back to 0.0, repeating.
+         Useful for back-and-forth animation and folding patterns.
 
    Trigonometric
       Sine, cosine, and tangent functions. The input is always in radians.

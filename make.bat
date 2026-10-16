@@ -79,7 +79,6 @@ if "%1" == "help" (
 	echo - check_structure      to check the structure of all .rst files
 	echo - check_syntax         to check the syntax of all .rst files
 	echo - check_spelling       to check spelling for text in RST files
-	echo - check_spelling_new   to check spelling for text in RST files [experimental new script]
 	echo.
 	echo Utilities
 	echo ---------
@@ -136,11 +135,6 @@ if "%1" == "report_po_progress" (
 
 if "%1" == "check_spelling" (
 	python tools\check_source\check_spelling.py
-	goto EOF
-)
-
-if "%1" == "check_spelling_new" (
-	python tools\check_source\check_spelling_new.py
 	goto EOF
 )
 

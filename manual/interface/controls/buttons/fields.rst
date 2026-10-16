@@ -69,7 +69,7 @@ for navigating and editing across multiple lines.
    :width: 100%
    :widths: 20 80
 
-   * - :kbd:`Shift-Enter`
+   * - :kbd:`Shift-Return`
      - Insert a new line.
    * - :kbd:`Up`, :kbd:`Down`
      - Move the cursor between lines.

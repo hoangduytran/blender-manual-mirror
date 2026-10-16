@@ -81,13 +81,16 @@ The following are common built-in attributes supported by point cloud objects:
    * - ``radiance:base``
      - *4D Vector*
      - *Point*
-     - The base (DC) radiance of the point, followed by opacity. Only used if the Point Cloud object is of type 3D Gaussian Splat.
+     - The base (DC) radiance of the point, followed by opacity.
+       Only used if the Point Cloud object is of type 3D Gaussian Splat.
 
    * - ``radiance:sh_{index}``
      - *Vector*
      - *Point*
-     - Spherical harmonics coefficients for bands >= 1. The order is `<L=1 M=-1>`, `<L=1 M=0>`, `<L=1 M=1>`, `<L=2 M=-2>` ..
-       where `L` is the band index, `M` is the basis function. Only used if the Point Cloud object is of type 3D Gaussian Splat.
+     - Spherical harmonics coefficients for bands >= 1.
+       The order is `<L=1 M=-1>`, `<L=1 M=0>`, `<L=1 M=1>`, `<L=2 M=-2>` ..
+       where `L` is the band index, `M` is the basis function.
+       Only used if the Point Cloud object is of type 3D Gaussian Splat.
 
 Custom Attributes
    Custom attribute can be given to particles to hold a custom characteristic.
