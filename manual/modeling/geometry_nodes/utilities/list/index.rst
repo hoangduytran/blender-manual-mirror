@@ -9,6 +9,7 @@ Nodes to manipulate lists.
    :maxdepth: 1
 
    closure_to_list.rst
+   combine_list.rst
    field_to_list.rst
    filter_list.rst
    get_list_item.rst
