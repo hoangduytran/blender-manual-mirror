@@ -65,3 +65,20 @@ Rest Length
    Original length of the bone.
 Exists
    Whether the specified bone exists in the armature.
+
+
+Envelope
+--------
+
+The following outputs provide the bone's envelope properties as defined in Edit Mode.
+These values can be used to calculate procedural deformation weights or reproduce
+envelope-based deformation in Geometry Nodes.
+
+Envelope Distance
+   Distance beyond the bone's head and tail radii over which its envelope influence extends.
+
+Radius Head
+   Radius of the bone's envelope at its head.
+
+Radius Tail
+   Radius of the bone's envelope at its tail.
