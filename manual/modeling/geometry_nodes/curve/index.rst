@@ -26,3 +26,10 @@ Nodes that only operate on curves.
    Operations <operations/index.rst>
    Primitives <primitives/index.rst>
    Topology <topology/index.rst>
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
+   construct_curves.rst
