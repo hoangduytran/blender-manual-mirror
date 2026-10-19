@@ -66,6 +66,8 @@ Realize All
    (overrides the value of the *Depth* input).
 Depth
    Number of levels of nested instances to realize for each top-level instance.
+Preserve Normals
+   Preserve the apparent face orientation of mirrored mesh instances.
 
 
 Outputs
