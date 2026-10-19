@@ -95,6 +95,62 @@ Instance Offset X, Y Z
    Applies a spatial offset of the instanced collections from the original object's origin.
 
 
+.. _collections-import:
+
+Importer
+--------
+
+An empty collection can be associated with a file format importer, which can then import
+data directly into the collection. This can help both in organization and to streamline
+the process of re-importing the same asset(s) repeatedly.
+
+.. note::
+
+   The content of the collection is strictly managed by the importer. Content cannot
+   be added, removed, or changed unless done so by modifying the file referenced by the importer.
+
+The following file formats are supported, see each for the documentation of import parameters:
+
+- :doc:`/files/import_export/usd`
+
+.. _bpy.ops.collection.importer_add:
+
+Add
+   Opens a menu to choose an importer to add.
+
+.. _bpy.ops.collection.importer_import:
+
+Import to Collection
+   Perform the import into the collection. If an import has already occurred, this functions as a reload and the contents
+   of the file will be re-imported accordingly.
+
+.. _bpy.ops.collection.importer_control:
+
+:bl-icon:`downarrow_hlt` (Importer Control)
+   Opens a menu that provides further control over the contents of the collection.
+
+.. _bpy.ops.collection.importer_make_local:
+
+Apply and Make Local
+   Make all imported data local to the .blend file and remove the importer from the collection.
+
+.. _bpy.ops.collection.importer_clear:
+
+Delete Collection Content
+   Delete the imported data while keeping the importer associated with the collection.
+
+.. _bpy.ops.collection.importer_remove:
+
+Remove Importer
+   Delete the imported data and remove the importer from the collection.
+
+.. admonition:: Implementation Caveats
+   :class: important
+
+   Once an importer has been associated with a collection, this collection can no longer be appended or linked
+   into another .blend file.
+
+
 .. _collections-exporters:
 
 Exporters
