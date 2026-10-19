@@ -18,6 +18,7 @@ the corresponding import node is added automatically and configured with the fil
    CSV (.csv) <csv.rst>
    Wavefront (.obj) <obj.rst>
    Stanford PLY (.ply) <ply.rst>
+   SPZ (.spz) <spz.rst>
    STL (.stl) <stl.rst>
    Text (.txt) <txt.rst>
    OpenVDB (.vdb) <vdb.rst>
