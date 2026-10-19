@@ -1,6 +1,6 @@
 
 .. index:: Geometry Nodes; Set Point Cloud Type
-.. _bpy.types.GeometryNodeSetPointRadius:
+.. _bpy.types.GeometryNodePointsSetType:
 
 *************************
 Set Point Cloud Type Node
