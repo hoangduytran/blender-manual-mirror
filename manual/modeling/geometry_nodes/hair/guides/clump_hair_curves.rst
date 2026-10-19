@@ -65,6 +65,9 @@ Guide Distance
 Guide Mask
    Defines which curves can be used as guides during automatic guide map creation.
 
+Seed
+   Random seed for the guide map.
+
 Existing Guide Map
    When enabled, uses the existing guide map attribute if it is already available.
    If disabled and *Guide Index* is not provided, a new
