@@ -79,6 +79,23 @@ def iter_node_names(tree_type):
             yield cls.__name__
 
 
+def get_node_screenshot_name(node):
+    """Return the node type, or a prefixed asset name without spaces."""
+    node_prefixes = {
+        "GeometryNodeGroup": "GeometryNode",
+        "ShaderNodeGroup": "ShaderNode",
+        "CompositorNodeGroup": "CompositorNode",
+    }
+
+    prefix = node_prefixes.get(node.bl_idname)
+
+    if prefix and node.node_tree:
+        asset_name = node.node_tree.name.replace(" ", "")
+        return f"{prefix}{asset_name}"
+
+    return node.bl_idname
+
+
 class MakeScreenshotsOperator(bpy.types.Operator):
     bl_idname = "test.make_screenshots"
     bl_label = "Make Screenshots"
@@ -120,10 +137,10 @@ class MakeScreenshotsOperator(bpy.types.Operator):
         if self.selected_index >= len(self.selected_nodes):
             return {'FINISHED'}
 
-        # Get the current node and deselect it
+        # Get the current node and deselect it.
         self.current_node = self.selected_nodes[self.selected_index]
-        self.current_name = self.current_node.bl_idname
-        self.selected_nodes[self.selected_index].select = False  # Deselect the node
+        self.current_name = get_node_screenshot_name(self.current_node)
+        self.current_node.select = False
 
         self.selected_index += 1
         context.area.tag_redraw()
