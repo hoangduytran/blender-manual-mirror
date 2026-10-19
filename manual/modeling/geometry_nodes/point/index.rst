@@ -30,3 +30,10 @@ Nodes generate or modify point clouds.
    :maxdepth: 1
 
    set_point_radius.rst
+
+----
+
+.. toctree::
+   :maxdepth: 1
+
+   set_point_cloud_type.rst
