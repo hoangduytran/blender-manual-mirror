@@ -52,6 +52,19 @@ Shade Smooth
    Enables smooth shading for the generated mesh.
 
 
+Miter Scale
+^^^^^^^^^^^
+
+Controls how the profile is scaled around sharp turns in the input curve.
+The profile is stretched along the direction of the turn to maintain a more
+consistent apparent width around corners.
+
+Limit
+   Limits the amount of miter scaling at sharp corners. When the corner angle
+   reaches the specified limit, the scale stops increasing, preventing
+   excessively long geometry at very sharp turns.
+
+
 Resample
 --------
 
