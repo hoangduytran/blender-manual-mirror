@@ -47,6 +47,9 @@ Group ID
    This is useful for ensuring that different regions (for example, left vs. right side of a groom)
    do not mix.
 
+Seed
+   Random seed for the guide map.
+
 
 Outputs
 =======
