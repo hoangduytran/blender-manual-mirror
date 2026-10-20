@@ -36,6 +36,8 @@ the template syntax will remain as-is in the path field.
    node**. More filepaths will support templates in future releases.
 
 
+.. _files-built_in_variables:
+
 Available Variables
 -------------------
 
@@ -65,6 +67,8 @@ Available only in render output paths (including in the compositor File Output n
 Available only in path properties on a node:
 
 :``node_name``: The name of the node that the path property is on.
+
+When you're inside a :ref:`Blender Project <projects-index>` you additionally have access to :ref:`Project Variables <projects-variables>`
 
 
 Syntax

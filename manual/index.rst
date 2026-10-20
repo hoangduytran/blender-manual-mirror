@@ -166,6 +166,11 @@ Sections
 
       .. container:: card
 
+         :doc:`/projects/index`
+            Project system, for better managing multi-file projects.
+
+      .. container:: card
+
          :doc:`/advanced/index`
             Python scripting, how to write add-ons and a reference for command-line arguments.
 
@@ -204,6 +209,7 @@ Sections
       video_editing/index.rst
       files/index.rst
       addons/index.rst
+      projects/index.rst
       advanced/index.rst
       troubleshooting/index.rst
       glossary/index.rst
