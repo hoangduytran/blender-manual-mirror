@@ -269,9 +269,9 @@ UI Row
   button controlling the visibility of this collection. When zero, no button is generated, and the collection is
   hidden.
 
-UI Title
-  This field can be used to override the title used on the UI button to be distinct from the true collection name.
-  Unlike collection names, titles are not required to be unique, so this can be used to reduce clutter by relying
+Button Text
+  This field can be used to override the text used on the UI button to be distinct from the true collection name.
+  Unlike collection names, button text is not required to be unique, so this can be used to reduce clutter by relying
   on contextual cues within the panel.
 
 UI Layout sub-panel

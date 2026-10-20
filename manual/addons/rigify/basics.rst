@@ -242,7 +242,7 @@ Mirror Widgets
    by checking object scale to avoid flipping existing controls. Therefore switching to mirrored
    widgets for an existing character requires deleting the right side widgets, or *Force Widget Update*.
 
-Run Script
+Post Generation
    It is possible to configure Rigify to execute a Python script contained in a text data-block
    after generation in order to apply user-defined customizations. The script is executed with
    the generated rig active and selected in Object Mode.
