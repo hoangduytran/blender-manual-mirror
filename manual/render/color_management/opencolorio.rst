@@ -17,7 +17,7 @@ workflows with:
 * ACEScc log space for grading
 * Camera input color spaces
 
-For Blender projects, it is also possible to select an official
+For :ref:`Blender Projects <projects-ocio_config>`, it is also possible to select an official
 ACES 1.3 or 2.0 configuration in the project settings, or to download
 and select a specific
 `ACES configuration file <https://github.com/AcademySoftwareFoundation/OpenColorIO-Config-ACES/releases>`_.

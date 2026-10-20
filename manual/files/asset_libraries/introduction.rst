@@ -43,8 +43,8 @@ An asset library is a collection of Blender assets that is registered in the Pre
 Asset libraries may be stored locally as directories containing blend-files
 or hosted online and downloaded on demand.
 
-Registering it means that you give the library a name (like "Sprite Fright")
-and the location on drive (like ``/home/user/projects/sprite-fright/assets``).
+Registering it means that you give the library a name (like "Dinosaurs")
+and the location on drive (like ``/home/user/asset_libs/dinosaurs``).
 
 .. figure:: /images/asset_browser-asset_library_preferences.png
 
@@ -65,6 +65,11 @@ The on-drive organization of asset libraries is all up to you. Regardless of whi
 each asset can be assigned a **catalog**. For more info about how to organize your assets
 this way, see :doc:`/files/asset_libraries/catalogs`.
 
+Asset libraries can be registered either in Blender's :ref:`preferences
+<bpy.types.UserAssetLibrary>` or (when in a Blender Project) in :ref:`project
+settings <projects-asset_libraries>`. Asset libraries registered in Blender's
+preferences will be available at all times. Asset libraries registered in
+project settings will only be available when working inside that project.
 
 Online Asset Libraries
 ======================
