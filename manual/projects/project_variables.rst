@@ -18,8 +18,6 @@ automatically available:
 :``project_name``: The name of the current project.
 :``project_root``: The absolute filepath of the project's root directory.
 
-.. _files-built_in_variables:
-
 Custom Project Variables
 ========================
 
