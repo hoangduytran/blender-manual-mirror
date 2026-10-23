@@ -18,8 +18,6 @@ automatically available:
 :``project_name``: The name of the current project.
 :``project_root``: The absolute filepath of the project's root directory.
 
-.. _files-built_in_variables:
-
 Custom Project Variables
 ========================
 
@@ -53,7 +51,7 @@ String variables additionally have a subtype:
 
 :None: A normal string.
 :Filepath: A filepath, whose value is passed through as-is in a filepath context
-    (such as in path templates).
+   (such as in path templates).
 
 For example, if the String variable's value is "Left/Right", then in a path
 template the slash will be left as-is if the variable's subtype is Filepath, but

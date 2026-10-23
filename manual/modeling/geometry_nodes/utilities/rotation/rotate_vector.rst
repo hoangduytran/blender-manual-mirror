@@ -16,13 +16,13 @@ Inputs
 ======
 
 Vector
-    The vector to rotate.
+   The vector to rotate.
 
 Rotation
-    Standard rotation value.
+   Standard rotation value.
 
 Outputs
 =======
 
 Vector
-    The rotated vector.
+   The rotated vector.

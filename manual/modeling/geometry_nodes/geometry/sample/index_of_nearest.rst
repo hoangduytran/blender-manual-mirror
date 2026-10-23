@@ -20,8 +20,8 @@ from the :ref:`field context <field-context>` is used.
 
 .. tip::
 
-    This is often combined with the :doc:`/modeling/geometry_nodes/utilities/field/evaluate_at_index` or
-    the :doc:`/modeling/geometry_nodes/geometry/sample/sample_index` node.
+   This is often combined with the :doc:`/modeling/geometry_nodes/utilities/field/evaluate_at_index` or
+   the :doc:`/modeling/geometry_nodes/geometry/sample/sample_index` node.
 
 
 Inputs

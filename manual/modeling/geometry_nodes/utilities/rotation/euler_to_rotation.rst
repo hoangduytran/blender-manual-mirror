@@ -16,11 +16,11 @@ Inputs
 ======
 
 Euler
-    The :term:`Euler` rotation.
+   The :term:`Euler` rotation.
 
 
 Outputs
 =======
 
 Rotation
-    Standard rotation value.
+   Standard rotation value.

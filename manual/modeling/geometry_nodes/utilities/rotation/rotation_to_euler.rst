@@ -16,11 +16,11 @@ Inputs
 ======
 
 Rotation
-    Standard rotation socket value.
+   Standard rotation socket value.
 
 
 Outputs
 =======
 
 Euler
-    The :term:`Euler` rotation.
+   The :term:`Euler` rotation.

@@ -26,7 +26,7 @@ Properties
 ==========
 
 Component
-    Which geometry type to retrieve the domain sizes from.
+   Which geometry type to retrieve the domain sizes from.
 
 Outputs
 =======

@@ -13,8 +13,8 @@ The *Convert Colorspace* node converts images between :term:`color spaces <Color
 
 .. note::
 
-    Images are already automatically converted into linear color space unless specified in the image's
-    :ref:`Color Space <bpy.types.ColorManagedInputColorspaceSettings.name>` option.
+   Images are already automatically converted into linear color space unless specified in the image's
+   :ref:`Color Space <bpy.types.ColorManagedInputColorspaceSettings.name>` option.
 
 
 Inputs

@@ -39,8 +39,8 @@ will then be unable to enable online access in the preferences.
 
 .. note::
 
-    Add-ons that follow this setting will only connect to the internet if enabled.
-    However, Blender cannot prevent third-party add-ons from violating this rule.
+   Add-ons that follow this setting will only connect to the internet if enabled.
+   However, Blender cannot prevent third-party add-ons from violating this rule.
 
 
 .. _deploying-blender-bundling:
@@ -68,7 +68,7 @@ with a resulting path like this:
 
 .. code-block:: bash
 
-    $BLENDER_SYSTEM_EXTENSIONS/system/my-addon/blender_manifest.toml
+   $BLENDER_SYSTEM_EXTENSIONS/system/my-addon/blender_manifest.toml
 
 In the Extensions preferences, it's possible to manually set a custom
 directory for the default System repository, or to create multiple
@@ -100,7 +100,7 @@ For example, a script can enable add-ons for every user.
 
 .. code-block:: bash
 
-    $BLENDER_SYSTEM_SCRIPTS/startup/enable_addons.py
+   $BLENDER_SYSTEM_SCRIPTS/startup/enable_addons.py
 
 .. code-block:: python
 

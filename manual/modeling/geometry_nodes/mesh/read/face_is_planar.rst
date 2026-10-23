@@ -21,8 +21,8 @@ Inputs
 ======
 
 Threshold
-    The distance a point can be from the surface before the face is no longer
-    considered planar.
+   The distance a point can be from the surface before the face is no longer
+   considered planar.
 
 
 Outputs

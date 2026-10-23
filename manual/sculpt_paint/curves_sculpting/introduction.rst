@@ -12,7 +12,7 @@ require the surface to be set already.
 
 .. note::
 
-    Curves Sculpt tools only use the original mesh of the surface object and don't take its modifiers into account.
+   Curves Sculpt tools only use the original mesh of the surface object and don't take its modifiers into account.
 
 
 Curves Menu

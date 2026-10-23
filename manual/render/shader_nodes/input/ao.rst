@@ -18,19 +18,20 @@ in faster renders.
 .. note::
 
    :guilabel:`Cycles Only`
-    The Ambient Occlusion node will not produce a valid result when:
-     - The object is either a :ref:`Caustic caster <bpy.types.CyclesObjectSettings.is_caustics_caster>`
-       or :ref:`Caustic receiver <bpy.types.CyclesObjectSettings.is_caustics_receiver>` while the scene
-       contains an active :ref:`Caustic caster <bpy.types.CyclesObjectSettings.is_caustics_caster>`,
-       :ref:`Caustic receiver <bpy.types.CyclesObjectSettings.is_caustics_receiver>`, and
-       :ref:`Shadow Caustic Light <bpy.types.CyclesLightSettings.is_caustics_light>`.
-     - :doc:`/render/cycles/osl/index` is active while using the OptiX rendering backend.
+   The Ambient Occlusion node will not produce a valid result when:
+
+   - The object is either a :ref:`Caustic caster <bpy.types.CyclesObjectSettings.is_caustics_caster>`
+     or :ref:`Caustic receiver <bpy.types.CyclesObjectSettings.is_caustics_receiver>` while the scene
+     contains an active :ref:`Caustic caster <bpy.types.CyclesObjectSettings.is_caustics_caster>`,
+     :ref:`Caustic receiver <bpy.types.CyclesObjectSettings.is_caustics_receiver>`, and
+     :ref:`Shadow Caustic Light <bpy.types.CyclesLightSettings.is_caustics_light>`.
+   - :doc:`/render/cycles/osl/index` is active while using the OptiX rendering backend.
 
 .. note::
 
    :guilabel:`EEVEE Only`
-    The Ambient Occlusion node uses a screen space implementation which inherits the same
-    :ref:`limitations <eevee-limitations-raytracing>` as the other screen space effects.
+   The Ambient Occlusion node uses a screen space implementation which inherits the same
+   :ref:`limitations <eevee-limitations-raytracing>` as the other screen space effects.
 
 .. seealso::
 

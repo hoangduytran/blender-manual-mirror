@@ -194,12 +194,12 @@ Auto-smooth :guilabel:`Sculpt Mode`
 .. _bpy.types.Brush.topology_rake_factor:
 
 Topology Rake :guilabel:`Sculpt Mode`
-    The higher this setting is set, the more :doc:`Dyntopo </sculpt_paint/sculpting/tool_settings/dyntopo>`
-    aligns mesh edges to the brush direction while tessellating the surface.
-    This generates cleaner edge flow to help define sharp features.
-    *Topology Rake* can have a severe performance impact so it works best on low-poly meshes.
+   The higher this setting is set, the more :doc:`Dyntopo </sculpt_paint/sculpting/tool_settings/dyntopo>`
+   aligns mesh edges to the brush direction while tessellating the surface.
+   This generates cleaner edge flow to help define sharp features.
+   *Topology Rake* can have a severe performance impact so it works best on low-poly meshes.
 
-    .. figure:: /images/sculpt-paint_sculpting_tool-settings_dyntopo_topology-rake.jpg
+   .. figure:: /images/sculpt-paint_sculpting_tool-settings_dyntopo_topology-rake.jpg
 
 Normal Weight :kbd:`Ctrl` :guilabel:`Sculpt Mode`
    Constrains brush movement along the surface normal.
