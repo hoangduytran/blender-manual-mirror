@@ -42,7 +42,6 @@ Tangent
    Tangent used for shading; if nothing is connected the default shading tangent is used.
 
 
-
 Thin Film :guilabel:`Cycles Only`
 ---------------------------------
 

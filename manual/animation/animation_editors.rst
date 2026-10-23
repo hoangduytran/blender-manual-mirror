@@ -111,7 +111,6 @@ Second Step :guilabel:`Seconds`
    The interval in seconds between each snap point when using the *Seconds* target.
 
 
-
 .. _animation-editors-footer:
 
 Playback Controls

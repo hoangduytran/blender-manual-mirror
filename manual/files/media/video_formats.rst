@@ -13,7 +13,6 @@ A video file is typically composed of:
 * An **audio codec** -- compresses the audio stream (optional).
 
 
-
 .. _files-video-containers:
 
 Supported Video Containers

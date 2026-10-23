@@ -364,7 +364,8 @@ Debug Options
    Disable memory aliasing optimizations in the GPU texture pool.
 
 ``--debug-gpu-backend-no-fallback``
-   Fail instead of falling back to another GPU backend when the selected one is not supported. Skips the GPU backend support check.
+   Fail instead of falling back to another GPU backend when the selected one is not supported.
+   Skips the GPU backend support check.
 
 ``--debug-gpu-renderdoc``
    Enable RenderDoc integration for GPU frame grabbing and debugging.
@@ -560,6 +561,9 @@ Other Options
 
 ``--debug-cycles``
    Enable debug messages from Cycles.
+
+``--debug-gpu-no-hw-raytracing``
+   Force disable hardware raytracing support (Vulkan only).
 
 
 .. _command-line-args-argument-parsing:

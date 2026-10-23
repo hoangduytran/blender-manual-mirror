@@ -121,8 +121,8 @@ Add
 .. _bpy.ops.collection.importer_import:
 
 Import to Collection
-   Perform the import into the collection. If an import has already occurred, this functions as a reload and the contents
-   of the file will be re-imported accordingly.
+   Perform the import into the collection. If an import has already occurred,
+   this functions as a reload and the contents of the file will be re-imported accordingly.
 
 .. _bpy.ops.collection.importer_control:
 

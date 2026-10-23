@@ -74,7 +74,6 @@ Look
    See :ref:`Look <bpy.types.ColorManagedViewSettings.look>` for an explanation of all options.
 
 
-
 Outputs
 =======
 

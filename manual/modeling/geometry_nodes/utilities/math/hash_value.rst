@@ -29,7 +29,7 @@ Value
    Value input determined by *Data Type* property.
 
 Seed
-   Integer input used to generate different Hashes	.
+   Integer input used to generate different Hashes.
 
 
 Properties

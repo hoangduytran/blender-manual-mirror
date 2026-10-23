@@ -776,7 +776,6 @@ Distance
    The distance to move the UVs, measured in the selected unit type.
 
 
-
 .. _bpy.ops.uv.copy:
 
 Copy UVs

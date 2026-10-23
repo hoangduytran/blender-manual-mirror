@@ -49,7 +49,7 @@ Operation
    Rounding
       :Divide Round: Divide the values and round the result toward zero.
       :Divide Floor: Divide the values and floor the result down to the nearest integer.
-      :Divide Ceiling: Divide the values and ceil the result up to the nearest integer	.
+      :Divide Ceiling: Divide the values and ceil the result up to the nearest integer.
       :Floored Modulo: Returns the positive remainder of a division operation.
       :Modulo: Outputs the remainder once the first value is divided by the second value.
       :Greatest Common Divisor: The largest positive integer that divides into each of the values.
@@ -61,4 +61,3 @@ Output
 
 Value
    Standard integer output.
-

@@ -4,7 +4,8 @@
 Project OCIO Configuration
 **************************
 
-A Blender Project can have its own custom :ref:`OpenColorIO configuration <ocio-config>`. This configuration will be automatically loaded and used for blend files in the project.
+A Blender Project can have its own custom :ref:`OpenColorIO configuration <ocio-config>`.
+This configuration will be automatically loaded and used for blend files in the project.
 
 This approach helps ensure consistent color management throughout a project.
 

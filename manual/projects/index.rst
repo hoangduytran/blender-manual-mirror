@@ -1,8 +1,8 @@
 .. _projects-index:
 
-###########
+############
   Projects
-###########
+############
 
 .. toctree::
    :maxdepth: 2
