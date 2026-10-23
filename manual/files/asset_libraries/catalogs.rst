@@ -44,7 +44,6 @@ So, in the preceding example, selecting ``Characters/Ellie/Poses`` will also sho
 ``Characters/Ellie/Poses/Head`` and ``Characters/Ellie/Poses/Hands``.
 
 
-
 Using Catalogs to Extend Menus
 ==============================
 

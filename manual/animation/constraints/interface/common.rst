@@ -33,7 +33,6 @@ The :bl-icon:`ipo_bezier` button enables following the curved shape of
 .. figure:: /images/animation_constraints_interface_common_target-bone.png
 
 
-
 .. _rigging-constraints-interface-common-space:
 .. _bpy.types.constraint.owner_space:
 .. _bpy.types.constraint.target_space:

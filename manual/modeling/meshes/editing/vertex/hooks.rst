@@ -11,7 +11,6 @@ The opposite operation -- parenting an external object to a vertex -- can be ach
 :doc:`/modeling/meshes/editing/vertex/make_vertex_parent`.
 
 
-
 .. _bpy.ops.object.hook_add_newob:
 
 Hook to New Object

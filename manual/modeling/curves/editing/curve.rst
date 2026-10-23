@@ -214,7 +214,6 @@ Handles
    Includes handle information during the conversion process.
 
 
-
 .. _bpy.ops.curve.reveal:
 .. _bpy.ops.curve.hide:
 .. _curves-show-hide:

@@ -2,13 +2,17 @@
 Introduction
 ************
 
-A Blender Project is a directory that contains a ``.blender_project`` subdirectory with a valid project configuration in it. The directory that contains the ``.blender_project`` is called the "project root", and all files under the project root are considered part of that Blender Project.
+A Blender Project is a directory that contains a ``.blender_project`` subdirectory with a valid project
+configuration in it. The directory that contains the ``.blender_project`` is called the "project root",
+and all files under the project root are considered part of that Blender Project.
 
-Opening a blend file that's inside a Blender Project will automatically load the project as well, which gives you access to various project features.
+Opening a blend file that's inside a Blender Project will automatically load the project as well,
+which gives you access to various project features.
 
 .. note::
 
-   Blender's Project feature is completely optional to use. Blender's single-file workflows will always keep working. If you already have your own approach for managing projects, feel free to keep doing that.
+   Blender's Project feature is completely optional to use. Blender's single-file workflows will always keep working.
+   If you already have your own approach for managing projects, feel free to keep doing that.
 
    However, Blender's Project system does provide a lot of niceties, so we recommend giving it try.
 
@@ -20,7 +24,8 @@ To create a new Blender Project, select :menuselection:`File --> Project --> New
 
 .. figure:: /images/projects_new_menu.png
 
-A file browser will pop up. Navigate to the desired root directory of your project, and click the *New Project* button.
+A file browser will pop up. Navigate to the desired root directory of your project,
+and click the *New Project* button.
 
 
 Opening Projects

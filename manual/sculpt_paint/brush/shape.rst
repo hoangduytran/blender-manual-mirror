@@ -33,5 +33,5 @@ Tip Roundness :guilabel:`Sculpt Mode`
 .. _bpy.types.Brush.tip_scale_x:
 
 Tip Scale X :guilabel:`Sculpt Mode`
-   Scale of the brush tip in the X axis. This is useful for achieving a painting stroke like a marker or paint 
+   Scale of the brush tip in the X axis. This is useful for achieving a painting stroke like a marker or paint
    roller.

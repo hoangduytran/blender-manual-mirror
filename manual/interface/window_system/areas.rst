@@ -87,7 +87,6 @@ Dragging from an area corner into the space of a second area will *join* two are
 The areas that will be joined will be displayed brighter.
 
 
-
 .. _bpy.ops.screen.area_split:
 
 Splitting

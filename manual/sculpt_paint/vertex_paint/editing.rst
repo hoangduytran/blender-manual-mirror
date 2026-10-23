@@ -130,7 +130,6 @@ Affect Alpha
    Set color completely opaque instead of reusing existing alpha.
 
 
-
 Sample Color
 ============
 

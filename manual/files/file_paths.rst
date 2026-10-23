@@ -68,7 +68,8 @@ Available only in path properties on a node:
 
 :``node_name``: The name of the node that the path property is on.
 
-When you're inside a :ref:`Blender Project <projects-index>` you additionally have access to :ref:`Project Variables <projects-variables>`
+When you're inside a :ref:`Blender Project <projects-index>` you additionally have access to
+:ref:`Project Variables <projects-variables>`
 
 
 Syntax

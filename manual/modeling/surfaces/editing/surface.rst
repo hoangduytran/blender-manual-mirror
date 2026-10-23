@@ -136,7 +136,6 @@ a sphere is cyclic along both.
    panel in the Sidebar.
 
 
-
 Set Spline Type
 ===============
 

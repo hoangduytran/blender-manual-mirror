@@ -47,7 +47,6 @@ The Crease value can also be seen and changed in the
 :ref:`Sidebar <modeling-mesh-transform-panel>`.
 
 
-
 .. _bpy.ops.mesh.mark_seam:
 
 Mark/Clear Seam
