@@ -20,11 +20,11 @@ The management of your project asset libraries here is generally the same as
 
 .. note::
 
-    We recommend keeping your project asset libraries somewhere under your
-    project root.
+   We recommend keeping your project asset libraries somewhere under your
+   project root.
 
-    If you do, and you select the library path via the file browser, the path
-    will automatically use the ``{project_root}`` variable expression to make
-    the path project-relative. This ensures that your project asset libraries
-    travel with your project, and are available no matter where on disk you put
-    your project.
+   If you do, and you select the library path via the file browser, the path
+   will automatically use the ``{project_root}`` variable expression to make
+   the path project-relative. This ensures that your project asset libraries
+   travel with your project, and are available no matter where on disk you put
+   your project.

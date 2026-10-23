@@ -105,18 +105,18 @@ Type
 
    :None:
 
-    .. todo:: Add this information.
+      .. todo:: Add this information.
 
    :Braid:
 
-    .. todo:: Add this information.
+      .. todo:: Add this information.
 
    :Curl: The radius of the influence depends on the distance of the curve to the emitter.
    :Radial: A three-dimensional, standing wave.
    :Roll: A one-dimensional, standing wave.
    :Rotation:
 
-    .. todo:: Add this information.
+      .. todo:: Add this information.
 
    :Wave: A two-dimensional, standing wave.
 

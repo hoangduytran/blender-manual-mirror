@@ -83,7 +83,7 @@ Performs a Boolean operation based on the area defined by a
 
 .. note::
 
-    The Line Trim tool does not support adding geometry. Only *Difference* mode is supported.
+   The Line Trim tool does not support adding geometry. Only *Difference* mode is supported.
 
 
 .. _tool-polyline-trim:

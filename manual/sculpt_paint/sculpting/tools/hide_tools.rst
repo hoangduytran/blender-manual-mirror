@@ -70,7 +70,7 @@ Hides vertices and connected edges and faces based on a
 
 .. note::
 
-    The Polyline Hide tool does not support showing all vertices via pressing :kbd:`LMB`.
+   The Polyline Hide tool does not support showing all vertices via pressing :kbd:`LMB`.
 
 Tool Settings
 =============

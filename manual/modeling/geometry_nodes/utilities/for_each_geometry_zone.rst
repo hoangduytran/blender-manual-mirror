@@ -28,10 +28,10 @@ Inputs
 ======
 
 Geometry
-    Geometry whose elements are iterated over.
+   Geometry whose elements are iterated over.
 
 Selection
-    Which subset of the chosen *Domain* to process.
+   Which subset of the chosen *Domain* to process.
 
 Index
    Index of the element in the source geometry. Note that the same index can occur more than

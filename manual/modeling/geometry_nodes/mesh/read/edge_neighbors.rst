@@ -22,9 +22,9 @@ Outputs
 =======
 
 Face Count
-    The number of faces that use the edge as one of their sides.
-    When the value is one, the edge is a :term:`non-manifold <Non-manifold>` boundary edge.
-    Alternatively, when the value is zero, the edge is a loose edge, not used by any faces.
+   The number of faces that use the edge as one of their sides.
+   When the value is one, the edge is a :term:`non-manifold <Non-manifold>` boundary edge.
+   Alternatively, when the value is zero, the edge is a loose edge, not used by any faces.
 
 
 Examples

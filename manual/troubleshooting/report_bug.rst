@@ -43,8 +43,9 @@ To initiate a bug report:
 
 
 .. note::
-    If Blender crashes before fully starting, this process will not work for you. In that case, you will need to
-    manually `Report on the Web`_.
+
+   If Blender crashes before fully starting, this process will not work for you.
+   In that case, you will need to manually `Report on the Web`_.
 
 Report on the Web
 =================

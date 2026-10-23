@@ -177,7 +177,7 @@ Paste
 Paste Grease Pencil points or strokes from the internal clipboard to the active layer.
 
 Paste on Back :kbd:`Shift-Ctrl-V`
-    Add pasted strokes behind all strokes.
+   Add pasted strokes behind all strokes.
 Keep World Transform
    Keep the world transform of strokes from the clipboard unchanged.
 

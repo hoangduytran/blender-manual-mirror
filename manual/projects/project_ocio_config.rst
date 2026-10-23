@@ -27,11 +27,11 @@ configuration on disk:
 
 .. note::
 
-    When using the *Path* option, we recommend keeping your on-disk OpenColorIO
-    configuration somewhere under your project root.
+   When using the *Path* option, we recommend keeping your on-disk OpenColorIO
+   configuration somewhere under your project root.
 
-    If you do so, and you select the configuration path via the file browser,
-    the path will automatically use the ``{project_root}`` variable expression
-    to make the path project-relative. This ensures that your OpenColorIO
-    configuration travels with your project, and works no matter where on disk
-    you put your project.
+   If you do so, and you select the configuration path via the file browser,
+   the path will automatically use the ``{project_root}`` variable expression
+   to make the path project-relative. This ensures that your OpenColorIO
+   configuration travels with your project, and works no matter where on disk
+   you put your project.

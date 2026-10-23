@@ -16,17 +16,17 @@ Inputs
 ======
 
 W
-    The W value of the quaternion.
+   The W value of the quaternion.
 X
-    The X value of the quaternion.
+   The X value of the quaternion.
 Y
-    The Y value of the quaternion.
+   The Y value of the quaternion.
 Z
-    The Z value of the quaternion.
+   The Z value of the quaternion.
 
 
 Outputs
 =======
 
 Rotation
-    Standard rotation value.
+   Standard rotation value.

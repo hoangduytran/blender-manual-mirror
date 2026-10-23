@@ -7,8 +7,8 @@ Axes to Rotation Node
 *********************
 
 .. figure:: /images/node-types_FunctionNodeAxesToRotation.webp
-    :align: right
-    :alt: Axis to Rotation node.
+   :align: right
+   :alt: Axis to Rotation node.
 
 Creates a rotation based on two axis directions.
 
@@ -41,4 +41,4 @@ Outputs
 =======
 
 Rotation
-    The rotation that results in the given axes being aligned to the given directions.
+   The rotation that results in the given axes being aligned to the given directions.

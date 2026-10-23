@@ -16,10 +16,10 @@ Inputs
 ======
 
 Rotation
-    Standard rotation value.
+   Standard rotation value.
 
 Outputs
 =======
 
 Rotation
-    The inverted rotation.
+   The inverted rotation.

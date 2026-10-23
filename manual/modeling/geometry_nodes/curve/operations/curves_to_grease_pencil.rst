@@ -18,12 +18,12 @@ Curves
    Either plain curves or curve instances.
 
 Selection
-    Either a curve or instance selection.
+   Either a curve or instance selection.
 
 Instances as Layers
-    Create a separate layer for each instance. If instances are used, realized curve geometry will be
-    ignored. Layer names will use the instance geometry name. If real curve geometry is used, a single
-    layer is created with the input geometry's name.
+   Create a separate layer for each instance. If instances are used, realized curve geometry will be
+   ignored. Layer names will use the instance geometry name. If real curve geometry is used, a single
+   layer is created with the input geometry's name.
 
 
 Outputs
@@ -41,4 +41,3 @@ Examples
    This example shows how to use the *Curves to Grease Pencil* node to create a Grease Pencil layer from a curve.
 
    The *Set Curve Radius* node is used to set the radius of the Grease Pencil strokes.
-

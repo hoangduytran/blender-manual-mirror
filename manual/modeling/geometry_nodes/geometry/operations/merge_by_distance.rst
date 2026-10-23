@@ -49,7 +49,7 @@ Mode
    :Connected: Merge only includes attached geometry i.e. the modifier will not merge loose parts together.
 
 Distance
-    The distance to use for searching for nearby points.
+   The distance to use for searching for nearby points.
 
 
 Output

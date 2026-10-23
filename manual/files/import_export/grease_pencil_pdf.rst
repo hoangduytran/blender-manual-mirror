@@ -41,5 +41,6 @@ Fill
 Uniform Width
    When enabled, export strokes with constant thickness.
 
-.. note:: The export of the Grease Pencil strokes is always from the view of the largest 3D Viewport in the current
-    workspace.
+.. note::
+
+   The export of the Grease Pencil strokes is always from the view of the largest 3D Viewport in the current workspace.

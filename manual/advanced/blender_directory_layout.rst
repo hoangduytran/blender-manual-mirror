@@ -114,101 +114,101 @@ Path Layout
 ===========
 
 ``./autosave``
-  Autosave blend-file location. (Windows only, temp directory used for other systems.)
+   Autosave blend-file location. (Windows only, temp directory used for other systems.)
 
-  Located in user directories.
+   Located in user directories.
 
 ``./config``
-  User configuration and session info.
+   User configuration and session info.
 
-  Located in user directories.
+   Located in user directories.
 
-  ``./config/startup.blend``
-    Blend file to load on startup.
+   ``./config/startup.blend``
+      Blend file to load on startup.
 
-  ``./config/userpref.blend``
-    User preferences.
+   ``./config/userpref.blend``
+      User preferences.
 
-  ``./config/bookmarks.txt``
-    File Browser bookmarks.
+   ``./config/bookmarks.txt``
+      File Browser bookmarks.
 
-  ``./config/recent-files.txt``
-    Recent file menu list.
+   ``./config/recent-files.txt``
+      Recent file menu list.
 
-  ``./config/{APP_TEMPLATE_ID}/startup.blend``
-    Startup file for an application template.
+   ``./config/{APP_TEMPLATE_ID}/startup.blend``
+      Startup file for an application template.
 
-  ``./config/{APP_TEMPLATE_ID}/userpref.blend``
-    User preferences file for an application template.
+   ``./config/{APP_TEMPLATE_ID}/userpref.blend``
+      User preferences file for an application template.
 
 ``./datafiles``
-  Data files loaded at runtime.
+   Data files loaded at runtime.
 
-  Located in both user and system directories. User data files either override
-  or add to system data files.
+   Located in both user and system directories. User data files either override
+   or add to system data files.
 
-  ``./datafiles/colormanagement``
-    Default OpenColorIO configuration.
+   ``./datafiles/colormanagement``
+      Default OpenColorIO configuration.
 
-  ``./datafiles/fonts``
-    User interface fonts.
+   ``./datafiles/fonts``
+      User interface fonts.
 
-  ``./datafiles/studiolights``
-    Studio light images for 3D viewport.
+   ``./datafiles/studiolights``
+      Studio light images for 3D viewport.
 
 ``./extensions``
-  Extension repositories.
+   Extension repositories.
 
-  Located in both user and system directories. Repositories are loaded from
-  both directories.
+   Located in both user and system directories. Repositories are loaded from
+   both directories.
 
 ``./scripts``
-  Add-ons, presets, templates, user interface, startup scripts.
+   Add-ons, presets, templates, user interface, startup scripts.
 
-  Located in both user and system directories. Scripts are loaded from
-  both directories.
+   Located in both user and system directories. Scripts are loaded from
+   both directories.
 
-  ``./scripts/addons/*.py``
-    Python add-ons which may be enabled in the Preferences include import/export format support,
-    render engine integration and many handy utilities.
+   ``./scripts/addons/*.py``
+      Python add-ons which may be enabled in the Preferences include import/export format support,
+      render engine integration and many handy utilities.
 
-  ``./scripts/addons/modules/*.py``
-    Modules for add-ons to use
-    (added to Python's ``sys.path``).
+   ``./scripts/addons/modules/*.py``
+      Modules for add-ons to use
+      (added to Python's ``sys.path``).
 
-  ``./scripts/addons_core/*.py``
-    The add-ons directory which is used for bundled add-ons.
+   ``./scripts/addons_core/*.py``
+      The add-ons directory which is used for bundled add-ons.
 
-  ``./scripts/addons_core/modules/*.py``
-    Modules for ``addons_core`` to use (added to Python's ``sys.path`` when it found).
+   ``./scripts/addons_core/modules/*.py``
+      Modules for ``addons_core`` to use (added to Python's ``sys.path`` when it found).
 
-  ``./scripts/modules/*.py``
-    Python modules containing our core API and utility functions for other scripts to import
-    (added to Python's ``sys.path``).
+   ``./scripts/modules/*.py``
+      Python modules containing our core API and utility functions for other scripts to import
+      (added to Python's ``sys.path``).
 
-  ``./scripts/startup/*.py``
-    Scripts which are automatically imported on startup.
+   ``./scripts/startup/*.py``
+      Scripts which are automatically imported on startup.
 
-    ``./scripts/startup/bl_app_templates_user/{APP_TEMPLATE_ID}``
-      Application templates installed in user directories.
+      ``./scripts/startup/bl_app_templates_user/{APP_TEMPLATE_ID}``
+         Application templates installed in user directories.
 
-    ``./scripts/startup/bl_app_templates_system/{APP_TEMPLATE_ID}``
-      Application templates automatically loaded from system directories.
+      ``./scripts/startup/bl_app_templates_system/{APP_TEMPLATE_ID}``
+         Application templates automatically loaded from system directories.
 
-  ``./scripts/presets/{preset}/*.py``
-    Presets used for storing user-defined settings for cloth, render formats, etc.
+   ``./scripts/presets/{preset}/*.py``
+      Presets used for storing user-defined settings for cloth, render formats, etc.
 
-  ``./scripts/templates_py/*.py``
-    Example scripts which can be accessed from :menuselection:`Text Editor --> Templates --> Python`.
+   ``./scripts/templates_py/*.py``
+      Example scripts which can be accessed from :menuselection:`Text Editor --> Templates --> Python`.
 
-  ``./scripts/templates_osl/*.osl``
-    Example OSL shaders which can be accessed from
-    :menuselection:`Text Editor --> Templates --> Open Shading Language`.
+   ``./scripts/templates_osl/*.osl``
+      Example OSL shaders which can be accessed from
+      :menuselection:`Text Editor --> Templates --> Open Shading Language`.
 
 ``./python``
-  Bundled Python distribution.
+   Bundled Python distribution.
 
-  Located in system directories.
+   Located in system directories.
 
 
 .. _local-cache-dir:

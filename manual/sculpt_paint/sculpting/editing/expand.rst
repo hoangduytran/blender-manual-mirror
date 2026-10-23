@@ -188,8 +188,8 @@ This operator is especially useful for hard surface sculpting.
 
 .. tip::
 
-    If one expansion does not properly fill the entire desired surface,
-    use the operator repeatedly with a different starting point.
+   If one expansion does not properly fill the entire desired surface,
+   use the operator repeatedly with a different starting point.
 
 .. needs visual practical example
 

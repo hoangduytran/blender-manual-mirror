@@ -115,7 +115,7 @@ A breakdown keyframe will be added on every frame between the previous and next 
 Step
    Number of frames between generated interpolated frames.
 Layer
-    Layers included in the interpolation.
+   Layers included in the interpolation.
 Exclude Break Downs
    Exclude existing Breakdowns keyframes as interpolation extremes.
 Flip Mode
