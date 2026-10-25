@@ -187,9 +187,9 @@ Relocate Linked ID
 .. reference::
 
    :Editor:    Outliner
-   :Menu:      :menuselection:`Context menu --> ID Data --> Relocate`
+   :Menu:      :menuselection:`Context menu --> Data-block --> Relocate`
 
-A right-click a linked ID will show the *Relocate* option in the *ID Data* sub-menu. It allows to
+A right-click a linked ID will show the *Relocate* option in the *Data-Block* sub-menu. It allows to
 relocate a directly linked ID by another one, from the same library or from a different one.
 This can be used to either fix a broken linked data-block (e.g. because the ID was renamed),
 or to switch to a variation of the same data.
@@ -214,7 +214,7 @@ Make Local
 .. reference::
 
    :Editor:    Outliner
-   :Menu:      :menuselection:`Context menu --> ID Data --> Make Local`
+   :Menu:      :menuselection:`Context menu --> Data-block --> Make Local`
 
 Makes the selected or all external objects local to the current blend-file.
 Links to the original library file will be lost,
