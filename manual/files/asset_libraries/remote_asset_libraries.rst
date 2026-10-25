@@ -63,6 +63,8 @@ A Remote Asset Library consists of the following ingredients:
    While generating the listing, Blender will export the preview images to WebP files.
 
 
+.. _asset-library-creating:
+
 Creating a Remote Asset Library
 ===============================
 
@@ -110,6 +112,8 @@ to update the asset library's name & contact information:
 Re-running the listing generator will retain this information, so you should only need to edit this once.
 
 
+.. _asset-library-serving:
+
 Serving a Remote Asset Library
 ==============================
 
@@ -146,6 +150,8 @@ onwards.
 This can be extended indefinitely: a third file ``my_asset@b47_0.blend`` will become available in
 Blender 47.0, and the assets in ``my_asset@b5_3.blend`` will then be used before that version.
 
+
+.. _asset-library-server-requirements:
 
 Requirements to the Web Server
 ==============================

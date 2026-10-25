@@ -149,12 +149,21 @@ The region has a context menu with the following operations:
 
 Refresh Asset Library :kbd:`R`
    Refreshes the list.
+
+.. _bpy.ops.asset.library_reload_listing:
+
+Refresh Remote Listing
+   Re-downloads the listing of a remote asset library, so changes made on the server show up.
 Clear Asset
    See :ref:`bpy.ops.asset.clear`.
 Clear Asset (Set Fake User)
    See :ref:`assets-clear-set-fake-user`.
 Open Blend File
    Opens the blend-file containing the asset.
+View Extension
+   Shows the extension the asset came from in :menuselection:`Get Extensions`.
+
+   Only available for assets from :ref:`extension asset libraries <prefs-asset_libraries-extensions>`.
 Display Size
    Changes the size of the preview thumbnails.
 
