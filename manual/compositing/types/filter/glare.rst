@@ -16,6 +16,8 @@ It simulates the way light interacts with lenses, creating realistic or artistic
 Inputs
 ======
 
+.. glare-inputs-start
+
 Image
    Standard color input.
 
@@ -137,9 +139,13 @@ Kernel :guilabel:`Kernel`
    When the *Color* type is selected, an image input can be connected
    to provide a grayscale or color-based convolution kernel.
 
+.. glare-inputs-end
+
 
 Outputs
 =======
+
+.. glare-outputs-start
 
 Image
    The final image with the generated glare added.
@@ -151,6 +157,8 @@ Glare
 Highlights
    The extracted bright areas used to generate the glare effect.
    Can be used to fine-tune the glare or as a base for custom effects.
+
+.. glare-outputs-end
 
 
 Gizmos
