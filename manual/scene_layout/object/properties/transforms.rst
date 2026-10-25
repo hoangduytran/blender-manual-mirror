@@ -49,7 +49,8 @@ Rotation Mode
 
    Changing the rotation mode does not convert existing animation. To preserve
    animated motion when switching rotation modes, use the
-   :ref:`Convert Rotation Mode <bpy.ops.anim.rotation_mode_convert>` operator.
+   :ref:`Convert Rotation Mode <bpy.ops.anim.rotation_mode_convert>` operator,
+   available in the menu next to the rotation mode selector.
 
    :Euler:
       The gizmo handles are aligned to the :term:`Euler` axis,
