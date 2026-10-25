@@ -46,8 +46,8 @@ Tabs related to the active scene:
   :doc:`Cycles </render/cycles/render_settings/index>`, or
   :doc:`Workbench </render/workbench/index>` settings.
 - :doc:`Output </render/output/index>`
-- :doc:`View Layer </render/layers/index>`
 - :doc:`Scene </scene_layout/scene/properties>`
+- :doc:`View Layer </render/layers/index>`
 - :doc:`World </render/lights/world>`
 
 
