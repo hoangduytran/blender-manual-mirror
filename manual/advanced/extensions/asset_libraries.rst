@@ -19,6 +19,9 @@ The extension is simply a manifest referencing the URL of the remote-asset-libra
 Creating an Asset Library Extension
 ===================================
 
+An extension is defined by a :ref:`blender_manifest.toml <extensions-manifest>`,
+which Blender builds into a ZIP file for re-distribution.
+
 
 Manifest
 --------
