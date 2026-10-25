@@ -68,21 +68,36 @@ Offsets
    the strip's handles). See :ref:`bpy.types.Strip.frame_offset_start`.
 
 
+.. _bpy.types.SequencerTimelineOverlay.show_thumbnails:
+
 Thumbnails
 ----------
 
+Displays previews of the source images or video frames within strips in the Timeline.
+Thumbnails make it easier to identify the contents of strips without using the Preview.
+
+Thumbnails can be toggled on or off in the panel's header.
+
 .. _bpy.types.SequencerTimelineOverlay.thumbnail_display_style:
 
-Thumbnails
-   How thumbnails are displayed.
-   The thumbnail size depends on the vertical zoom level (which can be adjusted
-   by dragging up and down with :kbd:`Ctrl-MMB`). Zooming in results in taller
-   strips with bigger, but fewer thumbnails. Zooming out results in narrower
-   strips with smaller, but more thumbnails.
+Display Style
+   Determines how thumbnails are arranged within strips.
 
-   :None: Do not show strip thumbnails.
-   :Strip Ends: Show thumbnails only at the beginning and end of the strip.
-   :Continuous: Displays thumbnails across the full width of each Movie or Image strips.
+   The thumbnail size depends on the vertical zoom level, which can be adjusted
+   by dragging vertically with :kbd:`Ctrl-MMB`.
+   Zooming in makes strips taller, displaying larger but fewer thumbnails,
+   while zooming out makes strips shorter, displaying smaller but more thumbnails.
+
+   :Middle:
+      Displays a single thumbnail in the center of each strip.
+      Useful for identifying the contents of strips while keeping the Timeline uncluttered.
+   :Strip Ends:
+      Displays thumbnails at the beginning and end of each strip.
+      Useful for identifying the first and last frames without displaying intermediate thumbnails.
+   :Continuous:
+      Displays thumbnails continuously across the width of Movie and Image strips.
+      The thumbnails represent frames at different points in the strip,
+      making it easier to identify scenes and locate specific content.
 
 
 Waveforms
