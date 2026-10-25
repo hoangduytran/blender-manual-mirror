@@ -39,6 +39,8 @@ URL
 
    Only available for online asset libraries.
 
+   .. This is read-only for extension asset libraries, probably not worth an explicit note.
+
 .. _bpy.types.UserAssetLibrary.import_method:
 
 Import Method
@@ -89,6 +91,43 @@ Relative Path
 
    This is useful when the asset library resides alongside a project and may
    be moved together with it.
+
+
+.. _prefs-asset_libraries-extensions:
+
+Extension Asset Libraries
+=========================
+
+These asset libraries are added by :doc:`extensions </advanced/extensions/asset_libraries>`,
+they're listed under the extension repository they were installed from.
+
+The extension simply adds a :doc:`remote asset library </files/asset_libraries/remote_asset_libraries>`
+to this list, the assets are downloaded as needed & new assets show up without updating the extension.
+
+Installing & Removing
+   These are managed the same as :ref:`other extensions <prefs-extensions-install>`,
+   installing adds the library to this list & uninstalling removes it.
+
+   The library can't be removed from this list, uninstall the extension instead.
+
+Enabling & Disabling
+   Disable a library to hide its assets without uninstalling the extension.
+
+   Disabling the extension repository hides all of its libraries (they're shown grayed out in the preferences),
+   enabling the repository restores them as they were.
+
+Access Token
+   When a library requires an :ref:`access token <asset-library-access-token>`,
+   enter it in the library's :menuselection:`Advanced` settings.
+
+   Some extension repositories share their access token with their libraries,
+   so it only needs to be entered once, for the :ref:`repository <access-token>`.
+   The library then shows the repository's token (read-only), to change it, edit the repository.
+
+Finding an Asset's Extension
+   To find out where an asset came from,
+   right-click on it in the :doc:`/editors/asset_browser` and choose :menuselection:`View Extension...`,
+   this shows the extension in :menuselection:`Get Extensions`, with its maintainer & license.
 
 
 .. _essentials-library:
