@@ -9,12 +9,16 @@ Import PLY Node
    :align: right
    :alt: Import PLY node.
 
-The *Import PLY* node imports mesh data from a `.ply` (Polygon File Format or Stanford Triangle Format) file.
+The *Import PLY* node imports geometry from a ``.ply`` (Polygon File Format or Stanford Triangle Format) file.
 
-PLY files typically store geometry from 3D scanning or modeling software and can include
-vertex attributes such as colors or normals. The geometry is imported as a single mesh.
+PLY files are commonly used to store geometry from 3D scanning and modeling software.
+They can contain mesh data with attributes such as vertex colors and normals,
+as well as Gaussian splats used for rendering captured scenes.
 
-This node allows procedural workflows to incorporate external static geometry directly into Geometry Nodes.
+The node automatically detects the type of geometry stored in the file,
+importing it as either a mesh or a :doc:`point cloud </modeling/point_clouds/introduction>`
+containing Gaussian splats.
+This allows both types of PLY files to be used in Geometry Nodes without additional setup.
 
 .. seealso::
 
@@ -25,11 +29,12 @@ Inputs
 ======
 
 Path
-   The path to the `.ply` file to be imported.
+   The path to the ``.ply`` file to import.
 
 
 Outputs
 =======
 
-Mesh
-   The mesh geometry imported from the PLY file.
+Geometry
+   The geometry imported from the PLY file.
+   The resulting geometry type depends on the file contents.
