@@ -34,6 +34,20 @@ Interface
 Header
 ------
 
+Asset
+    This menu is always available in the Asset Browser header.
+    It contains the following operations:
+
+    Clear Asset
+       See :ref:`bpy.ops.asset.clear`.
+    Clear Asset (Set Fake User)
+       See :ref:`assets-clear-set-fake-user`.
+    Open Containing Blend File
+       Opens the blend-file that contains the asset in a new Blender instance.
+    Browse Containing Blend File
+       Browses to the blend-file that contains the asset.
+
+
 Import Settings
 ^^^^^^^^^^^^^^^
 
