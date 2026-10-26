@@ -1,3 +1,5 @@
+.. _asset_libraries-introduction:
+
 ************
 Introduction
 ************
@@ -6,9 +8,9 @@ This section describes Blender's asset library system.
 
 .. seealso::
 
-   :doc:`/editors/asset_browser`
+   :ref:`editors-asset_browser`
       The main interface for organizing and using assets.
-   :doc:`/files/asset_libraries/catalogs`
+   :ref:`asset_libraries-catalogs`
       For organizing assets.
    :doc:`/animation/armatures/posing/editing/pose_library`
       Built on top of the Asset Browser.
@@ -63,10 +65,10 @@ and all those assets will be shown in the Asset Browser.
 The blend-files can be directly in the top-level directory of the asset library, or in any subdirectory.
 The on-drive organization of asset libraries is all up to you. Regardless of which blend-file contains the assets,
 each asset can be assigned a **catalog**. For more info about how to organize your assets
-this way, see :doc:`/files/asset_libraries/catalogs`.
+this way, see :ref:`asset_libraries-catalogs`.
 
 Asset libraries can be registered either in Blender's :ref:`preferences
-<bpy.types.UserAssetLibrary>` or (when in a Blender Project) in :ref:`project
+<prefs-asset-libraries>` or (when in a Blender Project) in :ref:`project
 settings <projects-asset_libraries>`. Asset libraries registered in Blender's
 preferences will be available at all times. Asset libraries registered in
 project settings will only be available when working inside that project.
@@ -278,7 +280,7 @@ This could be implemented as an add-on.
 Using Assets
 ------------
 
-Assets can be used from the :doc:`/editors/asset_browser`.
+Assets can be used from the :ref:`editors-asset_browser`.
 
 The pose library extends this, and adds an Asset View to the 3D Viewport.
 See :ref:`pose-library-from-viewport`.

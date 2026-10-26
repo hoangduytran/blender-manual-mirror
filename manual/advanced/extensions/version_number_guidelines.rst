@@ -53,6 +53,18 @@ good sense of how to approach the common cases. Extension developers should use
 their best judgment when dealing with situations not covered well by these
 guidelines.
 
+Asset Library Extensions
+========================
+
+In practice, the version rarely needs to change,
+since the extension references a :ref:`remote asset library <asset_libraries-remote>`
+which is updated on the server (see :doc:`Releasing Updates <asset_libraries>`),
+a new version is only needed when the extension's metadata changes.
+
+Increment the MAJOR version when raising ``blender_version_min``, as this drops support for older Blender versions.
+Otherwise, the version may optionally be incremented to indicate significant updates to the asset-library.
+
+
 Theme Extensions
 ================
 

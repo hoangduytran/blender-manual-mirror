@@ -42,12 +42,12 @@ top to bottom in the modifier stack, so the order of modifiers can affect the fi
 Modifier Assets
 ===============
 
-Compositor node groups marked as :doc:`Assets </editors/asset_browser>`
+Compositor node groups marked as :ref:`Assets <editors-asset_browser>`
 can be used as strip modifiers.
 
 Asset modifiers appear in the :menuselection:`Add` menu alongside Blender's
-built-in modifiers. Assets assigned to :doc:`Catalogs
-</files/asset_libraries/catalogs>` are organized into matching submenus.
+built-in modifiers. Assets assigned to :ref:`Catalogs
+<asset_libraries-catalogs>` are organized into matching submenus.
 
 This makes it possible to build reusable modifier libraries and share custom
 effects across multiple projects.

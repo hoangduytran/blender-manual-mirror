@@ -72,7 +72,7 @@ features:
    <files-path_templates>`. This lets you define common filepaths, etc. in one
    place, to then be used by reference throughout your project's blend files.
 :ref:`Project Asset Libraries <projects-asset_libraries>`
-   :doc:`Asset libraries </files/asset_libraries/introduction>` that are only
+   :ref:`Asset libraries <asset_libraries-introduction>` that are only
    loaded when you're working on files inside that project. This lets you have
    project-specific assets to use within the project, without polluting your
    asset libraries outside of the project.

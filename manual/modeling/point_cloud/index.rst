@@ -1,3 +1,4 @@
+.. _point_cloud-index:
 .. _bpy.ops.object.pointcloud:
 
 ###############

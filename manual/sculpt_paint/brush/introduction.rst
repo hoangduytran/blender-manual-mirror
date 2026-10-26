@@ -72,9 +72,9 @@ select *Assign Shortcut*. To modify or remove an existing shortcut, select *Chan
 Brush Assets
 ============
 
-Brushes are used as assets, and stored in :doc:`asset libraries </files/asset_libraries/introduction>`. This makes the
+Brushes are used as assets, and stored in :ref:`asset libraries <asset_libraries-introduction>`. This makes the
 brushes shared across project files. All available brush assets can be displayed in the
-:doc:`Asset Browser </editors/asset_browser>`, which also provides ways to organize them.
+:ref:`Asset Browser <editors-asset_browser>`, which also provides ways to organize them.
 
 Blender comes bundled with a number of brushes in the `Essentials` asset library. These can be customized into all
 kinds of custom brushes by duplicating them (see :doc:`Brush Editing<brush_management>`).

@@ -5,8 +5,8 @@
 Pose Library
 ************
 
-This section describes the pose library, which is based on the :doc:`/editors/asset_browser`.
-For an overview of the asset system, see the :doc:`/files/asset_libraries/index` section.
+This section describes the pose library, which is based on the :ref:`editors-asset_browser`.
+For an overview of the asset system, see the :ref:`asset_libraries-index` section.
 The pose library is meant to be used in Pose Mode. In other words, it only works
 when posing an armature, and not for general object animation.
 
@@ -32,7 +32,7 @@ but any action that is keyed on exactly one frame can be seen as pose asset.
 
 Each pose in the library is stored in its own action data-block.
 This means that it can get its own name, its own preview image,
-and can be organized in :doc:`/files/asset_libraries/catalogs`.
+and can be organized in :ref:`asset_libraries-catalogs`.
 
 Since a pose asset is just an action, it can also contain
 :ref:`slots <animation-actions-slots>`. That means a single pose asset
@@ -193,7 +193,7 @@ Use from the Asset Browser
 
 The pose library can be used directly from the Asset Browser.
 The **Pose Library panels will appear** when the active object is an armature
-and in Pose Mode. The :doc:`catalog system </files/asset_libraries/catalogs>`
+and in Pose Mode. The :ref:`catalog system <asset_libraries-catalogs>`
 and the filter bar at the top can be used to search for specific poses.
 
 

@@ -1,3 +1,5 @@
+.. _asset_libraries-remote:
+
 **********************
 Remote Asset Libraries
 **********************

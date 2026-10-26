@@ -113,6 +113,8 @@ Or show only extensions of a single type:
 :Themes: Only show themes.
 
 
+.. _prefs-extensions-repositories:
+
 Repositories
 ============
 

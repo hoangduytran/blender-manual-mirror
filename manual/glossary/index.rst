@@ -84,7 +84,7 @@ This page lists definitions for terms used in Blender and this manual.
 
    Asset
       Curated data-blocks that are meant for reuse, usually contained in an :term:`Asset Library`.
-      See also :doc:`Asset Libraries </files/asset_libraries/introduction>`.
+      See also :ref:`Asset Libraries <asset_libraries-introduction>`.
 
       Note that there are other meanings of the word "asset" -- sometimes this
       is used more generically, and refers to any "useful thing", like images,
@@ -92,11 +92,11 @@ This page lists definitions for terms used in Blender and this manual.
 
    Asset Catalog
       Container for assets, similar to what a directory is for files.
-      See also :doc:`/files/asset_libraries/catalogs`.
+      See also :ref:`asset_libraries-catalogs`.
 
    Asset Library
       Directory on drive, registered in the list of asset libraries in the preferences.
-      See also :doc:`Asset Libraries </files/asset_libraries/introduction>` and :term:`Current File Asset Library`.
+      See also :ref:`Asset Libraries <asset_libraries-introduction>` and :term:`Current File Asset Library`.
 
    Asset Metadata
       Asset-related information, such as its :term:`catalog <Asset Catalog>`,
