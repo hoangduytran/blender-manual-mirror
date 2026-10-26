@@ -109,10 +109,34 @@ you can use this region to tweak its size.
 Sidebar
 =======
 
-The *Sidebar* (on the right side of the editor area)
-contains :ref:`Panels <ui-panels>`
-with settings of objects within the editor and the editor itself.
-:kbd:`N` toggles the visibility of the Sidebar.
+The *Sidebar* is a region on the right side of an editor that contains
+:ref:`panels <ui-panels>` with settings and properties related to the editor
+and its contents. The available panels depend on the editor type, active mode,
+and current selection.
+
+Panels are often organized into tabs along the right edge of the Sidebar.
+Clicking a tab displays its corresponding panels, which can be expanded or
+collapsed to show or hide their settings.
+
+The Sidebar can be toggled using :kbd:`N` or through
+:menuselection:`View --> Sidebar` in the editor's header.
+It can also be resized by dragging its left edge.
+
+Some editors provide additional tabs through built-in features or extensions,
+allowing quick access to commonly used settings and operations.
+
+.. _bpy.ops.ui.region_start_filter:
+
+Pressing :kbd:`Ctrl-F` while hovering over the Sidebar opens a search field
+for finding settings and properties.
+
+Panels containing matching results are highlighted, while non-matching settings
+are grayed out. This makes it easier to locate specific options while preserving
+the context of the surrounding panels.
+
+.. _bpy.ops.ui.region_clear_filter:
+
+Press :kbd:`Alt-F` to clear the search and restore the normal appearance of the Sidebar.
 
 
 .. _ui-region-footer:

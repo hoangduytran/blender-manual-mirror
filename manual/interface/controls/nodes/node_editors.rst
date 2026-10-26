@@ -211,7 +211,7 @@ Mute
 
 .. _bpy.types.Node.warning_propagation:
 
-Propagation :guilabel:`Geometry Nodes`
+Propagate :guilabel:`Geometry Nodes` :guilabel:`Shader Nodes` :guilabel:`Compositing Nodes`
    Controls which messages from this node are propagated to the parent
    node group or modifier.
 
