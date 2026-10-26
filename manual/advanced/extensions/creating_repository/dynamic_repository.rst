@@ -58,7 +58,7 @@ using the optional ``assetlib_auth_method`` in the listing:
 
 ``PER_LIBRARY``
    Each asset library uses its own access token, edited in the
-   :ref:`Asset Libraries preferences <bpy.types.UserAssetLibrary>` (the default, used when omitted).
+   :ref:`Asset Libraries preferences <prefs-asset-libraries>` (the default, used when omitted).
 
    Suits asset libraries hosted by different providers.
 ``FROM_REPOSITORY``

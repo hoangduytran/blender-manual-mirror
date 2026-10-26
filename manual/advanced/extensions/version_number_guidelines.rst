@@ -57,7 +57,7 @@ Asset Library Extensions
 ========================
 
 In practice, the version rarely needs to change,
-since the extension references a :doc:`remote asset library </files/asset_libraries/remote_asset_libraries>`
+since the extension references a :ref:`remote asset library <asset_libraries-remote>`
 which is updated on the server (see :doc:`Releasing Updates <asset_libraries>`),
 a new version is only needed when the extension's metadata changes.
 

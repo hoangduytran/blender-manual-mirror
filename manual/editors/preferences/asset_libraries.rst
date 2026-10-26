@@ -1,4 +1,5 @@
 .. _bpy.types.UserAssetLibrary:
+.. _prefs-asset-libraries:
 
 ***************
 Asset Libraries
@@ -8,7 +9,7 @@ Asset Libraries define locations where Blender searches for assets.
 
 Asset libraries can point to directories on the local file system or to
 online asset repositories. Once added, assets contained in those libraries
-are available in the :doc:`/editors/asset_browser` and other asset selectors.
+are available in the :ref:`editors-asset_browser` and other asset selectors.
 
 .. figure:: /images/editors_preferences_section_assets.webp
 
@@ -98,10 +99,10 @@ Relative Path
 Extension Asset Libraries
 =========================
 
-These asset libraries are added by :doc:`extensions </advanced/extensions/asset_libraries>`,
+These asset libraries are added by :ref:`extensions <extensions-asset_libraries>`,
 they're listed under the extension repository they were installed from.
 
-The extension simply adds a :doc:`remote asset library </files/asset_libraries/remote_asset_libraries>`
+The extension simply adds a :ref:`remote asset library <asset_libraries-remote>`
 to this list, the assets are downloaded as needed & new assets show up without updating the extension.
 
 Installing & Removing
@@ -126,7 +127,7 @@ Access Token
 
 Finding an Asset's Extension
    To find out where an asset came from,
-   right-click on it in the :doc:`/editors/asset_browser` and choose :menuselection:`View Extension...`,
+   right-click on it in the :ref:`editors-asset_browser` and choose :menuselection:`View Extension...`,
    this shows the extension in :menuselection:`Get Extensions`, with its maintainer & license.
 
 

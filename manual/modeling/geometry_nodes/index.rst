@@ -92,7 +92,7 @@ Node Types
 
 .. tip::
 
-   :doc:`Asset Catalogs </files/asset_libraries/catalogs>`
+   :ref:`Asset Catalogs <asset_libraries-catalogs>`
    that contain geometry node groups will also appear in the add menu.
 
    Catalogs and assets inserted into a top-level "Geometry Nodes" catalog will

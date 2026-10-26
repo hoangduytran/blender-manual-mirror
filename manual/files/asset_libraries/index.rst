@@ -1,3 +1,4 @@
+.. _asset_libraries-index:
 
 ###################
   Asset Libraries

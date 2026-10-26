@@ -5,8 +5,8 @@
 Asset Libraries
 ***************
 
-An *Asset Library* extension adds a :doc:`Remote Asset Library </files/asset_libraries/remote_asset_libraries>`
-to the :ref:`Asset Libraries <bpy.types.UserAssetLibrary>` preferences when installed.
+An *Asset Library* extension adds a :ref:`Remote Asset Library <asset_libraries-remote>`
+to the :ref:`Asset Libraries <prefs-asset-libraries>` preferences when installed.
 
 The extension is simply a manifest referencing the URL of the remote-asset-library.
 
@@ -93,7 +93,7 @@ Which token an asset library uses is set by the extension repository, not the ma
 
 Library Access Token
    Each library has its own :ref:`access token <asset-library-access-token>`,
-   entered in the library's settings in the :ref:`Asset Libraries <bpy.types.UserAssetLibrary>` preferences.
+   entered in the library's settings in the :ref:`Asset Libraries <prefs-asset-libraries>` preferences.
    This is the default.
 
    Use this when the assets are hosted separately from the extension repository,
@@ -184,7 +184,7 @@ describing the assets it contains.
 
 - For making assets see :ref:`Creating an Asset <asset-create>`.
 - For the requirements of remote-asset-libraries
-  see :doc:`Remote Asset Libraries </files/asset_libraries/remote_asset_libraries>`.
+  see :ref:`Remote Asset Libraries <asset_libraries-remote>`.
 
 Generate the listing & edit ``_asset-library-meta.json``,
 see :ref:`Creating a Remote Asset Library <asset-library-creating>`.

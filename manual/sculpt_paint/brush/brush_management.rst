@@ -2,7 +2,7 @@
 Manage Brushes
 **************
 
-Brush assets are stored in :doc:`asset libraries </files/asset_libraries/introduction>` to make them accessible from
+Brush assets are stored in :ref:`asset libraries <asset_libraries-introduction>` to make them accessible from
 any Blender session. There are two ways of managing brush assets:
 
 - Using :ref:`asset operators <brush-management-utility-operators>`: Create and update brush assets
@@ -53,9 +53,9 @@ updating the brushes in asset libraries for you. Assets managed this way will be
       A custom name to use for the new brush.
    Library
       Choose an Asset Library to store the new brush asset in. The available asset libraries are configured
-      :ref:`in the Preferences <bpy.types.UserAssetLibrary>`.
+      :ref:`in the Preferences <prefs-asset-libraries>`.
    Catalog
-      Choose an :doc:`Asset Catalog </files/asset_libraries/catalogs>` to assign the brush asset to. Entering a
+      Choose an :ref:`Asset Catalog <asset_libraries-catalogs>` to assign the brush asset to. Entering a
       non-existent name/path will create a new catalog accordingly.
 
 Delete Asset
@@ -65,7 +65,7 @@ Edit Metadata...
    Spawns a popup to change some of the available :ref:`asset metadata <editing-asset-metadata>` fields:
 
    Catalog
-      Choose an :doc:`Asset Catalog </files/asset_libraries/catalogs>` to assign the brush asset to. Entering a
+      Choose an :ref:`Asset Catalog <asset_libraries-catalogs>` to assign the brush asset to. Entering a
       non-existent name/path will create a new catalog accordingly.
    Author
       See :ref:`Asset Author <bpy.types.AssetMetaData.description>`.

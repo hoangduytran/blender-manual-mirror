@@ -1,3 +1,4 @@
+.. _editors-asset_browser:
 .. index:: Editors; Asset Browser
 
 *************
@@ -11,10 +12,10 @@ click the *Editor Type* button in its top left corner, and choose
 
 .. seealso::
 
-   :doc:`/files/asset_libraries/index`
+   :ref:`asset_libraries-index`
       For general information on Blender's asset library system, including how to
       :ref:`create <asset-create>` and :ref:`edit <asset-edit>` assets, and design choices.
-   :doc:`/files/asset_libraries/catalogs`
+   :ref:`asset_libraries-catalogs`
       For organizing assets.
    :doc:`/animation/armatures/posing/editing/pose_library`
       Built on top of the Asset Browser.
@@ -191,7 +192,7 @@ You can show/hide this region by pressing :kbd:`T`.
 .. _bpy.types.FileAssetSelectParams.asset_library_reference:
 
 Asset Library
-   The :doc:`asset library </files/asset_libraries/introduction>` whose catalogs to show.
+   The :ref:`asset library <asset_libraries-introduction>` whose catalogs to show.
 
    :All Libraries: Show catalogs from all available libraries.
    :Current File:
@@ -199,7 +200,7 @@ Asset Library
       an asset library). See :ref:`asset-library-current-file` for more information.
    :Essentials: Show the catalogs that come bundled with Blender.
 
-   Any libraries that you added in the :ref:`File Path Preferences <bpy.types.UserAssetLibrary>`
+   Any libraries that you added in the :ref:`File Path Preferences <prefs-asset-libraries>`
    are listed here too.
 
 .. _bpy.ops.asset.bundle_install:
@@ -213,7 +214,7 @@ Copy Bundle to Asset Library
    become available as part of the library.
 
 Catalogs
-   :ref:`ui-tree-view` that shows the :doc:`catalogs </files/asset_libraries/catalogs>` of the selected
+   :ref:`ui-tree-view` that shows the :ref:`catalogs <asset_libraries-catalogs>` of the selected
    asset library. A catalog is a group of assets; when you select one, only the assets in that
    catalog and its child catalogs will be listed.
 
@@ -434,7 +435,7 @@ Asset bundles can be copied to an asset library via the :ref:`Asset Browser <bpy
 - Choose the asset library to copy it to.
 - A File Browser will open at the root folder of the selected asset library.
   Choose the desired location of the blend-file, and click the *Copy to Asset Library* button.
-- The blend-file will be saved at the chosen location, and any :doc:`catalogs </files/asset_libraries/catalogs>` of
+- The blend-file will be saved at the chosen location, and any :ref:`catalogs <asset_libraries-catalogs>` of
   the asset bundle will be merged into the target asset library.
 
 .. note::

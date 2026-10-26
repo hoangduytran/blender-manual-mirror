@@ -1,3 +1,5 @@
+.. _asset_libraries-catalogs:
+
 **************
 Asset Catalogs
 **************
@@ -71,7 +73,7 @@ Compositor, for example.
 Creating Catalogs
 =================
 
-New catalogs can be created in the :doc:`/editors/asset_browser`
+New catalogs can be created in the :ref:`editors-asset_browser`
 through :menuselection:`Header --> Catalog --> New Asset Catalog`.
 Once the catalog is created you can double :kbd:`LMB` on its name in the
 *Source List* region of the editor to give the catalog a more descriptive name.
@@ -99,7 +101,7 @@ Saving Catalogs
 ===============
 
 Saving catalogs makes any edits to any catalogs permanent by writing the current set up to the asset library.
-Catalogs can be saved in the :doc:`/editors/asset_browser`
+Catalogs can be saved in the :ref:`editors-asset_browser`
 through :menuselection:`Header --> Catalog --> Save Asset Catalog`.
 Once the catalog is created you can double :kbd:`LMB` on its name
 Catalogs can also be saved in the *Source List* region of the editor

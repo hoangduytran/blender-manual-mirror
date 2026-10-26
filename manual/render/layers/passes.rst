@@ -327,7 +327,7 @@ Asset
    Render cryptomatte passes for isolating groups of objects with
    the same :doc:`parent </scene_layout/object/editing/parent>`.
    This option is not related to Blender's
-   :doc:`asset </files/asset_libraries/introduction>` feature.
+   :ref:`asset <asset_libraries-introduction>` feature.
 
 .. _bpy.types.ViewLayer.pass_cryptomatte_depth:
 
