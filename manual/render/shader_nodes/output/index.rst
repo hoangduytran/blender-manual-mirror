@@ -15,3 +15,10 @@ except in the case of the :doc:`Displacement </render/materials/components/displ
    material.rst
    light.rst
    world.rst
+
+-----
+
+.. toctree::
+   :maxdepth: 1
+
+   enable_output.rst
