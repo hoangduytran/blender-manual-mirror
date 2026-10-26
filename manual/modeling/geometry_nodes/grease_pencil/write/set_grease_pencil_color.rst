@@ -28,6 +28,7 @@ Mode
 
    :Stroke: Apply the color and opacity to stroke points.
    :Fill: Apply the color and opacity to stroke fills.
+   :Both: Apply the color and opacity for stroke points and fills together.
 
 Color
    The new color to apply.
