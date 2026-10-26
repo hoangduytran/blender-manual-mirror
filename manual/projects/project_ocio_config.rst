@@ -27,6 +27,12 @@ configuration on disk:
 
 .. note::
 
+   Changes to the OpenColorIO configuration are not applied automatically.
+   The blend-file must be reloaded for the updated configuration to take effect.
+   This can be done by clicking *Reload to Apply Changes*.
+
+.. tip::
+
    When using the *Path* option, we recommend keeping your on-disk OpenColorIO
    configuration somewhere under your project root.
 

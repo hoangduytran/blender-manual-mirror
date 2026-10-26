@@ -18,6 +18,7 @@ and vignetting, all of which help replicate the subtleties of physical camera sy
 .. toctree::
    :maxdepth: 1
 
+   bloom.rst
    chromatic_aberration.rst
    film_grain.rst
    sensor_noise.rst

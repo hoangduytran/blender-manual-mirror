@@ -169,8 +169,8 @@ Set Color Tag
 
 .. _bpy.ops.outliner.id_operation:
 
-ID Data
--------
+Data-block
+----------
 
 Unlink
    Removes the current usage of the data-block while keeping any others

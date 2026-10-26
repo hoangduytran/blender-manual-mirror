@@ -92,6 +92,8 @@ Data Previews
 
 -----
 
+Project
+   Create and manage Blender :doc:`/projects/index`.
 Import
    Blender can use information stored in a variety of other format files which are created by
    other graphics programs. See :doc:`Import/Export </files/import_export/index>`.

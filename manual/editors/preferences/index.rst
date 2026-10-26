@@ -34,12 +34,8 @@ Sections
    :maxdepth: 1
 
    addons.rst
-   themes.rst
-
-.. toctree::
-   :maxdepth: 1
-
    asset_libraries.rst
+   themes.rst
 
 .. toctree::
    :maxdepth: 1

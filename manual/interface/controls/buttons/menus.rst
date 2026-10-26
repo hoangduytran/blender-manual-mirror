@@ -171,7 +171,7 @@ Copy To Selected
    A use case is if the Properties context is pinned.
 
 Assign Shortcut
-   Lets you define a keyboard or mouse shortcut for an operation.
+   Lets you define a keyboard or mouse shortcut for an operation or an enum menu item.
    To define the shortcut you must first move the mouse cursor over the button that pops up.
    When "Press a key" appears you must press and/or click the desired shortcut.
    Press :kbd:`Esc` to cancel.
