@@ -22,3 +22,4 @@ except in the case of the :doc:`Displacement </render/materials/components/displ
    :maxdepth: 1
 
    enable_output.rst
+   warning.rst
