@@ -16,7 +16,7 @@ They can contain mesh data with attributes such as vertex colors and normals,
 as well as Gaussian splats used for rendering captured scenes.
 
 The node automatically detects the type of geometry stored in the file,
-importing it as either a mesh or a :doc:`point cloud </modeling/point_clouds/introduction>`
+importing it as either a mesh or a :ref:`point cloud <point_cloud-index>`
 containing Gaussian splats.
 This allows both types of PLY files to be used in Geometry Nodes without additional setup.
 
