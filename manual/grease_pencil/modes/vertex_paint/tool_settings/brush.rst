@@ -6,10 +6,6 @@ Brush Settings
 Painting needs paint brushes and Blender provides a Brush panel within the Toolbar
 when in *Vertex Paint Mode*.
 
-Brush
-   In the :ref:`Data-Block menu <ui-data-block>` you find predefined Brush presets.
-   And you can create your own custom presets as needed.
-
 Blend
    The blending mode used when applying the brush.
 
@@ -30,13 +26,18 @@ Strength
    :bl-icon:`stylus_pressure` (Strength Pressure)
       Adjusts the brush strength based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
 
-Mode
+.. _bpy.types.BrushGpencilSettings.vertex_mode:
+
+Stroke Mode
    :Stroke: Only paint over strokes.
    :Fill: Only paint over fill areas.
    :Stroke & Fill: Paint over strokes and fill areas.
 
+
 Cursor
-   See the global brush settings for :doc:`Cursor </sculpt_paint/brush/cursor>` settings.
+======
+
+See the global brush settings for :doc:`Cursor </sculpt_paint/brush/cursor>` settings.
 
 
 .. _grease-pencil-vertex-paint-brush-color:
@@ -57,9 +58,3 @@ Color Palette
 =============
 
 The active Color Palette. See :ref:`bpy.types.PaletteColor`.
-
-
-Falloff
-=======
-
-See the global brush settings for :doc:`Falloff </sculpt_paint/brush/falloff>` settings.
