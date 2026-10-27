@@ -10,7 +10,8 @@ Fill Tool
    :Tool:      :menuselection:`Toolbar --> Fill`
 
 The Fill tool creates filled Grease Pencil strokes by detecting enclosed
-regions formed by existing strokes.
+regions formed by existing strokes. Multiple regions can be filled at once
+by dragging a path across them.
 
 Depending on the selected *Fill Solver*, the boundary can be computed from
 the stroke geometry or from a pixel-based representation, allowing fills to
@@ -226,6 +227,20 @@ the boundary and create a new closed stroke filled with the material selected.
           :width: 200px
 
           Final filled drawing.
+
+
+Filling Multiple Areas
+----------------------
+
+Click and drag :kbd:`LMB` to draw a path across multiple enclosed regions.
+All regions crossed by the path are filled in a single operation using
+the active material.
+
+The resulting fill geometry is combined into a single fill without
+internal borders between the regions.
+
+This is useful for filling several adjacent regions with the same material,
+without having to fill each region individually.
 
 
 Fill Guides
