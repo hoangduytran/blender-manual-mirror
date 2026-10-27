@@ -15,7 +15,7 @@ Import
 
 .. reference::
 
-   :menu: :menuselection:`File --> Import --> SVG as Grease Pencil`
+   :menu: :menuselection:`File --> Import --> SVG as Grease Pencil (.svg)`
 
 Resolution
    Resolution for generated strokes.

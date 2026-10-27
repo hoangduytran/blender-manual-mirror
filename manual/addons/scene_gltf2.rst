@@ -6,7 +6,7 @@ glTF 2.0
 .. reference::
 
    :Category: Import-Export
-   :Menu:      :menuselection:`File --> Import/Export --> glTF 2.0 (.glb, .gltf)`
+   :Menu:      :menuselection:`File --> Import/Export --> glTF 2.0 (.glb/.gltf)`
 
 
 Enabling Add-on

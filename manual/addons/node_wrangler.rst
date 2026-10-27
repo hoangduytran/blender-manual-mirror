@@ -69,8 +69,10 @@ Connect the outputs of two nodes into an appropriate "mix" type of node. This is
 nodes and executing the *Mix* function from `Merge with Automatic Type Detection`_.
 
 
-Merge
-=====
+.. _bpy.ops.node.nw_merge_nodes:
+
+Merge Selected Nodes
+====================
 
 .. reference::
 
@@ -149,6 +151,24 @@ You can quickly set some operations by using corresponding shortcuts.
 - Divide: :kbd:`Shift-Ctrl-Slash`, :kbd:`Shift-Ctrl-NumpadSlash`
 - Greater than: :kbd:`Ctrl-Comma`
 - Less than: :kbd:`Ctrl-Period`
+
+
+Merge Using Geometry to Instance Node
+-------------------------------------
+
+.. reference::
+
+   :Compatibility:   :guilabel:`Geometry Nodes`
+   :Menu:            :menuselection:`Node Wrangler --> Merge Selected Nodes --> Use Geometry Nodes --> Use Geometry to Instance Nodes`
+
+Connects the Geometry outputs of the selected nodes to a
+:doc:`Geometry to Instance Node </modeling/geometry_nodes/geometry/operations/geometry_to_instance>`.
+
+Unlike Join Geometry, which combines the input geometry,
+Geometry to Instance creates a separate instance for each input.
+This preserves the individual geometry components as instances,
+allowing them to be transformed or processed together without
+combining their underlying geometry.
 
 
 Merge Using Z-Combine Node
