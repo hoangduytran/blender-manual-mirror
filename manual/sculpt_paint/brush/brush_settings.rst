@@ -297,15 +297,6 @@ Original -- Plane :guilabel:`Sculpt Mode`
    instead of the surface plane currently under the cursor.
 
 
-.. _bpy.types.Brush.use_automasking_topology:
-.. _bpy.types.Brush.use_automasking_boundary_face_sets:
-.. _bpy.types.Brush.use_automasking_boundary_edges:
-.. _bpy.types.Brush.use_automasking_cavity:
-.. _bpy.types.Brush.use_automasking_cavity_inverted:
-.. _bpy.types.Brush.use_automasking_view_normal:
-.. _bpy.types.Brush.use_automasking_start_normal:
-.. _bpy.types.Brush.automasking:
-
 Auto-Masking
 ------------
 
