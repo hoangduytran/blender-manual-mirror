@@ -3,6 +3,8 @@
 Controls
 ********
 
+.. _bpy.types.MeshAutomaskingSettings:
+
 Auto-Masking
 ============
 
@@ -26,8 +28,6 @@ For example it's possible to auto-mask a specific face set,
 while excluding disconnected topology and face set boundaries,
 and only affect faces that are oriented towards the view via View Normal.
 
-.. _bpy.types.Sculpt.use_automasking_topology:
-
 Topology
    Only vertices that are topologically connected to where you started
    the stroke/tool on are affected. So loose geometry islands will be auto-masked.
@@ -38,8 +38,6 @@ Topology
    So even if geometry is connected somewhere,
    it is considered separate if the connection is not within the radius.
 
-.. _bpy.types.Sculpt.use_automasking_face_sets:
-
 Face Sets
    Only vertices that are part of the same face set that you started the stroke/tool on are affected.
 
@@ -49,8 +47,6 @@ Face Sets
    the previously auto-masked area will be targeted.
    This is especially useful with the "Projected" falloff shape in the
    :doc:`Falloff Settings </sculpt_paint/brush/falloff>`.
-
-.. _bpy.types.Sculpt.use_automasking_boundary_edges:
 
 Mesh Boundary
    Vertices that are part of open boundary edges are not affected.
@@ -65,8 +61,6 @@ Mesh Boundary
       This will execute the :ref:`sculpt-mask_from_mesh_boundary` operator with the current auto-masking
       settings. This is very useful to visualize the current auto-mask, or to edit the mask further manually.
 
-.. _bpy.types.Sculpt.use_automasking_boundary_face_sets:
-
 Face Sets Boundary
    Vertices that are part of a boundary between face sets are not affected.
    This also includes boundary edges to hidden faces.
@@ -75,8 +69,6 @@ Face Sets Boundary
    Create Mask
       This will execute the :ref:`bpy.ops.sculpt.mask_from_boundary` operator with the current auto-masking
       settings. This is very useful to visualize the current auto-mask, or to edit the mask further manually.
-
-.. _bpy.types.Sculpt.use_automasking_cavity:
 
 Cavity
    Vertices that are the peaks of the surface curvature are not affected.
@@ -100,15 +92,11 @@ Cavity
       This will execute the :ref:`bpy.ops.sculpt.mask_from_cavity` operator with the current auto-masking settings.
       This is very useful to visualize the current auto-mask, or to edit the mask further manually.
 
-.. _bpy.types.Sculpt.use_automasking_cavity_inverted:
-
 Cavity (Inverted)
    This is the same as "Cavity", but inverted.
    This means the valleys/crevices of the surface curvature will not be affected.
    It cannot be used at the same time as Cavity and shares all of its settings.
    Enable this to quickly invert the cavity auto-mask.
-
-.. _bpy.types.Sculpt.use_automasking_view_normal:
 
 View Normal
    Only vertices with a :term:`Normal` that face the viewer are affected.
@@ -127,10 +115,6 @@ View Normal
    Falloff
       Extends the angular range of the Limit slider with a soft falloff gradient.
       This falloff will visually extend the limit range further.
-
-.. _bpy.types.Sculpt.automasking_start_normal_falloff:
-.. _bpy.types.Sculpt.automasking_start_normal_limit:
-.. _bpy.types.Sculpt.use_automasking_start_normal:
 
 Area Normal
    Very similar to the View Normal, but uses the Normal of the surface that you started the stroke/tool on.
