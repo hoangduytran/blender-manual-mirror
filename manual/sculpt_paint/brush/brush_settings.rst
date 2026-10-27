@@ -53,7 +53,7 @@ Size
 
 .. _bpy.types.Brush.use_locked_size:
 
-Size Unit :guilabel:`Sculpt Mode`
+Size Unit :guilabel:`Sculpt Mode` :guilabel:`Grease Pencil Draw Mode`
    Controls how the brush *Size* is measured.
 
    :View:

@@ -24,28 +24,52 @@ Material
    Data-block selector for the :doc:`material </grease_pencil/materials/index>`.
 
 Size
-   The diameter of the brush in pixels.
+   This option controls the size of the brush, measured in pixels.
+   :kbd:`F` allows you to change the brush size interactively by
+   dragging the mouse from left to right and then :kbd:`LMB` to accept.
+   Meanwhile the texture of the brush will be visible inside the circle.
+   You can also enter the size numerically with the number keys.
 
-   :kbd:`F` allows you to change the brush size interactively by dragging the pointer or
-   by typing a number then confirm.
+   The size can be decreased/increased using :kbd:`[` and :kbd:`]` respectively.
 
    :bl-icon:`stylus_pressure` (Size Pressure)
-      Adjusts the brush size based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
-      The gradient of the pressure can be customized using
-      the :doc:`curve widget </interface/controls/templates/curve>`.
+      Adjusts the size based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
+   :bl-icon:`brushes_all` (Use Unified Size)
+      Use the shared brush *Size* value for this brush.
+   :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
+      Show or hide the customizable pressure curve.
+
+      Custom Curve
+         By default this is a straight line with positive slope such that
+         increased pressure results in a larger brush size.
+
+         For the curve controls see: :ref:`Curve widget <ui-curve-widget>`.
 
 Strength
-   Control the stroke transparency (alpha).
-   From fully transparent (0.0) to fully opaque (1.0).
+   For painting brushes the *Strength* defines the maximum effect of each brush stroke.
+   For example, higher values cause a *Paint* brush to give each stroke a higher opacity.
+   The opacity is never stronger than the set *Strength*,
+   no matter how often the same surface is painted during the same stroke.
+
+   For sculpting brushes on the other hand the *Strength* relates to how strong each step of the stroke is,
+   resulting in a slower/faster buildup towards the full brush effect during the stroke.
 
    You can change the brush strength interactively by pressing :kbd:`Shift-F`
-   in the 3D Viewport and then moving the pointer and then :kbd:`LMB`.
-   You can also enter the size numerically.
+   and then moving the brush and then :kbd:`LMB`.
+   You can also enter the strength numerically with the number keys.
 
    :bl-icon:`stylus_pressure` (Strength Pressure)
       Adjusts the strength based on the stylus pressure when using a :ref:`Graphics Tablet <hardware-tablet>`.
-      The gradient of the pressure can be customized using
-      the :doc:`curve widget </interface/controls/templates/curve>`.
+   :bl-icon:`brushes_all` (Use Unified Strength)
+      Use the shared brush *Strength* value for this brush.
+   :bl-icon:`rightarrow` / :bl-icon:`downarrow_hlt` (Expand/Collapse)
+      Show or hide the customizable pressure curve.
+
+      Custom Curve
+         By default this is a straight line with positive slope such that
+         increased pressure results in a stronger brush deformation.
+
+         For the curve controls see: :ref:`Curve widget <ui-curve-widget>`.
 
 .. _bpy.types.BrushGpencilSettings.stroke_type:
 
