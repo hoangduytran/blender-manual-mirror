@@ -9,19 +9,23 @@ Viewer Node
    :align: right
    :alt: Viewer Node.
 
-The *Viewer* node is used to preview image data or value maps anywhere within a compositor node graph.
-It is a diagnostic tool that allows users to inspect intermediate results without affecting the final output.
+The *Viewer* node previews image data or value maps at any point within a compositor node tree.
+It allows intermediate results to be inspected without affecting the final composited image.
 
-You can quickly assign a node to a Viewer by pressing :kbd:`Shift-Ctrl-LMB` on the desired node.
-To switch between multiple Viewer nodes, simply select one with :kbd:`LMB`.
-Only the active Viewer node (with the :bl-icon:`restrict_view_off` icon in the header)
-will be displayed in the backdrop or Image Editor.
+A Viewer node can be quickly connected to another node by pressing :kbd:`Shift-Ctrl-LMB` on that node.
+To switch between multiple Viewer nodes, select one with :kbd:`LMB`.
+The active Viewer node is indicated by the :bl-icon:`restrict_view_off` icon in its header.
+
+When using :doc:`Scene Effects </compositing/scene_effects>`, only Viewer nodes
+belonging to the active effect can control the preview.
+If the active effect has no active Viewer node, Blender displays the final
+output of the effects stack instead.
 
 .. note::
 
-   The *Viewer* node is optional. When no Viewer node exists, Blender uses the
-   *Group Output* node for interactive previews. Adding a Viewer node allows
-   previewing intermediate results without affecting the compositor's final output.
+   Viewer nodes are optional. When no active Viewer node is available,
+   Blender uses the output of the node tree for interactive previews.
+   This allows the final result to be displayed without adding a Viewer node.
 
 
 Inputs
@@ -79,18 +83,20 @@ improving workflow efficiency when comparing outputs.
 Using the Image Editor
 ----------------------
 
-The Viewer node allows results to be displayed in the Image Editor.
-The image is facilitated in the header by selecting *Viewer Node* in the linked *Image* data-block menu.
-The Image Editor will display the image from the currently selected Viewer node.
+The Viewer result can be displayed in the Image Editor by selecting
+*Viewer Node* from the *Image* data-block menu in its header.
 
-To save the image being viewed,
-use :menuselection:`Image --> Save As...`, :kbd:`Alt-S` to save the image to a file.
+The Image Editor displays the result of the active Viewer node.
+When no active Viewer node is available, the final compositor output is displayed instead.
 
-The Image Editor also has three additional options in its header to view Images with or
-without Alpha, or to view the Alpha or Z itself.
-Click and holding the mouse in the Image displayed allows you to sample the values.
+To save the displayed image, use :menuselection:`Image --> Save As...`
+or :kbd:`Alt-S`.
+
+The Image Editor also provides controls for displaying the color channels,
+alpha channel, or depth information.
+Clicking and holding :kbd:`LMB` over the image allows pixel values to be inspected.
 
 .. seealso::
 
-   For overlays specific to the Viewer node (such as text info and render guides),
+   For overlays specific to the Viewer node, such as text information and render guides,
    see :ref:`Guides Overlays <editors-image-overlays-guides>`.

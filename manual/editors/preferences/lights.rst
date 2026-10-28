@@ -92,5 +92,5 @@ HDRIs
 =====
 
 This panel manages :term:`HDRI` image files
-which can be used to light the view when :ref:`Material Preview <3dview-material-preview>` or
-:ref:`Rendered <3dview-rendered>` shading is enabled.
+which can be used to light the view when :ref:`Material Preview <3dview-shading-material>` or
+:ref:`Rendered <3dview-shading-rendered>` shading is enabled.

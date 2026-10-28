@@ -43,7 +43,7 @@ Viewport Display
 ----------------
 
 These settings control the curve rendering settings used when the 3D viewport is set to
-:ref:`Material Preview <3dview-material-preview>`
+:ref:`Material Preview <3dview-shading-material>`
 
 .. include:: /render/eevee/render_settings/curves.rst
    :start-after: .. --- copy below this line ---

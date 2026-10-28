@@ -26,6 +26,6 @@ Information on brush settings for every mode can be found in these pages:
 :doc:`Cursor </sculpt_paint/brush/cursor>`
    Cursor and appearance settings.
 
-:ref:`Auto-Masking <bpy.types.Brush.automasking>`
+:ref:`Auto-Masking <bpy.types.MeshAutomaskingSettings>`
    Topology, Mesh Boundary, Cavity, View Normal, and Area Normal automasking options.
    Also accessible via the :kbd:`Alt-A` pie menu.

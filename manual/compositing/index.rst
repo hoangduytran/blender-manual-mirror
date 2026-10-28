@@ -10,6 +10,7 @@
 
    introduction.rst
    compositing_workspace.rst
+   scene_effects.rst
    sidebar.rst
    compositor_system.rst
    usage.rst

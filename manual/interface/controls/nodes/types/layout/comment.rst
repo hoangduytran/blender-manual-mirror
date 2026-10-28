@@ -13,8 +13,9 @@ Comment Node
 The *Comment* node adds text annotations to a node tree, making it easier to
 document complex setups and explain how different parts of a node tree work.
 
-Unlike :ref:`Frame Nodes <node-frame>`, which are primarily used to organize
-nodes into groups, Comment nodes are designed for longer descriptions and notes.
+Unlike :doc:`Frame Nodes </interface/controls/nodes/types/layout/frame>`,
+which are primarily used to organize nodes into groups,
+Comment nodes are designed for longer descriptions and notes.
 They support multiple lines of text and basic Markdown formatting, allowing
 comments to include headings, emphasis, and links.
 

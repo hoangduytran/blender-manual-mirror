@@ -1,5 +1,4 @@
-.. _bpy.types.View3DShading.type:
-.. _view3d-viewport-shading:
+.. _bpy.types.View3DShading:
 
 ****************
 Viewport Shading
@@ -22,7 +21,7 @@ Pressing :kbd:`Z` opens a pie menu for changing the shading mode.
 Pressing :kbd:`Shift-Z` switches between the current shading mode and Wireframe.
 
 
-.. _3dview-shading-rendered:
+.. _3dview-shading-wireframe:
 
 :bl-icon:`shading_wire` -- Wireframe
 ====================================
@@ -201,7 +200,7 @@ Valley
    Control the visibility of valleys.
 
 
-.. _3dview-material-preview:
+.. _3dview-shading-material:
 
 :bl-icon:`shading_texture` -- Material Preview
 ==============================================
@@ -262,7 +261,7 @@ Compositor
    :Always: Always show the compositing output.
 
 
-.. _3dview-rendered:
+.. _3dview-shading-rendered:
 
 :bl-icon:`shading_rendered` -- Rendered
 =======================================
