@@ -131,3 +131,47 @@ to the final output of the entire effects stack.
 
 This allows individual effects to be inspected without changing
 the final compositing result.
+
+
+Built-in Scene Effects
+----------------------
+
+Blender includes a collection of compositor node group assets that can be
+added directly to the Scene Effects stack.
+
+.. rubric:: Camera & Lens Effects
+
+:doc:`Bloom </compositing/types/camera_lens_effects/bloom>`
+   Adds a glow around bright areas of the image, simulating light scattering
+   in camera lenses. The glare type can also be changed to create other effects,
+   such as Fog Glow or Streaks.
+
+:doc:`Chromatic Aberration </compositing/types/camera_lens_effects/chromatic_aberration>`
+   Simulates the separation of colors caused by imperfections in camera lenses.
+
+:doc:`Film Grain </compositing/types/camera_lens_effects/film_grain>`
+   Adds randomized grain to the image, simulating the appearance of
+   photographic film. This can be used to create a more organic,
+   film-like appearance.
+
+:doc:`Sensor Noise </compositing/types/camera_lens_effects/sensor_noise>`
+   Adds noise to the image to simulate the appearance of digital camera sensors.
+
+:doc:`Vignette </compositing/types/camera_lens_effects/vignette>`
+   Darkens the edges of the image to draw attention toward the center.
+
+
+.. rubric:: Creative
+
+:doc:`Sepia </compositing/types/creative/sepia>`
+   Applies a warm, brownish color tone resembling aged photographs.
+
+:doc:`Split Toning </compositing/types/creative/split_toning>`
+   Applies different color tints to the highlights and shadows of an image.
+
+:doc:`Tune Image </compositing/types/creative/tune_image>`
+   Provides controls for adjusting the color and tonal appearance of an image.
+
+:doc:`Unsharp Mask </compositing/types/creative/unsharp_mask>`
+   Enhances the perceived sharpness of an image by increasing contrast
+   around edges.
