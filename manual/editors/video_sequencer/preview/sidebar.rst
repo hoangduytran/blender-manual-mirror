@@ -228,7 +228,7 @@ are displayed in the preview.
 .. _bpy.types.RenderSettings.sequencer_gl_preview:
 
 Shading
-   The :ref:`shading mode <view3d-viewport-shading>` to use.
+   The :ref:`shading mode <bpy.types.View3DShading>` to use.
 
 .. _bpy.types.RenderSettings.use_sequencer_override_scene_strip:
 

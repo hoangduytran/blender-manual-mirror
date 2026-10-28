@@ -82,7 +82,7 @@ Render Region
 
 Allows you to limit rendering to a 2D rectangular area. If you're busy tweaking
 just a small part of the scene, it can be quite wasteful to have the whole viewport in
-:ref:`Rendered shading mode <view3d-viewport-shading>` or make full-frame renders,
+:ref:`Rendered shading mode <3dview-shading-rendered>` or make full-frame renders,
 so this feature lets you save time.
 
 You can define Render Regions in two different contexts:
