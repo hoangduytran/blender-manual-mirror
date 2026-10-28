@@ -162,7 +162,7 @@ Merge Using Geometry to Instance Node
    :Menu:            :menuselection:`Node Wrangler --> Merge Selected Nodes --> Use Geometry Nodes --> Use Geometry to Instance Nodes`
 
 Connects the Geometry outputs of the selected nodes to a
-:doc:`Geometry to Instance Node </modeling/geometry_nodes/geometry/operations/geometry_to_instance>`.
+:doc:`Geometry to Instance Node </modeling/geometry_nodes/geometry/geometry_to_instance>`.
 
 Unlike Join Geometry, which combines the input geometry,
 Geometry to Instance creates a separate instance for each input.
